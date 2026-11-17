@@ -10,7 +10,7 @@ from bulten.render import render  # noqa: E402
 
 theme, _, fontset = sys.argv[1].partition(":")
 fontset = fontset or "libron"
-editions = sys.argv[2:] or ["gundem2"]
+editions = sys.argv[2:] or ["gundem"]
 w = weather.today()
 for name in editions:
     issue = json.loads(Path(f"samples/{name}.json").read_text(encoding="utf-8"))

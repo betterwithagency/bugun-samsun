@@ -21,6 +21,10 @@ on:
         description: "Bugün zaten yayınlandıysa yine de gönder"
         type: boolean
         default: false
+      sample:
+        description: "Şablon testi: örnek içerikle görsel üret (yapay zekâ ve yayın yok)"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -48,6 +52,7 @@ jobs:
               flags=""
               if [ "${{ inputs.publish }}" = "true" ]; then flags="--publish"; fi
               if [ "${{ inputs.force }}" = "true" ]; then flags="$flags --force"; fi
+              if [ "${{ inputs.sample }}" = "true" ]; then flags="--issue samples/${{ inputs.edition }}.json"; fi
               echo "flags=$flags" >> "$GITHUB_OUTPUT" ;;
           esac
 

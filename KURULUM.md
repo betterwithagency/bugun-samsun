@@ -99,7 +99,7 @@ Yine de hesabın sorumluluğu sende. İlk iki hafta paylaşımları her gün kon
 
 - **Yerelde deneme:**
   - `python -m bulten run --edition gundem` komutu kareleri `output/` klasörüne üretir, yayın yapmaz. `ANTHROPIC_API_KEY` ortam değişkeni gerekir.
-  - `--issue samples/gundem2.json` ile yapay zekâ adımı atlanır; şablon testi için kullanılır.
+  - `--issue samples/gundem.json` ile yapay zekâ adımı atlanır; şablon testi için kullanılır. Aynı test GitHub'da *Run workflow* ekranındaki "Şablon testi" kutusuyla da çalışır.
 - **Tasarım:**
   - Şablon `templates/klasik.html.j2`. Fontlar Libron (başlık) ve Lexend (metin), ikisi de SIL OFL 1.1 lisanslı.
   - Harita verisi © OpenStreetMap katkıcıları (ODbL), geoBoundaries üzerinden.
