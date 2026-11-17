@@ -16,9 +16,9 @@ PAUSE = DATA / "PAUSE"
 PHARMACY = "Nöbetçi eczaneleri e-Devlet'ten ya da Samsun Eczacı Odası'ndan öğrenebilirsin."
 
 BASE_TAGS = {
-    "gundem": ["#samsun", "#samsunhaber", "#samsungündem", "#samsunbülten"],
-    "ekonomi": ["#samsun", "#samsunekonomi", "#samsunişdünyası", "#samsunbülten"],
-    "spor": ["#samsun", "#samsunspor", "#samsunsporhaber", "#samsunbülten"],
+    "gundem": ["#samsun", "#samsunhaber", "#samsungündem", "#bugunsamsun"],
+    "ekonomi": ["#samsun", "#samsunekonomi", "#samsunişdünyası", "#bugunsamsun"],
+    "spor": ["#samsun", "#samsunspor", "#samsunsporhaber", "#bugunsamsun"],
 }
 
 

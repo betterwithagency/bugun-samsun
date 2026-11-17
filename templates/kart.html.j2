@@ -2,7 +2,7 @@
 <html lang="tr">
 <head>
 <meta charset="utf-8">
-<title>Samsun Bülten · Kart</title>
+<title>Bugün Samsun · Kart</title>
 <style>
 @font-face { font-family: "Archivo"; src: url("{{ assets }}/fonts/Archivo.ttf"); font-weight: 100 900; font-stretch: 62% 125%; }
 @font-face { font-family: "Inter"; src: url("{{ assets }}/fonts/Inter.ttf"); font-weight: 100 900; }
@@ -171,7 +171,7 @@ h2.hl { font-family: var(--display); font-stretch: 78%; font-weight: 800; font-s
 <body>
 {%- macro sample_tag() -%}{% if sample %}<div class="sample">ÖRNEK</div>{% endif %}{%- endmacro -%}
 {%- macro prog(idx) -%}<div class="prog">{% for i in range(total) %}<i class="{{ 'on' if i < idx else '' }}"></i>{% endfor %}</div>{%- endmacro -%}
-{%- macro top() -%}<div class="top"><span class="wm"><i></i>Samsun Bülten</span><span class="ed">{{ ed.label }}</span></div>{%- endmacro -%}
+{%- macro top() -%}<div class="top"><span class="wm"><i></i>Bugün Samsun</span><span class="ed">{{ ed.label }}</span></div>{%- endmacro -%}
 {%- macro foot(src) -%}<div class="foot"><span>{{ src }}</span><span class="mk">{{ mark_svg }}</span></div>{%- endmacro -%}
 
 {% for s in slides %}
@@ -180,7 +180,7 @@ h2.hl { font-family: var(--display); font-stretch: 78%; font-weight: 800; font-s
   {{ sample_tag() }}{{ prog(s.idx) }}{{ top() }}
   <div class="content fit-box">
     <div class="hero">
-      <h1>{% if edition == 'gundem' %}Bugün<span>Samsun'da</span>{% elif edition == 'ekonomi' %}Ekonomi<span>&amp; İş</span>{% else %}Samsun<span>Spor</span>{% endif %}</h1>
+      <h1>{% if edition == 'gundem' %}Günün<span>özeti</span>{% elif edition == 'ekonomi' %}Ekonomi<span>&amp; İş</span>{% else %}Samsun<span>Spor</span>{% endif %}</h1>
       <div class="stick"><div class="d">{{ day }}</div><div class="m">{{ month }}</div><div class="m">{{ weekday }}</div></div>
     </div>
     <div class="meta">
@@ -286,7 +286,7 @@ h2.hl { font-family: var(--display); font-stretch: 78%; font-weight: 800; font-s
   <div class="btns">
     <div class="btn">{{ icon('bookmark', 2) }}<span class="h">Kaydet</span><span class="t">Gün rehberine sonra dön</span></div>
     <div class="btn">{{ icon('send', 2) }}<span class="h">Gönder</span><span class="t">Samsunlu bir dostuna ilet</span></div>
-    <div class="btn">{{ icon('follow', 2) }}<span class="h">Takip et</span><span class="t">@samsun.bulten</span></div>
+    <div class="btn">{{ icon('follow', 2) }}<span class="h">Takip et</span><span class="t">@bugunsamsun</span></div>
   </div>
   <div class="spacer"></div>
   <div class="sched"><span><b>08.00</b> Gündem</span><span><b>12.30</b> Ekonomi &amp; İş</span><span><b>19.00</b> Spor</span></div>

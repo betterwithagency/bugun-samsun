@@ -2,7 +2,7 @@
 <html lang="tr">
 <head>
 <meta charset="utf-8">
-<title>Samsun Bülten · Harita</title>
+<title>Bugün Samsun · Harita</title>
 <style>
 @font-face { font-family: "Instrument Sans"; src: url("{{ assets }}/fonts/InstrumentSans.ttf"); font-weight: 400 700; font-stretch: 75% 100%; }
 @font-face { font-family: "JetBrains Mono"; src: url("{{ assets }}/fonts/JetBrainsMono.ttf"); font-weight: 100 800; }
@@ -155,7 +155,7 @@ h2 { font-weight: 600; letter-spacing: -.02em; line-height: 1.03; text-wrap: bal
 </head>
 <body>
 {%- macro sample_tag() -%}{% if sample %}<div class="sample">ÖRNEK</div>{% endif %}{%- endmacro -%}
-{%- macro hd(sec) -%}<div class="hd"><span class="wm">Samsun <b>Bülten</b></span><span class="sec">{{ ed.label }} / <b>{{ sec }}</b></span></div>{%- endmacro -%}
+{%- macro hd(sec) -%}<div class="hd"><span class="wm">Bugün <b>Samsun</b></span><span class="sec">{{ ed.label }} / <b>{{ sec }}</b></span></div>{%- endmacro -%}
 {%- macro foot(src, extra='') -%}<div class="foot"><div class="l"><span>{{ src }}</span>{% if extra %}<span>{{ extra }}</span>{% endif %}</div><span class="mk">{{ mark_svg }}</span></div>{%- endmacro -%}
 {%- macro place(st) -%}{{ st.district if st.district and st.district != 'Samsun' else 'Samsun geneli' }}{%- endmacro -%}
 {%- set CROP = "-10 58 970 540" -%}
@@ -166,7 +166,7 @@ h2 { font-weight: 600; letter-spacing: -.02em; line-height: 1.03; text-wrap: bal
   {{ sample_tag() }}
   {{ hd('Sayı ' ~ ('%03d' % issue_no)) }}
   <div class="coords">41°17′K · 36°20′D · {{ date_short }}</div>
-  <h1>{% if edition == 'gundem' %}Bugün <em>Samsun'da</em>{% elif edition == 'ekonomi' %}Ekonomi <em>&amp; İş</em>{% else %}Samsun <em>Spor</em>{% endif %}</h1>
+  <h1>{% if edition == 'gundem' %}Günün <em>özeti</em>{% elif edition == 'ekonomi' %}Ekonomi <em>&amp; İş</em>{% else %}Samsun <em>Spor</em>{% endif %}</h1>
   <div class="dl"><span>{{ weekday|upper }}</span>{% if weather %}<span><b>{{ weather.max }}°</b>/{{ weather.min }}° {{ weather.text|upper }}</span>{% endif %}<span>{{ reading_min }} DK</span></div>
   <div class="mapbox{{ ' short' if scoreboard else '' }}">{{ map_svg(highlight=districts_with_news, pins=pins, vb=CROP) }}<div class="legend"><i></i>Bugün haberi olan ilçeler</div></div>
   {% if scoreboard %}
@@ -273,7 +273,7 @@ h2 { font-weight: 600; letter-spacing: -.02em; line-height: 1.03; text-wrap: bal
   <div class="acts">
     <div>{{ icon('bookmark', 2) }}<div class="h">Kaydet</div><div class="t">Gün rehberine dön</div></div>
     <div>{{ icon('send', 2) }}<div class="h">Gönder</div><div class="t">Samsunlu dostuna</div></div>
-    <div>{{ icon('follow', 2) }}<div class="h">Takip et</div><div class="t">@samsun.bulten</div></div>
+    <div>{{ icon('follow', 2) }}<div class="h">Takip et</div><div class="t">@bugunsamsun</div></div>
   </div>
   <div class="spacer"></div>
   <div class="sched"><span><b>08.00</b> GÜNDEM</span><span><b>12.30</b> EKONOMİ</span><span><b>19.00</b> SPOR</span></div>

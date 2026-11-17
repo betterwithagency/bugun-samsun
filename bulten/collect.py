@@ -9,7 +9,7 @@ import requests
 
 from .config import EDITIONS, TZ
 
-UA = "Mozilla/5.0 (compatible; SamsunBulten/1.0)"
+UA = "Mozilla/5.0 (compatible; BugunSamsun/1.0)"
 _WORD = re.compile(r"[0-9a-zçğıöşüâîû]+")
 
 

@@ -1,4 +1,4 @@
-"""Shared settings for Samsun Bülten."""
+"""Shared settings for Bugün Samsun."""
 import os
 from pathlib import Path
 from zoneinfo import ZoneInfo
@@ -10,7 +10,7 @@ OUTPUT = ROOT / "output"
 DATA = ROOT / "data"
 
 TZ = ZoneInfo("Europe/Istanbul")
-HANDLE = "@samsun.bulten"
+HANDLE = "@bugunsamsun"
 
 # Visual design
 THEME = os.environ.get("BULTEN_THEME") or "klasik"
@@ -29,7 +29,7 @@ SAMSUN_DISTRICTS = ["Alaçam", "Asarcık", "Atakum", "Ayvacık", "Bafra", "Canik
 EDITIONS = {
     "gundem": {
         "label": "Gündem",
-        "title_html": "Bugün<br><em>Samsun'da</em>",
+        "title_html": "Günün<br><em>özeti</em>",
         "publish_at": "08:00",
         "schedule": "Ekonomi 12.30 · Spor 19.00",
         "next": "Yarın sabah 08.00'de yeni bültenle buradayız.",

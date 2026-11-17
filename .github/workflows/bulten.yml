@@ -1,4 +1,4 @@
-name: Samsun Bülten
+name: Bugün Samsun
 
 on:
   schedule:
@@ -30,7 +30,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: samsun-bulten
+  group: bugun-samsun
   cancel-in-progress: false
 
 jobs:
@@ -78,7 +78,7 @@ jobs:
       - name: Save state
         if: always()
         run: |
-          git config user.name "samsun-bulten-bot"
+          git config user.name "bugun-samsun-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data
           if ! git diff --cached --quiet; then

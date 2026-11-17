@@ -28,7 +28,7 @@ def host_images(paths: list, folder: str) -> list:
         for p in paths:
             shutil.copy(p, dest / Path(p).name)
         _git(tmp, "init", "-q", "-b", "media")
-        _git(tmp, "config", "user.name", "samsun-bulten-bot")
+        _git(tmp, "config", "user.name", "bugun-samsun-bot")
         _git(tmp, "config", "user.email", "bot@users.noreply.github.com")
         _git(tmp, "add", ".")
         _git(tmp, "commit", "-q", "-m", f"media {folder}")

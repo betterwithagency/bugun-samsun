@@ -1,6 +1,6 @@
-# Samsun Bülten · Kurulum rehberi
+# Bugün Samsun · Kurulum rehberi
 
-Bu proje her gün üç bülteni kendiliğinden hazırlayıp @samsun.bulten hesabında paylaşır:
+Bu proje her gün üç bülteni kendiliğinden hazırlayıp @bugunsamsun hesabında paylaşır:
 
 | Bülten | Hazırlık başlar | Yayın |
 |---|---|---|
@@ -30,10 +30,10 @@ Aşağıdaki adımları bir kez yapman yeterli. Toplam süre yaklaşık 30-45 da
 ## 2. Instagram yayın anahtarını (access token) al
 
 1. [developers.facebook.com](https://developers.facebook.com) adresine Facebook hesabınla gir, gerekiyorsa geliştirici hesabı oluştur.
-2. *Uygulamalarım → Uygulama oluştur* yolunu izle. Kullanım alanı olarak **"Instagram'da mesajları ve içeriği yönet"** seç. Uygulamaya örneğin "Samsun Bülten Yayıncı" adını ver.
+2. *Uygulamalarım → Uygulama oluştur* yolunu izle. Kullanım alanı olarak **"Instagram'da mesajları ve içeriği yönet"** seç. Uygulamaya örneğin "Bugün Samsun Yayıncı" adını ver.
 3. Uygulama panosunda **Instagram → Instagram girişi ile API kurulumu** bölümünü aç.
-4. **"Erişim belirteçleri oluştur"** adımında *Hesap ekle* de ve @samsun.bulten ile giriş yap. İzinleri onayla; en az `instagram_business_basic` ve `instagram_business_content_publish` izinleri gerekli.
-   - Hesap eklenemezse: *Uygulama rolleri → Roller → Instagram test kullanıcısı ekle* ile @samsun.bulten'i ekle. Ardından daveti Instagram'da kabul et (*Ayarlar → Web sitesi izinleri → Uygulamalar ve web siteleri → Test kullanıcısı davetleri*). Sonra bu adımı tekrarla.
+4. **"Erişim belirteçleri oluştur"** adımında *Hesap ekle* de ve @bugunsamsun ile giriş yap. İzinleri onayla; en az `instagram_business_basic` ve `instagram_business_content_publish` izinleri gerekli.
+   - Hesap eklenemezse: *Uygulama rolleri → Roller → Instagram test kullanıcısı ekle* ile @bugunsamsun'i ekle. Ardından daveti Instagram'da kabul et (*Ayarlar → Web sitesi izinleri → Uygulamalar ve web siteleri → Test kullanıcısı davetleri*). Sonra bu adımı tekrarla.
 5. Oluşan uzun bir metni kopyala. Bu senin **IG_ACCESS_TOKEN** değerin. Kimseyle paylaşma.
 
 Bu anahtar 60 gün geçerli. Sistem onu her hafta kendiliğinden yeniler, yani normalde bir daha uğraşmazsın.
@@ -69,7 +69,7 @@ Depo hazır: **https://github.com/betterwithagency/samsun-bulten** (public).
 ## 5. Önce deneme, sonra canlı
 
 1. **Kuru deneme** (duraklatma açıkken de çalışır):
-   - Deponun *Actions* sekmesinde **Samsun Bülten → Run workflow** de.
+   - Deponun *Actions* sekmesinde **Bugün Samsun → Run workflow** de.
    - Bülten olarak `gundem` seç, "Instagram'a gönder" kutusunu **boş bırak**.
    - İş bitince sayfanın altındaki `bulten-gundem-…` dosyasını indir. İçinde kareler, Instagram açıklaması (`caption.txt`) ve Claude'un araştırma notları (`dosya.md`) var.
 2. **Canlıya geçiş:** Sonuç iyiyse depoda `data/PAUSE` dosyasını aç, çöp kutusu simgesiyle sil ve değişikliği kaydet.

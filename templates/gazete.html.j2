@@ -2,7 +2,7 @@
 <html lang="tr">
 <head>
 <meta charset="utf-8">
-<title>Samsun Bülten · Gazete</title>
+<title>Bugün Samsun · Gazete</title>
 <style>
 @font-face { font-family: "Newsreader"; src: url("{{ assets }}/fonts/Newsreader.ttf"); font-weight: 200 800; }
 @font-face { font-family: "Newsreader"; src: url("{{ assets }}/fonts/Newsreader-Italic.ttf"); font-weight: 200 800; font-style: italic; }
@@ -149,7 +149,7 @@ h2 { font-family: var(--serif); font-weight: 650; letter-spacing: -.02em; font-v
 <body>
 {%- macro sample_tag() -%}{% if sample %}<div class="sample">ÖRNEK</div>{% endif %}{%- endmacro -%}
 {%- macro rhead(kicker, s) -%}
-  <div class="rhead"><span class="logo">Samsun <em>Bülten</em></span><span class="sec sc">{{ ed.label }}</span></div>
+  <div class="rhead"><span class="logo">Bugün <em>Samsun</em></span><span class="sec sc">{{ ed.label }}</span></div>
   <div class="rule2" style="margin-top:16px"></div>
   <div class="rmeta"><span class="k sc">{{ kicker }}</span><span>{{ day }} {{ month }} {{ year }}, {{ weekday }}</span></div>
 {%- endmacro -%}
@@ -163,7 +163,7 @@ h2 { font-family: var(--serif); font-weight: 650; letter-spacing: -.02em; font-v
   {{ sample_tag() }}
   <div class="band"></div>
   <div class="tag sc">Samsun'un {{ 'sabah' if edition == 'gundem' else ('öğle' if edition == 'ekonomi' else 'akşam') }} bülteni</div>
-  <div class="nameplate">Samsun <em>Bülten</em></div>
+  <div class="nameplate">Bugün <em>Samsun</em></div>
   <div class="rule2"></div>
   <div class="ears">
     <div>Sayı <b>{{ '%03d' % issue_no }}</b></div>
@@ -267,7 +267,7 @@ h2 { font-family: var(--serif); font-weight: 650; letter-spacing: -.02em; font-v
   <div class="ctas">
     <div>{{ icon('bookmark') }}<div class="h">Kaydet</div><div class="t">Gün rehberine sonra dön.</div></div>
     <div>{{ icon('send') }}<div class="h">Gönder</div><div class="t">Samsunlu bir dostuna ilet.</div></div>
-    <div>{{ icon('follow') }}<div class="h">Takip et</div><div class="t">@samsun.bulten</div></div>
+    <div>{{ icon('follow') }}<div class="h">Takip et</div><div class="t">@bugunsamsun</div></div>
   </div>
   <div class="spacer"></div>
   <div class="times"><div class="sc k">Yayın saatleri</div><div class="row"><span><b>08.00</b> Gündem</span><span><b>12.30</b> Ekonomi &amp; İş</span><span><b>19.00</b> Spor</span></div></div>
