@@ -159,8 +159,8 @@ def run(edition: str, publish: bool = False, wait: bool = False, force: bool = F
                 _trim(issue, exc.slides)
     text = caption(issue)
     (out_dir / "caption.txt").write_text(text, encoding="utf-8")
-    if not issue_file:  # sample/test runs never touch the archive
-        _save(DATA / "issues" / f"{folder}.json", {k: v for k, v in issue.items() if k != "weather"})
+    record = {k: v for k, v in issue.items() if k != "weather"}
+    _save(out_dir / "issue.json", record)  # always kept with the run's slides (workflow artifact)
     print(f"[run] rendered {len(paths)} slides → {out_dir}")
 
     result = {"edition": edition, "slides": [str(p) for p in paths], "caption": text, "published": False}
@@ -181,6 +181,8 @@ def run(edition: str, publish: bool = False, wait: bool = False, force: bool = F
     post = instagram.publish_carousel(token, user["user_id"], urls, text)
     print(f"[run] published to @{user.get('username')}: {post.get('permalink') or post['id']}")
 
+    if not issue_file:  # the archive holds published bulletins only
+        _save(DATA / "issues" / f"{folder}.json", {**record, "permalink": post.get("permalink", "")})
     state["issue_no"][edition] = issue["issue_no"]
     state["last"][edition] = today.isoformat()
     _save(STATE, state)

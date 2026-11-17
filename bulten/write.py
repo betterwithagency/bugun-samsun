@@ -132,7 +132,7 @@ def _schema(edition: str) -> dict:
     }
 
 
-LIMITS = {"title": 70, "short_title": 46, "location": 30, "body": 340, "why": 130,
+LIMITS = {"title": 70, "short_title": 46, "location": 30, "body": 280, "why": 115,
           "stat.value": 12, "stat.label": 42, "brief": 115, "hook": 180}
 
 WRITING_RULES = f"""Yazım kuralları (görsel şablona sığması için sınırlar kesindir):
