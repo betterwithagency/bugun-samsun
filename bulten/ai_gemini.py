@@ -87,5 +87,6 @@ def write(system: str, task: str, schema: dict) -> dict:
 
 def check() -> str:
     """Free metadata call: confirms the key works and the model exists."""
-    m = _client().models.get(model=GEMINI_MODEL)
+    client = _client()  # keep a reference: a garbage-collected Client closes its HTTP session
+    m = client.models.get(model=GEMINI_MODEL)
     return getattr(m, "name", GEMINI_MODEL)
