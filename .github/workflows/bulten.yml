@@ -72,10 +72,13 @@ jobs:
 
       - name: Prepare and publish
         env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
           TOKEN_KEY: ${{ secrets.TOKEN_KEY }}
           GITHUB_TOKEN: ${{ github.token }}
+          BULTEN_PROVIDER: ${{ vars.BULTEN_PROVIDER }}
+          BULTEN_GEMINI_MODEL: ${{ vars.BULTEN_GEMINI_MODEL }}
           BULTEN_MODEL: ${{ vars.BULTEN_MODEL }}
           IG_USER_ID: ${{ vars.IG_USER_ID }}
         run: |

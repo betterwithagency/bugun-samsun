@@ -1,12 +1,21 @@
-"""Claude does the journalism: research (web search + fetch) then writing to a strict JSON schema."""
+"""The journalism: research (web search + page reading) then writing to a strict JSON schema.
+
+The prompts, rules, schema and checks live here; the model calls live in ai_gemini.py / ai_claude.py,
+picked with the BULTEN_PROVIDER variable (default: gemini).
+"""
 import json
 
-import anthropic
-
-from .config import EDITIONS, MODEL, SAMSUN_DISTRICTS
+from .config import EDITIONS, PROVIDER, SAMSUN_DISTRICTS
 from .icons import CATEGORIES
 
-FALLBACK_BETA = "server-side-fallback-2026-07-01"
+
+def provider():
+    if PROVIDER == "claude":
+        from . import ai_claude
+        return ai_claude
+    from . import ai_gemini
+    return ai_gemini
+
 
 EDITORIAL_RULES = """Sen "Bugün Samsun" adlı Instagram haber bülteninin editörüsün. Bülten her gün otomatik yayınlanıyor ve yayından önce hiçbir insan kontrol etmiyor. Bu yüzden doğruluk, hızdan ve ilginçlikten her zaman önemlidir.
 
@@ -31,21 +40,6 @@ Seçim önceliği
 - Önce Samsunluların günlük hayatını etkileyen ve kamu yararı taşıyan haberler; sonra ekonomi, kültür ve insan hikâyeleri.
 - Birçok kaynakta geçen haber genellikle daha önemlidir ama tek ölçüt bu değildir.
 - Daha önce yayınladığımız bir konuyu yeni ve önemli bir gelişme yoksa tekrar seçme."""
-
-
-def _client() -> anthropic.Anthropic:
-    return anthropic.Anthropic(max_retries=4)
-
-
-def _text(msg) -> str:
-    return "".join(b.text for b in msg.content if getattr(b, "type", "") == "text").strip()
-
-
-def _check_stop(msg, step: str):
-    if msg.stop_reason == "refusal":
-        raise RuntimeError(f"{step}: model declined the request ({getattr(msg, 'stop_details', None)})")
-    if msg.stop_reason == "max_tokens":
-        raise RuntimeError(f"{step}: output hit max_tokens")
 
 
 def research(edition: str, date_label: str, candidates: list, recent_titles: list) -> str:
@@ -91,38 +85,7 @@ Görev:
 - Kaynak adları ve okuduğun sayfaların adresleri
 Kısa haberler için tek satırlık olgu, ilçe ve kaynak yeterli."""
 
-    client = _client()
-    tools = [
-        {"type": "web_search_20260209", "name": "web_search", "max_uses": 12,
-         "user_location": {"type": "approximate", "city": "Samsun", "country": "TR", "timezone": "Europe/Istanbul"}},
-        {"type": "web_fetch_20260209", "name": "web_fetch", "max_uses": 15},
-    ]
-    messages = [{"role": "user", "content": prompt}]
-    responses = []
-    for _ in range(8):  # server tools may pause a long turn; resume by appending the assistant content
-        with client.beta.messages.stream(
-            model=MODEL,
-            max_tokens=64000,
-            betas=[FALLBACK_BETA],
-            fallbacks="default",
-            cache_control={"type": "ephemeral"},
-            system=EDITORIAL_RULES,
-            messages=messages,
-            tools=tools,
-            output_config={"effort": "high"},
-        ) as stream:
-            msg = stream.get_final_message()
-        responses.append(msg)
-        if msg.stop_reason == "pause_turn":
-            # consecutive assistant messages are merged into one turn by the API
-            messages.append({"role": "assistant", "content": msg.content})
-            continue
-        _check_stop(msg, "research")
-        dossier = _text(msg) or "\n".join(_text(m) for m in responses)
-        if not dossier:
-            raise RuntimeError("research: empty dossier")
-        return dossier
-    raise RuntimeError("research: too many pause_turn continuations")
+    return provider().research(EDITORIAL_RULES, prompt)
 
 
 def _schema(edition: str) -> dict:
@@ -201,19 +164,40 @@ def write(edition: str, date_label: str, dossier: str, fix_note: str = "", previ
         task = (f"Aşağıdaki bülten JSON'unda şu sorunlar var:\n{fix_note}\n\n"
                 f"Yalnızca bu sorunları düzelt; içeriği ve olguları değiştirme. Dosya referans için aşağıda.\n\n"
                 f"<bulten>\n{json.dumps(previous, ensure_ascii=False)}\n</bulten>\n\n<dosya>\n{dossier}\n</dosya>")
-    client = _client()
-    with client.beta.messages.stream(
-        model=MODEL,
-        max_tokens=32000,
-        betas=[FALLBACK_BETA],
-        fallbacks="default",
-        system=EDITORIAL_RULES + "\n\n" + WRITING_RULES,
-        messages=[{"role": "user", "content": task}],
-        output_config={"effort": "high", "format": {"type": "json_schema", "schema": _schema(edition)}},
-    ) as stream:
-        msg = stream.get_final_message()
-    _check_stop(msg, "write")
-    return json.loads(_text(msg))
+    issue = provider().write(EDITORIAL_RULES + "\n\n" + WRITING_RULES, task, _schema(edition))
+    return normalize(issue)
+
+
+def normalize(issue: dict) -> dict:
+    """Make the shape exactly what the renderer expects, whatever the provider returned."""
+    def s(v):
+        return v.strip() if isinstance(v, str) else ""
+    stories = []
+    for st in issue.get("stories") or []:
+        stat = st.get("stat") or {}
+        stories.append({
+            "category": st.get("category") if st.get("category") in CATEGORIES else "Gündem",
+            "district": st.get("district") if st.get("district") in SAMSUN_DISTRICTS else "Samsun",
+            "location": s(st.get("location")), "title": s(st.get("title")).rstrip("."),
+            "short_title": s(st.get("short_title")) or s(st.get("title")),
+            "stat": {"value": s(stat.get("value")), "label": s(stat.get("label"))},
+            "body": s(st.get("body")), "why": s(st.get("why")),
+            "sources": [x.strip() for x in st.get("sources") or [] if isinstance(x, str) and x.strip()],
+        })
+    briefs = [{"category": b.get("category") if b.get("category") in CATEGORIES else "Gündem",
+               "district": b.get("district") if b.get("district") in SAMSUN_DISTRICTS else "Samsun",
+               "text": s(b.get("text")),
+               "sources": [x.strip() for x in b.get("sources") or [] if isinstance(x, str) and x.strip()]}
+              for b in issue.get("briefs") or [] if s(b.get("text"))]
+    outages = [{"kind": o.get("kind") if o.get("kind") in ("bolt", "droplet") else "bolt",
+                "title": s(o.get("title")), "text": s(o.get("text")), "source": s(o.get("source"))}
+               for o in issue.get("outages") or [] if s(o.get("text"))]
+    sb = issue.get("scoreboard") or {}
+    scoreboard = {"present": bool(sb.get("present")), "competition": s(sb.get("competition")),
+                  "home": s(sb.get("home")), "away": s(sb.get("away")),
+                  "home_score": int(sb.get("home_score") or 0), "away_score": int(sb.get("away_score") or 0)}
+    return {"stories": [x for x in stories if x["title"] and x["body"]], "briefs": briefs, "outages": outages,
+            "scoreboard": scoreboard, "hook": s(issue.get("hook"))}
 
 
 def problems(issue: dict) -> list:

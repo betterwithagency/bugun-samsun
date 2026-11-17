@@ -4,6 +4,6 @@
 
 - Kurulum ve günlük kullanım: [KURULUM.md](KURULUM.md)
 - Akış: `bulten/pipeline.py` (topla → araştır → yaz → kontrol → çiz → yayınla)
-- Yayın kuralları (Claude'a verilen talimatlar): `bulten/write.py`
+- Yayın kuralları ve yazım talimatları: `bulten/write.py` (yapay zekâ: `ai_gemini.py`, isteğe bağlı `ai_claude.py`)
 - Tasarım: `templates/klasik.html.j2`
 - Zamanlama: `.github/workflows/bulten.yml`

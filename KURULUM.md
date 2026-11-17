@@ -10,7 +10,7 @@ Bu proje her gün üç bülteni kendiliğinden hazırlayıp @bugunsamsun hesabı
 
 Her çalıştırmada sırasıyla şunlar olur:
 1. Google Haberler'den son 24 saatin Samsun haberleri toplanır.
-2. Claude haberleri seçer ve web'de kaynak sayfalarını okuyarak doğrular.
+2. Yapay zekâ (Gemini) haberleri seçer ve web'de kaynak sayfalarını okuyarak doğrular.
 3. Bülten metni yazılır, uzunluklar kontrol edilir.
 4. Görseller şablondan üretilir.
 5. Yayın saatinde Instagram'a carousel olarak gönderilir.
@@ -41,15 +41,18 @@ Anahtarı yeniden üretmen gerekirse:
 
 Bu yöntemin anahtarı bir **sistem kullanıcısı anahtarıdır** ve süresi dolmaz; yenilemeye gerek yoktur. Eski tür Instagram girişi anahtarları da desteklenir; bunlar haftalık olarak kendiliğinden yenilenir.
 
-## 3. Anthropic API anahtarı al
+## 3. Yapay zekâ anahtarı (Gemini)
 
-1. [console.anthropic.com](https://console.anthropic.com) adresinde hesap aç ya da giriş yap.
-2. *Billing* bölümünden kredi yükle. **Aylık harcama limiti** koymanı öneririm.
-3. *API Keys → Create Key* ile bir anahtar oluştur. Bu senin **ANTHROPIC_API_KEY** değerin.
+Haberleri seçen, web'de doğrulayan ve yazan yapay zekâ varsayılan olarak **Google Gemini**. Araştırma için Google Arama ve sayfa okuma araçlarını kullanır.
 
-**Tahmini maliyet:** Varsayılan model Claude Opus 5.5. Her bülten web araması, sayfa okuma ve yazım dahil yaklaşık 1-2 $ tutar; günde 3 bültenle ayda yaklaşık 90-180 $.
+1. [Google AI Studio](https://aistudio.google.com) → *Get API key* bölümünden bir anahtar oluştur. Faturalandırma tanımlı bir proje seç.
+2. Anahtarı GitHub'da *Settings → Secrets and variables → Actions → New repository secret* ile `GEMINI_API_KEY` adıyla ekle. Anahtarı sohbete ya da başka bir yere yapıştırma.
 
-**Daha ucuz seçenek:** GitHub'da *Settings → Secrets and variables → Actions → Variables* bölümünde `BULTEN_MODEL` değişkenini `claude-sonnet-5-5` yaparsan maliyet yaklaşık yarıya iner. İlk hafta Console'daki *Usage* ekranından gerçek tutarı izle.
+**Model:** Varsayılan `gemini-4-argon` (Google'ın verimli Gemini 4 akıl yürütme modeli). Daha güçlü ama daha pahalı `gemini-4-carbon` için *Variables* sekmesinde `BULTEN_GEMINI_MODEL` değişkenini değiştir.
+
+**Maliyet:** Google Arama ile beslenen yanıtlarda ayda 5.000 arama ücretsiz. Sonrası 1.000 arama başına 14 $ (Gemini 3 ve sonrası için). Bültenler ayda yaklaşık 1.000 arama yapar. Model kullanım ücretleri için Google AI Studio'daki fiyat sayfasına bak ve ilk hafta faturalandırma ekranından gerçek tutarı izle.
+
+**Claude'a geçmek istersen:** `BULTEN_PROVIDER` değişkenini `claude` yap ve `ANTHROPIC_API_KEY` gizli değerini ekle. Model `BULTEN_MODEL` ile seçilir, varsayılanı `claude-opus-5-5`.
 
 ## 4. GitHub deposu
 
@@ -63,20 +66,20 @@ Depo hazır: **https://github.com/betterwithagency/bugun-samsun** (public).
 
 | Ad | Değer |
 |---|---|
-| `ANTHROPIC_API_KEY` | 3. adımdaki anahtar |
+| `GEMINI_API_KEY` | 3. adımdaki Gemini anahtarı |
 | `IG_ACCESS_TOKEN` | 2. adımdaki Instagram anahtarı |
 
 Değişken (*Variables* sekmesi): `IG_USER_ID` = `17841475041510019` (eklendi).
 | `TOKEN_KEY` (isteğe bağlı) | Yalnızca 60 günlük Instagram girişi anahtarı kullanılırsa gerekir; süresiz sistem kullanıcısı anahtarında gerekmez. Uzun, rastgele bir paroladır (en az 32 karakter) ve yenilenen anahtarı şifrelemek için kullanılır. Şu komutla değeri görmeden üretip ekleyebilirsin: `python3 -c "import secrets; print(secrets.token_urlsafe(32))" \| gh secret set TOKEN_KEY -R betterwithagency/bugun-samsun` |
 
-İpucu: `gh secret set ANTHROPIC_API_KEY -R betterwithagency/bugun-samsun` komutu değeri gizli olarak sorar. Anahtarı terminale yapıştırırsın; başka hiçbir yerde görünmez.
+İpucu: Gizli değerleri GitHub'ın *New secret* sayfasından eklemek en kolayı. Eklediğin anahtarların çalıştığını *Run workflow* ekranındaki **Bağlantı kontrolü** kutusuyla, hiçbir şey yayınlamadan deneyebilirsin.
 
 ## 5. Önce deneme, sonra canlı
 
 1. **Kuru deneme** (duraklatma açıkken de çalışır):
    - Deponun *Actions* sekmesinde **Bugün Samsun → Run workflow** de.
    - Bülten olarak `gundem` seç, "Instagram'a gönder" kutusunu **boş bırak**.
-   - İş bitince sayfanın altındaki `bulten-gundem-…` dosyasını indir. İçinde kareler, Instagram açıklaması (`caption.txt`) ve Claude'un araştırma notları (`dosya.md`) var.
+   - İş bitince sayfanın altındaki `bulten-gundem-…` dosyasını indir. İçinde kareler, Instagram açıklaması (`caption.txt`) ve yapay zekânın araştırma notları (`dosya.md`) var.
 2. **Canlıya geçiş:** Sonuç iyiyse depoda `data/PAUSE` dosyasını aç, çöp kutusu simgesiyle sil ve değişikliği kaydet.
 3. **İlk gerçek paylaşım:** İstersen hemen bir tane göndermek için *Run workflow*'u "Instagram'a gönder" kutusu **işaretli** olarak çalıştır. Yoksa bir sonraki yayın saatini bekle; zamanlanmış çalıştırmalar artık kendiliğinden yayın yapar.
 
@@ -91,7 +94,7 @@ Değişken (*Variables* sekmesi): `IG_USER_ID` = `17841475041510019` (eklendi).
 
 ## Yayın sorumluluğu
 
-İçerik yapay zekâ tarafından yazılıyor ve insan onayı olmadan yayınlanıyor. Yayın kuralları `bulten/write.py` dosyasının başında. Bu kurallar Claude'a şunları söylüyor:
+İçerik yapay zekâ tarafından yazılıyor ve insan onayı olmadan yayınlanıyor. Yayın kuralları `bulten/write.py` dosyasının başında. Bu kurallar yapay zekâya şunları söylüyor:
 - Yalnızca kaynak sayfası okunarak doğrulanmış haberleri kullan.
 - Suç ve kaza haberlerinde kişi adı verme.
 - İntihar haberlerini dahil etme.
@@ -103,7 +106,7 @@ Yine de hesabın sorumluluğu sende. İlk iki hafta paylaşımları her gün kon
 ## Teknik notlar
 
 - **Yerelde deneme:**
-  - `python -m bulten run --edition gundem` komutu kareleri `output/` klasörüne üretir, yayın yapmaz. `ANTHROPIC_API_KEY` ortam değişkeni gerekir.
+  - `python -m bulten run --edition gundem` komutu kareleri `output/` klasörüne üretir, yayın yapmaz. `GEMINI_API_KEY` ortam değişkeni gerekir.
   - `--issue samples/gundem.json` ile yapay zekâ adımı atlanır; şablon testi için kullanılır. Aynı test GitHub'da *Run workflow* ekranındaki "Şablon testi" kutusuyla da çalışır.
 - **Tasarım:**
   - Şablon `templates/klasik.html.j2`. Fontlar Libron (başlık) ve Lexend (metin), ikisi de SIL OFL 1.1 lisanslı.

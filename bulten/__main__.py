@@ -62,17 +62,17 @@ def check() -> int:
     except Exception as exc:
         ok = False
         print(f"[check] Instagram HATA: {exc}")
-    if os.environ.get("ANTHROPIC_API_KEY"):
+    from .config import GEMINI_MODEL, MODEL, PROVIDER
+    key_name, model = ("ANTHROPIC_API_KEY", MODEL) if PROVIDER == "claude" else ("GEMINI_API_KEY", GEMINI_MODEL)
+    if os.environ.get(key_name):
         try:
-            import anthropic
-            from .config import MODEL
-            model = anthropic.Anthropic().models.retrieve(MODEL)  # free metadata call, no tokens billed
-            print(f"[check] Anthropic OK: {model.id}")
+            from .write import provider
+            print(f"[check] Yapay zekâ OK: {PROVIDER} / {provider().check()}")
         except Exception as exc:
             ok = False
-            print(f"[check] Anthropic HATA: {exc}")
+            print(f"[check] Yapay zekâ HATA ({PROVIDER} / {model}): {exc}")
     else:  # not an error yet: the key may simply not be added
-        print("[check] Anthropic UYARI: ANTHROPIC_API_KEY henüz eklenmedi")
+        print(f"[check] Yapay zekâ UYARI: {key_name} henüz eklenmedi ({PROVIDER} seçili)")
     return 0 if ok else 1
 
 

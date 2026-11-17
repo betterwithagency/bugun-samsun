@@ -16,8 +16,10 @@ HANDLE = "@bugunsamsun"
 THEME = os.environ.get("BULTEN_THEME") or "klasik"
 FONTSET = os.environ.get("BULTEN_FONTSET") or "libron"
 
-# Claude model used for research and writing (override with BULTEN_MODEL)
-MODEL = os.environ.get("BULTEN_MODEL") or "claude-opus-5-5"
+# AI provider for research and writing: "gemini" (default) or "claude"
+PROVIDER = (os.environ.get("BULTEN_PROVIDER") or "gemini").strip().lower()
+GEMINI_MODEL = os.environ.get("BULTEN_GEMINI_MODEL") or "gemini-4-argon"
+MODEL = os.environ.get("BULTEN_MODEL") or "claude-opus-5-5"  # used when PROVIDER == "claude"
 
 # Instagram: carousels hold up to 20 items via the API; we keep posts short on purpose.
 MAX_SLIDES = 10
