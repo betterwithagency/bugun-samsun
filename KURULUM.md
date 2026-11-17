@@ -50,7 +50,7 @@ Bu anahtar 60 gün geçerli. Sistem onu her hafta kendiliğinden yeniler, yani n
 
 ## 4. GitHub deposu
 
-Depo hazır: **https://github.com/betterwithagency/samsun-bulten** (public).
+Depo hazır: **https://github.com/betterwithagency/bugun-samsun** (public).
 
 - **Neden public:** Instagram görselleri bir web adresinden çekiyor. Görseller depodaki ayrı bir `media` dalından yayınlanıyor.
 - **Gizli kalanlar:** Şifreler ve anahtarlar herkese açık değildir; GitHub Secrets'ta saklanır. Depoya kaydedilen Instagram anahtarı da şifrelidir.
@@ -62,9 +62,9 @@ Depo hazır: **https://github.com/betterwithagency/samsun-bulten** (public).
 |---|---|
 | `ANTHROPIC_API_KEY` | 3. adımdaki anahtar |
 | `IG_ACCESS_TOKEN` | 2. adımdaki Instagram anahtarı |
-| `TOKEN_KEY` | Uzun, rastgele bir parola (en az 32 karakter). Yenilenen Instagram anahtarını şifrelemek için kullanılır. Şu komutla değeri görmeden üretip ekleyebilirsin: `python3 -c "import secrets; print(secrets.token_urlsafe(32))" \| gh secret set TOKEN_KEY -R betterwithagency/samsun-bulten` |
+| `TOKEN_KEY` | Uzun, rastgele bir parola (en az 32 karakter). Yenilenen Instagram anahtarını şifrelemek için kullanılır. Şu komutla değeri görmeden üretip ekleyebilirsin: `python3 -c "import secrets; print(secrets.token_urlsafe(32))" \| gh secret set TOKEN_KEY -R betterwithagency/bugun-samsun` |
 
-İpucu: `gh secret set ANTHROPIC_API_KEY -R betterwithagency/samsun-bulten` komutu değeri gizli olarak sorar. Anahtarı terminale yapıştırırsın; başka hiçbir yerde görünmez.
+İpucu: `gh secret set ANTHROPIC_API_KEY -R betterwithagency/bugun-samsun` komutu değeri gizli olarak sorar. Anahtarı terminale yapıştırırsın; başka hiçbir yerde görünmez.
 
 ## 5. Önce deneme, sonra canlı
 
