@@ -4,6 +4,7 @@
   python -m bulten run --edition gundem --publish --wait  # what the scheduled workflow does
   python -m bulten run --edition gundem --issue samples/gundem2.json   # skip the AI, test rendering
   python -m bulten candidates --edition spor            # show today's candidate headlines
+  python -m bulten check                                 # verify the Instagram and Anthropic credentials
 """
 import argparse
 import json
@@ -24,7 +25,11 @@ def main(argv=None) -> int:
     r.add_argument("--issue", help="use a ready issue JSON instead of collecting and writing")
     c = sub.add_parser("candidates")
     c.add_argument("--edition", required=True, choices=["gundem", "ekonomi", "spor"])
+    sub.add_parser("check")
     args = p.parse_args(argv)
+
+    if args.cmd == "check":
+        return check()
 
     if args.cmd == "candidates":
         from .collect import collect
@@ -41,6 +46,35 @@ def main(argv=None) -> int:
     print(json.dumps({k: v for k, v in result.items() if k != "caption"}, ensure_ascii=False, indent=1))
     print("\n--- caption ---\n" + result["caption"])
     return 0
+
+
+def check() -> int:
+    """Confirm the secrets work without publishing anything. Never prints secret values."""
+    import os
+
+    ok = True
+    try:
+        from . import instagram, tokens
+        token = tokens.get_token()
+        acc = instagram.account(token)
+        kind = "süresiz sistem kullanıcısı anahtarı" if instagram.is_system_user_token(token) else "Instagram girişi anahtarı"
+        print(f"[check] Instagram OK: @{acc['username']} (kimlik {acc['user_id']}, {kind})")
+    except Exception as exc:
+        ok = False
+        print(f"[check] Instagram HATA: {exc}")
+    if os.environ.get("ANTHROPIC_API_KEY"):
+        try:
+            import anthropic
+            from .config import MODEL
+            model = anthropic.Anthropic().models.retrieve(MODEL)  # free metadata call, no tokens billed
+            print(f"[check] Anthropic OK: {model.id}")
+        except Exception as exc:
+            ok = False
+            print(f"[check] Anthropic HATA: {exc}")
+    else:
+        ok = False
+        print("[check] Anthropic: ANTHROPIC_API_KEY henüz eklenmedi")
+    return 0 if ok else 1
 
 
 if __name__ == "__main__":
