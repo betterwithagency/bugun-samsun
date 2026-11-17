@@ -120,15 +120,12 @@
    ]
   }
  ],
- "practical": {
-  "outages": [
-   {
-    "kind": "bolt",
-    "title": "Planlı elektrik kesintisi",
-    "text": "Bazı mahallelerde gün içinde planlı çalışma var.",
-    "source": "YEDAŞ"
-   }
-  ],
-  "pharmacy": "Nöbetçi eczane listesi Samsun Eczacı Odası'nda."
- }
+ "outages": [
+  {
+   "kind": "bolt",
+   "title": "Planlı elektrik kesintisi",
+   "text": "Bazı mahallelerde gün içinde planlı çalışma var.",
+   "source": "YEDAŞ"
+  }
+ ]
 }

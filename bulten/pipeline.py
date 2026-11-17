@@ -129,10 +129,12 @@ def run(edition: str, publish: bool = False, wait: bool = False, force: bool = F
     issue["issue_no"] = state["issue_no"].get(edition, 0) + 1
     for n, st in enumerate(issue["stories"], start=1):
         st["n"] = n
+    issue.pop("practical", None)
     if ed["practical"]:
         issue["weather"] = weather.today()
-        outages = issue.get("outages") or (issue.get("practical") or {}).get("outages", [])
-        issue["practical"] = {"outages": outages, "pharmacy": PHARMACY}
+        outages = issue.get("outages") or []
+        if issue["weather"] or outages:  # without either, the guide slide would look empty: leave it out
+            issue["practical"] = {"outages": outages, "pharmacy": PHARMACY}
     sb = issue.get("scoreboard") or {}
     issue["scoreboard"] = sb if sb.get("present") else None
 
@@ -157,7 +159,8 @@ def run(edition: str, publish: bool = False, wait: bool = False, force: bool = F
                 _trim(issue, exc.slides)
     text = caption(issue)
     (out_dir / "caption.txt").write_text(text, encoding="utf-8")
-    _save(DATA / "issues" / f"{folder}.json", {k: v for k, v in issue.items() if k != "weather"})
+    if not issue_file:  # sample/test runs never touch the archive
+        _save(DATA / "issues" / f"{folder}.json", {k: v for k, v in issue.items() if k != "weather"})
     print(f"[run] rendered {len(paths)} slides → {out_dir}")
 
     result = {"edition": edition, "slides": [str(p) for p in paths], "caption": text, "published": False}

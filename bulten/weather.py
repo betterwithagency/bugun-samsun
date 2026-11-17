@@ -1,4 +1,6 @@
 """Today's Samsun conditions from Open-Meteo (free, no key): forecast + sea temperature + sun times."""
+import time
+
 import requests
 
 FORECAST = ("https://api.open-meteo.com/v1/forecast?latitude=41.2867&longitude=36.33"
@@ -36,10 +38,23 @@ def describe(code: int):
     return "Bulutlu", "cloud"
 
 
+def _get(url: str) -> dict:
+    last = None
+    for attempt in range(3):
+        try:
+            r = requests.get(url, timeout=30)
+            r.raise_for_status()
+            return r.json()
+        except Exception as exc:
+            last = exc
+            time.sleep(5 * (attempt + 1))
+    raise last
+
+
 def today():
     """Return a dict for the 'Gün rehberi' slide, or None if the service is down."""
     try:
-        d = requests.get(FORECAST, timeout=15).json()["daily"]
+        d = _get(FORECAST)["daily"]
         text, icon = describe(int(d["weather_code"][0]))
         out = {
             "max": round(d["temperature_2m_max"][0]),
@@ -56,7 +71,7 @@ def today():
         print(f"[weather] skipped: {exc}")
         return None
     try:
-        sea = requests.get(MARINE, timeout=15).json()["current"]["sea_surface_temperature"]
+        sea = _get(MARINE)["current"]["sea_surface_temperature"]
         out["sea"] = round(sea) if sea is not None else None
     except Exception as exc:
         print(f"[weather] sea temperature skipped: {exc}")
