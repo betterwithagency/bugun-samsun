@@ -71,9 +71,8 @@ def check() -> int:
         except Exception as exc:
             ok = False
             print(f"[check] Anthropic HATA: {exc}")
-    else:
-        ok = False
-        print("[check] Anthropic: ANTHROPIC_API_KEY henüz eklenmedi")
+    else:  # not an error yet: the key may simply not be added
+        print("[check] Anthropic UYARI: ANTHROPIC_API_KEY henüz eklenmedi")
     return 0 if ok else 1
 
 
