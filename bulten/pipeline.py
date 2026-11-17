@@ -176,7 +176,7 @@ def run(edition: str, publish: bool = False, wait: bool = False, force: bool = F
             print(f"[run] waiting {int(delay)}s until {ed['publish_at']}")
             time.sleep(delay)
     token = tokens.get_token()
-    user = instagram.me(token)
+    user = instagram.account(token)
     urls = hosting.host_images(paths, folder)
     post = instagram.publish_carousel(token, user["user_id"], urls, text)
     print(f"[run] published to @{user.get('username')}: {post.get('permalink') or post['id']}")

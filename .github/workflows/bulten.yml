@@ -73,6 +73,7 @@ jobs:
           TOKEN_KEY: ${{ secrets.TOKEN_KEY }}
           GITHUB_TOKEN: ${{ github.token }}
           BULTEN_MODEL: ${{ vars.BULTEN_MODEL }}
+          IG_USER_ID: ${{ vars.IG_USER_ID }}
         run: python -m bulten run --edition ${{ steps.pick.outputs.edition }} ${{ steps.pick.outputs.flags }}
 
       - name: Save state

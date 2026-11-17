@@ -32,6 +32,8 @@ def get_token() -> str:
     key = os.environ.get("TOKEN_KEY", "").strip()
     if not seed_token:
         raise RuntimeError("IG_ACCESS_TOKEN secret is missing")
+    if instagram.is_system_user_token(seed_token):  # Unified login system-user tokens never expire
+        return seed_token
     token, refreshed_at = seed_token, None
     if key and STORE.exists():
         try:

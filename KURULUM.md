@@ -21,22 +21,25 @@ Aşağıdaki adımları bir kez yapman yeterli. Toplam süre yaklaşık 30-45 da
 
 ---
 
-## 1. Instagram hesabını hazırla
+## 1. Instagram hesabı (tamamlandı)
 
-1. **Doğrulama:** Hesap şu an "doğrulama selfiesi" istiyor. Instagram uygulamasından selfie'yi gönder ve hesabın açılmasını bekle (genelde 1-2 gün).
-2. **Profesyonel hesap:** Hesap açılınca *Ayarlar → Hesap türü ve araçlar → Profesyonel hesaba geç* yolunu izle. "İşletme" seç, kategori olarak "Medya/Haber şirketi" ya da benzerini seç.
-3. **Isınma:** Otomasyonu başlatmadan önce birkaç gün hesabı normal kullan: profil fotoğrafı, biyografi, elle 1-2 paylaşım. Yeni hesapların hemen otomatik paylaşıma başlaması tekrar kısıtlamaya yol açabilir.
+- @bugunsamsun **İşletme** hesabı; kategori "News & media website" profilde görünüyor.
+- **Isınma:** Otomasyonu başlatmadan önce birkaç gün hesabı normal kullan (elle 1-2 paylaşım, hikâye). Yeni hesapların hemen otomatik paylaşıma başlaması kısıtlamaya yol açabilir.
 
-## 2. Instagram yayın anahtarını (access token) al
+## 2. Instagram yayın anahtarı
 
-1. [developers.facebook.com](https://developers.facebook.com) adresine Facebook hesabınla gir, gerekiyorsa geliştirici hesabı oluştur.
-2. *Uygulamalarım → Uygulama oluştur* yolunu izle. Kullanım alanı olarak **"Instagram'da mesajları ve içeriği yönet"** seç. Uygulamaya örneğin "Bugün Samsun Yayıncı" adını ver.
-3. Uygulama panosunda **Instagram → Instagram girişi ile API kurulumu** bölümünü aç.
-4. **"Erişim belirteçleri oluştur"** adımında *Hesap ekle* de ve @bugunsamsun ile giriş yap. İzinleri onayla; en az `instagram_business_basic` ve `instagram_business_content_publish` izinleri gerekli.
-   - Hesap eklenemezse: *Uygulama rolleri → Roller → Instagram test kullanıcısı ekle* ile @bugunsamsun'i ekle. Ardından daveti Instagram'da kabul et (*Ayarlar → Web sitesi izinleri → Uygulamalar ve web siteleri → Test kullanıcısı davetleri*). Sonra bu adımı tekrarla.
-5. Oluşan uzun bir metni kopyala. Bu senin **IG_ACCESS_TOKEN** değerin. Kimseyle paylaşma.
+Meta'da kurulu olanlar:
+- **Uygulama:** "Bugun Samsun Yayinci"; bw/a işletme portföyüne bağlı, *API setup with Unified login* yöntemiyle.
+- **İzinler:** Yalnızca `instagram_basic` ve `instagram_content_publish` istenir. `instagram_manage_messages` de görünür; Meta bunu zorunlu tutuyor.
+- **Test kullanıcısı:** @bugunsamsun uygulamaya test kullanıcısı olarak eklendi ve daveti kabul edildi.
+- **Hesap kimliği:** `17841475041510019`. GitHub'da `IG_USER_ID` değişkeni olarak kayıtlı.
 
-Bu anahtar 60 gün geçerli. Sistem onu her hafta kendiliğinden yeniler, yani normalde bir daha uğraşmazsın.
+Anahtarı yeniden üretmen gerekirse:
+1. Uygulama panosunda *Kullanım durumları → Instagram API → API setup with Unified login → 2. Generate access tokens* bölümünü aç.
+2. @bugunsamsun satırında **Generate token** de.
+3. Çıkan anahtarı kopyala ve terminalde `gh secret set IG_ACCESS_TOKEN -R betterwithagency/bugun-samsun` komutuyla yapıştır.
+
+Bu yöntemin anahtarı bir **sistem kullanıcısı anahtarıdır** ve süresi dolmaz; yenilemeye gerek yoktur. Eski tür Instagram girişi anahtarları da desteklenir; bunlar haftalık olarak kendiliğinden yenilenir.
 
 ## 3. Anthropic API anahtarı al
 
@@ -56,13 +59,15 @@ Depo hazır: **https://github.com/betterwithagency/bugun-samsun** (public).
 - **Gizli kalanlar:** Şifreler ve anahtarlar herkese açık değildir; GitHub Secrets'ta saklanır. Depoya kaydedilen Instagram anahtarı da şifrelidir.
 - **Duraklatılmış teslim:** Depo `data/PAUSE` dosyasıyla duraklatılmış olarak geldi. Zamanlanmış çalıştırmalar sen hazır olana kadar hiçbir şey yapmadan biter.
 
-*Settings → Secrets and variables → Actions → New repository secret* ile üç gizli değer ekle:
+*Settings → Secrets and variables → Actions → New repository secret* ile gizli değerler:
 
 | Ad | Değer |
 |---|---|
 | `ANTHROPIC_API_KEY` | 3. adımdaki anahtar |
 | `IG_ACCESS_TOKEN` | 2. adımdaki Instagram anahtarı |
-| `TOKEN_KEY` | Uzun, rastgele bir parola (en az 32 karakter). Yenilenen Instagram anahtarını şifrelemek için kullanılır. Şu komutla değeri görmeden üretip ekleyebilirsin: `python3 -c "import secrets; print(secrets.token_urlsafe(32))" \| gh secret set TOKEN_KEY -R betterwithagency/bugun-samsun` |
+
+Değişken (*Variables* sekmesi): `IG_USER_ID` = `17841475041510019` (eklendi).
+| `TOKEN_KEY` (isteğe bağlı) | Yalnızca 60 günlük Instagram girişi anahtarı kullanılırsa gerekir; süresiz sistem kullanıcısı anahtarında gerekmez. Uzun, rastgele bir paroladır (en az 32 karakter) ve yenilenen anahtarı şifrelemek için kullanılır. Şu komutla değeri görmeden üretip ekleyebilirsin: `python3 -c "import secrets; print(secrets.token_urlsafe(32))" \| gh secret set TOKEN_KEY -R betterwithagency/bugun-samsun` |
 
 İpucu: `gh secret set ANTHROPIC_API_KEY -R betterwithagency/bugun-samsun` komutu değeri gizli olarak sorar. Anahtarı terminale yapıştırırsın; başka hiçbir yerde görünmez.
 

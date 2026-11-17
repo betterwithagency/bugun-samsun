@@ -1,11 +1,16 @@
-"""Publish a carousel with the Instagram API (Instagram Login, graph.instagram.com)."""
+"""Publish a carousel with the Instagram API.
+
+Works with both token kinds Meta hands out:
+- system-user tokens from "API setup with Unified login" (start with "EAA", never expire) → graph.facebook.com,
+  account id from the IG_USER_ID variable;
+- Instagram Login tokens (start with "IG", 60 days, refreshable) → graph.instagram.com.
+"""
 import os
 import time
 
 import requests
 
-HOST = "https://graph.instagram.com"
-VERSION = os.environ.get("IG_API_VERSION", "v24.0")
+VERSION = os.environ.get("IG_API_VERSION") or "v24.0"
 _TRANSIENT_CODES = {1, 2, 4, 17, 32, 341, 613}
 
 
@@ -13,8 +18,16 @@ class InstagramError(RuntimeError):
     pass
 
 
+def is_system_user_token(token: str) -> bool:
+    return token.startswith("EAA")
+
+
+def _host(token: str) -> str:
+    return "https://graph.facebook.com" if is_system_user_token(token) else "https://graph.instagram.com"
+
+
 def _call(method: str, path: str, token: str, **params) -> dict:
-    url = f"{HOST}/{VERSION}/{path}"
+    url = f"{_host(token)}/{VERSION}/{path}"
     payload = {**params, "access_token": token}
     for attempt in range(4):
         try:
@@ -44,8 +57,14 @@ def _call(method: str, path: str, token: str, **params) -> dict:
     raise InstagramError(f"{path}: gave up after retries")
 
 
-def me(token: str) -> dict:
-    """{'user_id': ..., 'username': ...} of the account the token belongs to."""
+def account(token: str) -> dict:
+    """{'user_id': ..., 'username': ...} of the Instagram account we publish to."""
+    user_id = (os.environ.get("IG_USER_ID") or "").strip()
+    if user_id:
+        info = _call("GET", user_id, token, fields="username")
+        return {"user_id": user_id, "username": info.get("username", "")}
+    if is_system_user_token(token):
+        raise InstagramError("IG_USER_ID variable is required with a system-user token")
     return _call("GET", "me", token, fields="user_id,username")
 
 
@@ -85,8 +104,8 @@ def publish_carousel(token: str, user_id: str, image_urls: list, caption: str) -
 
 
 def refresh_token(token: str) -> dict:
-    """Exchange a long-lived token (older than 24h) for a fresh 60-day one."""
-    r = requests.get(f"{HOST}/refresh_access_token",
+    """Exchange a long-lived Instagram Login token (older than 24h) for a fresh 60-day one."""
+    r = requests.get("https://graph.instagram.com/refresh_access_token",
                      params={"grant_type": "ig_refresh_token", "access_token": token}, timeout=30)
     data = r.json() if r.content else {}
     if not r.ok or "access_token" not in data:
