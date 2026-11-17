@@ -1,0 +1,52 @@
+{
+ "edition": "spor",
+ "date": "2026-11-18",
+ "issue_no": 1,
+ "scoreboard": {
+  "competition": "Süper Lig · 13. Hafta",
+  "home": "Samsunspor",
+  "away": "Rakip Takım",
+  "home_score": 2,
+  "away_score": 1,
+  "note": "Samsun Stadyumu · 32.140 seyirci"
+ },
+ "stories": [
+  {
+   "category": "Samsunspor",
+   "location": "Samsun Stadyumu",
+   "title": "Samsunspor iç sahada geriden gelip kazandı",
+   "short_title": "Samsunspor geriden gelip 3 puanı aldı",
+   "body": "İlk yarıyı 1-0 geride kapatan kırmızı-beyazlılar, ikinci yarıda bulduğu iki golle maçı çevirdi.\nGalibiyetle birlikte takım üst sıralardaki yerini korudu.",
+   "why": "Ligde art arda üçüncü galibiyet; seri, Avrupa kupaları yarışında önemli.",
+   "sources": [
+    "Samsunspor"
+   ],
+   "district": "Tekkeköy"
+  },
+  {
+   "category": "Samsunspor",
+   "location": "Nuri Asan Tesisleri",
+   "title": "Milli araya kadar iki maç: Kadroda iki eksik var",
+   "short_title": "Milli ara öncesi kadroda iki eksik",
+   "body": "Teknik heyet, sakatlığı bulunan iki oyuncunun önümüzdeki hafta takımla çalışmaya başlamasını bekliyor.",
+   "sources": [
+    "Samsunspor"
+   ],
+   "district": "Samsun",
+   "why": "Eksiklerin dönmesi, ara sonrası maçlar için kritik."
+  },
+  {
+   "category": "Basketbol",
+   "location": "Yaşar Doğu Spor Salonu",
+   "title": "Samsun ekibi deplasmandan galibiyetle döndü",
+   "short_title": "Basketbolda deplasman galibiyeti",
+   "body": "Ligin 8. haftasında oynanan mücadelede Samsun temsilcisi son çeyrekte farkı açarak maçı kazandı.",
+   "sources": [
+    "TBF"
+   ],
+   "district": "Samsun",
+   "why": "Galibiyet, takımı play-off yarışında üst sıralara taşıdı."
+  }
+ ],
+ "briefs": []
+}

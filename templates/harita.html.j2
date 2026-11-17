@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<title>Samsun Bülten · Harita</title>
+<style>
+@font-face { font-family: "Instrument Sans"; src: url("{{ assets }}/fonts/InstrumentSans.ttf"); font-weight: 400 700; font-stretch: 75% 100%; }
+@font-face { font-family: "JetBrains Mono"; src: url("{{ assets }}/fonts/JetBrainsMono.ttf"); font-weight: 100 800; }
+
+:root {
+  --sea: #06182A; --sea-2: #0A2338; --land: #11314D; --land-edge: #2E5C82; --ctx: #0B2034;
+  --text: #EAF2F8; --soft: #C3D3E2; --muted: #7F9DB8; --hair: rgba(234,242,248,.14);
+  --sans: "Instrument Sans", Arial, sans-serif; --mono: "JetBrains Mono", Menlo, monospace;
+}
+.ed-gundem  { --accent: #49D3F5; }
+.ed-ekonomi { --accent: #F6C04A; }
+.ed-spor    { --accent: #FF5A66; }
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: #333; font-family: var(--sans); color: var(--text); -webkit-font-smoothing: antialiased; }
+.slide { position: relative; width: 1080px; height: 1350px; overflow: hidden; margin-bottom: 40px; display: flex; flex-direction: column;
+  padding: 60px 72px 50px;
+  background:
+    radial-gradient(1200px 700px at 80% -10%, rgba(73,211,245,.10), transparent 60%),
+    repeating-linear-gradient(0deg, transparent 0 15px, rgba(120,180,230,.045) 15px 16px),
+    var(--sea); }
+.sample { position: absolute; top: 26px; left: -58px; transform: rotate(-35deg); background: var(--accent); color: var(--sea);
+  font: 800 17px/1 var(--mono); letter-spacing: .2em; padding: 9px 70px; z-index: 9; }
+.mono { font-family: var(--mono); letter-spacing: .04em; }
+.up { text-transform: uppercase; }
+
+/* header — top-right left free for Instagram's 1/N badge */
+.hd { display: flex; align-items: baseline; gap: 18px; }
+.hd .wm { font-weight: 700; font-size: 32px; letter-spacing: -.01em; }
+.hd .wm b { color: var(--accent); font-weight: 700; }
+.hd .sec { font-family: var(--mono); font-size: 19px; color: var(--muted); text-transform: uppercase; letter-spacing: .1em; }
+.hd .sec b { color: var(--accent); font-weight: 600; }
+.coords { font-family: var(--mono); font-size: 18px; color: var(--muted); margin-top: 8px; letter-spacing: .06em; }
+
+.content { flex: 1 1 auto; min-height: 0; overflow: hidden; display: flex; flex-direction: column; }
+.spacer { flex: 1 1 30px; min-height: 30px; }
+.foot { display: flex; align-items: flex-end; justify-content: space-between; gap: 30px; padding-top: 22px; font-family: var(--mono); font-size: 17px; color: var(--muted); letter-spacing: .03em; }
+.foot .l span { display: block; }
+.foot .l span + span { opacity: .7; margin-top: 4px; font-size: 14px; }
+.mk { width: 44px; height: 44px; flex: none; color: var(--text); }
+.mk svg { width: 100%; height: 100%; display: block; }
+
+/* map */
+.map { display: block; width: 100%; height: 100%; }
+.map path, .map line, .map circle { vector-effect: non-scaling-stroke; }
+.map .ctx path { fill: var(--ctx); stroke: var(--sea); stroke-width: 1.2; }
+.map .d { fill: var(--land); stroke: var(--land-edge); stroke-width: 1.3; }
+.map .d.on { fill: color-mix(in srgb, var(--accent) 32%, var(--land)); stroke: var(--accent); stroke-width: 2.4; }
+.map .pin rect { fill: var(--accent); }
+.map .pin text { fill: var(--sea); font: 800 24px var(--mono); }
+.map .lead { stroke: var(--accent); stroke-width: 2; }
+.map .dot { fill: var(--accent); }
+.map .target .r1 { fill: none; stroke: var(--accent); stroke-width: 3; }
+.map .target .r2 { fill: none; stroke: var(--accent); stroke-width: 1.5; opacity: .5; }
+.map .target .c { fill: var(--accent); }
+.map .target .x { stroke: var(--accent); stroke-width: 2; opacity: .7; }
+.map .tlabel { fill: var(--text); font: 700 34px var(--mono); letter-spacing: .08em; text-transform: uppercase; paint-order: stroke; stroke: var(--sea); stroke-width: 8px; }
+
+/* ---------- cover ---------- */
+.cover h1 { font-weight: 600; font-size: 104px; line-height: .95; letter-spacing: -.03em; margin-top: 30px; }
+.cover h1 em { font-style: normal; color: var(--accent); }
+.cover .dl { display: flex; gap: 26px; font-family: var(--mono); font-size: 21px; color: var(--soft); margin-top: 18px; letter-spacing: .04em; }
+.cover .dl b { color: var(--accent); font-weight: 600; }
+.cover .mapbox { height: 520px; margin: 18px -72px 0; position: relative; flex: none; }
+.cover .mapbox.short { height: 400px; }
+.cover .mapbox .legend { position: absolute; left: 72px; bottom: 16px; font-family: var(--mono); font-size: 16px; color: var(--muted); letter-spacing: .06em; }
+.cover .mapbox .legend i { display: inline-block; width: 14px; height: 14px; border: 2px solid var(--accent); background: color-mix(in srgb, var(--accent) 32%, var(--land)); vertical-align: -1px; margin-right: 8px; }
+.rows { margin-top: 10px; }
+.rows .r { display: grid; grid-template-columns: 70px 1fr auto; align-items: baseline; gap: 18px; padding: 15px 0; border-top: 1px solid var(--hair); }
+.rows .n { font-family: var(--mono); font-weight: 700; font-size: 26px; color: var(--accent); }
+.rows .h { font-weight: 600; font-size: 33px; line-height: 1.15; letter-spacing: -.01em; }
+.rows .dd { font-family: var(--mono); font-size: 17px; color: var(--muted); text-transform: uppercase; letter-spacing: .08em; }
+.cover .foot .swipe { color: var(--accent); font-size: 20px; display: flex; align-items: center; gap: 10px; }
+.cover .foot .swipe svg { width: 26px; height: 26px; }
+.scoreboard { margin-top: 22px; border: 1px solid var(--hair); border-radius: 14px; padding: 16px 26px; display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; background: rgba(255,255,255,.03); }
+.scoreboard .comp { grid-column: 1/-1; font-family: var(--mono); font-size: 16px; color: var(--muted); text-transform: uppercase; letter-spacing: .1em; }
+.scoreboard .t { font-weight: 700; font-size: 34px; }
+.scoreboard .t.r { text-align: right; }
+.scoreboard .s { font-family: var(--mono); font-weight: 800; font-size: 80px; padding: 0 26px; color: var(--accent); }
+
+/* ---------- lead ---------- */
+.lead .mapbox { height: 400px; margin: 22px -72px 0; position: relative; flex: none; }
+.lead .mapbox .tag { position: absolute; left: 72px; top: 18px; font-family: var(--mono); font-size: 18px; background: var(--accent); color: var(--sea); padding: 8px 14px; font-weight: 800; letter-spacing: .12em; }
+.meta { display: grid; grid-template-columns: repeat(3, auto); justify-content: start; gap: 0 34px; margin-top: 26px; font-family: var(--mono); }
+.meta .k { font-size: 15px; color: var(--muted); letter-spacing: .12em; text-transform: uppercase; }
+.meta .v { font-size: 22px; color: var(--text); margin-top: 4px; }
+h2 { font-weight: 600; letter-spacing: -.02em; line-height: 1.03; text-wrap: balance; }
+.lead h2 { font-size: 74px; margin-top: 22px; }
+.statline { display: flex; align-items: baseline; gap: 22px; margin-top: 24px; }
+.statline .v { font-family: var(--mono); font-weight: 800; font-size: 96px; color: var(--accent); line-height: 1; letter-spacing: -.02em; }
+.statline .l { font-family: var(--mono); font-size: 20px; color: var(--soft); text-transform: uppercase; letter-spacing: .08em; max-width: 380px; line-height: 1.35; }
+.body { font-size: 33px; line-height: 1.45; color: var(--soft); }
+.body p + p { margin-top: 14px; }
+.lead .body { margin-top: 22px; }
+.why { border-left: 4px solid var(--accent); padding: 6px 0 6px 26px; }
+.why .k { font-family: var(--mono); font-size: 17px; color: var(--accent); letter-spacing: .14em; text-transform: uppercase; }
+.why .t { font-size: 30px; line-height: 1.38; margin-top: 8px; font-weight: 500; }
+
+/* ---------- story ---------- */
+.loc { display: grid; grid-template-columns: 440px 1fr; gap: 30px; margin-top: 34px; align-items: stretch; }
+.loc .mini { height: 260px; border: 1px solid var(--hair); border-radius: 16px; overflow: hidden; background: rgba(0,0,0,.15); }
+.loc .data { display: grid; align-content: center; gap: 18px; font-family: var(--mono); }
+.loc .data .k { font-size: 15px; color: var(--muted); letter-spacing: .12em; text-transform: uppercase; }
+.loc .data .v { font-size: 26px; margin-top: 2px; }
+.loc .data .v.a { color: var(--accent); font-weight: 700; }
+.story h2 { font-size: 70px; margin-top: 34px; }
+.story .body { margin-top: 24px; }
+
+/* ---------- briefs ---------- */
+.ptitle { font-weight: 600; font-size: 104px; line-height: .95; letter-spacing: -.03em; margin-top: 40px; }
+.ptitle em { font-style: normal; color: var(--accent); }
+.psub { font-family: var(--mono); font-size: 20px; color: var(--muted); margin-top: 14px; letter-spacing: .04em; }
+.table { margin-top: 30px; }
+.table .r { display: grid; grid-template-columns: 230px 1fr; gap: 24px; padding: 24px 0; border-top: 1px solid var(--hair); }
+.table .r:last-child { border-bottom: 1px solid var(--hair); }
+.table .k { font-family: var(--mono); font-size: 18px; color: var(--accent); letter-spacing: .1em; text-transform: uppercase; padding-top: 8px; }
+.table .k small { display: block; color: var(--muted); font-size: 15px; margin-top: 6px; }
+.table .t { font-size: 33px; line-height: 1.36; font-weight: 500; }
+
+/* ---------- practical ---------- */
+.dash { display: grid; grid-template-columns: 1fr 1fr; margin-top: 30px; border-top: 1px solid var(--hair); }
+.dash .c { padding: 26px 0 28px; border-bottom: 1px solid var(--hair); }
+.dash .c:nth-child(even) { padding-left: 32px; border-left: 1px solid var(--hair); }
+.dash .k { display: flex; align-items: center; gap: 10px; font-family: var(--mono); font-size: 16px; color: var(--muted); letter-spacing: .12em; text-transform: uppercase; }
+.dash .k svg { width: 24px; height: 24px; color: var(--accent); }
+.dash .v { font-family: var(--mono); font-weight: 800; font-size: 92px; line-height: 1; margin-top: 14px; letter-spacing: -.03em; }
+.dash .v small { font-size: .42em; color: var(--muted); font-weight: 600; letter-spacing: 0; }
+.dash .s { font-size: 24px; color: var(--soft); margin-top: 10px; }
+.notes .r { display: grid; grid-template-columns: 56px 1fr; gap: 18px; padding: 22px 0; border-bottom: 1px solid var(--hair); align-items: start; }
+.notes svg { width: 40px; height: 40px; color: var(--accent); margin-top: 2px; }
+.notes .h { font-weight: 600; font-size: 30px; }
+.notes .t { font-size: 25px; color: var(--soft); margin-top: 4px; line-height: 1.35; }
+.notes .src { font-family: var(--mono); font-size: 15px; color: var(--muted); margin-top: 6px; }
+
+/* ---------- outro ---------- */
+.outro .mapbox { height: 560px; margin: 10px -72px 0; flex: none; }
+.outro .map .d { fill: color-mix(in srgb, var(--accent) 16%, var(--land)); stroke: color-mix(in srgb, var(--accent) 70%, var(--land-edge)); }
+.outro .big { font-weight: 600; font-size: 96px; line-height: .98; letter-spacing: -.03em; margin-top: 10px; }
+.outro .big em { font-style: normal; color: var(--accent); }
+.outro .sub { font-size: 32px; color: var(--soft); margin-top: 16px; }
+.acts { display: grid; grid-template-columns: repeat(3, 1fr); margin-top: 34px; border-top: 1px solid var(--hair); }
+.acts > div { padding: 22px 20px 0 0; }
+.acts > div + div { padding-left: 24px; border-left: 1px solid var(--hair); }
+.acts svg { width: 40px; height: 40px; color: var(--accent); }
+.acts .h { font-weight: 700; font-size: 32px; margin-top: 10px; }
+.acts .t { font-family: var(--mono); font-size: 16px; color: var(--muted); margin-top: 6px; letter-spacing: .03em; }
+.sched { display: flex; gap: 30px; font-family: var(--mono); font-size: 21px; color: var(--soft); }
+.sched b { color: var(--accent); }
+</style>
+</head>
+<body>
+{%- macro sample_tag() -%}{% if sample %}<div class="sample">ÖRNEK</div>{% endif %}{%- endmacro -%}
+{%- macro hd(sec) -%}<div class="hd"><span class="wm">Samsun <b>Bülten</b></span><span class="sec">{{ ed.label }} / <b>{{ sec }}</b></span></div>{%- endmacro -%}
+{%- macro foot(src, extra='') -%}<div class="foot"><div class="l"><span>{{ src }}</span>{% if extra %}<span>{{ extra }}</span>{% endif %}</div><span class="mk">{{ mark_svg }}</span></div>{%- endmacro -%}
+{%- macro place(st) -%}{{ st.district if st.district and st.district != 'Samsun' else 'Samsun geneli' }}{%- endmacro -%}
+{%- set CROP = "-10 58 970 540" -%}
+
+{% for s in slides %}
+{% if s.kind == 'cover' %}
+<section class="slide cover ed-{{ edition }}" data-idx="{{ s.idx }}" data-grow="1.3">
+  {{ sample_tag() }}
+  {{ hd('Sayı ' ~ ('%03d' % issue_no)) }}
+  <div class="coords">41°17′K · 36°20′D · {{ date_short }}</div>
+  <h1>{% if edition == 'gundem' %}Bugün <em>Samsun'da</em>{% elif edition == 'ekonomi' %}Ekonomi <em>&amp; İş</em>{% else %}Samsun <em>Spor</em>{% endif %}</h1>
+  <div class="dl"><span>{{ weekday|upper }}</span>{% if weather %}<span><b>{{ weather.max }}°</b>/{{ weather.min }}° {{ weather.text|upper }}</span>{% endif %}<span>{{ reading_min }} DK</span></div>
+  <div class="mapbox{{ ' short' if scoreboard else '' }}">{{ map_svg(highlight=districts_with_news, pins=pins, vb=CROP) }}<div class="legend"><i></i>Bugün haberi olan ilçeler</div></div>
+  {% if scoreboard %}
+  <div class="scoreboard"><div class="comp">{{ scoreboard.competition }}</div><div class="t">{{ scoreboard.home }}</div><div class="s">{{ scoreboard.home_score }}–{{ scoreboard.away_score }}</div><div class="t r">{{ scoreboard.away }}</div></div>
+  {% endif %}
+  <div class="content fit-box">
+    <div class="rows">
+      {% for st in s.stories %}
+      <div class="r"><span class="n">{{ '%02d' % st.n }}</span><span class="h" data-fit="24" data-max="38">{{ st.short_title }}</span><span class="dd">{{ place(st) }}</span></div>
+      {% endfor %}
+    </div>
+  </div>
+  <div class="foot"><div class="l"><span class="swipe">Detaylar için kaydır {{ icon('arrow', 2.2) }}</span></div><span class="mk">{{ mark_svg }}</span></div>
+</section>
+
+{% elif s.kind == 'lead' %}
+{% set st = s.story %}
+<section class="slide lead ed-{{ edition }}" data-idx="{{ s.idx }}">
+  {{ sample_tag() }}
+  {{ hd('Manşet') }}
+  <div class="mapbox">
+    {% if st.district in districts_with_news %}{{ map_svg(highlight=[st.district], vb=CROP, target=st.district, label=st.district, zoom=1.8) }}{% else %}{{ map_svg(highlight='all', vb=CROP) }}{% endif %}
+    <span class="tag">{{ '%02d' % st.n }} · MANŞET</span>
+  </div>
+  <div class="content fit-box">
+    <div class="meta"><div><div class="k">İlçe</div><div class="v">{{ place(st) }}</div></div><div><div class="k">Kategori</div><div class="v">{{ st.category }}</div></div><div><div class="k">Konum</div><div class="v">{{ st.location }}</div></div></div>
+    <h2 data-fit="48" data-max="76">{{ st.title }}</h2>
+    {% if st.stat and st.stat.value %}<div class="statline"><span class="v">{{ st.stat.value }}</span><span class="l">{{ st.stat.label }}</span></div>{% endif %}
+    <div class="body" data-fit="26" data-max="38">{% for p in st.body_paragraphs %}<p>{{ p }}</p>{% endfor %}</div>
+    <div class="spacer"></div>
+    {% if st.why %}<div class="why"><div class="k">Neden önemli</div><div class="t" data-fit="22" data-max="34">{{ st.why }}</div></div>{% endif %}
+  </div>
+  {{ foot('KAYNAK: ' ~ st.sources|join(', ')|upper, map_credit) }}
+</section>
+
+{% elif s.kind == 'story' %}
+{% set st = s.story %}
+<section class="slide story ed-{{ edition }}" data-idx="{{ s.idx }}">
+  {{ sample_tag() }}
+  {{ hd('Haber ' ~ ('%02d' % st.n)) }}
+  <div class="content fit-box">
+    <div class="loc">
+      <div class="mini">{% if st.district in districts_with_news %}{{ map_svg(highlight=[st.district], vb=CROP, target=st.district) }}{% else %}{{ map_svg(highlight='all', vb=CROP) }}{% endif %}</div>
+      <div class="data">
+        <div><div class="k">İlçe</div><div class="v a">{{ place(st) }}</div></div>
+        <div><div class="k">Kategori</div><div class="v">{{ st.category }}</div></div>
+        {% if st.stat and st.stat.value %}<div><div class="k">{{ st.stat.label }}</div><div class="v a" style="font-size:52px;line-height:1.05">{{ st.stat.value }}</div></div>{% endif %}
+      </div>
+    </div>
+    <h2 data-fit="48" data-max="80">{{ st.title }}</h2>
+    <div class="body" data-fit="26" data-max="40">{% for p in st.body_paragraphs %}<p>{{ p }}</p>{% endfor %}</div>
+    <div class="spacer"></div>
+    {% if st.why %}<div class="why"><div class="k">Neden önemli</div><div class="t" data-fit="22" data-max="34">{{ st.why }}</div></div>{% endif %}
+  </div>
+  {{ foot('KAYNAK: ' ~ st.sources|join(', ')|upper, map_credit) }}
+</section>
+
+{% elif s.kind == 'briefs' %}
+<section class="slide briefs ed-{{ edition }}" data-idx="{{ s.idx }}">
+  {{ sample_tag() }}
+  {{ hd('Kısa kısa') }}
+  <div class="content fit-box">
+    <div class="ptitle">Kısa <em>kısa</em></div>
+    <div class="psub">// bir cümlede bilmen gerekenler</div>
+    <div class="table">
+      {% for b in s.briefs %}
+      <div class="r"><div class="k">{{ b.district if b.district and b.district != 'Samsun' else 'Samsun' }}<small>{{ b.category }}</small></div><div class="t" data-fit="24" data-max="40">{{ b.text }}</div></div>
+      {% endfor %}
+    </div>
+  </div>
+  {{ foot('KAYNAK: ' ~ s.sources|join(', ')|upper) }}
+</section>
+
+{% elif s.kind == 'practical' %}
+<section class="slide practical ed-{{ edition }}" data-idx="{{ s.idx }}">
+  {{ sample_tag() }}
+  {{ hd('Gün rehberi') }}
+  <div class="content fit-box">
+    <div class="ptitle">Günün <em>verileri</em></div>
+    <div class="psub">// kaydet, gün içinde lazım olur</div>
+    {% if weather %}
+    <div class="dash">
+      <div class="c"><div class="k">{{ icon(weather.icon, 2) }}Hava</div><div class="v">{{ weather.max }}°<small> / {{ weather.min }}°</small></div><div class="s">{{ weather.text }}</div></div>
+      <div class="c"><div class="k">{{ icon('waves', 2) }}Deniz suyu</div><div class="v">{{ weather.sea if weather.sea is not none else '–' }}°</div><div class="s">Samsun açıkları</div></div>
+      <div class="c"><div class="k">{{ icon('umbrella', 2) }}Yağış · Rüzgâr</div><div class="v">%{{ weather.rain }}</div><div class="s">Rüzgâr {{ weather.wind }} km/sa</div></div>
+      <div class="c"><div class="k">{{ icon('sunrise', 2) }}Güneş</div><div class="v" style="font-size:64px;margin-top:26px">{{ weather.sunrise }}<small> → </small>{{ weather.sunset }}</div><div class="s">Doğuş → batış</div></div>
+    </div>
+    {% endif %}
+    <div class="notes">
+      {% for o in practical.outages %}<div class="r">{{ icon(o.kind, 2) }}<div><div class="h">{{ o.title }}</div><div class="t">{{ o.text }}</div><div class="src">KAYNAK: {{ o.source|upper }}</div></div></div>{% endfor %}
+      {% if practical.pharmacy %}<div class="r">{{ icon('pharmacy', 2) }}<div><div class="h">Nöbetçi eczane</div><div class="t">{{ practical.pharmacy }}</div></div></div>{% endif %}
+    </div>
+  </div>
+  {{ foot('VERİ: OPEN-METEO') }}
+</section>
+
+{% elif s.kind == 'outro' %}
+<section class="slide outro ed-{{ edition }}" data-idx="{{ s.idx }}">
+  {{ sample_tag() }}
+  {{ hd('Son') }}
+  <div class="mapbox">{{ map_svg(vb=CROP) }}</div>
+  <div class="big">17 ilçe,<br><em>tek bülten.</em></div>
+  <div class="sub">{{ ed.next }}</div>
+  <div class="acts">
+    <div>{{ icon('bookmark', 2) }}<div class="h">Kaydet</div><div class="t">Gün rehberine dön</div></div>
+    <div>{{ icon('send', 2) }}<div class="h">Gönder</div><div class="t">Samsunlu dostuna</div></div>
+    <div>{{ icon('follow', 2) }}<div class="h">Takip et</div><div class="t">@samsun.bulten</div></div>
+  </div>
+  <div class="spacer"></div>
+  <div class="sched"><span><b>08.00</b> GÜNDEM</span><span><b>12.30</b> EKONOMİ</span><span><b>19.00</b> SPOR</span></div>
+  {{ foot("HABER İHBARI İÇİN DM", map_credit) }}
+</section>
+{% endif %}
+{% endfor %}
+{% include "_fit.js.j2" %}
+</body>
+</html>

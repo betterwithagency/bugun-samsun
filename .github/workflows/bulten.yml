@@ -1,0 +1,91 @@
+name: Samsun Bülten
+
+on:
+  schedule:
+    # GitHub cron is UTC; Türkiye is UTC+3 all year.
+    - cron: "7 4 * * *"    # 07:07 → Gündem, published 08:00
+    - cron: "37 8 * * *"   # 11:37 → Ekonomi & İş, published 12:30
+    - cron: "7 15 * * *"   # 18:07 → Spor, published 19:00
+  workflow_dispatch:
+    inputs:
+      edition:
+        description: "Bülten"
+        type: choice
+        options: [gundem, ekonomi, spor]
+        default: gundem
+      publish:
+        description: "Instagram'a gönder (kapalıysa yalnızca görselleri hazırlar)"
+        type: boolean
+        default: false
+      force:
+        description: "Bugün zaten yayınlandıysa yine de gönder"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: samsun-bulten
+  cancel-in-progress: false
+
+jobs:
+  bulletin:
+    runs-on: ubuntu-latest
+    timeout-minutes: 150
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Choose edition
+        id: pick
+        run: |
+          case "${{ github.event.schedule }}" in
+            "7 4 * * *")  echo "edition=gundem"  >> "$GITHUB_OUTPUT"; echo "flags=--publish --wait" >> "$GITHUB_OUTPUT" ;;
+            "37 8 * * *") echo "edition=ekonomi" >> "$GITHUB_OUTPUT"; echo "flags=--publish --wait" >> "$GITHUB_OUTPUT" ;;
+            "7 15 * * *") echo "edition=spor"    >> "$GITHUB_OUTPUT"; echo "flags=--publish --wait" >> "$GITHUB_OUTPUT" ;;
+            *)
+              echo "edition=${{ inputs.edition }}" >> "$GITHUB_OUTPUT"
+              flags=""
+              if [ "${{ inputs.publish }}" = "true" ]; then flags="--publish"; fi
+              if [ "${{ inputs.force }}" = "true" ]; then flags="$flags --force"; fi
+              echo "flags=$flags" >> "$GITHUB_OUTPUT" ;;
+          esac
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install
+        run: |
+          pip install -r requirements.txt
+          python -m playwright install --with-deps chromium
+
+      - name: Prepare and publish
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          TOKEN_KEY: ${{ secrets.TOKEN_KEY }}
+          GITHUB_TOKEN: ${{ github.token }}
+          BULTEN_MODEL: ${{ vars.BULTEN_MODEL }}
+        run: python -m bulten run --edition ${{ steps.pick.outputs.edition }} ${{ steps.pick.outputs.flags }}
+
+      - name: Save state
+        if: always()
+        run: |
+          git config user.name "samsun-bulten-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data
+          if ! git diff --cached --quiet; then
+            git commit -q -m "bülten: ${{ steps.pick.outputs.edition }} $(TZ=Europe/Istanbul date +%F)"
+            for i in 1 2 3; do git pull -q --rebase && git push -q && break; sleep 5; done
+          fi
+
+      - name: Keep slides, caption and research notes
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: bulten-${{ steps.pick.outputs.edition }}-${{ github.run_number }}
+          path: output/
+          retention-days: 14
+          if-no-files-found: ignore

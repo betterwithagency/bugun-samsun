@@ -1,0 +1,134 @@
+{
+ "edition": "gundem",
+ "date": "2026-11-18",
+ "issue_no": 1,
+ "stories": [
+  {
+   "category": "Sanayi",
+   "district": "Bafra",
+   "location": "Bafra Karma OSB",
+   "title": "Bafra Karma OSB'de doluluk yüzde 85'e ulaştı",
+   "short_title": "Bafra OSB'de doluluk %85'e çıktı",
+   "stat": {
+    "value": "%85",
+    "label": "parsel doluluk oranı"
+   },
+   "body": "Bafra Karma Organize Sanayi Bölgesi'nde tahsis edilen parsellerin oranı yüzde 85'e yükseldi.\nBölgede yatırımların sürmesiyle ilçede yeni iş imkânları doğması bekleniyor.",
+   "why": "Doluluk arttıkça yeni sanayi alanı ihtiyacı gündeme geliyor.",
+   "sources": [
+    "DHA"
+   ]
+  },
+  {
+   "category": "Çevre",
+   "district": "Atakum",
+   "location": "Atakum sahili",
+   "title": "Deniz dibinden çıkarılan kum, plajlarda değerlendiriliyor",
+   "short_title": "Deniz dibinden çıkan kum plajlara taşınıyor",
+   "stat": {
+    "value": "",
+    "label": ""
+   },
+   "body": "Büyükşehir Belediyesi, Atakum'da deniz dibi temizliği yapıyor.\nÇıkarılan sediment, sahildeki plajların beslenmesinde kullanılıyor.",
+   "why": "Kıyı erozyonuna karşı plajların korunması amaçlanıyor.",
+   "sources": [
+    "Samsun Büyükşehir Belediyesi",
+    "Habertürk"
+   ]
+  },
+  {
+   "category": "İstihdam",
+   "district": "İlkadım",
+   "location": "İlkadım",
+   "title": "250 kişilik nitelikli iş gücü programı başladı",
+   "short_title": "250 kişilik iş gücü programı başladı",
+   "stat": {
+    "value": "250",
+    "label": "kursiyer eğitime başladı"
+   },
+   "body": "Nitelikli İş Gücü Yetiştirme Programı kapsamında 250 kişi eğitime başladı.\nProgramı tamamlayanların sanayi ve hizmet sektöründe istihdamı hedefleniyor.",
+   "why": "İşverenlerin aradığı nitelikli eleman açığını kapatmaya yönelik.",
+   "sources": [
+    "Habertürk"
+   ]
+  },
+  {
+   "category": "Tarım",
+   "district": "Samsun",
+   "location": "Samsun geneli",
+   "title": "Örtü altı üretim yapan 61 çiftçiye sera naylonu desteği",
+   "short_title": "61 üreticiye sera naylonu desteği",
+   "stat": {
+    "value": "61",
+    "label": "üreticiye destek"
+   },
+   "body": "İl Tarım ve Orman Müdürlüğü, sera üretimi yapan 61 çiftçiye naylon dağıttı.\nDestek, kış dönemi üretim maliyetlerini azaltmayı amaçlıyor.",
+   "why": "Kış aylarında sera üretimi, ildeki taze sebze arzını doğrudan etkiliyor.",
+   "sources": [
+    "DHA",
+    "Milliyet"
+   ]
+  },
+  {
+   "category": "Yönetim",
+   "district": "Samsun",
+   "location": "Samsun",
+   "title": "Samsun'da dört ilçenin kaymakamı değişti",
+   "short_title": "4 ilçede kaymakam değişikliği",
+   "stat": {
+    "value": "",
+    "label": ""
+   },
+   "body": "Yayımlanan atama kararnamesiyle Samsun'da dört ilçenin kaymakamı değişti.\nYeni kaymakamların önümüzdeki günlerde görevlerine başlaması bekleniyor.",
+   "why": "Kaymakamlar, ilçelerdeki kamu hizmetlerinin koordinasyonundan sorumlu.",
+   "sources": [
+    "Samsun İlk Haber"
+   ]
+  }
+ ],
+ "briefs": [
+  {
+   "category": "Tarım",
+   "district": "Bafra",
+   "text": "Bafra Ovası'nda kırmızı lahana hasadı başladı.",
+   "sources": [
+    "Canlı Gaste"
+   ]
+  },
+  {
+   "category": "Gündem",
+   "district": "Samsun",
+   "text": "Belediye otobüsü şoförü, yolda alev alan bir otomobili yangın tüpüyle söndürdü.",
+   "sources": [
+    "Habertürk"
+   ]
+  },
+  {
+   "category": "İstihdam",
+   "district": "Samsun",
+   "text": "İŞKUR hizmetleri, il genelindeki muhtarlara tanıtıldı.",
+   "sources": [
+    "Habertürk"
+   ]
+  },
+  {
+   "category": "Samsunspor",
+   "district": "Samsun",
+   "text": "Samsunspor, Galatasaray maçının hazırlıklarını sürdürüyor.",
+   "sources": [
+    "Habertürk"
+   ]
+  }
+ ],
+ "practical": {
+  "outages": [
+   {
+    "kind": "bolt",
+    "title": "Planlı elektrik kesintisi",
+    "text": "Bazı mahallelerde gün içinde planlı çalışma var.",
+    "source": "YEDAŞ"
+   }
+  ],
+  "pharmacy": "Nöbetçi eczane listesi Samsun Eczacı Odası'nda."
+ }
+}

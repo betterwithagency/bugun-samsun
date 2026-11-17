@@ -1,0 +1,23 @@
+<script>
+// Fit text marked data-fit="minPx" (optional data-max="maxPx"): grow up to GROW× to fill space,
+// then shrink until each slide's .fit-box stops overflowing.
+window.__fit = function () {
+  const report = [];
+  document.querySelectorAll('.slide').forEach(slide => {
+    const GROW = parseFloat(slide.dataset.grow || 1.3);
+    const box = slide.querySelector('.fit-box');
+    if (!box) { report.push({ idx: +slide.dataset.idx, overflow: false, scale: 1 }); return; }
+    const els = [...slide.querySelectorAll('[data-fit]')].map(el => {
+      const base = parseFloat(getComputedStyle(el).fontSize);
+      return { el, base, min: parseFloat(el.dataset.fit), max: parseFloat(el.dataset.max || base) };
+    });
+    const apply = s => els.forEach(o => { o.el.style.fontSize = Math.max(o.min, Math.min(o.max, o.base * s)) + 'px'; });
+    const over = () => box.scrollHeight > box.clientHeight + 1;
+    let scale = GROW;
+    apply(scale);
+    while (over() && scale > 0.5) { scale -= 0.02; apply(scale); }
+    report.push({ idx: +slide.dataset.idx, overflow: over(), scale: +scale.toFixed(2) });
+  });
+  return report;
+};
+</script>

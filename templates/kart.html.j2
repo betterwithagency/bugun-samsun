@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<title>Samsun Bülten · Kart</title>
+<style>
+@font-face { font-family: "Archivo"; src: url("{{ assets }}/fonts/Archivo.ttf"); font-weight: 100 900; font-stretch: 62% 125%; }
+@font-face { font-family: "Inter"; src: url("{{ assets }}/fonts/Inter.ttf"); font-weight: 100 900; }
+
+:root {
+  --bg: #F4F3EF; --card: #FFFFFF; --ink: #0B0B0C; --muted: #5B5E66; --line: #E2E0D8; --yellow: #FFD43B;
+  --display: "Archivo", "Arial Narrow", sans-serif; --sans: "Inter", Arial, sans-serif;
+}
+.ed-gundem  { --c: #1F4BFF; --c-soft: #E4EAFF; --c-deep: #0F2BB0; }
+.ed-ekonomi { --c: #00875A; --c-soft: #DCF2E8; --c-deep: #005C3D; }
+.ed-spor    { --c: #E30A17; --c-soft: #FDE2E3; --c-deep: #A1000B; }
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: #777; font-family: var(--sans); color: var(--ink); -webkit-font-smoothing: antialiased; }
+.slide { position: relative; width: 1080px; height: 1350px; overflow: hidden; margin-bottom: 40px; background: var(--bg);
+  display: flex; flex-direction: column; padding: 34px 64px 52px; }
+.slide.c { background: var(--c); color: #fff; }
+.sample { position: absolute; top: 26px; left: -58px; transform: rotate(-35deg); background: #111; color: var(--yellow);
+  font: 800 17px/1 var(--sans); letter-spacing: .2em; padding: 9px 70px; z-index: 9; }
+
+.disp { font-family: var(--display); font-stretch: 78%; font-weight: 800; letter-spacing: -.01em; }
+.up { text-transform: uppercase; }
+
+/* Stories-style progress — tells the reader this is a series */
+.prog { display: flex; gap: 7px; }
+.prog i { flex: 1; height: 6px; border-radius: 3px; background: rgba(11,11,12,.12); }
+.prog i.on { background: var(--c); }
+.c .prog i { background: rgba(255,255,255,.3); }
+.c .prog i.on { background: #fff; }
+
+.top { display: flex; align-items: center; gap: 14px; margin-top: 26px; }
+.wm { font-family: var(--display); font-stretch: 82%; font-weight: 900; font-size: 30px; letter-spacing: .01em; text-transform: uppercase; display: flex; align-items: center; gap: 12px; }
+.wm i { width: 20px; height: 20px; background: var(--c); border-radius: 5px; display: inline-block; }
+.c .wm i { background: var(--yellow); }
+.top .ed { font-weight: 700; font-size: 20px; letter-spacing: .12em; text-transform: uppercase; color: var(--c); }
+.c .top .ed { color: rgba(255,255,255,.8); }
+
+.content { flex: 1 1 auto; min-height: 0; overflow: hidden; display: flex; flex-direction: column; }
+.spacer { flex: 1 1 30px; min-height: 30px; }
+.foot { display: flex; align-items: flex-end; justify-content: space-between; gap: 30px; padding-top: 22px; font-size: 20px; color: var(--muted); }
+.c .foot { color: rgba(255,255,255,.8); }
+.mk { width: 46px; height: 46px; flex: none; color: var(--ink); }
+.c .mk { color: #fff; }
+.mk svg { width: 100%; height: 100%; display: block; }
+
+.chip { display: inline-flex; align-items: center; gap: 10px; border-radius: 999px; padding: 10px 20px 10px 14px; font-weight: 700; font-size: 22px; letter-spacing: .06em; text-transform: uppercase; line-height: 1; }
+.chip svg { width: 28px; height: 28px; }
+.chip.cat { background: var(--c-soft); color: var(--c); }
+.chip.loc { border: 2px solid var(--line); color: var(--muted); text-transform: none; letter-spacing: 0; font-weight: 600; }
+.c .chip.cat { background: rgba(255,255,255,.16); color: #fff; }
+.c .chip.loc { border-color: rgba(255,255,255,.4); color: #fff; }
+.chip.y { background: var(--yellow); color: var(--ink); padding-left: 20px; }
+
+/* ---------- cover ---------- */
+.cover .hero { margin-top: 40px; position: relative; }
+.cover .hero h1 { font-family: var(--display); font-stretch: 68%; font-weight: 900; font-size: 196px; line-height: .8; letter-spacing: -.02em; text-transform: uppercase; }
+.cover .hero h1 span { display: block; color: var(--yellow); }
+.cover .stick { position: absolute; right: 0; top: 4px; transform: rotate(4deg); background: var(--yellow); color: var(--ink); border-radius: 18px;
+  padding: 16px 22px; text-align: center; box-shadow: 0 10px 0 rgba(0,0,0,.18); }
+.cover .stick .d { font-family: var(--display); font-stretch: 75%; font-weight: 900; font-size: 74px; line-height: .9; }
+.cover .stick .m { font-weight: 800; font-size: 20px; letter-spacing: .1em; text-transform: uppercase; margin-top: 4px; }
+.cover .meta { display: flex; gap: 12px; margin-top: 30px; }
+.cover .meta .chip { background: rgba(255,255,255,.16); color: #fff; }
+.list { margin-top: 30px; background: var(--card); color: var(--ink); border-radius: 34px; padding: 10px 30px; box-shadow: 0 14px 0 var(--c-deep); }
+.list .row { display: grid; grid-template-columns: 62px 1fr 44px; align-items: center; gap: 20px; padding: 20px 0; }
+.list .row + .row { border-top: 2px solid var(--line); }
+.list .n { width: 62px; height: 62px; border-radius: 50%; background: var(--c); color: #fff; display: grid; place-items: center;
+  font-family: var(--display); font-stretch: 75%; font-weight: 900; font-size: 30px; }
+.list .row:first-child .n { background: var(--yellow); color: var(--ink); }
+.list .h { font-family: var(--display); font-stretch: 85%; font-weight: 750; font-size: 36px; line-height: 1.08; }
+.list svg { width: 40px; height: 40px; color: var(--c); }
+.cover .bottom { display: flex; align-items: center; justify-content: space-between; gap: 20px; padding-top: 26px; }
+.cover .bottom .info { font-weight: 600; font-size: 22px; opacity: .9; }
+.swipe { display: inline-flex; align-items: center; gap: 12px; background: var(--yellow); color: var(--ink); border-radius: 999px; padding: 14px 24px; font-weight: 800; font-size: 22px; letter-spacing: .1em; text-transform: uppercase; }
+.swipe svg { width: 28px; height: 28px; }
+.scoreboard { margin-top: 28px; background: rgba(0,0,0,.18); border-radius: 26px; padding: 20px 30px; display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; }
+.scoreboard .comp { grid-column: 1/-1; font-weight: 700; font-size: 18px; letter-spacing: .12em; text-transform: uppercase; opacity: .85; text-align: center; }
+.scoreboard .t { font-family: var(--display); font-stretch: 80%; font-weight: 800; font-size: 40px; text-transform: uppercase; }
+.scoreboard .t.r { text-align: right; }
+.scoreboard .s { font-family: var(--display); font-stretch: 70%; font-weight: 900; font-size: 110px; line-height: 1; padding: 0 26px; color: var(--yellow); }
+
+/* ---------- lead ---------- */
+.lead { padding: 0; }
+.lead .block { background: var(--c); color: #fff; padding: 34px 64px 120px; position: relative; overflow: hidden; }
+.lead .block .ghost { position: absolute; right: -50px; bottom: -80px; width: 460px; height: 460px; color: rgba(255,255,255,.13); }
+.lead .block .ghost svg { width: 100%; height: 100%; }
+.lead .tags { display: flex; gap: 12px; margin-top: 40px; flex-wrap: wrap; }
+.lead .block h2 { margin-top: 28px; }
+.lead .stat { position: absolute; right: 64px; top: -96px; z-index: 3; width: 290px; height: 290px; border-radius: 50%; background: var(--yellow); color: var(--ink);
+  display: grid; place-content: center; text-align: center; transform: rotate(-6deg); box-shadow: 0 12px 0 rgba(0,0,0,.15); padding: 30px; }
+.lead .stat .v { font-family: var(--display); font-stretch: 70%; font-weight: 900; font-size: 116px; line-height: .9; }
+.lead .stat .l { font-weight: 700; font-size: 21px; line-height: 1.2; margin-top: 8px; }
+.lead .inner { position: relative; flex: 1; display: flex; flex-direction: column; padding: 44px 64px 52px; min-height: 0; }
+h2.hl { font-family: var(--display); font-stretch: 78%; font-weight: 800; font-size: 76px; line-height: 1.0; letter-spacing: -.012em; text-wrap: balance; }
+.lead .block h2.hl { font-size: 84px; max-width: 900px; }
+.body { font-size: 33px; line-height: 1.45; color: #1D1F24; }
+.body p + p { margin-top: 16px; }
+.lead .body { max-width: 610px; }
+.lead.nostat .body { max-width: none; }
+.why { background: var(--ink); color: #fff; border-radius: 28px; padding: 26px 30px 30px; display: grid; grid-template-columns: 54px 1fr; gap: 18px; }
+.why svg { width: 48px; height: 48px; color: var(--yellow); }
+.why .k { font-weight: 800; font-size: 19px; letter-spacing: .14em; text-transform: uppercase; color: var(--yellow); }
+.why .t { font-size: 30px; line-height: 1.38; font-weight: 600; margin-top: 6px; }
+
+/* ---------- story ---------- */
+.story .tags { display: flex; gap: 12px; margin-top: 44px; flex-wrap: wrap; }
+.story h2.hl { margin-top: 26px; }
+.statcard { margin-top: 30px; background: var(--c); color: #fff; border-radius: 28px; padding: 22px 32px; display: flex; align-items: center; gap: 28px; }
+.statcard .v { font-family: var(--display); font-stretch: 70%; font-weight: 900; font-size: 110px; line-height: .9; color: var(--yellow); }
+.statcard .l { font-weight: 700; font-size: 26px; line-height: 1.25; }
+.story .body { margin-top: 30px; }
+
+/* ---------- briefs ---------- */
+.ptitle { font-family: var(--display); font-stretch: 70%; font-weight: 900; font-size: 150px; line-height: .82; text-transform: uppercase; margin-top: 40px; letter-spacing: -.01em; }
+.ptitle span { color: var(--c); }
+.ptitle.one { font-size: 118px; }
+.psub { font-weight: 600; font-size: 26px; color: var(--muted); margin-top: 16px; }
+.bgrid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 34px; }
+.bcard { background: var(--card); border-radius: 28px; padding: 26px 26px 30px; display: flex; flex-direction: column; gap: 14px; }
+.bcard .ic { width: 64px; height: 64px; border-radius: 18px; background: var(--c-soft); color: var(--c); display: grid; place-items: center; }
+.bcard .ic svg { width: 36px; height: 36px; }
+.bcard .k { font-weight: 800; font-size: 18px; letter-spacing: .12em; text-transform: uppercase; color: var(--c); }
+.bcard .t { font-family: var(--display); font-stretch: 88%; font-weight: 700; font-size: 34px; line-height: 1.14; }
+.bcard .s { font-size: 17px; color: var(--muted); margin-top: auto; }
+
+/* ---------- practical (bento) ---------- */
+.bento { display: grid; grid-template-columns: 1.15fr 1fr; grid-auto-rows: auto; gap: 20px; margin-top: 30px; }
+.tile { background: var(--card); border-radius: 30px; padding: 26px 28px 28px; }
+.tile .k { display: flex; align-items: center; gap: 10px; font-weight: 800; font-size: 18px; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); }
+.tile .k svg { width: 28px; height: 28px; color: var(--c); }
+.tile .num { font-family: var(--display); font-stretch: 70%; font-weight: 900; font-size: 104px; line-height: .9; margin-top: 12px; }
+.tile .num small { font-size: .45em; color: var(--muted); font-weight: 800; }
+.tile .t { font-size: 25px; line-height: 1.35; margin-top: 10px; font-weight: 500; }
+.tile.wx { grid-row: span 2; background: var(--c); color: #fff; display: flex; flex-direction: column; }
+.tile.wx .k, .tile.wx .k svg { color: #fff; }
+.tile.wx .big-ic { width: 96px; height: 96px; margin-top: 14px; color: var(--yellow); }
+.tile.wx .num { font-size: 150px; }
+.tile.wx .num small { color: rgba(255,255,255,.75); }
+.tile.wx .facts { margin-top: auto; display: grid; gap: 8px; font-weight: 600; font-size: 24px; }
+.tile.sun .row { display: flex; justify-content: space-between; margin-top: 14px; }
+.tile.sun .row div { font-family: var(--display); font-stretch: 75%; font-weight: 900; font-size: 54px; line-height: 1; }
+.tile.sun .row small { display: block; font-family: var(--sans); font-weight: 600; font-size: 18px; color: var(--muted); margin-top: 6px; letter-spacing: .04em; }
+.tile.wide { grid-column: 1 / -1; display: grid; grid-template-columns: 70px 1fr; gap: 20px; align-items: center; }
+.tile.wide > svg { width: 56px; height: 56px; color: var(--c); }
+.tile.alert { background: var(--yellow); }
+.tile.alert > svg { color: var(--ink); }
+.tile.wide .h { font-family: var(--display); font-stretch: 85%; font-weight: 800; font-size: 32px; }
+.tile.wide .t { margin-top: 4px; }
+.tile.wide .src { font-size: 17px; color: var(--muted); margin-top: 6px; }
+.tile.alert .src { color: #5c4a00; }
+
+/* ---------- outro ---------- */
+.outro h2.big { font-family: var(--display); font-stretch: 66%; font-weight: 900; font-size: 210px; line-height: .8; text-transform: uppercase; margin-top: 70px; letter-spacing: -.02em; }
+.outro h2.big span { color: var(--yellow); display: block; }
+.outro .sub { font-size: 34px; font-weight: 600; margin-top: 30px; opacity: .92; }
+.btns { display: grid; gap: 16px; margin-top: 50px; }
+.btn { display: grid; grid-template-columns: 56px 1fr auto; align-items: center; gap: 20px; background: #fff; color: var(--ink); border-radius: 26px; padding: 20px 28px; }
+.btn svg { width: 44px; height: 44px; color: var(--c); }
+.btn .h { font-family: var(--display); font-stretch: 82%; font-weight: 800; font-size: 38px; }
+.btn .t { font-size: 21px; color: var(--muted); font-weight: 600; }
+.sched { display: flex; gap: 12px; flex-wrap: wrap; }
+.sched span { background: rgba(255,255,255,.16); border-radius: 999px; padding: 12px 20px; font-weight: 700; font-size: 22px; }
+.sched b { color: var(--yellow); }
+</style>
+</head>
+<body>
+{%- macro sample_tag() -%}{% if sample %}<div class="sample">ÖRNEK</div>{% endif %}{%- endmacro -%}
+{%- macro prog(idx) -%}<div class="prog">{% for i in range(total) %}<i class="{{ 'on' if i < idx else '' }}"></i>{% endfor %}</div>{%- endmacro -%}
+{%- macro top() -%}<div class="top"><span class="wm"><i></i>Samsun Bülten</span><span class="ed">{{ ed.label }}</span></div>{%- endmacro -%}
+{%- macro foot(src) -%}<div class="foot"><span>{{ src }}</span><span class="mk">{{ mark_svg }}</span></div>{%- endmacro -%}
+
+{% for s in slides %}
+{% if s.kind == 'cover' %}
+<section class="slide c cover ed-{{ edition }}" data-idx="{{ s.idx }}" data-grow="1.5">
+  {{ sample_tag() }}{{ prog(s.idx) }}{{ top() }}
+  <div class="content fit-box">
+    <div class="hero">
+      <h1>{% if edition == 'gundem' %}Bugün<span>Samsun'da</span>{% elif edition == 'ekonomi' %}Ekonomi<span>&amp; İş</span>{% else %}Samsun<span>Spor</span>{% endif %}</h1>
+      <div class="stick"><div class="d">{{ day }}</div><div class="m">{{ month }}</div><div class="m">{{ weekday }}</div></div>
+    </div>
+    <div class="meta">
+      {% if weather %}<span class="chip">{{ icon(weather.icon, 2) }}{{ weather.max }}° / {{ weather.min }}°</span>{% endif %}
+      <span class="chip">{{ icon('clock', 2) }}{{ reading_min }} dk okuma</span>
+      <span class="chip">Sayı {{ '%03d' % issue_no }}</span>
+    </div>
+    {% if scoreboard %}
+    <div class="scoreboard"><div class="comp">{{ scoreboard.competition }}</div>
+      <div class="t">{{ scoreboard.home }}</div><div class="s">{{ scoreboard.home_score }}–{{ scoreboard.away_score }}</div><div class="t r">{{ scoreboard.away }}</div></div>
+    {% endif %}
+    <div class="list">
+      {% for st in s.stories %}
+      <div class="row"><span class="n">{{ st.n }}</span><span class="h" data-fit="24" data-max="44">{{ st.short_title }}</span>{{ st.icon }}</div>
+      {% endfor %}
+    </div>
+  </div>
+  <div class="bottom">
+    <span class="info">{{ s.stories|length }} haber{% if slides|selectattr('kind','equalto','briefs')|list %} + kısa kısa{% endif %}{% if practical %} + gün rehberi{% endif %}</span>
+    <span style="display:flex;align-items:center;gap:22px"><span class="swipe">Kaydır {{ icon('arrow', 2.6) }}</span><span class="mk">{{ mark_svg }}</span></span>
+  </div>
+</section>
+
+{% elif s.kind == 'lead' %}
+{% set st = s.story %}
+<section class="slide lead {{ '' if st.stat and st.stat.value else 'nostat' }} ed-{{ edition }}" data-idx="{{ s.idx }}">
+  {{ sample_tag() }}
+  <div class="block c">
+    <div class="ghost">{{ st.icon }}</div>
+    {{ prog(s.idx) }}{{ top() }}
+    <div class="tags"><span class="chip y">Manşet</span><span class="chip cat">{{ st.icon }}{{ st.category }}</span>{% if st.location %}<span class="chip loc">{{ icon('pin', 2) }}{{ st.location }}</span>{% endif %}</div>
+    <h2 class="hl">{{ st.title }}</h2>
+  </div>
+  <div class="inner">
+    {% if st.stat and st.stat.value %}<div class="stat"><div class="v">{{ st.stat.value }}</div><div class="l">{{ st.stat.label }}</div></div>{% endif %}
+    <div class="content fit-box">
+      <div class="body" data-fit="26" data-max="38">{% for p in st.body_paragraphs %}<p>{{ p }}</p>{% endfor %}</div>
+      <div class="spacer"></div>
+      {% if st.why %}<div class="why">{{ icon('bulb', 2) }}<div><div class="k">Neden önemli</div><div class="t" data-fit="22" data-max="34">{{ st.why }}</div></div></div>{% endif %}
+    </div>
+    {{ foot('Kaynak: ' ~ st.sources|join(', ')) }}
+  </div>
+</section>
+
+{% elif s.kind == 'story' %}
+{% set st = s.story %}
+<section class="slide story ed-{{ edition }}" data-idx="{{ s.idx }}">
+  {{ sample_tag() }}{{ prog(s.idx) }}{{ top() }}
+  <div class="content fit-box">
+    <div class="tags"><span class="chip cat">{{ st.icon }}{{ st.category }}</span>{% if st.location %}<span class="chip loc">{{ icon('pin', 2) }}{{ st.location }}</span>{% endif %}</div>
+    <h2 class="hl" data-fit="48" data-max="88">{{ st.title }}</h2>
+    {% if st.stat and st.stat.value %}<div class="statcard"><span class="v">{{ st.stat.value }}</span><span class="l">{{ st.stat.label }}</span></div>{% endif %}
+    <div class="body" data-fit="26" data-max="42">{% for p in st.body_paragraphs %}<p>{{ p }}</p>{% endfor %}</div>
+    <div class="spacer"></div>
+    {% if st.why %}<div class="why">{{ icon('bulb', 2) }}<div><div class="k">Neden önemli</div><div class="t" data-fit="22" data-max="34">{{ st.why }}</div></div></div>{% endif %}
+  </div>
+  {{ foot('Kaynak: ' ~ st.sources|join(', ')) }}
+</section>
+
+{% elif s.kind == 'briefs' %}
+<section class="slide briefs ed-{{ edition }}" data-idx="{{ s.idx }}">
+  {{ sample_tag() }}{{ prog(s.idx) }}{{ top() }}
+  <div class="content fit-box">
+    <div class="ptitle">Kısa<br><span>kısa</span></div>
+    <div class="psub">Bir cümlede bilmen gerekenler</div>
+    <div class="bgrid">
+      {% for b in s.briefs %}
+      <div class="bcard"><div class="ic">{{ b.icon }}</div><div class="k">{{ b.category }}</div><div class="t" data-fit="22" data-max="40">{{ b.text }}</div>{% if b.district and b.district != 'Samsun' %}<div class="s">{{ b.district }}</div>{% endif %}</div>
+      {% endfor %}
+    </div>
+  </div>
+  {{ foot('Kaynak: ' ~ s.sources|join(', ')) }}
+</section>
+
+{% elif s.kind == 'practical' %}
+<section class="slide practical ed-{{ edition }}" data-idx="{{ s.idx }}">
+  {{ sample_tag() }}{{ prog(s.idx) }}{{ top() }}
+  <div class="content fit-box">
+    <div class="ptitle one">Gün <span>rehberi</span></div>
+    <div class="psub">Kaydet, gün içinde lazım olur</div>
+    <div class="bento">
+      {% if weather %}
+      <div class="tile wx"><div class="k">{{ icon('cloud', 2) }}Hava</div><div class="big-ic">{{ icon(weather.icon, 1.6) }}</div>
+        <div class="num">{{ weather.max }}°<small>/{{ weather.min }}°</small></div>
+        <div class="facts"><span>{{ weather.text }}</span><span>Yağış %{{ weather.rain }}</span><span>Rüzgâr {{ weather.wind }} km/sa</span></div></div>
+      <div class="tile"><div class="k">{{ icon('waves', 2) }}Deniz suyu</div><div class="num">{{ weather.sea if weather.sea is not none else '–' }}°</div></div>
+      <div class="tile sun"><div class="k">{{ icon('sunrise', 2) }}Güneş</div><div class="row"><div>{{ weather.sunrise }}<small>DOĞUŞ</small></div><div>{{ weather.sunset }}<small>BATIŞ</small></div></div></div>
+      {% endif %}
+      {% for o in practical.outages %}
+      <div class="tile wide alert">{{ icon(o.kind, 2) }}<div><div class="h">{{ o.title }}</div><div class="t">{{ o.text }}</div><div class="src">Kaynak: {{ o.source }}</div></div></div>
+      {% endfor %}
+      {% if practical.pharmacy %}<div class="tile wide">{{ icon('pharmacy', 2) }}<div><div class="h">Nöbetçi eczane</div><div class="t">{{ practical.pharmacy }}</div></div></div>{% endif %}
+    </div>
+  </div>
+  {{ foot('Veri: Open-Meteo') }}
+</section>
+
+{% elif s.kind == 'outro' %}
+<section class="slide c outro ed-{{ edition }}" data-idx="{{ s.idx }}">
+  {{ sample_tag() }}{{ prog(s.idx) }}{{ top() }}
+  <h2 class="big">Bugünlük<span>bu kadar</span></h2>
+  <div class="sub">{{ ed.next }}</div>
+  <div class="btns">
+    <div class="btn">{{ icon('bookmark', 2) }}<span class="h">Kaydet</span><span class="t">Gün rehberine sonra dön</span></div>
+    <div class="btn">{{ icon('send', 2) }}<span class="h">Gönder</span><span class="t">Samsunlu bir dostuna ilet</span></div>
+    <div class="btn">{{ icon('follow', 2) }}<span class="h">Takip et</span><span class="t">@samsun.bulten</span></div>
+  </div>
+  <div class="spacer"></div>
+  <div class="sched"><span><b>08.00</b> Gündem</span><span><b>12.30</b> Ekonomi &amp; İş</span><span><b>19.00</b> Spor</span></div>
+  {{ foot("Haber ihbarı ve önerilerin için DM'den yaz.") }}
+</section>
+{% endif %}
+{% endfor %}
+{% include "_fit.js.j2" %}
+</body>
+</html>

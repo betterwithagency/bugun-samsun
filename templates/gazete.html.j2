@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<title>Samsun Bülten · Gazete</title>
+<style>
+@font-face { font-family: "Newsreader"; src: url("{{ assets }}/fonts/Newsreader.ttf"); font-weight: 200 800; }
+@font-face { font-family: "Newsreader"; src: url("{{ assets }}/fonts/Newsreader-Italic.ttf"); font-weight: 200 800; font-style: italic; }
+@font-face { font-family: "Inter"; src: url("{{ assets }}/fonts/Inter.ttf"); font-weight: 100 900; }
+
+:root {
+  --paper: #F3EEE3; --paper-2: #EAE3D3; --ink: #15171A; --muted: #646A72; --hair: rgba(21,23,26,.2);
+  --serif: "Newsreader", Georgia, serif; --sans: "Inter", Arial, sans-serif;
+}
+.ed-gundem  { --accent: #1D5C99; --accent-ink: #fff; }
+.ed-ekonomi { --accent: #12704F; --accent-ink: #fff; }
+.ed-spor    { --accent: #B5121B; --accent-ink: #fff; }
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: #777; font-family: var(--sans); color: var(--ink); -webkit-font-smoothing: antialiased; }
+.slide {
+  position: relative; width: 1080px; height: 1350px; overflow: hidden; margin-bottom: 40px;
+  background: var(--paper); display: flex; flex-direction: column; padding: 60px 72px 48px;
+}
+/* subtle newsprint grain */
+.slide::before {
+  content: ""; position: absolute; inset: 0; pointer-events: none; opacity: .5;
+  background-image: radial-gradient(rgba(0,0,0,.035) 1px, transparent 1px);
+  background-size: 5px 5px;
+}
+.slide > * { position: relative; }
+.sample { position: absolute; top: 26px; left: -58px; transform: rotate(-35deg); background: #FFD400; color: #111;
+  font: 700 17px/1 var(--sans); letter-spacing: .2em; padding: 9px 70px; z-index: 9; }
+
+.sc { font-family: var(--sans); font-weight: 600; letter-spacing: .16em; text-transform: uppercase; }
+.rule2 { border-top: 3px solid var(--ink); border-bottom: 1px solid var(--ink); height: 7px; }
+.hair { border-top: 1px solid var(--hair); }
+
+/* running head (inner pages) — top-right left clear for Instagram's 1/N badge */
+.rhead { display: flex; align-items: baseline; gap: 18px; }
+.rhead .logo { font-family: var(--serif); font-weight: 600; font-size: 34px; letter-spacing: -.01em; font-variation-settings: "opsz" 72; }
+.rhead .logo em { font-weight: 500; }
+.rhead .sec { font-size: 18px; color: var(--accent); }
+.rmeta { display: flex; justify-content: space-between; margin-top: 14px; font-size: 19px; color: var(--muted); }
+.rmeta .k { color: var(--accent); font-weight: 700; }
+
+.foot { margin-top: auto; padding-top: 22px; display: grid; grid-template-columns: 1fr auto 1fr; align-items: end; gap: 24px; font-size: 20px; color: var(--muted); }
+.foot .pg { font-family: var(--serif); font-style: italic; font-size: 24px; color: var(--ink); }
+.foot .mk { justify-self: end; width: 42px; height: 42px; color: var(--ink); }
+.foot .mk svg { width: 100%; height: 100%; display: block; }
+.content { flex: 1 1 auto; min-height: 0; overflow: hidden; display: flex; flex-direction: column; }
+
+/* ---------- cover ---------- */
+.cover { padding-top: 0; }
+.cover .band { height: 18px; margin: 0 -72px 44px; background: var(--accent); }
+.cover .tag { text-align: center; font-size: 17px; color: var(--muted); }
+.cover .nameplate { text-align: center; font-family: var(--serif); font-weight: 600; font-size: 138px; line-height: .92;
+  letter-spacing: -.03em; margin: 10px 0 22px; font-variation-settings: "opsz" 72; }
+.cover .nameplate em { font-weight: 500; color: var(--accent); }
+.ears { display: grid; grid-template-columns: 1fr 1.5fr 1fr; align-items: center; padding: 14px 0; }
+.ears > div { text-align: center; font-size: 21px; }
+.ears > div + div { border-left: 1px solid var(--hair); }
+.ears .wx { display: flex; justify-content: center; align-items: center; gap: 10px; }
+.ears .wx svg { width: 30px; height: 30px; color: var(--accent); }
+.ears b { font-weight: 600; }
+.cover .kicker { margin-top: 34px; font-size: 18px; color: var(--accent); }
+.cover .lead-h { font-family: var(--serif); font-weight: 650; font-size: 70px; line-height: 1.02; letter-spacing: -.02em;
+  margin-top: 12px; font-variation-settings: "opsz" 72; text-wrap: balance; }
+.cover .lead-d { font-family: var(--serif); font-style: italic; font-size: 30px; line-height: 1.3; color: #33373C; margin-top: 16px; }
+.also { margin-top: 30px; padding-top: 20px; border-top: 1px solid var(--ink); }
+.also .lbl { font-size: 17px; color: var(--muted); margin-bottom: 6px; }
+.also ol { list-style: none; display: grid; grid-template-columns: 1fr 1fr; column-gap: 44px; }
+.also li { padding: 22px 0; border-bottom: 1px solid var(--hair); display: grid; grid-template-columns: 46px 1fr; }
+.also .n { font-family: var(--serif); font-style: italic; font-size: 30px; color: var(--accent); line-height: 1.1; }
+.also .c { font-size: 15px; color: var(--muted); }
+.also .h { font-family: var(--serif); font-weight: 560; font-size: 31px; line-height: 1.16; margin-top: 4px; }
+.index { margin-top: auto; padding-top: 18px; display: flex; justify-content: space-between; align-items: center; font-size: 19px; }
+.index .i { color: var(--muted); }
+.index .i b { color: var(--ink); font-weight: 600; }
+.swipe { display: flex; align-items: center; gap: 10px; font-weight: 600; color: var(--accent); }
+.swipe svg { width: 30px; height: 30px; }
+.scoreboard { margin-top: 30px; border: 2px solid var(--ink); padding: 18px 28px; display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; }
+.scoreboard .comp { grid-column: 1 / -1; text-align: center; font-size: 16px; color: var(--muted); margin-bottom: 6px; }
+.scoreboard .t { font-family: var(--serif); font-weight: 650; font-size: 38px; }
+.scoreboard .t.r { text-align: right; }
+.scoreboard .s { font-family: var(--serif); font-weight: 700; font-size: 84px; padding: 0 30px; line-height: 1; }
+
+/* ---------- lead + story ---------- */
+.catline { margin-top: 44px; font-size: 19px; color: var(--accent); display: flex; align-items: center; gap: 10px; }
+.catline svg { width: 26px; height: 26px; }
+.catline .dl { color: var(--ink); }
+h2 { font-family: var(--serif); font-weight: 650; letter-spacing: -.02em; font-variation-settings: "opsz" 72; text-wrap: balance; }
+.lead h2 { font-size: 88px; line-height: 1; margin-top: 18px; }
+.story h2 { font-size: 72px; line-height: 1.02; margin-top: 18px; }
+.split { display: grid; grid-template-columns: 300px 1fr; gap: 40px; margin-top: 40px; padding-top: 30px; border-top: 1px solid var(--ink); }
+.figure .v { font-family: var(--serif); font-weight: 700; font-size: 132px; line-height: .9; color: var(--accent); letter-spacing: -.03em; }
+.figure .l { font-size: 22px; color: var(--muted); margin-top: 12px; line-height: 1.35; }
+.statrow { display: flex; align-items: baseline; gap: 22px; margin-top: 30px; padding: 18px 0; border-top: 1px solid var(--hair); border-bottom: 1px solid var(--hair); }
+.statrow .v { font-family: var(--serif); font-weight: 700; font-size: 84px; line-height: 1; color: var(--accent); }
+.statrow .l { font-size: 23px; color: var(--muted); }
+.body { font-family: var(--serif); font-size: 34px; line-height: 1.42; color: #1E2125; }
+.story .body { margin-top: 30px; }
+.body p + p { margin-top: 14px; text-indent: 1.4em; }
+.body p:first-child::first-letter { float: left; font-weight: 700; font-size: 3.15em; line-height: .82; margin: 8px 12px 0 0; color: var(--accent); }
+.spacer { flex: 1 1 34px; min-height: 34px; }
+.why { margin-top: 0; padding-top: 18px; border-top: 3px solid var(--ink); display: grid; grid-template-columns: 210px 1fr; gap: 24px; }
+.why .k { font-size: 17px; color: var(--accent); padding-top: 8px; }
+.why .t { font-family: var(--serif); font-style: italic; font-size: 32px; line-height: 1.35; }
+
+/* ---------- briefs ---------- */
+.ptitle { font-family: var(--serif); font-weight: 650; font-size: 104px; line-height: .95; letter-spacing: -.03em; margin-top: 40px; font-variation-settings: "opsz" 72; }
+.ptitle em { font-weight: 500; color: var(--accent); }
+.psub { font-family: var(--serif); font-style: italic; font-size: 28px; color: var(--muted); margin-top: 12px; }
+.briefs ul { list-style: none; margin-top: 30px; border-top: 1px solid var(--ink); }
+.briefs li { padding: 24px 0; border-bottom: 1px solid var(--hair); font-family: var(--serif); font-size: 34px; line-height: 1.38; }
+.briefs li .dl { font-family: var(--sans); font-weight: 700; font-size: .62em; letter-spacing: .14em; text-transform: uppercase; color: var(--accent); }
+
+/* ---------- practical ---------- */
+.guide { margin-top: 30px; display: grid; grid-template-columns: 1fr 1fr; border-top: 3px solid var(--ink); }
+.guide .cell { padding: 24px 26px 26px 0; border-bottom: 1px solid var(--hair); }
+.guide .cell:nth-child(even) { padding-left: 26px; padding-right: 0; border-left: 1px solid var(--hair); }
+.guide .cell.wide { grid-column: 1 / -1; padding-right: 0; padding-left: 0; border-left: 0; }
+.guide .k { font-size: 16px; color: var(--muted); display: flex; align-items: center; gap: 8px; }
+.guide .k svg { width: 22px; height: 22px; color: var(--accent); }
+.guide .big { font-family: var(--serif); font-weight: 650; font-size: 84px; line-height: 1; margin-top: 10px; letter-spacing: -.02em; }
+.guide .big small { font-size: .5em; color: var(--muted); font-weight: 500; }
+.guide .t { font-family: var(--serif); font-size: 29px; line-height: 1.35; margin-top: 8px; }
+.guide .t b { font-weight: 650; }
+.guide .src { font-size: 16px; color: var(--muted); margin-top: 8px; }
+
+/* ---------- outro ---------- */
+.outro .big { font-family: var(--serif); font-weight: 600; font-size: 128px; line-height: .95; letter-spacing: -.03em; margin-top: 90px; font-variation-settings: "opsz" 72; }
+.outro .big em { font-weight: 500; color: var(--accent); }
+.outro .sub { font-family: var(--serif); font-style: italic; font-size: 36px; color: #3A3E44; margin-top: 22px; }
+.ctas { display: grid; grid-template-columns: repeat(3, 1fr); margin-top: 80px; border-top: 3px solid var(--ink); }
+.ctas > div { padding: 26px 22px 0 0; }
+.ctas > div + div { padding-left: 24px; border-left: 1px solid var(--hair); }
+.ctas svg { width: 46px; height: 46px; color: var(--accent); }
+.ctas .h { font-family: var(--serif); font-weight: 650; font-size: 40px; margin-top: 14px; }
+.ctas .t { font-size: 22px; color: var(--muted); margin-top: 6px; line-height: 1.35; }
+.times { border-top: 3px solid var(--ink); padding-top: 18px; }
+.times .k { font-size: 16px; color: var(--muted); }
+.times .row { display: flex; justify-content: space-between; margin-top: 12px; font-family: var(--serif); font-size: 34px; }
+.times b { font-weight: 700; color: var(--accent); }
+.outro .dm { margin-top: 30px; padding-top: 20px; border-top: 1px solid var(--hair); font-family: var(--serif); font-size: 30px; }
+.outro .dm b { font-weight: 650; }
+</style>
+</head>
+<body>
+{%- macro sample_tag() -%}{% if sample %}<div class="sample">ÖRNEK</div>{% endif %}{%- endmacro -%}
+{%- macro rhead(kicker, s) -%}
+  <div class="rhead"><span class="logo">Samsun <em>Bülten</em></span><span class="sec sc">{{ ed.label }}</span></div>
+  <div class="rule2" style="margin-top:16px"></div>
+  <div class="rmeta"><span class="k sc">{{ kicker }}</span><span>{{ day }} {{ month }} {{ year }}, {{ weekday }}</span></div>
+{%- endmacro -%}
+{%- macro foot(src, idx) -%}
+  <div class="foot"><span>{{ src }}</span><span class="pg">— {{ idx }} —</span><span class="mk">{{ mark_svg }}</span></div>
+{%- endmacro -%}
+
+{% for s in slides %}
+{% if s.kind == 'cover' %}
+<section class="slide cover ed-{{ edition }}" data-idx="{{ s.idx }}" data-grow="1.6">
+  {{ sample_tag() }}
+  <div class="band"></div>
+  <div class="tag sc">Samsun'un {{ 'sabah' if edition == 'gundem' else ('öğle' if edition == 'ekonomi' else 'akşam') }} bülteni</div>
+  <div class="nameplate">Samsun <em>Bülten</em></div>
+  <div class="rule2"></div>
+  <div class="ears">
+    <div>Sayı <b>{{ '%03d' % issue_no }}</b></div>
+    <div><b>{{ day }} {{ month }} {{ year }}</b>, {{ weekday }}</div>
+    <div class="wx">{% if weather %}{{ icon(weather.icon) }}<span><b>{{ weather.max }}°</b> / {{ weather.min }}°</span>{% else %}{{ reading_min }} dk okuma{% endif %}</div>
+  </div>
+  <div class="rule2"></div>
+  <div class="content fit-box">
+    {% if scoreboard %}
+    <div class="scoreboard">
+      <div class="comp sc">{{ scoreboard.competition }}</div>
+      <div class="t">{{ scoreboard.home }}</div><div class="s">{{ scoreboard.home_score }}–{{ scoreboard.away_score }}</div><div class="t r">{{ scoreboard.away }}</div>
+    </div>
+    {% endif %}
+    {% set lead = s.stories[0] %}
+    <div class="kicker sc">Manşet · {{ lead.category }}</div>
+    <div class="lead-h" data-fit="48" data-max="92">{{ lead.title }}</div>
+    {% if lead.why %}<div class="lead-d" data-fit="24" data-max="36">{{ lead.why }}</div>{% endif %}
+    <div class="also">
+      <div class="lbl sc">Ayrıca bugün</div>
+      <ol>
+        {% for st in s.stories[1:] %}
+        <li><span class="n">{{ st.n }}</span><div><div class="c sc">{{ st.category }}{% if st.district and st.district != 'Samsun' %} · {{ st.district }}{% endif %}</div><div class="h" data-fit="24" data-max="42">{{ st.short_title }}</div></div></li>
+        {% endfor %}
+      </ol>
+    </div>
+  </div>
+  <div class="index">
+    <span class="i"><b>2</b> Manşet · <b>3–{{ s.stories|length + 1 }}</b> Haberler{% if slides|selectattr('kind','equalto','briefs')|list %} · <b>{{ (slides|selectattr('kind','equalto','briefs')|first).idx }}</b> Kısa kısa{% endif %}{% if practical %} · <b>{{ (slides|selectattr('kind','equalto','practical')|first).idx }}</b> Gün rehberi{% endif %}</span>
+    <span class="swipe">Kaydır {{ icon('arrow', 2.2) }}</span>
+  </div>
+</section>
+
+{% elif s.kind in ('lead', 'story') %}
+{% set st = s.story %}
+<section class="slide {{ s.kind }} ed-{{ edition }}" data-idx="{{ s.idx }}">
+  {{ sample_tag() }}
+  {{ rhead('Manşet' if s.kind == 'lead' else 'Haber ' ~ st.n, s) }}
+  <div class="content fit-box">
+    <div class="catline sc">{{ icon(st.icon_name, 2) }}<span>{{ st.category }}</span>{% if st.location %}<span class="dl">— {{ st.location }}</span>{% endif %}</div>
+    <h2 data-fit="50" data-max="{{ 100 if s.kind == 'lead' else 88 }}">{{ st.title }}</h2>
+    {% if s.kind == 'lead' and st.stat and st.stat.value %}
+      <div class="split">
+        <div class="figure"><div class="v" data-fit="80" data-max="150">{{ st.stat.value }}</div><div class="l">{{ st.stat.label }}</div></div>
+        <div class="body" data-fit="26" data-max="38">{% for p in st.body_paragraphs %}<p>{{ p }}</p>{% endfor %}</div>
+      </div>
+    {% else %}
+      {% if st.stat and st.stat.value %}<div class="statrow"><span class="v">{{ st.stat.value }}</span><span class="l">{{ st.stat.label }}</span></div>{% endif %}
+      <div class="body" data-fit="26" data-max="44">{% for p in st.body_paragraphs %}<p>{{ p }}</p>{% endfor %}</div>
+    {% endif %}
+    <div class="spacer"></div>
+    {% if st.why %}<div class="why"><div class="k sc">Neden önemli</div><div class="t" data-fit="24" data-max="36">{{ st.why }}</div></div>{% endif %}
+  </div>
+  {{ foot('Kaynak: ' ~ st.sources|join(', '), s.idx) }}
+</section>
+
+{% elif s.kind == 'briefs' %}
+<section class="slide briefs ed-{{ edition }}" data-idx="{{ s.idx }}">
+  {{ sample_tag() }}
+  {{ rhead('Kısa kısa', s) }}
+  <div class="content fit-box">
+    <div class="ptitle">Kısa <em>kısa</em></div>
+    <div class="psub">Bir cümlede bilmen gerekenler</div>
+    <ul>
+      {% for b in s.briefs %}
+      <li data-fit="24" data-max="44"><span class="dl">{{ b.district if b.district and b.district != 'Samsun' else b.category }} —</span> {{ b.text }}</li>
+      {% endfor %}
+    </ul>
+  </div>
+  {{ foot('Kaynak: ' ~ s.sources|join(', '), s.idx) }}
+</section>
+
+{% elif s.kind == 'practical' %}
+<section class="slide practical ed-{{ edition }}" data-idx="{{ s.idx }}">
+  {{ sample_tag() }}
+  {{ rhead('Gün rehberi', s) }}
+  <div class="content fit-box">
+    <div class="ptitle">Gün <em>rehberi</em></div>
+    <div class="psub">Kaydet, gün içinde lazım olur</div>
+    <div class="guide">
+      {% if weather %}
+      <div class="cell"><div class="k sc">{{ icon(weather.icon) }}Hava</div><div class="big">{{ weather.max }}°<small> / {{ weather.min }}°</small></div><div class="t">{{ weather.text }}, yağış ihtimali %{{ weather.rain }}, rüzgâr {{ weather.wind }} km/sa</div></div>
+      <div class="cell"><div class="k sc">{{ icon('waves') }}Deniz suyu</div><div class="big">{{ weather.sea if weather.sea is not none else '–' }}°</div><div class="t">Samsun açıkları, yüzey sıcaklığı</div></div>
+      <div class="cell wide"><div class="k sc">{{ icon('sunrise') }}Güneş</div><div class="t"><b>Doğuş {{ weather.sunrise }}</b> · <b>Batış {{ weather.sunset }}</b></div></div>
+      {% endif %}
+      {% for o in practical.outages %}
+      <div class="cell wide"><div class="k sc">{{ icon(o.kind) }}{{ o.title }}</div><div class="t">{{ o.text }}</div><div class="src">Kaynak: {{ o.source }}</div></div>
+      {% endfor %}
+      {% if practical.pharmacy %}<div class="cell wide"><div class="k sc">{{ icon('pharmacy') }}Nöbetçi eczane</div><div class="t">{{ practical.pharmacy }}</div></div>{% endif %}
+    </div>
+  </div>
+  {{ foot('Veri: Open-Meteo', s.idx) }}
+</section>
+
+{% elif s.kind == 'outro' %}
+<section class="slide outro ed-{{ edition }}" data-idx="{{ s.idx }}">
+  {{ sample_tag() }}
+  {{ rhead('Son sayfa', s) }}
+  <div class="big">Bugünlük<br><em>bu kadar.</em></div>
+  <div class="sub">{{ ed.next }}</div>
+  <div class="ctas">
+    <div>{{ icon('bookmark') }}<div class="h">Kaydet</div><div class="t">Gün rehberine sonra dön.</div></div>
+    <div>{{ icon('send') }}<div class="h">Gönder</div><div class="t">Samsunlu bir dostuna ilet.</div></div>
+    <div>{{ icon('follow') }}<div class="h">Takip et</div><div class="t">@samsun.bulten</div></div>
+  </div>
+  <div class="spacer"></div>
+  <div class="times"><div class="sc k">Yayın saatleri</div><div class="row"><span><b>08.00</b> Gündem</span><span><b>12.30</b> Ekonomi &amp; İş</span><span><b>19.00</b> Spor</span></div></div>
+  <div class="dm">Haber ihbarı ve önerilerin için <b>DM'den</b> yazabilirsin.</div>
+  {{ foot('', s.idx) }}
+</section>
+{% endif %}
+{% endfor %}
+{% include "_fit.js.j2" %}
+</body>
+</html>

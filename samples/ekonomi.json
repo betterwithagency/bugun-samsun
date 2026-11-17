@@ -1,0 +1,64 @@
+{
+ "edition": "ekonomi",
+ "date": "2026-11-18",
+ "issue_no": 1,
+ "stories": [
+  {
+   "category": "Liman",
+   "location": "Samsun Limanı",
+   "title": "Limanda Ekim ayında elleçlenen yük arttı",
+   "short_title": "Limanda Ekim ayında elleçlenen yük arttı",
+   "stat": {
+    "value": "%12",
+    "label": "geçen yılın aynı ayına göre artış"
+   },
+   "body": "Liman işletmesinin verilerine göre artışta Rusya ve Gürcistan hattındaki konteyner trafiği belirleyici oldu.\nTahıl ve inşaat malzemesi yüklemeleri de yükselişini sürdürdü.",
+   "why": "Liman hacmi, kentteki lojistik ve depolama istihdamını doğrudan etkiliyor.",
+   "sources": [
+    "Samsunport"
+   ],
+   "district": "İlkadım"
+  },
+  {
+   "category": "Ticaret",
+   "location": "İlkadım",
+   "title": "Samsun TSO üyeleri için ihracat eğitim programı başlıyor",
+   "short_title": "TSO'dan üyelere ihracat eğitim programı",
+   "body": "Program, ilk kez ihracat yapacak KOBİ'lere gümrük, finansman ve pazar araştırması konularında destek verecek.\nBaşvurular ay sonuna kadar oda internet sitesinden alınıyor.",
+   "sources": [
+    "Samsun TSO"
+   ],
+   "district": "İlkadım",
+   "why": "İlk kez ihracat yapacak KOBİ'ler için ücretsiz destek fırsatı."
+  },
+  {
+   "category": "Destek",
+   "location": "Samsun",
+   "title": "OKA'nın KOBİ destek programında sonuçlar açıklandı",
+   "short_title": "OKA KOBİ destek programı sonuçları açıklandı",
+   "stat": {
+    "value": "38 proje",
+    "label": "desteklenmeye hak kazandı"
+   },
+   "body": "Orta Karadeniz Kalkınma Ajansı, Samsun, Ordu, Çorum ve Amasya'dan başvuran işletmelerin sonuçlarını duyurdu.\nSözleşmeler aralık ayında imzalanacak.",
+   "sources": [
+    "OKA"
+   ],
+   "district": "Samsun",
+   "why": "Desteklenen projelerle bölgede yeni yatırım ve istihdam bekleniyor."
+  },
+  {
+   "category": "Tarım",
+   "location": "Bafra",
+   "title": "Bafra Ovası'nda çeltik hasadı tamamlandı",
+   "short_title": "Bafra'da çeltik hasadı tamamlandı",
+   "body": "İl Tarım ve Orman Müdürlüğü, rekoltenin geçen yılla benzer seviyede gerçekleştiğini açıkladı.\nÜreticiler kurutma ve depolama maliyetlerinin arttığını belirtiyor.",
+   "sources": [
+    "Samsun İl Tarım ve Orman Müdürlüğü"
+   ],
+   "district": "Bafra",
+   "why": "Bafra Ovası, Türkiye'nin önemli çeltik üretim alanlarından biri."
+  }
+ ],
+ "briefs": []
+}
