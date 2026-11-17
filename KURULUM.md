@@ -48,30 +48,32 @@ Bu anahtar 60 gün geçerli. Sistem onu her hafta kendiliğinden yeniler, yani n
 
 **Daha ucuz seçenek:** GitHub'da *Settings → Secrets and variables → Actions → Variables* bölümünde `BULTEN_MODEL` değişkenini `claude-sonnet-5-5` yaparsan maliyet yaklaşık yarıya iner. İlk hafta Console'daki *Usage* ekranından gerçek tutarı izle.
 
-## 4. GitHub deposunu kur
+## 4. GitHub deposu
 
-1. GitHub'da yeni bir **public** (herkese açık) depo oluştur, örneğin `samsun-bulten`.
-   - Neden public: Instagram görselleri bir web adresinden çekiyor. Görseller depodaki ayrı bir `media` dalından yayınlanıyor.
-   - Şifreler ve anahtarlar herkese açık değildir; GitHub Secrets'ta saklanır. Depoya kaydedilen Instagram anahtarı da şifrelidir.
-2. Bu proje klasörünü o depoya yükle.
-3. *Settings → Secrets and variables → Actions → New repository secret* ile üç gizli değer ekle:
+Depo hazır: **https://github.com/betterwithagency/samsun-bulten** (public).
+
+- **Neden public:** Instagram görselleri bir web adresinden çekiyor. Görseller depodaki ayrı bir `media` dalından yayınlanıyor.
+- **Gizli kalanlar:** Şifreler ve anahtarlar herkese açık değildir; GitHub Secrets'ta saklanır. Depoya kaydedilen Instagram anahtarı da şifrelidir.
+- **Duraklatılmış teslim:** Depo `data/PAUSE` dosyasıyla duraklatılmış olarak geldi. Zamanlanmış çalıştırmalar sen hazır olana kadar hiçbir şey yapmadan biter.
+
+*Settings → Secrets and variables → Actions → New repository secret* ile üç gizli değer ekle:
 
 | Ad | Değer |
 |---|---|
 | `ANTHROPIC_API_KEY` | 3. adımdaki anahtar |
 | `IG_ACCESS_TOKEN` | 2. adımdaki Instagram anahtarı |
-| `TOKEN_KEY` | Uydurduğun uzun, rastgele bir parola (en az 32 karakter). Yenilenen Instagram anahtarını şifrelemek için kullanılır. Bilgisayarında şu komutla üretebilirsin: `python3 -c "import secrets; print(secrets.token_urlsafe(32))"` |
+| `TOKEN_KEY` | Uzun, rastgele bir parola (en az 32 karakter). Yenilenen Instagram anahtarını şifrelemek için kullanılır. Şu komutla değeri görmeden üretip ekleyebilirsin: `python3 -c "import secrets; print(secrets.token_urlsafe(32))" \| gh secret set TOKEN_KEY -R betterwithagency/samsun-bulten` |
 
-4. *Settings → Actions → General → Workflow permissions* bölümünde **"Read and write permissions"** seçeneğini işaretle.
+İpucu: `gh secret set ANTHROPIC_API_KEY -R betterwithagency/samsun-bulten` komutu değeri gizli olarak sorar. Anahtarı terminale yapıştırırsın; başka hiçbir yerde görünmez.
 
 ## 5. Önce deneme, sonra canlı
 
-1. **Kuru deneme:**
+1. **Kuru deneme** (duraklatma açıkken de çalışır):
    - Deponun *Actions* sekmesinde **Samsun Bülten → Run workflow** de.
    - Bülten olarak `gundem` seç, "Instagram'a gönder" kutusunu **boş bırak**.
    - İş bitince sayfanın altındaki `bulten-gundem-…` dosyasını indir. İçinde kareler, Instagram açıklaması (`caption.txt`) ve Claude'un araştırma notları (`dosya.md`) var.
-2. **İlk gerçek paylaşım:** Sonuç iyiyse aynı adımı "Instagram'a gönder" kutusu **işaretli** olarak tekrarla. İlk gerçek paylaşım hemen gider.
-3. Bundan sonra zamanlanmış çalıştırmalar kendiliğinden başlar.
+2. **Canlıya geçiş:** Sonuç iyiyse depoda `data/PAUSE` dosyasını aç, çöp kutusu simgesiyle sil ve değişikliği kaydet.
+3. **İlk gerçek paylaşım:** İstersen hemen bir tane göndermek için *Run workflow*'u "Instagram'a gönder" kutusu **işaretli** olarak çalıştır. Yoksa bir sonraki yayın saatini bekle; zamanlanmış çalıştırmalar artık kendiliğinden yayın yapar.
 
 ## Günlük kullanım
 
