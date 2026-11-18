@@ -1,8 +1,10 @@
 {
  "issue_no": {
-  "gundem": 1
+  "gundem": 1,
+  "ekonomi": 1
  },
  "last": {
-  "gundem": "2026-11-18"
+  "gundem": "2026-11-18",
+  "ekonomi": "2026-11-18"
  }
 }

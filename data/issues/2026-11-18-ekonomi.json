@@ -1,0 +1,143 @@
+{
+ "stories": [
+  {
+   "category": "Ekonomi",
+   "district": "Samsun",
+   "location": "Samsun geneli",
+   "title": "Samsun'da ekim ayı konut satışları yıllık yüzde 22,4 azaldı",
+   "short_title": "Ekimde konut satışları yüzde 22,4 düştü",
+   "stat": {
+    "value": "2 bin 502",
+    "label": "Ekim ayında satılan toplam konut sayısı"
+   },
+   "body": "TÜİK verilerine göre Samsun'da ekimde konut satışları yıllık %22,4 azalarak 2 bin 502 oldu; kentte 409 iş yeri satıldı.\nEmlakçılar Odası Başkanı Mevlüt Oral, 2026 konut işlemlerinde Atakum'un 6 bin 724, İlkadım'ın 6 bin 365 işlemle ilk iki sırada yer aldığını bildirdi.",
+   "why": "Konut ve iş yeri alım satımı planlayanlar için piyasadaki daralmayı ve talebin yoğunlaştığı ilçeleri gösteriyor.",
+   "sources": [
+    "TÜİK",
+    "İHA",
+    "Haber Expres"
+   ],
+   "n": 1
+  },
+  {
+   "category": "Sanayi",
+   "district": "Bafra",
+   "location": "Bafra Karma OSB",
+   "title": "Bafra Karma OSB'de doluluk oranı yüzde 85 seviyesine ulaştı",
+   "short_title": "Bafra Karma OSB'de doluluk yüzde 85'e ulaştı",
+   "stat": {
+    "value": "%85",
+    "label": "112 sanayi parselindeki doluluk oranı"
+   },
+   "body": "Vali Orhan Tavlı başkanlığındaki toplantıda, 112 parselli Bafra Karma OSB'de doluluk oranının %85'e ulaştığı açıklandı.\nAlaçam Göçkün'deki genişleme sahası ve yol çalışmaları görüşülürken, tamamlanan sağlık, itfaiye ve jandarma binaları için komisyon kuruldu.",
+   "why": "Yeni genişleme sahası ve tamamlanan altyapı yatırımları bölgedeki fabrika kurulumunu ve istihdamı destekliyor.",
+   "sources": [
+    "DHA",
+    "İHA"
+   ],
+   "n": 2
+  },
+  {
+   "category": "Sanayi",
+   "district": "Havza",
+   "location": "Havza OSB",
+   "title": "Havza OSB'de doluluk yüzde 35'e çıktı, altyapı yatırımları sürüyor",
+   "short_title": "Havza OSB'de doluluk oranı yüzde 35'e çıktı",
+   "stat": {
+    "value": "140 milyon",
+    "label": "Süren trafo merkezi yatırımının TL bedeli"
+   },
+   "body": "Havza OSB toplantısında, 128 sanayi parselinde doluluğun %35'e ulaştığı ve TEİAŞ'ın 140 milyon TL'lik trafo yatırımının sürdüğü açıklandı.\nYapımı biten atık su arıtma tesisinde test süreci devam ederken doğal gaz projesinin 2027 yılında faaliyete alınması planlanıyor.",
+   "why": "Enerji, doğal gaz ve arıtma yatırımları bölgenin yeni fabrika çekme ve istihdam kapasitesini artırıyor.",
+   "sources": [
+    "İHA",
+    "Aydınlık"
+   ],
+   "n": 3
+  },
+  {
+   "category": "Tarım",
+   "district": "Samsun",
+   "location": "Samsun İl Tarım Müdürlüğü",
+   "title": "Samsun'da 61 örtü altı üreticisine yüzde 50 hibeli sera naylonu",
+   "short_title": "61 üreticiye yüzde 50 hibeli sera naylonu",
+   "stat": {
+    "value": "%50",
+    "label": "Sera naylonu desteğindeki bakanlık hibesi"
+   },
+   "body": "Tarım ve Orman Bakanlığı projesiyle 9 ilçedeki 61 üreticiye %50 hibeli toplam 99 bin metrekare (18 ton) sera naylonu teslim edildi.\nİl Müdürü Kemal Yılmaz, afet veya yıpranmadan etkilenen seralarda son 3 yılda 407 üreticinin 350 dekar örtüsünün yenilendiğini bildirdi.",
+   "why": "Yüzde 50 hibe desteği serası zarar gören çiftçilerin maliyetini azaltarak örtü altı üretimin sürmesini sağlıyor.",
+   "sources": [
+    "AA",
+    "DHA"
+   ],
+   "n": 4
+  },
+  {
+   "category": "Tarım",
+   "district": "Bafra",
+   "location": "Bafra Ovası",
+   "title": "Bafra Ovası'nda kırmızı lahanada 100 bin ton rekolte bekleniyor",
+   "short_title": "Bafra Ovası'nda kırmızı lahana hasadı başladı",
+   "stat": {
+    "value": "100 bin ton",
+    "label": "Bafra Ovası'nda beklenen sezon rekoltesi"
+   },
+   "body": "Türkiye'nin kırmızı lahana ihtiyacının %65'ini karşılayan Bafra Ovası'nda 20 bin dekar alanda yetiştirilen ürünlerin hasadına başlandı.\nÜretici Birliği Başkanı Adem Aşçı 100 bin ton rekolte beklediklerini açıklarken, ürünler tarladan kilosu 8-10 liradan alıcı buluyor.",
+   "why": "Ovadaki rekolte ve tarla çıkış fiyatları hem bölge çiftçisinin gelirini hem de kışlık sebze arzını belirliyor.",
+   "sources": [
+    "AA",
+    "Habertürk",
+    "Karar"
+   ],
+   "n": 5
+  }
+ ],
+ "briefs": [
+  {
+   "category": "İstihdam",
+   "district": "Havza",
+   "text": "Havza Kaymakamlığı, mahalle muhtarlarına iş ilanlarına erişim ve İŞKUR mobil uygulaması hakkında eğitim verdi.",
+   "sources": [
+    "İHA",
+    "Habertürk"
+   ],
+   "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"3\" y=\"7\" width=\"18\" height=\"13\" rx=\"2\"/><path d=\"M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2M3 13h18\"/></svg>"
+  },
+  {
+   "category": "Ticaret",
+   "district": "Samsun",
+   "text": "Samsun'da serbest piyasada 165,75 TL'den satılan Levant fındık ile TMO fiyatı arasındaki fark 84,25 TL'ye çıktı.",
+   "sources": [
+    "Haberlisin"
+   ],
+   "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M4 10v10h16V10M3 10l2-6h14l2 6z\"/><path d=\"M9 20v-6h6v6\"/></svg>"
+  },
+  {
+   "category": "Ekonomi",
+   "district": "Samsun",
+   "text": "ASKON Şube Başkanı Ahmet Alp Doğru, fon soruşturmasında Samsun iş dünyasında mağduriyet yaşanmadığını açıkladı.",
+   "sources": [
+    "Haber Expres"
+   ],
+   "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M3 17l6-6 4 4 8-8\"/><path d=\"M15 7h6v6\"/></svg>"
+  },
+  {
+   "category": "Duyuru",
+   "district": "Samsun",
+   "text": "Samsun'da lise öğrencilerine yönelik tarım inovasyon yarışması için başvurular 15 Mart 2027'ye kadar sürecek.",
+   "sources": [
+    "Samsun Büyükşehir Belediyesi",
+    "Çarşamba Medya"
+   ],
+   "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M3 10v4h3l7 5V5l-7 5z\"/><path d=\"M17 9a4 4 0 0 1 0 6M19.5 6.5a7.5 7.5 0 0 1 0 11\"/></svg>"
+  }
+ ],
+ "outages": [],
+ "scoreboard": null,
+ "hook": "Samsun'da ekim ayında konut satışları yıllık bazda yüzde 22,4 gerilerken, yıl genelinde en çok konut işleminin hangi ilçelerde yapıldığı belli oldu.",
+ "edition": "ekonomi",
+ "date": "2026-11-18",
+ "issue_no": 1,
+ "permalink": "https://www.instagram.com/p/Df4NAXGD61K/"
+}
