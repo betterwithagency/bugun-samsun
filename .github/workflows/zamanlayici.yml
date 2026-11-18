@@ -1,0 +1,91 @@
+name: Zamanlayıcı
+
+# GitHub's own cron is best-effort and may skip runs. This timer does not depend on it:
+# one run sleeps until the next bulletin's preparation time, starts the bulletin, then starts
+# its successor (workflow_dispatch with GITHUB_TOKEN is allowed to start new runs).
+# Gaps longer than ~5.5 h are bridged with intermediate hops (jobs may last at most 6 h).
+# Bulletin runs skip themselves when the edition is already on the account, so overlapping
+# with the cron triggers in bulten.yml is harmless. Cancel the running timer to stop the chain.
+
+on:
+  workflow_dispatch:
+    inputs:
+      after:
+        description: "Bu andan sonraki ilk bülteni planla (ISO zaman; boşsa şimdiden itibaren)"
+        default: ""
+      test:
+        description: "Deneme: 30 sn sonra bağlantı kontrolü başlat, sonra gerçek zinciri kur"
+        type: boolean
+        default: false
+  schedule:
+    - cron: "19 */4 * * *"  # re-seeds the chain if it ever stops; waits behind a running timer
+
+permissions:
+  actions: write
+  contents: read
+
+concurrency:
+  group: zamanlayici
+  cancel-in-progress: false  # one timer at a time; a newer pending run replaces an older pending one
+
+jobs:
+  timer:
+    runs-on: ubuntu-latest
+    timeout-minutes: 355
+    env:
+      GH_TOKEN: ${{ github.token }}
+      AFTER: ${{ inputs.after }}
+      TEST: ${{ inputs.test }}
+    steps:
+      - name: Sleep until the next bulletin
+        id: plan
+        run: |
+          python3 - <<'EOF'
+          import datetime as dt, os, time, zoneinfo
+          TZ = zoneinfo.ZoneInfo("Europe/Istanbul")
+          SLOTS = [("gundem", 7, 7), ("ekonomi", 11, 37), ("spor", 18, 7)]  # preparation starts
+          MAX_SLEEP = 5 * 3600 + 35 * 60
+          now = dt.datetime.now(TZ)
+          out = open(os.environ["GITHUB_OUTPUT"], "a")
+          if os.environ.get("TEST") == "true":
+              time.sleep(30)
+              out.write(f"action=test\nnext_after={now.isoformat()}\n")
+              raise SystemExit
+          floor = dt.datetime.fromisoformat(os.environ["AFTER"]) if os.environ.get("AFTER") else now
+          cands = sorted((dt.datetime.combine(now.date() + dt.timedelta(days=d), dt.time(h, m), TZ), ed)
+                         for d in (-1, 0, 1, 2) for ed, h, m in SLOTS)
+          # next slot after the last one handled; a slot missed by more than 90 min is dropped
+          slot, edition = next((t, e) for t, e in cands if t > floor and t > now - dt.timedelta(minutes=90))
+          wait = (slot - now).total_seconds()
+          if wait > MAX_SLEEP:
+              print(f"next: {edition} at {slot:%d.%m %H:%M}; hop after {MAX_SLEEP // 60} min")
+              time.sleep(MAX_SLEEP - 300)
+              out.write(f"action=hop\nnext_after={floor.isoformat()}\n")
+          else:
+              print(f"next: {edition} at {slot:%d.%m %H:%M}; sleeping {int(wait)} s")
+              time.sleep(max(0, wait))
+              out.write(f"action=start\nedition={edition}\nnext_after={slot.isoformat()}\n")
+          EOF
+
+      - name: Start the bulletin
+        if: steps.plan.outputs.action == 'start' || steps.plan.outputs.action == 'test'
+        run: |
+          if [ "${{ steps.plan.outputs.action }}" = "test" ]; then
+            args="-f check=true"
+          else
+            args="-f edition=${{ steps.plan.outputs.edition }} -f publish=true -f wait=true"
+          fi
+          for i in 1 2 3 4 5; do
+            gh workflow run bulten.yml -R "$GITHUB_REPOSITORY" $args && exit 0
+            sleep 20
+          done
+          exit 1
+
+      - name: Start the next timer
+        if: ${{ !cancelled() }}
+        run: |
+          for i in 1 2 3 4 5; do
+            gh workflow run zamanlayici.yml -R "$GITHUB_REPOSITORY" -f after="${{ steps.plan.outputs.next_after }}" && exit 0
+            sleep 20
+          done
+          exit 1
