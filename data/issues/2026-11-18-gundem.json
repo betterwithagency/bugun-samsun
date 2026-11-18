@@ -1,0 +1,165 @@
+{
+ "stories": [
+  {
+   "category": "Sağlık",
+   "district": "İlkadım",
+   "location": "Eski doğumevi arazisi",
+   "title": "350 yataklı İlkadım Devlet Hastanesi için yıkım çalışmaları başladı",
+   "short_title": "İlkadım Devlet Hastanesi için yıkım başladı",
+   "stat": {
+    "value": "350 yatak",
+    "label": "Yeni İlkadım Devlet Hastanesi kapasitesi"
+   },
+   "body": "İlkadım'da eski hastane binalarının bulunduğu 62 dönümlük arazide 350 yataklı yeni hastane için yıkım başladı.\n15 ameliyathane, yoğun bakım, acil ve anjiyo birimleri içerecek projenin yanı sıra Tekkeköy Devlet Hastanesi'nin 2027'nin ilk yarısında açılması planlanıyor.",
+   "why": "Şehir merkezinde acil, yoğun bakım ve anjiyo gibi kapsamlı sağlık hizmetlerine erişimi kolaylaştıracak.",
+   "sources": [
+    "AA",
+    "Samsun İl Sağlık Müdürlüğü"
+   ],
+   "n": 1
+  },
+  {
+   "category": "Altyapı",
+   "district": "İlkadım",
+   "location": "Mert Irmağı çevresi",
+   "title": "İlkadım'da Mert Irmağı çevresine 13,4 kilometrelik altyapı yatırımı",
+   "short_title": "Mert Irmağı çevresine yeni altyapı hattı",
+   "stat": {
+    "value": "13,4 km",
+    "label": "İnşa edilecek toplam altyapı hattı"
+   },
+   "body": "SASKİ, 308 milyon 555 bin TL bedelli Mert Irmağı projesiyle içme suyu, atık su ve yağmur suyu hatlarını yeniliyor.\nKılıçdede ve Çay mahallelerinde anayol, demir yolu ve tramvay hatlarının altından mikrotünel yöntemiyle geçilerek kolektör hattı döşenecek.",
+   "why": "Mahallelerin su ve kanalizasyon altyapısı yenilenirken mikrotünel yöntemiyle ulaşım kesintiye uğramıyor.",
+   "sources": [
+    "İHA",
+    "SASKİ"
+   ],
+   "n": 2
+  },
+  {
+   "category": "Çevre",
+   "district": "Atakum",
+   "location": "Kurupelit Yat Limanı",
+   "title": "Kurupelit'ten çıkarılan kumlarla Çakırlar Yalı sahili düzenleniyor",
+   "short_title": "Kurupelit'te dip temizliği ve yeni plaj",
+   "stat": {
+    "value": "2.080 m³",
+    "label": "Denizden günlük çıkarılan dip malzemesi"
+   },
+   "body": "Büyükşehir Belediyesi, Kurupelit Yat Limanı'nda müsilaj ve koku sorununu çözmek için 163 bin 263 metrekarelik alanda deniz dibi taraması yapıyor.\nDenizden çıkarılıp elenen kumlar, Çakırlar Yalı sahilinde kıyı erozyonunu önlemek ve yeni plaj alanı oluşturmak için kullanılıyor.",
+   "why": "Yat limanındaki koku ve yosun sorunu giderilirken Çakırlar Yalı sahilinde halka açık yeni plaj oluşturuluyor.",
+   "sources": [
+    "DHA",
+    "AA",
+    "Samsun Büyükşehir Belediyesi"
+   ],
+   "n": 3
+  },
+  {
+   "category": "Eğitim",
+   "district": "Çarşamba",
+   "location": "Çarşamba Anadolu İHL",
+   "title": "Çarşamba'da yıkılan 50 yıllık okulun yerine yeni lise ve pansiyon",
+   "short_title": "Çarşamba'ya 20 derslikli lise ve pansiyon",
+   "stat": {
+    "value": "20 derslik",
+    "label": "Yeni lise binasındaki sınıf kapasitesi"
+   },
+   "body": "Çarşamba'da 1976'dan 2024'e kadar hizmet veren Anadolu İmam Hatip Lisesinin eski binasında yıkım çalışmaları başladı.\nYİKOB'un 231 milyon 750 bin TL'lik ihalesiyle alana 20 sınıflı lise ve 100 kişilik pansiyon yapılacak. Projenin Temmuz 2028'de bitmesi öngörülüyor.",
+   "why": "İlçedeki ortaöğretim öğrencileri için modern bir okul binası ve 100 kişilik yeni barınma imkânı sağlanacak.",
+   "sources": [
+    "İHA",
+    "Samsun YİKOB"
+   ],
+   "n": 4
+  },
+  {
+   "category": "Belediye",
+   "district": "Terme",
+   "location": "Terme ilçe merkezi",
+   "title": "Terme'de taşkın önleme ve yeni kent meydanı projesi açıklandı",
+   "short_title": "Terme'ye yeni meydan ve yerinde dönüşüm",
+   "stat": {
+    "value": "2 milyar TL",
+    "label": "Meydan ve dönüşüm projesi yatırım tutarı"
+   },
+   "body": "Terme Belediye Başkanı Şenol Kul, taşkınlara karşı ırmak yatağının 50'den 80 metreye çıkarılacağını ve köprülerin yenileneceğini açıkladı.\nEski kamu binalarının yerine meydan, çarşı ve otopark yapılacak; hak sahipleri başka mahalleye taşınmadan yerinde dönüşüm uygulanacak.",
+   "why": "İlçedeki sel riskini azaltacak projeyle yeni meydan kurulurken hak sahipleri yerinde dönüşümden yararlanacak.",
+   "sources": [
+    "İHA",
+    "Terme Belediyesi"
+   ],
+   "n": 5
+  },
+  {
+   "category": "Sağlık",
+   "district": "Bafra",
+   "location": "Bafra",
+   "title": "Bafra'da gezici sağlık aracıyla ücretsiz sigara bırakma desteği",
+   "short_title": "Bafra'da ücretsiz sigara bırakma desteği",
+   "stat": {
+    "value": "",
+    "label": ""
+   },
+   "body": "Bafra İlçe Sağlık Müdürlüğü, gezici araçla kurumlarda karbonmonoksit ölçümü yaparak kişiye özel sigara bırakma planı oluşturuyor.\nHekim uygun görürse ilaç ve nikotin bantları ücretsiz veriliyor. MHRS, e-Nabız ve Sağlıklı Hayat Merkezlerinden de başvuru yapılabiliyor.",
+   "why": "Sigarayı bırakmak isteyenler MHRS, e-Nabız veya Sağlıklı Hayat Merkezlerinden ücretsiz ilaç desteği alabiliyor.",
+   "sources": [
+    "İHA",
+    "Bafra İlçe Sağlık Müdürlüğü"
+   ],
+   "n": 6
+  }
+ ],
+ "briefs": [
+  {
+   "category": "Gündem",
+   "district": "İlkadım",
+   "text": "Samsun-Ankara yolu Derecik mevkisinde alev alan otomobil, büyükşehir otobüs şoförünün müdahalesiyle söndürüldü.",
+   "sources": [
+    "DHA"
+   ],
+   "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"3\" y=\"4\" width=\"18\" height=\"16\" rx=\"2\"/><path d=\"M7 8h10M7 12h10M7 16h6\"/></svg>"
+  },
+  {
+   "category": "Spor",
+   "district": "Canik",
+   "text": "Canik Belediyesi, ücretsiz spor eğitimleri ve akademi kurslarına katılan gençlere ücretsiz servis sağlıyor.",
+   "sources": [
+    "DHA",
+    "Canik Belediyesi"
+   ],
+   "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"12\" cy=\"12\" r=\"9\"/><path d=\"M12 7.5l4 2.9-1.5 4.6h-5L8 10.4z\"/><path d=\"M12 3v4.5M21 10.5l-5 0M17.5 19.5l-3-4.5M6.5 19.5l3-4.5M3 10.5h5\"/></svg>"
+  },
+  {
+   "category": "Eğitim",
+   "district": "Bafra",
+   "text": "Bafra Belediyesinin ücretsiz Akademi Hazırlık Kursları'nda 110 aday fiziki yeterlilik sınavlarına hazırlanıyor.",
+   "sources": [
+    "AA",
+    "Bafra Belediyesi"
+   ],
+   "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M2 9l10-5 10 5-10 5z\"/><path d=\"M6 11v5c0 1.5 3 3 6 3s6-1.5 6-3v-5M22 9v6\"/></svg>"
+  },
+  {
+   "category": "Çevre",
+   "district": "Samsun",
+   "text": "OMÜ'de yemekhane ve kantinlerden toplanan yiyecek atıkları organik gübreye dönüştürülerek kampüste kullanılıyor.",
+   "sources": [
+    "DHA",
+    "OMÜ"
+   ],
+   "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M5 20c0-9 6-15 15-15 0 9-6 15-15 15z\"/><path d=\"M5 20l8-8\"/></svg>"
+  }
+ ],
+ "outages": [],
+ "scoreboard": null,
+ "hook": "İlkadım'da 350 yataklı yeni devlet hastanesi için yıkım çalışmaları başlarken, Tekkeköy ve Atakum'daki hastanelerin açılış takvimi ile ilçelerdeki yeni yatırımlar belli oldu.",
+ "edition": "gundem",
+ "date": "2026-11-18",
+ "issue_no": 1,
+ "practical": {
+  "outages": [],
+  "pharmacy": "Nöbetçi eczaneleri e-Devlet'ten ya da Samsun Eczacı Odası'ndan öğrenebilirsin."
+ },
+ "permalink": "https://www.instagram.com/p/Df3xfumiatp/"
+}
