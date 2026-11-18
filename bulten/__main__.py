@@ -59,6 +59,15 @@ def check() -> int:
         acc = instagram.account(token)
         kind = "süresiz sistem kullanıcısı anahtarı" if instagram.is_system_user_token(token) else "Instagram girişi anahtarı"
         print(f"[check] Instagram OK: @{acc['username']} (kimlik {acc['user_id']}, {kind})")
+        if instagram.is_system_user_token(token):
+            info = instagram.token_info(token)
+            print(f"[check] Anahtar: tür={info['type']} uygulama={info['app_id']} geçerli={info['valid']}")
+            print(f"[check] İzinler: {', '.join(info['scopes']) or '-'}")
+            for scope, ids in info["granular"].items():
+                print(f"[check]   {scope}: {', '.join(ids) or 'tüm varlıklar'}")
+            if "instagram_content_publish" not in info["scopes"]:
+                ok = False
+                print("[check] Instagram HATA: anahtarda instagram_content_publish (paylaşım) izni yok")
     except Exception as exc:
         ok = False
         print(f"[check] Instagram HATA: {exc}")
