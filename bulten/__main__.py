@@ -81,7 +81,7 @@ def check() -> int:
             ok = False
             print(f"[check] Instagram HATA: {exc}")
         if instagram.is_system_user_token(token):
-            for path, fields in (("me", "id,name"), ("me/accounts", "id,name,instagram_business_account")):
+            for path, fields in (("me/permissions", ""), ("me/accounts", "id,name,instagram_business_account")):
                 try:
                     print(f"[check] {path}: {instagram._call('GET', path, token, fields=fields)}")
                 except Exception as exc:
