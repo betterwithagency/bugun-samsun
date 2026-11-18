@@ -44,6 +44,8 @@ on:
 
 permissions:
   contents: write
+  actions: write   # restart the timer if its chain ever breaks
+  issues: write    # failure alerts (an issue mentioning the owner sends an e-mail)
 
 concurrency:
   group: bugun-samsun
@@ -125,3 +127,23 @@ jobs:
           path: output/
           retention-days: 14
           if-no-files-found: ignore
+
+      - name: Keep the timer running
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          active=$(gh run list -R "$GITHUB_REPOSITORY" --workflow zamanlayici.yml -L 20 --json status \
+                   --jq '[.[] | select(.status != "completed")] | length')
+          if [ "$active" = "0" ]; then
+            gh workflow run zamanlayici.yml -R "$GITHUB_REPOSITORY" && echo "Zamanlayıcı çalışmıyordu, yeniden başlatıldı."
+          fi
+
+      - name: Alert on failure
+        if: failure()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh issue create -R "$GITHUB_REPOSITORY" \
+            --title "Bülten hata verdi: ${{ steps.pick.outputs.edition }} $(TZ=Europe/Istanbul date '+%d.%m %H:%M')" \
+            --body "@${{ github.repository_owner }} çalıştırma başarısız oldu. Ayrıntı: $GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID"

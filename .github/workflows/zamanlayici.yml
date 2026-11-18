@@ -18,11 +18,12 @@ on:
         type: boolean
         default: false
   schedule:
-    - cron: "19 */4 * * *"  # re-seeds the chain if it ever stops; waits behind a running timer
+    - cron: "19 */4 * * *"  # re-seeds the chain if GitHub's cron ever works here; waits behind a running timer
 
 permissions:
   actions: write
   contents: read
+  issues: write  # failure alert
 
 concurrency:
   group: zamanlayici
@@ -89,3 +90,10 @@ jobs:
             sleep 20
           done
           exit 1
+
+      - name: Alert on failure
+        if: failure()
+        run: |
+          gh issue create -R "$GITHUB_REPOSITORY" \
+            --title "Zamanlayıcı hata verdi $(TZ=Europe/Istanbul date '+%d.%m %H:%M')" \
+            --body "@${{ github.repository_owner }} zamanlayıcı zinciri kopmuş olabilir. Actions → Zamanlayıcı → Run workflow ile yeniden başlat. Ayrıntı: $GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID"
