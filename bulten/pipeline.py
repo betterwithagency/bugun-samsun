@@ -20,6 +20,7 @@ BASE_TAGS = {
     "ekonomi": ["#samsun", "#samsunekonomi", "#samsunişdünyası", "#bugunsamsun"],
     "spor": ["#samsun", "#samsunspor", "#samsunsporhaber", "#bugunsamsun"],
 }
+MARKER = {"gundem": "#samsungündem", "ekonomi": "#samsunekonomi", "spor": "#samsunsporhaber"}  # one per edition
 
 
 class Skip(Exception):
@@ -177,6 +178,15 @@ def run(edition: str, publish: bool = False, wait: bool = False, force: bool = F
             time.sleep(delay)
     token = tokens.get_token()
     user = instagram.account(token)
+    if not force:  # backup triggers may overlap: the account itself is the final word on "already posted"
+        midnight = now.replace(hour=0, minute=0, second=0, microsecond=0)
+        try:
+            done = instagram.posted_since(token, user["user_id"], MARKER[edition], midnight)
+        except instagram.InstagramError as exc:
+            print(f"[run] could not list recent posts, relying on state.json: {exc}")
+            done = ""
+        if done:
+            raise Skip(f"{edition} bugün zaten paylaşılmış: {done}")
     urls = hosting.host_images(paths, folder)
     post = instagram.publish_carousel(token, user["user_id"], urls, text)
     print(f"[run] published to @{user.get('username')}: {post.get('permalink') or post['id']}")

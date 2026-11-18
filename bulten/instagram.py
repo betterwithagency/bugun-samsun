@@ -7,6 +7,7 @@ Works with both token kinds Meta hands out:
 """
 import os
 import time
+from datetime import datetime
 
 import requests
 
@@ -66,6 +67,19 @@ def account(token: str) -> dict:
     if is_system_user_token(token):
         raise InstagramError("IG_USER_ID variable is required with a system-user token")
     return _call("GET", "me", token, fields="user_id,username")
+
+
+def posted_since(token: str, user_id: str, marker: str, since: datetime) -> str:
+    """Permalink of a post made at/after `since` whose caption contains `marker`, or ''."""
+    data = _call("GET", f"{user_id}/media", token, fields="caption,timestamp,permalink", limit=12)
+    for m in data.get("data", []):
+        try:
+            ts = datetime.strptime(m.get("timestamp", ""), "%Y-%m-%dT%H:%M:%S%z")
+        except ValueError:
+            continue
+        if ts >= since and marker in (m.get("caption") or ""):
+            return m.get("permalink") or m.get("id", "?")
+    return ""
 
 
 def _wait_ready(token: str, container_id: str, timeout: int = 300):

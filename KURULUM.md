@@ -2,11 +2,15 @@
 
 Bu proje her gün üç bülteni kendiliğinden hazırlayıp @bugunsamsun hesabında paylaşır:
 
-| Bülten | Hazırlık başlar | Yayın |
+| Bülten | Hazırlık başlar (yedekler) | Yayın |
 |---|---|---|
-| Gündem | 07.07 | 08.00 |
-| Ekonomi & İş | 11.37 | 12.30 |
-| Spor | 18.07 | 19.00 |
+| Gündem | 07.07 (07.23, 07.41) | 08.00 |
+| Ekonomi & İş | 11.37 (11.53, 12.11) | 12.30 |
+| Spor | 18.07 (18.23, 18.41) | 19.00 |
+
+GitHub zamanlanmış işleri yoğunlukta geciktirebilir ya da hiç başlatmayabilir. Bu yüzden her bülten için
+iki yedek tetikleyici var. Bülten paylaşıldıktan sonra çalışan yedekler bunu hesapta görüp hiçbir şey
+göndermeden kapanır. Önceki çalıştırma hata verdiyse bir sonraki yedek yeniden dener.
 
 Her çalıştırmada sırasıyla şunlar olur:
 1. Google Haberler'den son 24 saatin Samsun haberleri toplanır.
