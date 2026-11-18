@@ -69,12 +69,10 @@ def account(token: str) -> dict:
     return _call("GET", "me", token, fields="user_id,username")
 
 
-def token_info(token: str) -> dict:
-    """Granted scopes and type of a system-user token (debug_token); no secret values."""
-    data = _call("GET", "debug_token", token, input_token=token).get("data", {})
-    return {"type": data.get("type"), "app_id": data.get("app_id"), "valid": data.get("is_valid"),
-            "scopes": data.get("scopes", []),
-            "granular": {g.get("scope"): g.get("target_ids", []) for g in data.get("granular_scopes", [])}}
+def granted_permissions(token: str) -> list:
+    """Permissions granted to a system-user token (no secret values)."""
+    data = _call("GET", "me/permissions", token).get("data", [])
+    return [p["permission"] for p in data if p.get("status") == "granted"]
 
 
 def posted_since(token: str, user_id: str, marker: str, since: datetime) -> str:

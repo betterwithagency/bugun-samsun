@@ -58,11 +58,11 @@ jobs:
           slot, edition = next((t, e) for t, e in cands if t > floor and t > now - dt.timedelta(minutes=90))
           wait = (slot - now).total_seconds()
           if wait > MAX_SLEEP:
-              print(f"next: {edition} at {slot:%d.%m %H:%M}; hop after {MAX_SLEEP // 60} min")
+              print(f"next: {edition} at {slot:%d.%m %H:%M}; hop after {MAX_SLEEP // 60} min", flush=True)
               time.sleep(MAX_SLEEP - 300)
               out.write(f"action=hop\nnext_after={floor.isoformat()}\n")
           else:
-              print(f"next: {edition} at {slot:%d.%m %H:%M}; sleeping {int(wait)} s")
+              print(f"next: {edition} at {slot:%d.%m %H:%M}; sleeping {int(wait)} s", flush=True)
               time.sleep(max(0, wait))
               out.write(f"action=start\nedition={edition}\nnext_after={slot.isoformat()}\n")
           EOF

@@ -60,18 +60,6 @@ def check() -> int:
         token = None
         ok = False
         print(f"[check] Instagram HATA: {exc}")
-    if token and instagram.is_system_user_token(token):
-        try:  # what the token can do, independent of the account lookup below
-            info = instagram.token_info(token)
-            print(f"[check] Anahtar: tür={info['type']} uygulama={info['app_id']} geçerli={info['valid']}")
-            print(f"[check] İzinler: {', '.join(info['scopes']) or '-'}")
-            for scope, ids in info["granular"].items():
-                print(f"[check]   {scope}: {', '.join(ids) or 'tüm varlıklar'}")
-            if "instagram_content_publish" not in info["scopes"]:
-                ok = False
-                print("[check] Instagram HATA: anahtarda instagram_content_publish (paylaşım) izni yok")
-        except Exception as exc:
-            print(f"[check] Anahtar bilgisi alınamadı: {exc}")
     if token:
         try:
             acc = instagram.account(token)
@@ -81,11 +69,14 @@ def check() -> int:
             ok = False
             print(f"[check] Instagram HATA: {exc}")
         if instagram.is_system_user_token(token):
-            for path, fields in (("me/permissions", ""), ("me/accounts", "id,name,instagram_business_account")):
-                try:
-                    print(f"[check] {path}: {instagram._call('GET', path, token, fields=fields)}")
-                except Exception as exc:
-                    print(f"[check] {path}: {exc}")
+            try:
+                granted = instagram.granted_permissions(token)
+                print(f"[check] İzinler: {', '.join(granted) or '-'}")
+                if "instagram_content_publish" not in granted:
+                    ok = False
+                    print("[check] Instagram HATA: anahtarda instagram_content_publish (paylaşım) izni yok")
+            except Exception as exc:
+                print(f"[check] İzinler okunamadı: {exc}")
     from .config import GEMINI_MODEL, MODEL, PROVIDER
     key_name, model = ("ANTHROPIC_API_KEY", MODEL) if PROVIDER == "claude" else ("GEMINI_API_KEY", GEMINI_MODEL)
     if os.environ.get(key_name):
