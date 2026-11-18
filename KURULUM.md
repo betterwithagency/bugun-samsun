@@ -2,15 +2,26 @@
 
 Bu proje her gün üç bülteni kendiliğinden hazırlayıp @bugunsamsun hesabında paylaşır:
 
-| Bülten | Hazırlık başlar (yedekler) | Yayın |
+| Bülten | Hazırlık başlar | Yayın |
 |---|---|---|
-| Gündem | 07.07 (07.23, 07.41) | 08.00 |
-| Ekonomi & İş | 11.37 (11.53, 12.11) | 12.30 |
-| Spor | 18.07 (18.23, 18.41) | 19.00 |
+| Gündem | 07.07 | 08.00 |
+| Ekonomi & İş | 11.37 | 12.30 |
+| Spor | 18.07 | 19.00 |
 
-GitHub zamanlanmış işleri yoğunlukta geciktirebilir ya da hiç başlatmayabilir. Bu yüzden her bülten için
-iki yedek tetikleyici var. Bülten paylaşıldıktan sonra çalışan yedekler bunu hesapta görüp hiçbir şey
-göndermeden kapanır. Önceki çalıştırma hata verdiyse bir sonraki yedek yeniden dener.
+### Bültenleri ne başlatır?
+GitHub'ın kendi zamanlaması (cron) bu depoda güvenilir çalışmadı. Bu yüzden iki ayrı yol var:
+
+1. **Zamanlayıcı (asıl yol):** *Actions* sekmesinde **Zamanlayıcı** adlı iş akışı her zaman bir çalıştırmayla
+   açık durur. Bu çalıştırma bir sonraki hazırlık saatine kadar bekler, bülteni başlatır ve kendinden sonrakini
+   başlatır. Uzun aralar (gece gibi) en fazla 5,5 saatlik ara adımlarla geçilir.
+2. **GitHub cron'u (yedek):** Her bülten için 07.07/07.23/07.41, 11.37/11.53/12.11 ve 18.07/18.23/18.41
+   tetikleyicileri var. GitHub bunları başlatırsa ek güvence olur.
+
+Aynı bülten iki kez paylaşılmaz: her çalıştırma önce hesapta o günün bültenini arar, varsa göndermeden kapanır.
+
+- **Zamanlayıcı durursa** (*Actions → Zamanlayıcı* altında çalışan bir iş yoksa): *Run workflow* ile yeniden başlat;
+  alanları boş bırakman yeterli.
+- **Zamanlayıcıyı tamamen durdurmak için:** çalışan Zamanlayıcı işini *Cancel workflow run* ile iptal et.
 
 Her çalıştırmada sırasıyla şunlar olur:
 1. Google Haberler'den son 24 saatin Samsun haberleri toplanır.
