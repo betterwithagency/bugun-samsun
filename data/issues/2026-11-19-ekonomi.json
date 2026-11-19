@@ -1,0 +1,140 @@
+{
+ "stories": [
+  {
+   "category": "Sanayi",
+   "district": "Samsun",
+   "location": "Samsun Merkez OSB",
+   "title": "Samsun Merkez OSB'de Teknoloji Geliştirme Bölgesi hazırlığı",
+   "short_title": "Merkez OSB'de teknoloji bölgesi hazırlığı",
+   "stat": {
+    "value": "",
+    "label": ""
+   },
+   "body": "Samsun Merkez OSB'de kurulması planlanan Teknoloji Geliştirme Bölgesi için OKA koordinasyonunda Teknopark Ankara ve OSTİM Teknopark'a teknik inceleme ziyareti yapıldı.\nGörüşmelerde AR-GE kapasitesini geliştiren teknopark modelleri ve sanayi iş birlikleri ele alındı.",
+   "why": "Projenin hayata geçmesiyle OSB'deki sanayi işletmelerine yeni AR-GE ve teknoloji iş birliği imkânları sunulacak.",
+   "sources": [
+    "İHA",
+    "Gazete Arena"
+   ],
+   "n": 1
+  },
+  {
+   "category": "İstihdam",
+   "district": "Samsun",
+   "location": "Samsun",
+   "title": "Samsun merkezli SAMPA Otomotiv'e OSBÜK'ten üç ödül",
+   "short_title": "SAMPA Otomotiv'e OSBÜK'ten üç ödül",
+   "stat": {
+    "value": "3 ödül",
+    "label": "OSB Yıldızları Araştırması 2026'da"
+   },
+   "body": "Samsun merkezli SAMPA Otomotiv, OSBÜK tarafından yapılan OSB Yıldızları Araştırması 2026'da en başarılı, en çok istihdam ve en çok kadın istihdamı sağlayan firma ödüllerini aldı.\nAnkara'daki törende ödülleri Sanayi ve Teknoloji Bakanı Mehmet Fatih Kacır takdim etti.",
+   "why": "Türkiye genelindeki OSB araştırmasında alınan istihdam ödülleri, kentin sanayi ve iş gücündeki yerini gösteriyor.",
+   "sources": [
+    "Samsun Kent Haber",
+    "Gazeteniz Olsun"
+   ],
+   "n": 2
+  },
+  {
+   "category": "Ticaret",
+   "district": "İlkadım",
+   "location": "İlkadım Kıran Mahallesi",
+   "title": "İlkadım'da eski Makro AVM arazisindeki karma proje için ÇED süreci",
+   "short_title": "Eski Makro AVM arazisinde yeni proje",
+   "stat": {
+    "value": "9,42 milyar",
+    "label": "TL bedelli AVM ve konut yatırımı"
+   },
+   "body": "Torunlar GYO'nun 805 milyon TL'ye aldığı eski Makro AVM arazisinde yapacağı 9,42 milyar TL bedelli Mall of Samsun AVM ve Konut Projesi için ÇED süreci başlatıldı.\nYaklaşık 2 yılda tamamlanması hedeflenen projede 215 mağaza ve iş yeri ile 186 konut yer alacak.",
+   "why": "Yıllardır atıl bekleyen arazi, ticaret ve konut yatırımıyla yeniden kent ekonomisine ve istihdama kazandırılacak.",
+   "sources": [
+    "Samsun Kent Haber",
+    "EmlakNews"
+   ],
+   "n": 3
+  },
+  {
+   "category": "Tarım",
+   "district": "Ladik",
+   "location": "Ladik",
+   "title": "Ladik'te üreticiler için üç etaplı hayvancılık merkezi kuruluyor",
+   "short_title": "Ladik'te üç etaplı hayvancılık merkezi",
+   "stat": {
+    "value": "18 dönüm",
+    "label": "Yeni ahırların kurulacağı proje alanı"
+   },
+   "body": "Ladik Belediyesi, ilk etabı olan kapalı hayvan pazarı 2 yıldır hizmet veren üç etaplı projenin ikinci etabında 18 dönümlük alana 30 ve 50 başlık ahırlar kurmayı hedefliyor.\nBaşkan Adnan Topal, üçüncü etapta ise ilçeye bir kesimhane kazandırılacağını açıkladı.",
+   "why": "Üreticilerin barınma, pazarlama ve kesimhane ihtiyaçları tek merkezde toplanarak kırsal üretim desteklenecek.",
+   "sources": [
+    "AA",
+    "Habertürk"
+   ],
+   "n": 4
+  },
+  {
+   "category": "Ekonomi",
+   "district": "Samsun",
+   "location": "Samsun",
+   "title": "Samsun Kuyumcular Odası'ndan altın fiyatlarında 2027 beklentisi",
+   "short_title": "Kuyumcular Odası'ndan 2027 altın tahmini",
+   "stat": {
+    "value": "6.200 TL",
+    "label": "Gram altında altına inilen son seviye"
+   },
+   "body": "Samsun Kuyumcular Odası Başkanı Salih Özman, şubatta 8.100 TL'yi gören gram altının merkez bankası satışları ve küresel gelişmelerle 6.200 TL'nin altına indiğini belirtti.\nÖzman, 2027'nin ilk yarısında gram altında 6.500-7.000 TL bandına kademeli toparlanma bekliyor.",
+   "why": "Altın fiyatlarındaki gerilemenin nedenleri ve 2027 beklentisi, kentteki birikim sahiplerine ışık tutuyor.",
+   "sources": [
+    "İHA",
+    "Samsun İlk Haber"
+   ],
+   "n": 5
+  }
+ ],
+ "briefs": [
+  {
+   "category": "Altyapı",
+   "district": "Samsun",
+   "text": "Mert Irmağı'nda rekreasyon alanı oluşturacak 170 milyon TL'lik lastik savak projesinin ihalesi tamamlandı.",
+   "sources": [
+    "İHA",
+    "Gazete Arena"
+   ],
+   "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M12 3s7 7.5 7 12a7 7 0 0 1-14 0c0-4.5 7-12 7-12z\"/></svg>"
+  },
+  {
+   "category": "Ticaret",
+   "district": "Samsun",
+   "text": "Samsun Ticaret Borsası'nın yeni yönetimi, Büyükşehir Belediye Başkanı Halit Doğan'ı ziyaret etti.",
+   "sources": [
+    "Samsun Ticaret Borsası"
+   ],
+   "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M4 10v10h16V10M3 10l2-6h14l2 6z\"/><path d=\"M9 20v-6h6v6\"/></svg>"
+  },
+  {
+   "category": "Ticaret",
+   "district": "Samsun",
+   "text": "Doyasıya Platformu, Samsun'da esnaf ve kuryeleri komisyon yüküne karşı destekleyecek dört proje hedefliyor.",
+   "sources": [
+    "Gazete Arena"
+   ],
+   "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M4 10v10h16V10M3 10l2-6h14l2 6z\"/><path d=\"M9 20v-6h6v6\"/></svg>"
+  },
+  {
+   "category": "Enerji",
+   "district": "Samsun",
+   "text": "Samsun'da güncel akaryakıt litre fiyatları benzinde 72,90 TL, motorinde 97,00 TL ve otogazda 51,09 TL oldu.",
+   "sources": [
+    "Samsun İlk Haber"
+   ],
+   "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M13 2L4 14h7l-1 8 9-12h-7z\"/></svg>"
+  }
+ ],
+ "outages": [],
+ "scoreboard": null,
+ "hook": "Samsun Merkez OSB'de kurulacak Teknoloji Geliştirme Bölgesi hazırlıklarından İlkadım'daki 9,42 milyar TL'lik yeni yatırıma kadar kentin ekonomi gündemini derledik.",
+ "edition": "ekonomi",
+ "date": "2026-11-19",
+ "issue_no": 2,
+ "permalink": "https://www.instagram.com/p/Df6w3yRDcy4/"
+}
