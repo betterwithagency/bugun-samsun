@@ -158,7 +158,8 @@ def run(edition: str, publish: bool = False, wait: bool = False, force: bool = F
             if attempt == 0 and not issue_file:
                 from . import write as w
                 note = (f"Görselde {exc.slides} numaralı slaytlardaki metin sığmadı. İlgili haberlerin body ve "
-                        f"why alanlarını yaklaşık %25 kısalt; kapak (1) ise short_title alanlarını kısalt.")
+                        f"why alanlarını yaklaşık %25 kısalt; büyük rakam (stat.value) sığmıyorsa onu da kısalt; "
+                        f"kapak (1) ise short_title alanlarını kısalt.")
                 fixed = w.write(edition, date_label, dossier, fix_note=note, previous=issue)
                 for k in ("stories", "briefs", "hook"):
                     issue[k] = fixed[k]

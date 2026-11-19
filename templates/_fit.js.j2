@@ -1,6 +1,8 @@
 <script>
 // Fit text marked data-fit="minPx" (optional data-max="maxPx"): grow up to GROW× to fill space,
-// then shrink until each slide's .fit-box stops overflowing.
+// then shrink until each slide's .fit-box stops overflowing. Afterwards any fitted text that is
+// wider than its column (a long word in a big number such as "21 Kasım") shrinks on its own,
+// down to 60% of its minimum; text still too wide counts as overflow.
 window.__fit = function () {
   const report = [];
   document.querySelectorAll('.slide').forEach(slide => {
@@ -13,10 +15,16 @@ window.__fit = function () {
     });
     const apply = s => els.forEach(o => { o.el.style.fontSize = Math.max(o.min, Math.min(o.max, o.base * s)) + 'px'; });
     const over = () => box.scrollHeight > box.clientHeight + 1;
+    const wide = el => el.scrollWidth > el.clientWidth + 1;
     let scale = GROW;
     apply(scale);
     while (over() && scale > 0.5) { scale -= 0.02; apply(scale); }
-    report.push({ idx: +slide.dataset.idx, overflow: over(), scale: +scale.toFixed(2) });
+    els.forEach(o => {
+      let size = parseFloat(o.el.style.fontSize);
+      while (wide(o.el) && size > o.min * 0.6) { size -= 2; o.el.style.fontSize = size + 'px'; }
+    });
+    const tooWide = els.filter(o => wide(o.el)).length > 0;
+    report.push({ idx: +slide.dataset.idx, overflow: over() || tooWide, scale: +scale.toFixed(2) });
   });
   return report;
 };
