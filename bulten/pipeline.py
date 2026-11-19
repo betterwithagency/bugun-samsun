@@ -21,6 +21,8 @@ BASE_TAGS = {
     "spor": ["#samsun", "#samsunspor", "#samsunsporhaber", "#bugunsamsun"],
 }
 MARKER = {"gundem": "#samsungündem", "ekonomi": "#samsunekonomi", "spor": "#samsunsporhaber"}  # one per edition
+MIN_GAP = timedelta(hours=14)  # an edition goes out once a day: two posts closer than this are a duplicate
+WINDOW = (timedelta(hours=3), timedelta(hours=2))  # automated (--wait) runs publish only from publish_at-3h to +2h
 
 
 class Skip(Exception):
@@ -92,8 +94,14 @@ def run(edition: str, publish: bool = False, wait: bool = False, force: bool = F
 
     if PAUSE.exists() and publish:
         raise Skip("data/PAUSE var: yayın duraklatıldı")
-    if publish and not force and state["last"].get(edition) == today.isoformat():
-        raise Skip(f"{edition} bugün zaten yayınlandı")
+    hh, mm = map(int, ed["publish_at"].split(":"))
+    target = now.replace(hour=hh, minute=mm, second=0, microsecond=0)
+    if publish and wait and not target - WINDOW[0] <= now <= target + WINDOW[1]:
+        # a trigger that fires hours late (GitHub has fired one 7.5 h late, after midnight) must not post
+        raise Skip(f"{edition} yayın penceresinin dışında ({now:%H:%M}, yayın {ed['publish_at']})")
+    last_at = state.get("last_at", {}).get(edition)
+    if publish and not force and last_at and now - datetime.fromisoformat(last_at) < MIN_GAP:
+        raise Skip(f"{edition} {last_at[:16].replace('T', ' ')} tarihinde zaten yayınlandı")
 
     folder = f"{today.isoformat()}-{edition}"
     out_dir = OUTPUT / folder
@@ -170,31 +178,34 @@ def run(edition: str, publish: bool = False, wait: bool = False, force: bool = F
 
     from . import hosting, instagram, tokens
     if wait:
-        hh, mm = map(int, ed["publish_at"].split(":"))
-        target = now.replace(hour=hh, minute=mm, second=0, microsecond=0)
         delay = (target - datetime.now(TZ)).total_seconds()
         if 0 < delay < 3 * 3600:
             print(f"[run] waiting {int(delay)}s until {ed['publish_at']}")
             time.sleep(delay)
     token = tokens.get_token()
     user = instagram.account(token)
-    if not force:  # backup triggers may overlap: the account itself is the final word on "already posted"
-        midnight = now.replace(hour=0, minute=0, second=0, microsecond=0)
+    if not force:  # the account itself is the final word on "already posted" (rolling window, not calendar day)
         try:
-            done = instagram.posted_since(token, user["user_id"], MARKER[edition], midnight)
+            done = instagram.posted_since(token, user["user_id"], MARKER[edition], datetime.now(TZ) - MIN_GAP)
         except instagram.InstagramError as exc:
             print(f"[run] could not list recent posts, relying on state.json: {exc}")
             done = ""
         if done:
-            raise Skip(f"{edition} bugün zaten paylaşılmış: {done}")
+            raise Skip(f"{edition} son {MIN_GAP.seconds // 3600} saatte zaten paylaşılmış: {done}")
     urls = hosting.host_images(paths, folder)
     post = instagram.publish_carousel(token, user["user_id"], urls, text)
     print(f"[run] published to @{user.get('username')}: {post.get('permalink') or post['id']}")
 
     if not issue_file:  # the archive holds published bulletins only
-        _save(DATA / "issues" / f"{folder}.json", {**record, "permalink": post.get("permalink", "")})
+        archive = DATA / "issues" / f"{folder}.json"
+        n = 2
+        while archive.exists():  # never overwrite an earlier record
+            archive = DATA / "issues" / f"{folder}-{n}.json"
+            n += 1
+        _save(archive, {**record, "permalink": post.get("permalink", "")})
     state["issue_no"][edition] = issue["issue_no"]
     state["last"][edition] = today.isoformat()
+    state.setdefault("last_at", {})[edition] = datetime.now(TZ).isoformat(timespec="minutes")
     _save(STATE, state)
     for st in issue["stories"]:
         history.append({"date": today.isoformat(), "edition": edition, "title": st["title"],

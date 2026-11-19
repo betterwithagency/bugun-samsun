@@ -1,19 +1,8 @@
 name: Bugün Samsun
 
 on:
-  schedule:
-    # GitHub cron is UTC; Türkiye is UTC+3 all year. GitHub may delay or silently drop a scheduled
-    # run, so each edition has three triggers. Runs queue one at a time; once the bulletin is out,
-    # the later ones see it on the account (and in data/state.json) and exit without posting.
-    - cron: "7 4 * * *"    # 07:07 → Gündem, published 08:00
-    - cron: "23 4 * * *"   # 07:23 → Gündem (backup)
-    - cron: "41 4 * * *"   # 07:41 → Gündem (backup)
-    - cron: "37 8 * * *"   # 11:37 → Ekonomi & İş, published 12:30
-    - cron: "53 8 * * *"   # 11:53 → Ekonomi & İş (backup)
-    - cron: "11 9 * * *"   # 12:11 → Ekonomi & İş (backup)
-    - cron: "7 15 * * *"   # 18:07 → Spor, published 19:00
-    - cron: "23 15 * * *"  # 18:23 → Spor (backup)
-    - cron: "41 15 * * *"  # 18:41 → Spor (backup)
+  # No GitHub cron here: in this repository it fired hours late (Spor once ran at 01:33 and posted
+  # a second bulletin). The Zamanlayıcı workflow starts the bulletins instead (wait=true).
   workflow_dispatch:
     inputs:
       edition:
@@ -53,6 +42,7 @@ concurrency:
 
 jobs:
   bulletin:
+    if: github.event_name == 'workflow_dispatch'  # a stale scheduled event from the old cron must do nothing
     runs-on: ubuntu-latest
     timeout-minutes: 150
     steps:
@@ -63,22 +53,13 @@ jobs:
       - name: Choose edition
         id: pick
         run: |
-          case "${{ github.event.schedule }}" in
-            "7 4 * * *"|"23 4 * * *"|"41 4 * * *")
-              echo "edition=gundem"  >> "$GITHUB_OUTPUT"; echo "flags=--publish --wait" >> "$GITHUB_OUTPUT" ;;
-            "37 8 * * *"|"53 8 * * *"|"11 9 * * *")
-              echo "edition=ekonomi" >> "$GITHUB_OUTPUT"; echo "flags=--publish --wait" >> "$GITHUB_OUTPUT" ;;
-            "7 15 * * *"|"23 15 * * *"|"41 15 * * *")
-              echo "edition=spor"    >> "$GITHUB_OUTPUT"; echo "flags=--publish --wait" >> "$GITHUB_OUTPUT" ;;
-            *)
-              echo "edition=${{ inputs.edition }}" >> "$GITHUB_OUTPUT"
-              flags=""
-              if [ "${{ inputs.publish }}" = "true" ]; then flags="--publish"; fi
-              if [ "${{ inputs.force }}" = "true" ]; then flags="$flags --force"; fi
-              if [ "${{ inputs.wait }}" = "true" ]; then flags="$flags --wait"; fi
-              if [ "${{ inputs.sample }}" = "true" ]; then flags="--issue samples/${{ inputs.edition }}.json"; fi
-              echo "flags=$flags" >> "$GITHUB_OUTPUT" ;;
-          esac
+          echo "edition=${{ inputs.edition }}" >> "$GITHUB_OUTPUT"
+          flags=""
+          if [ "${{ inputs.publish }}" = "true" ]; then flags="--publish"; fi
+          if [ "${{ inputs.force }}" = "true" ]; then flags="$flags --force"; fi
+          if [ "${{ inputs.wait }}" = "true" ]; then flags="$flags --wait"; fi
+          if [ "${{ inputs.sample }}" = "true" ]; then flags="--issue samples/${{ inputs.edition }}.json"; fi
+          echo "flags=$flags" >> "$GITHUB_OUTPUT"
 
       - uses: actions/setup-python@v5
         with:

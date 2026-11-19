@@ -9,15 +9,17 @@ Bu proje her gün üç bülteni kendiliğinden hazırlayıp @bugunsamsun hesabı
 | Spor | 18.07 | 19.00 |
 
 ### Bültenleri ne başlatır?
-GitHub'ın kendi zamanlaması (cron) bu depoda güvenilir çalışmadı. Bu yüzden iki ayrı yol var:
+GitHub'ın kendi zamanlaması (cron) bu depoda saatlerce geç çalıştı: 18 Kasım'ın Spor tetikleyicisi gece 01.33'te
+başladı ve ikinci bir Spor bülteni paylaştı. Bu yüzden bültenleri artık yalnızca **Zamanlayıcı** başlatır.
+*Actions* sekmesinde bu iş akışının her zaman bir çalıştırması açık durur. Bu çalıştırma bir sonraki hazırlık
+saatine kadar bekler, bülteni başlatır ve kendinden sonrakini başlatır. Uzun aralar (gece gibi) en fazla 5,5
+saatlik ara adımlarla geçilir.
 
-1. **Zamanlayıcı (asıl yol):** *Actions* sekmesinde **Zamanlayıcı** adlı iş akışı her zaman bir çalıştırmayla
-   açık durur. Bu çalıştırma bir sonraki hazırlık saatine kadar bekler, bülteni başlatır ve kendinden sonrakini
-   başlatır. Uzun aralar (gece gibi) en fazla 5,5 saatlik ara adımlarla geçilir.
-2. **GitHub cron'u (yedek):** Her bülten için 07.07/07.23/07.41, 11.37/11.53/12.11 ve 18.07/18.23/18.41
-   tetikleyicileri var. GitHub bunları başlatırsa ek güvence olur.
-
-Aynı bülten iki kez paylaşılmaz: her çalıştırma önce hesapta o günün bültenini arar, varsa göndermeden kapanır.
+Aynı bülten iki kez paylaşılmasın diye üç kontrol var:
+1. **Yayın penceresi:** Zamanlayıcının başlattığı bülten yalnızca yayın saatinden 3 saat önce ile 2 saat sonra
+   arasında paylaşılır. Geç kalan bir tetikleyici hiçbir şey göndermez.
+2. **Kayıt:** Aynı bülten son 14 saat içinde paylaşılmışsa (`data/state.json`) çalıştırma göndermeden kapanır.
+3. **Hesap:** Göndermeden hemen önce Instagram hesabında son 14 saatte aynı bültenin paylaşılıp paylaşılmadığına bakılır.
 
 - **Zamanlayıcı durursa** (*Actions → Zamanlayıcı* altında çalışan bir iş yoksa): *Run workflow* ile yeniden başlat;
   alanları boş bırakman yeterli.
