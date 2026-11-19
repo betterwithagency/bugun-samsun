@@ -1,0 +1,140 @@
+{
+ "stories": [
+  {
+   "category": "Samsunspor",
+   "district": "Samsun",
+   "location": "Başakşehir Fatih Terim Stadı",
+   "title": "Galatasaray - Samsunspor maçının hakemi Ali Şansalan oldu",
+   "short_title": "Galatasaray maçının hakemi Ali Şansalan oldu",
+   "stat": {
+    "value": "5",
+    "label": "Şansalan'ın yönettiği Samsunspor maçı"
+   },
+   "body": "21 Kasım Cumartesi saat 16.00'daki Galatasaray - Samsunspor maçına hakem Ali Şansalan atandı. Maç, RAMS Park'taki zemin sorunu nedeniyle Başakşehir Fatih Terim Stadı'nda oynanacak.\nSamsunspor, Şansalan'ın yönettiği 5 resmi maçta 2 galibiyet, 1 beraberlik ve 2 mağlubiyet aldı.",
+   "why": "Samsunspor'un hafta sonu oynayacağı Süper Lig deplasmanının hakemi, maç saati ve stadyumu netleşti.",
+   "sources": [
+    "AA",
+    "BirGün Gazetesi",
+    "Gazete Arena"
+   ],
+   "n": 1
+  },
+  {
+   "category": "Samsunspor",
+   "district": "Samsun",
+   "location": "Nuri Asan Tesisleri",
+   "title": "Nenad Bjelica Galatasaray maçı öncesi kadro durumunu açıkladı",
+   "short_title": "Bjelica'dan Galatasaray maçı öncesi açıklama",
+   "stat": {
+    "value": "",
+    "label": ""
+   },
+   "body": "Teknik Direktör Nenad Bjelica, Galatasaray maçı öncesi Celil Yüksel dışında eksik olmadığını ve sakatlığını atlatan Emre Kılınç'ın oynayabileceğini açıkladı.\nBjelica, Başakşehir'de oynanacak maçta agresif ve kompakt bir oyunla Galatasaray'ı şaşırtmayı hedeflediklerini söyledi.",
+   "why": "Galatasaray deplasmanı öncesinde Samsunspor'un maç kadrosundaki sakat ve hazır oyuncular netleşti.",
+   "sources": [
+    "AA",
+    "DHA"
+   ],
+   "n": 2
+  },
+  {
+   "category": "Samsunspor",
+   "district": "Samsun",
+   "location": "Samsun",
+   "title": "Veysel Bilen'den ligdeki konum ve devre arası transfer açıklaması",
+   "short_title": "Veysel Bilen'den devre arası transfer mesajı",
+   "stat": {
+    "value": "",
+    "label": ""
+   },
+   "body": "Samsunspor Başkan Vekili Veysel Bilen, ligdeki konumdan memnun olmadıklarını ve Galatasaray deplasmanından puanla dönmek istediklerini söyledi.\nDevre arasına kadar maksimum puanı hedeflediklerini belirten Bilen, ara transferde eksik bölgelere takviye yapacaklarını açıkladı.",
+   "why": "Kulüp yönetimi, takımın ligdeki durumuna ilişkin yol haritasını ve ara transfer planını duyurdu.",
+   "sources": [
+    "AA"
+   ],
+   "n": 3
+  },
+  {
+   "category": "Spor",
+   "district": "Samsun",
+   "location": "Samsun",
+   "title": "Samsunspor Okçuluk Takımı U13 Salon Kış Kupası'nda şampiyon oldu",
+   "short_title": "Samsunspor Okçuluk Takımı Türkiye şampiyonu",
+   "stat": {
+    "value": "852 puan",
+    "label": "U13 Makaralı Yay Kadın Takımı'nın puanı"
+   },
+   "body": "Samsunspor Okçuluk Takımı, 2026 U13 Salon Kış Kupası'nda Makaralı Yay Kadın Takım kategorisinde 852 puanla Türkiye şampiyonu oldu.\nBireysel U13 Makaralı Yay Kadınlar kategorisinde yarışan Samsunsporlu Asya Mina Yaman ise 295 puanla Türkiye ikincisi olup gümüş madalya kazandı.",
+   "why": "Samsunsporlu genç okçular ulusal turnuvada hem takım şampiyonluğu hem de bireysel ikincilik kazandı.",
+   "sources": [
+    "Samsun Gazetesi",
+    "Gazete Arena"
+   ],
+   "n": 4
+  },
+  {
+   "category": "Samsunspor",
+   "district": "Samsun",
+   "location": "Store55",
+   "title": "Samsunspor özel tasarım Samsun City formasını satışa sundu",
+   "short_title": "Samsunspor'un özel tasarım forması satışta",
+   "stat": {
+    "value": "2.755 TL",
+    "label": "Özel tasarım formanın başlangıç fiyatı"
+   },
+   "body": "Samsunspor, 2026/27 sezonu kapsamında sınırlı sayıda üretilen Hummel imzalı \"We Are Samsun City\" temalı özel tasarım formasını tanıttı.\nAtakum'un gün batımı renkleri ve palmiye silüetlerini taşıyan forma, Store55 üzerinden 2 bin 755 TL'den başlayan fiyatlarla satışa çıktı.",
+   "why": "Taraftarların beklediği sınırlı üretim özel tasarım formanın tasarımı ve satış fiyatı belli oldu.",
+   "sources": [
+    "Samsun Gazetesi",
+    "Onedio"
+   ],
+   "n": 5
+  }
+ ],
+ "briefs": [
+  {
+   "category": "Samsunspor",
+   "district": "Samsun",
+   "text": "Samsunspor Yardımcı Antrenörü Michel Ribeiro, futbol akademisindeki U13, U14 ve U15 takımlarıyla antrenman yaptı.",
+   "sources": [
+    "Samsun Gazetesi",
+    "Gazete Arena"
+   ],
+   "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"12\" cy=\"12\" r=\"9\"/><path d=\"M12 7.5l4 2.9-1.5 4.6h-5L8 10.4z\"/><path d=\"M12 3v4.5M21 10.5l-5 0M17.5 19.5l-3-4.5M6.5 19.5l3-4.5M3 10.5h5\"/></svg>"
+  },
+  {
+   "category": "Futbol",
+   "district": "Samsun",
+   "text": "U19 Gelişim Ligi'ndeki YABPA Spor, 20 Kasım Cuma saat 14.00'te Halim Batur Tesisleri'nde Pazarspor'u ağırlayacak.",
+   "sources": [
+    "Samsun Gazetesi"
+   ],
+   "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"12\" cy=\"12\" r=\"9\"/><path d=\"M12 7.5l4 2.9-1.5 4.6h-5L8 10.4z\"/><path d=\"M12 3v4.5M21 10.5l-5 0M17.5 19.5l-3-4.5M6.5 19.5l3-4.5M3 10.5h5\"/></svg>"
+  },
+  {
+   "category": "Futbol",
+   "district": "Samsun",
+   "text": "Kadıköyspor U-12 Takımı, Ordu'daki uluslararası turnuvada Ordu Demirspor'u 10-0, Albatros FC'yi 2-0 mağlup etti.",
+   "sources": [
+    "Samsun Gazetesi"
+   ],
+   "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"12\" cy=\"12\" r=\"9\"/><path d=\"M12 7.5l4 2.9-1.5 4.6h-5L8 10.4z\"/><path d=\"M12 3v4.5M21 10.5l-5 0M17.5 19.5l-3-4.5M6.5 19.5l3-4.5M3 10.5h5\"/></svg>"
+  },
+  {
+   "category": "Spor",
+   "district": "Samsun",
+   "text": "Madalyalı badmintoncular Buğra Aktaş ve Aysu Arslan, Milletvekili Orhan Kırcalı tarafından Ankara'da ağırlandı.",
+   "sources": [
+    "Samsun Gazetesi"
+   ],
+   "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"12\" cy=\"12\" r=\"9\"/><path d=\"M12 7.5l4 2.9-1.5 4.6h-5L8 10.4z\"/><path d=\"M12 3v4.5M21 10.5l-5 0M17.5 19.5l-3-4.5M6.5 19.5l3-4.5M3 10.5h5\"/></svg>"
+  }
+ ],
+ "outages": [],
+ "scoreboard": null,
+ "hook": "Samsunspor'un cumartesi günü Başakşehir'de oynayacağı Galatasaray maçının hakemi ve kadro durumu netleşirken, okçuluk takımı U13 Salon Kış Kupası'nda Türkiye şampiyonu oldu.",
+ "edition": "spor",
+ "date": "2026-11-19",
+ "issue_no": 2,
+ "permalink": "https://www.instagram.com/p/Df7ddjFF7L6/"
+}
