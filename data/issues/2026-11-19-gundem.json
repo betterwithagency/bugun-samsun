@@ -1,0 +1,164 @@
+{
+ "stories": [
+  {
+   "category": "Hava",
+   "district": "Samsun",
+   "location": "Samsun ve Cide-Bafra hattı",
+   "title": "Samsun ve Cide-Bafra hattı için sarı kodlu fırtına ve yağış uyarısı",
+   "short_title": "Samsun'a sarı kodlu fırtına ve yağış uyarısı",
+   "stat": {
+    "value": "50-75 km/sa",
+    "label": "Cide-Bafra hattında beklenen fırtına hızı"
+   },
+   "body": "Meteoroloji, bugün Samsun genelinde aralıklı sağanak ve iç kesimlerde kuvvetli rüzgâr nedeniyle sarı kodlu uyarı yayımladı.\nKaradeniz'de Cide-Bafra arasında 09.00-17.00 saatlerinde saatte 50-75 kilometre hızla esecek fırtınanın akşam etkisini kaybetmesi bekleniyor.",
+   "why": "Çatı uçması, ağaç devrilmesi, baca gazı zehirlenmesi ve ulaşımda aksamalara karşı tedbirli olunması gerekiyor.",
+   "sources": [
+    "Meteoroloji Genel Müdürlüğü",
+    "AA",
+    "Samsun Gazetesi"
+   ],
+   "n": 1
+  },
+  {
+   "category": "Belediye",
+   "district": "Samsun",
+   "location": "Büyükşehir Belediye Meclisi",
+   "title": "Büyükşehir Belediye Meclisi kasım toplantısında 35 maddeyi kabul etti",
+   "short_title": "Büyükşehir Meclisinde 35 madde kabul edildi",
+   "stat": {
+    "value": "35 madde",
+    "label": "Kasım ayı kapanış toplantısında görüşüldü"
+   },
+   "body": "Meclis Başkanvekili Nihat Soğuk yönetimindeki kasım ayı kapanış toplantısında 35 gündem maddesi kabul edildi.\nBatı Çevre Yolu mera düzenlemesi, tramvay yedek parçası için 500 bin avro kredi yetkisi, iki yeni müze kurulumu ve 10 ilçedeki imar planları onaylandı.",
+   "why": "Alınan kararlar tramvay ulaşımını, Batı Çevre Yolu'nu, iki yeni müzeyi ve 10 ilçenin imar planlarını etkiliyor.",
+   "sources": [
+    "İHA",
+    "Habertürk"
+   ],
+   "n": 2
+  },
+  {
+   "category": "Ulaşım",
+   "district": "Samsun",
+   "location": "Recep Tayyip Erdoğan Bulvarı",
+   "title": "Recep Tayyip Erdoğan Bulvarı'nda asfalt çalışması cumartesi bitiyor",
+   "short_title": "Erdoğan Bulvarı'nda geçici trafik düzenlemesi",
+   "stat": {
+    "value": "21 Kasım",
+    "label": "Çalışmaların planlanan tamamlanma tarihi"
+   },
+   "body": "Recep Tayyip Erdoğan Bulvarı'nın Hürriyet ile 23 Nisan caddeleri arasındaki kısmında 6 Kasım'da başlayan asfalt yenileme çalışmaları sürüyor.\nAraç trafiğinin karşı yönden kontrollü sağlandığı 15 günlük çalışmanın 21 Kasım Cumartesi gününe kadar bitirilmesi hedefleniyor.",
+   "why": "Sürücülerin 21 Kasım'a kadar trafik işaretlerine uyması ve alternatif güzergâhları değerlendirmesi gerekiyor.",
+   "sources": [
+    "Samsun Gazetesi"
+   ],
+   "n": 3
+  },
+  {
+   "category": "Çevre",
+   "district": "Atakum",
+   "location": "Kasnakçımermer Mahallesi",
+   "title": "Atakum'da ormanlık alanda bakır ve mangan araması için ÇED başlatıldı",
+   "short_title": "Atakum'da maden araması için ÇED süreci",
+   "stat": {
+    "value": "18 bin m²",
+    "label": "Maden araması planlanan toplam orman alanı"
+   },
+   "body": "Kasnakçımermer Mahallesi'ndeki toplam 18 bin metrekarelik iki orman alanında bakır ve mangan aranması için ÇED süreci başlatıldı.\nŞadulluk ve Bağlar derelerine yakın sahada iki yılda iki yeraltı galerisi açılarak analiz için 50 bin 400 ton malzeme çıkarılması planlanıyor.",
+   "why": "Dere yataklarına yakın ormanlık alanda yapılacak iki yıllık maden arama faaliyeti doğal yapı için önem taşıyor.",
+   "sources": [
+    "Samsun Kent Haber",
+    "Samsun Analiz"
+   ],
+   "n": 4
+  },
+  {
+   "category": "Tarım",
+   "district": "Samsun",
+   "location": "Samsun geneli",
+   "title": "Tarım ve Orman Müdürlüğünden kivi üreticilerine hasat zamanı uyarısı",
+   "short_title": "Kivi üreticilerine hasat ve depolama uyarısı",
+   "stat": {
+    "value": "%15",
+    "label": "Samsun'un Türkiye kivi üretimindeki payı"
+   },
+   "body": "Türkiye kivi üretiminin yaklaşık %15'ini karşılayan Samsun'da İl Tarım ve Orman Müdürlüğü üreticileri hasat ve depolama için uyardı.\nHatalı işlemlerin ürün kaybını %5 ile %50 arasında artırdığı, hasadın kuru havada ve meyveye zarar vermeden yapılması gerektiği belirtildi.",
+   "why": "Üreticilerin gelir kaybı yaşamaması ve meyvenin raf ömrünün korunması için hasat kurallarına uyulması gerekiyor.",
+   "sources": [
+    "AA",
+    "CNN Türk"
+   ],
+   "n": 5
+  },
+  {
+   "category": "Gündem",
+   "district": "İlkadım",
+   "location": "Derecik Mahallesi",
+   "title": "Yanan otomobile müdahale eden belediye otobüsü şoförü ödüllendirildi",
+   "short_title": "Araç yangınını söndüren şoföre ödül verildi",
+   "stat": {
+    "value": "",
+    "label": ""
+   },
+   "body": "Samsun-Ankara kara yolunda alev alan bir otomobile, seferdeki Büyükşehir Belediyesi otobüs şoförü Aytaç Uzunoğlu yangın tüpüyle müdahale etti.\nÇevre esnafının da desteğiyle yangını söndüren şoföre, Büyükşehir Belediye Başkanı Halit Doğan teşekkür belgesi ve ikramiye verdi.",
+   "why": "Otobüs şoförünün hızlı müdahalesiyle kara yolundaki araç yangınının büyümesi ve olası kayıplar önlendi.",
+   "sources": [
+    "DHA"
+   ],
+   "n": 6
+  }
+ ],
+ "briefs": [
+  {
+   "category": "Belediye",
+   "district": "Canik",
+   "text": "Canik Belediyesi, enerji tasarruflu sistemlerle Gaziosmanpaşa Mahallesi Gerçek Sokak'ın aydınlatmasını yeniledi.",
+   "sources": [
+    "İHA",
+    "Habertürk"
+   ],
+   "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M3 21h18M4 10h16M12 3l8.5 7h-17z\"/><path d=\"M6.5 10v11M10.5 10v11M13.5 10v11M17.5 10v11\"/></svg>"
+  },
+  {
+   "category": "Yönetim",
+   "district": "Samsun",
+   "text": "Samsun Valiliği, EKAP'taki 25 bin 212 TL'nin terlik değil, 30'u aşkın konuğun ağırlama gideri olduğunu duyurdu.",
+   "sources": [
+    "AA",
+    "Habertürk"
+   ],
+   "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M3 21h18M4 10h16M12 3l8.5 7h-17z\"/><path d=\"M6.5 10v11M10.5 10v11M13.5 10v11M17.5 10v11\"/></svg>"
+  },
+  {
+   "category": "Eğitim",
+   "district": "Samsun",
+   "text": "Büyükşehir Belediyesi, ara tatilde Bilim Samsun ve Keşif Kampüsü'nde öğrenciler için bilim atölyeleri başlattı.",
+   "sources": [
+    "Samsun Büyükşehir Belediyesi",
+    "Gazete Arena"
+   ],
+   "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M2 9l10-5 10 5-10 5z\"/><path d=\"M6 11v5c0 1.5 3 3 6 3s6-1.5 6-3v-5M22 9v6\"/></svg>"
+  },
+  {
+   "category": "Asayiş",
+   "district": "Tekkeköy",
+   "text": "Tekkeköy Atatürk Bulvarı'nda bir kamyonetin otomobile çarpması sonucu yaralanan 4 kişi hastanelere kaldırıldı.",
+   "sources": [
+    "AA",
+    "CNN Türk"
+   ],
+   "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z\"/></svg>"
+  }
+ ],
+ "outages": [],
+ "scoreboard": null,
+ "hook": "Meteoroloji'den Samsun ve Cide-Bafra hattı için sarı kodlu fırtına uyarısı gelirken Büyükşehir Meclisi 35 yeni kararı onayladı; günün öne çıkan gelişmeleri bültenimizde.",
+ "edition": "gundem",
+ "date": "2026-11-19",
+ "issue_no": 2,
+ "practical": {
+  "outages": [],
+  "pharmacy": "Nöbetçi eczaneleri e-Devlet'ten ya da Samsun Eczacı Odası'ndan öğrenebilirsin."
+ },
+ "permalink": "https://www.instagram.com/p/Df6R_HPmAwH/"
+}
