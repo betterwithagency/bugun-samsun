@@ -5,7 +5,7 @@
   python -m bulten run --edition gundem --issue samples/gundem2.json   # skip the AI, test rendering
   python -m bulten run --edition reels --publish --wait  # 17.30 Reels from today's Gündem bulletin
   python -m bulten candidates --edition spor            # show today's candidate headlines
-  python -m bulten check                                 # verify the Instagram and Anthropic credentials
+  python -m bulten check                                 # verify credentials, followers, trial Reels (posts nothing)
 """
 import argparse
 import json
@@ -69,6 +69,13 @@ def check() -> int:
             acc = instagram.account(token)
             kind = "süresiz sistem kullanıcısı anahtarı" if instagram.is_system_user_token(token) else "Instagram girişi anahtarı"
             print(f"[check] Instagram OK: @{acc['username']} (kimlik {acc['user_id']}, {kind})")
+            try:
+                st = instagram.profile_stats(token, acc["user_id"])
+                print(f"[check] Takipçi: {st.get('followers_count', '?')}, paylaşım: {st.get('media_count', '?')}")
+            except Exception as exc:
+                print(f"[check] Takipçi sayısı okunamadı: {exc}")
+            refusal = instagram.trial_reels_check(token, acc["user_id"])
+            print("[check] Deneme Reels: hesap uygun" if not refusal else f"[check] Deneme Reels: kabul edilmiyor ({refusal})")
         except Exception as exc:
             ok = False
             print(f"[check] Instagram HATA: {exc}")

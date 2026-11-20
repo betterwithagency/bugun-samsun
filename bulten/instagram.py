@@ -166,6 +166,24 @@ def publish_reel(token: str, user_id: str, video_path, caption: str, trial: bool
     return {"id": published["id"], "permalink": info.get("permalink", ""), "trial": trial}
 
 
+def profile_stats(token: str, user_id: str) -> dict:
+    """Follower and post counts (for the connection check)."""
+    return _call("GET", user_id, token, fields="followers_count,media_count")
+
+
+def trial_reels_check(token: str, user_id: str) -> str:
+    """'' if Instagram accepts a trial reel container for this account, else its refusal.
+
+    Creates an empty resumable Reels container and never uploads or publishes it (it expires unused).
+    """
+    try:
+        _call("POST", f"{user_id}/media", token, media_type="REELS", upload_type="resumable",
+              trial_params=json.dumps({"graduation_strategy": "SS_PERFORMANCE"}))
+        return ""
+    except InstagramError as exc:
+        return str(exc)
+
+
 def refresh_token(token: str) -> dict:
     """Exchange a long-lived Instagram Login token (older than 24h) for a fresh 60-day one."""
     r = requests.get("https://graph.instagram.com/refresh_access_token",
