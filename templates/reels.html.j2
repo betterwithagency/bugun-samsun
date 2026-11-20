@@ -130,7 +130,8 @@ body { font-family: var(--sans); -webkit-font-smoothing: antialiased; }
 
   {%- for s in scenes %}
   <section class="scene paper story wipeR" style="--at:{{ s.at }}s; --len:{{ s.len }}s">
-    <div class="pad bars">{% for j in range(scenes|length) %}<i class="{{ 'done' if j < loop.index0 else ('now' if j == loop.index0 else '') }}" {% if j == loop.index0 %}style="--at:{{ s.at }}s; --len:{{ s.len }}s"{% endif %}><b></b></i>{% endfor %}</div>
+    {%- set cur = loop.index0 %}{# inside the bar loop, `loop` is the bar's own loop #}
+    <div class="pad bars">{% for j in range(scenes|length) %}<i class="{{ 'done' if j < cur else ('now' if j == cur else 'todo') }}"><b></b></i>{% endfor %}</div>
     {%- set t = s.at %}
     <div class="pad kicker k up" style="--t:{{ '%.2f' % (t + 0.15) }}s"><span class="n">{{ '%02d' % s.n }}</span><span>{{ s.category }}</span></div>
     <h2 class="pad serif up" style="--t:{{ '%.2f' % (t + 0.25) }}s"><span data-fit-h="384" data-min="64">{{ s.title }}</span></h2>
