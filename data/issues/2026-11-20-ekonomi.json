@@ -1,0 +1,142 @@
+{
+ "stories": [
+  {
+   "category": "Ekonomi",
+   "district": "Samsun",
+   "location": "Çiftlik Caddesi, İlkadım",
+   "title": "SESOB: Samsun'da 100 esnaftan 90'ının vergi ve prim borcu var",
+   "short_title": "100 esnaftan 90'ının vergi ve prim borcu var",
+   "stat": {
+    "value": "90",
+    "label": "100 esnaftan vergi ve prim borcu olanlar"
+   },
+   "body": "SESOB Başkanvekili Savaş Kiraz, artan maliyetlerle Çiftlik Caddesi'ndeki 100 esnaftan 90'ının vergi, SGK veya Bağ-Kur borcu olduğunu açıkladı.\nBankaların esnaf kefaletini kabul etmediğini belirten Kiraz, asgari ücret artışının da ürün ve hizmetlere zam getireceğini söyledi.",
+   "why": "Küçük esnafın borç yükünü ve asgari ücret artışının kentteki mal ve hizmet fiyatlarına olası etkisini gösteriyor.",
+   "sources": [
+    "İHA",
+    "SESOB"
+   ],
+   "n": 1
+  },
+  {
+   "category": "Sanayi",
+   "district": "Kavak",
+   "location": "Kavak OSB",
+   "title": "Kavak OSB'deki 62 sanayi parselinde doluluk oranı yüzde 82'ye ulaştı",
+   "short_title": "Kavak OSB'de doluluk oranı yüzde 82'ye ulaştı",
+   "stat": {
+    "value": "%82",
+    "label": "Kavak OSB'deki 62 parselin doluluk oranı"
+   },
+   "body": "Kavak Organize Sanayi Bölgesi'ndeki 62 sanayi parselinde doluluk oranı yüzde 82'ye yükseldi.\nVali Orhan Tavlı başkanlığındaki yönetim kurulu toplantısında inşaatı süren fabrikalar, üretime geçen tesisler ve kurulacak 112 Acil Sağlık İstasyonu ele alındı.",
+   "why": "Bölgedeki parsellerin dolması ve yeni fabrikaların üretime geçmesi kentteki sanayi istihdamını doğrudan artırıyor.",
+   "sources": [
+    "İHA",
+    "Samsun Valiliği"
+   ],
+   "n": 2
+  },
+  {
+   "category": "Tarım",
+   "district": "Bafra",
+   "location": "Bafra Sera OTB",
+   "title": "Bafra Sera OTB'de 160 dönümlük yeni sera yatırımı değerlendirildi",
+   "short_title": "Bafra'da 160 dönümlük sera yatırımı görüşüldü",
+   "stat": {
+    "value": "160 dönüm",
+    "label": "Bafra Sera OTB'de kurulan yeni sera alanı"
+   },
+   "body": "Bafra Sera Organize Tarım Bölgesi'nde 160 dönümlük sera kuran firmanın yerli ve Japonya merkezli yetkilileri Vali Orhan Tavlı'yı ziyaret etti.\nGörüşmede projenin ilerleyişi ve Bafra'nın örtü altı tarımsal üretim kapasitesini artırmaya yönelik çalışmalar değerlendirildi.",
+   "why": "Büyük ölçekli sera yatırımı, Bafra Ovası'nda yıl boyu örtü altı tarımsal üretim ve istihdam imkanı sağlıyor.",
+   "sources": [
+    "İHA"
+   ],
+   "n": 3
+  },
+  {
+   "category": "Tarım",
+   "district": "Samsun",
+   "location": "Bafra Ovası",
+   "title": "Samsun 19 bin tonu aşan pırasa üretimiyle Türkiye ikincisi oldu",
+   "short_title": "Samsun pırasa üretiminde Türkiye ikincisi",
+   "stat": {
+    "value": "19 bin ton",
+    "label": "Samsun'un yıllık pırasa üretim miktarı"
+   },
+   "body": "İl Tarım ve Orman Müdürlüğü verilerine göre Samsun, 5 bin 400 dekarda 19 bin tonu aşan pırasa üretimiyle Türkiye ikincisi oldu.\nÜretimin 16 bin tonunu karşılayan Bafra'da hasat mart sonuna dek sürecek; Samsun Türkiye'nin kışlık sebzesinin yüzde 39,7'sini üretiyor.",
+   "why": "Kışlık sebze hasadının sürdüğü Samsun'da üreticilerin ülke tarım ekonomisindeki güçlü payını ortaya koyuyor.",
+   "sources": [
+    "DHA",
+    "İHA"
+   ],
+   "n": 4
+  },
+  {
+   "category": "Enerji",
+   "district": "Tekkeköy",
+   "location": "Sanayi Mahallesi, Tekkeköy",
+   "title": "EPDK kararıyla Tekkeköy'deki LPG terminalinin tarifesi yenilendi",
+   "short_title": "Tekkeköy'deki LPG terminaline yeni tarife",
+   "stat": {
+    "value": "20 TL/ton",
+    "label": "KDV hariç yeni günlük LPG depolama bedeli"
+   },
+   "body": "Resmi Gazete'de yayımlanan EPDK kararıyla Tekkeköy'deki 5 bin 850 metreküp kapasiteli Akpet Samsun Terminali'nin LPG depolama tarifesi yenilendi.\nYeni tarifede KDV hariç günlük depolama bedeli ton başına 20 TL, teslim alma ve teslim etme bedeli ise 200 TL olarak belirlendi.",
+   "why": "Kentteki enerji lojistiği altyapısında depolama hizmeti alan dağıtım şirketlerinin yeni maliyetlerini belirliyor.",
+   "sources": [
+    "Resmi Gazete",
+    "Gazete Arena"
+   ],
+   "n": 5
+  }
+ ],
+ "briefs": [
+  {
+   "category": "Tarım",
+   "district": "Samsun",
+   "text": "Samsun serbest piyasasında yağlı fındık 175,25 TL, Levant kalite 165,70 TL, sivri kalite 165 TL'den işlem görüyor.",
+   "sources": [
+    "Samsun Gazetesi",
+    "Haberlisin"
+   ],
+   "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M12 21V11\"/><path d=\"M12 11C12 7 9 5 5 5c0 4 3 6 7 6zM12 14c0-4 3-6 7-6 0 4-3 6-7 6z\"/></svg>"
+  },
+  {
+   "category": "Belediye",
+   "district": "Canik",
+   "text": "Canik Belediyesi vergi vezneleri, ikinci taksit ödemeleri için 21-22 Kasım'da 10.00-16.00 saatlerinde açık olacak.",
+   "sources": [
+    "DHA",
+    "Canik Belediyesi"
+   ],
+   "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M3 21h18M4 10h16M12 3l8.5 7h-17z\"/><path d=\"M6.5 10v11M10.5 10v11M13.5 10v11M17.5 10v11\"/></svg>"
+  },
+  {
+   "category": "Yönetim",
+   "district": "Atakum",
+   "text": "Bakanlık, Atakum'da mevzuata aykırılık saptanan Samtek Yapı Denetim'e 1 yıl yeni iş almaktan men cezası verdi.",
+   "sources": [
+    "Resmi Gazete",
+    "Gazete Arena"
+   ],
+   "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M3 21h18M4 10h16M12 3l8.5 7h-17z\"/><path d=\"M6.5 10v11M10.5 10v11M13.5 10v11M17.5 10v11\"/></svg>"
+  },
+  {
+   "category": "Ticaret",
+   "district": "Samsun",
+   "text": "Samsun TSO yönetimi, Vali Tavlı, Başkan Doğan ve Emniyet Müdürü Aydın'ı ziyaret ederek ortak proje mesajı verdi.",
+   "sources": [
+    "İHA",
+    "Habertürk"
+   ],
+   "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M4 10v10h16V10M3 10l2-6h14l2 6z\"/><path d=\"M9 20v-6h6v6\"/></svg>"
+  }
+ ],
+ "outages": [],
+ "scoreboard": null,
+ "hook": "Samsun'da her 100 esnaftan 90'ının vergi ve prim borcu altında çalıştığı açıklanırken, Kavak ve Bafra'daki sanayi ve tarım yatırımlarında yeni veriler paylaşıldı.",
+ "edition": "ekonomi",
+ "date": "2026-11-20",
+ "issue_no": 3,
+ "permalink": "https://www.instagram.com/p/Df9rjHUFxd8/"
+}
