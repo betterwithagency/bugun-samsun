@@ -1,0 +1,138 @@
+{
+ "stories": [
+  {
+   "category": "Samsunspor",
+   "district": "Samsun",
+   "location": "İstanbul",
+   "title": "Samsunspor Galatasaray maçı için 22 futbolcuyla İstanbul'a gitti",
+   "short_title": "Samsunspor 22 oyuncuyla İstanbul'a gitti",
+   "stat": {
+    "value": "22",
+    "label": "Galatasaray maçı kamp kadrosundaki oyuncu"
+   },
+   "body": "Süper Lig'in 12. haftasında 21 Kasım Cumartesi saat 16.00'da deplasmanda Galatasaray ile karşılaşacak Samsunspor, 22 kişilik kafileyle İstanbul'a gitti.\nSakatlıkları bulunan Celil Yüksel, Fatih Kaya ve Yunus Emre Çift kadroda yer almazken maçı Ali Şansalan yönetecek.",
+   "why": "Taraftarların kritik Galatasaray deplasmanı öncesi kamp kadrosunu ve sakatlık eksiklerini öğrenmesini sağlıyor.",
+   "sources": [
+    "DHA",
+    "Hürriyet",
+    "Samsun Gazetesi"
+   ],
+   "n": 1
+  },
+  {
+   "category": "Samsunspor",
+   "district": "Samsun",
+   "location": "Samsunspor Futbol Kulübü",
+   "title": "Samsunspor Galatasaray maçına sırtında 2446 yazılı formayla çıkacak",
+   "short_title": "Samsunspor 2446 yazılı özel formayla çıkacak",
+   "stat": {
+    "value": "2446",
+    "label": "8 Mart 2021'den beri öldürülen kadın"
+   },
+   "body": "Samsunspor, kadına yönelik şiddete karşı yürüttüğü Mor Forma Projesi kapsamında Galatasaray maçına sırtında 2446 yazılı özel formalarla çıkacak.\nBu sayı, projenin başladığı 8 Mart 2021'den bu yana Türkiye'de cinayete kurban giden 2 bin 446 kadını simgeliyor.",
+   "why": "Samsunspor'un kadına yönelik şiddete dikkat çekmek için sahaya taşıdığı farkındalık mesajını aktarıyor.",
+   "sources": [
+    "Samsunspor",
+    "Samsun İlk Haber"
+   ],
+   "n": 2
+  },
+  {
+   "category": "Spor",
+   "district": "Samsun",
+   "location": "Samsun",
+   "title": "Bakanlık 23 Kasım'da Süper Lig kulüplerini denetlemeye başlıyor",
+   "short_title": "Süper Lig kulüplerine 23 Kasım'da denetim",
+   "stat": {
+    "value": "23 Kasım",
+    "label": "Genel denetim sürecinin başlangıç tarihi"
+   },
+   "body": "Gençlik ve Spor Bakanlığı müfettişleri, Samsunspor'un da aralarında bulunduğu Süper Lig kulüpleri ve spor anonim şirketlerini 23 Kasım Pazartesi denetlemeye başlayacak.\nDenetimlerde kulüplerin 1 Haziran 2025 ile 31 Mayıs 2026 arasındaki işlem ve faaliyetleri incelenecek.",
+   "why": "Samsunspor'un idari ve mali işlemlerinin bakanlıkça inceleneceği resmi denetim takvimini ortaya koyuyor.",
+   "sources": [
+    "Haber Expres"
+   ],
+   "n": 3
+  },
+  {
+   "category": "Samsunspor",
+   "district": "İlkadım",
+   "location": "İlkadım Ihlamur Kafe",
+   "title": "Samsunspor yönetimi TSYD toplantısında yerel spor basınıyla buluştu",
+   "short_title": "Samsunspor yönetimi spor basınıyla buluştu",
+   "stat": {
+    "value": "",
+    "label": ""
+   },
+   "body": "TSYD Samsun Şubesi'nin Ihlamur Kafe'de düzenlediği toplantıda Samsunspor yönetimi ile yerel spor gazetecileri bir araya geldi.\nBuluşmada takımın ligdeki durumu, kalan fikstür, eleştiriler ve devre arası transfer döneminde planlanan takviyeler değerlendirildi.",
+   "why": "Yönetimin kalan maçlar ve devre arası transfer planlaması hakkında basına yaptığı bilgilendirmeyi özetliyor.",
+   "sources": [
+    "Kanal 362"
+   ],
+   "n": 4
+  },
+  {
+   "category": "Futbol",
+   "district": "Samsun",
+   "location": "Samsunspor Futbol Akademisi",
+   "title": "Yardımcı antrenör Michel Ribeiro altyapı futbolcularıyla çalıştı",
+   "short_title": "Michel Ribeiro altyapı oyuncularıyla çalıştı",
+   "stat": {
+    "value": "",
+    "label": ""
+   },
+   "body": "Samsunspor A Takım Yardımcı Antrenörü Michel Ribeiro, Futbol Akademisi'ni ziyaret ederek U13, U14 ve U15 takımlarındaki gençlerle özel antrenman yaptı.\nOyuncularla birebir ilgilenen Ribeiro, ardından akademi antrenörleriyle gelişim planlaması üzerine toplantı gerçekleştirdi.",
+   "why": "A takım teknik heyeti ile altyapı arasındaki koordinasyonu ve genç futbolculara yönelik çalışmaları gösteriyor.",
+   "sources": [
+    "Denge Gazetesi"
+   ],
+   "n": 5
+  }
+ ],
+ "briefs": [
+  {
+   "category": "Samsunspor",
+   "district": "Samsun",
+   "text": "İşleri nedeniyle ABD'de bulunan Başkan Yüksel Yıldırım, Galatasaray maçında hakemin konuşulmamasını diledi.",
+   "sources": [
+    "Yeni Şafak"
+   ],
+   "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"12\" cy=\"12\" r=\"9\"/><path d=\"M12 7.5l4 2.9-1.5 4.6h-5L8 10.4z\"/><path d=\"M12 3v4.5M21 10.5l-5 0M17.5 19.5l-3-4.5M6.5 19.5l3-4.5M3 10.5h5\"/></svg>"
+  },
+  {
+   "category": "Futbol",
+   "district": "Samsun",
+   "text": "Galatasaray-Samsunspor maçının deplasman tribünü biletleri 1.500 TL fiyatla Passolig'de satışa sunulacak.",
+   "sources": [
+    "Gazete Gerçek"
+   ],
+   "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"12\" cy=\"12\" r=\"9\"/><path d=\"M12 7.5l4 2.9-1.5 4.6h-5L8 10.4z\"/><path d=\"M12 3v4.5M21 10.5l-5 0M17.5 19.5l-3-4.5M6.5 19.5l3-4.5M3 10.5h5\"/></svg>"
+  },
+  {
+   "category": "Futbol",
+   "district": "Samsun",
+   "text": "Süper Lig'de Galatasaray ile 67. kez karşılaşacak Samsunspor, geride kalan 66 maçta 8 galibiyet elde etti.",
+   "sources": [
+    "AA"
+   ],
+   "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"12\" cy=\"12\" r=\"9\"/><path d=\"M12 7.5l4 2.9-1.5 4.6h-5L8 10.4z\"/><path d=\"M12 3v4.5M21 10.5l-5 0M17.5 19.5l-3-4.5M6.5 19.5l3-4.5M3 10.5h5\"/></svg>"
+  },
+  {
+   "category": "Samsunspor",
+   "district": "Samsun",
+   "text": "Trabzonspor Başkanı Ertuğrul Doğan, Samsunspor'un oynadığı futbolu överek Başkan Yüksel Yıldırım'ı tebrik etti.",
+   "sources": [
+    "Samsun Gazetesi",
+    "Gazete Arena"
+   ],
+   "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"12\" cy=\"12\" r=\"9\"/><path d=\"M12 7.5l4 2.9-1.5 4.6h-5L8 10.4z\"/><path d=\"M12 3v4.5M21 10.5l-5 0M17.5 19.5l-3-4.5M6.5 19.5l3-4.5M3 10.5h5\"/></svg>"
+  }
+ ],
+ "outages": [],
+ "scoreboard": null,
+ "hook": "Galatasaray deplasmanı için 22 kişilik kadrosuyla İstanbul'a giden Samsunspor, sahaya kadına yönelik şiddete dikkat çeken 2446 yazılı özel formalarla çıkacak.",
+ "edition": "spor",
+ "date": "2026-11-20",
+ "issue_no": 3,
+ "permalink": "https://www.instagram.com/p/Df-CR7LCdaD/"
+}
