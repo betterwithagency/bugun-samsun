@@ -44,7 +44,7 @@ jobs:
           python3 - <<'EOF'
           import datetime as dt, os, time, zoneinfo
           TZ = zoneinfo.ZoneInfo("Europe/Istanbul")
-          SLOTS = [("gundem", 7, 7), ("ekonomi", 11, 37), ("spor", 18, 7)]  # preparation starts
+          SLOTS = [("gundem", 7, 7), ("ekonomi", 11, 37), ("reels", 17, 25), ("spor", 18, 7)]  # preparation starts
           MAX_SLEEP = 5 * 3600 + 35 * 60
           now = dt.datetime.now(TZ)
           out = open(os.environ["GITHUB_OUTPUT"], "a")

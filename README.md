@@ -1,6 +1,6 @@
 # Bugün Samsun
 
-@bugunsamsun Instagram hesabı için otomatik haber bülteni: her gün 08.00 Gündem, 12.30 Ekonomi & İş, 19.00 Spor.
+@bugunsamsun Instagram hesabı için otomatik haber bülteni: her gün 08.00 Gündem, 12.30 Ekonomi & İş, 17.30 Reels, 19.00 Spor.
 
 - Kurulum ve günlük kullanım: [KURULUM.md](KURULUM.md)
 - Akış: `bulten/pipeline.py` (topla → araştır → yaz → kontrol → çiz → yayınla)

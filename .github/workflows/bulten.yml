@@ -58,7 +58,10 @@ jobs:
           if [ "${{ inputs.publish }}" = "true" ]; then flags="--publish"; fi
           if [ "${{ inputs.force }}" = "true" ]; then flags="$flags --force"; fi
           if [ "${{ inputs.wait }}" = "true" ]; then flags="$flags --wait"; fi
-          if [ "${{ inputs.sample }}" = "true" ]; then flags="--issue samples/${{ inputs.edition }}.json"; fi
+          if [ "${{ inputs.sample }}" = "true" ]; then
+            src="${{ inputs.edition }}"; [ "$src" = "reels" ] && src="gundem"  # the Reels is made from a Gündem issue
+            flags="--issue samples/$src.json"
+          fi
           echo "flags=$flags" >> "$GITHUB_OUTPUT"
 
       - uses: actions/setup-python@v5
@@ -79,6 +82,7 @@ jobs:
           TOKEN_KEY: ${{ secrets.TOKEN_KEY }}
           GITHUB_TOKEN: ${{ github.token }}
           BULTEN_PROVIDER: ${{ vars.BULTEN_PROVIDER }}
+          BULTEN_REELS_TRIAL: ${{ vars.BULTEN_REELS_TRIAL }}
           BULTEN_GEMINI_MODEL: ${{ vars.BULTEN_GEMINI_MODEL }}
           BULTEN_MODEL: ${{ vars.BULTEN_MODEL }}
           IG_USER_ID: ${{ vars.IG_USER_ID }}

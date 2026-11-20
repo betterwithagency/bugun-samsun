@@ -1,12 +1,20 @@
 # Bugün Samsun · Kurulum rehberi
 
-Bu proje her gün üç bülteni kendiliğinden hazırlayıp @bugunsamsun hesabında paylaşır:
+Bu proje her gün üç bülteni ve bir Reels videosunu kendiliğinden hazırlayıp @bugunsamsun hesabında paylaşır:
 
-| Bülten | Hazırlık başlar | Yayın |
+| Paylaşım | Hazırlık başlar | Yayın |
 |---|---|---|
 | Gündem | 07.07 | 08.00 |
 | Ekonomi & İş | 11.37 | 12.30 |
+| Reels (Gündem'in ilk 3 haberi) | 17.25 | 17.30 |
 | Spor | 18.07 | 19.00 |
+
+### Günlük Reels
+Sabahki Gündem bülteninin ilk 3 haberinden 21 saniyelik dikey bir video üretilir (`bulten/reels.py`,
+şablon `templates/reels.html.j2`). Yapay zekâ kullanılmaz. Video önce **deneme Reels** olarak gönderilir:
+Instagram onu önce takip etmeyenlere gösterir, iyi giderse takipçilere de açar; bu yüzden profil ızgarasında
+hemen görünmeyebilir. Hesap deneme Reels'e uygun değilse normal Reels olarak paylaşılır. Normal Reels'e
+geçmek için depo değişkeni `BULTEN_REELS_TRIAL` = `0` yap. O gün Gündem çıkmadıysa Reels de atlanır.
 
 ### Bültenleri ne başlatır?
 GitHub'ın kendi zamanlaması (cron) bu depoda saatlerce geç çalıştı: 18 Kasım'ın Spor tetikleyicisi gece 01.33'te
