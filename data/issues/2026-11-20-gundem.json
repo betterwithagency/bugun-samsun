@@ -1,0 +1,169 @@
+{
+ "stories": [
+  {
+   "category": "Belediye",
+   "district": "İlkadım",
+   "location": "İlkadım, 5 mahalle",
+   "title": "İlkadım'da 5 mahalleyi kapsayan kentsel dönüşümde inşaat başladı",
+   "short_title": "İlkadım'da 5 mahallede kentsel dönüşüm",
+   "stat": {
+    "value": "2.104",
+    "label": "Projede yapılacak toplam bağımsız bölüm"
+   },
+   "body": "Büyükşehir Belediyesinin Anadolu, Zeytinlik, Kadıköy, Kökçüoğlu ve Hastanebaşı'nı kapsayan 5 etaplı projesinde ilk 4 etapta %100 uzlaşma sağlandı.\n1. etapta 421 bağımsız bölümün kaba inşaatı başlarken, yıkımı biten 2 ve 3. etaptaki 666 birim için ihale ilanına çıkıldı.",
+   "why": "İlkadım'ın merkezindeki beş mahallede riskli yapıların yıkımı ve yeni konutların inşası eş zamanlı ilerliyor.",
+   "sources": [
+    "İHA",
+    "Habertürk",
+    "Samsun Büyükşehir Belediyesi"
+   ],
+   "n": 1
+  },
+  {
+   "category": "Eğitim",
+   "district": "Samsun",
+   "location": "Samsun genelindeki okullar",
+   "title": "Samsun'da 198 okulun bahçesine spor ve oyun alanı kazandırıldı",
+   "short_title": "198 okul bahçesine spor ve oyun alanı",
+   "stat": {
+    "value": "198",
+    "label": "Saha ve oyun alanı çizilen okul sayısı"
+   },
+   "body": "İl Millî Eğitim Müdürlüğü, Türkiye Oyun Politika Belgesi ve Eylem Planı kapsamında 91 okulun bahçesine basketbol ve voleybol saha çizimi yaptı.\nBüyükşehir Belediyesi desteğiyle 107 okulda da çocuk oyun alanı çizimleri tamamlanırken çalışmalar diğer okullarda sürüyor.",
+   "why": "Öğrencilerin teneffüslerde ve okul etkinliklerinde spor yapıp oyun oynayabileceği fiziksel alanlar genişletiliyor.",
+   "sources": [
+    "Samsun İl Millî Eğitim Müdürlüğü",
+    "Samsun Gazetesi"
+   ],
+   "n": 2
+  },
+  {
+   "category": "Gündem",
+   "district": "Samsun",
+   "location": "Orta Karadeniz Kalkınma Ajansı",
+   "title": "Aile ve çocuk korumaya yönelik iki yeni projeye OKA desteği",
+   "short_title": "İki yeni sosyal hizmet projesine OKA desteği",
+   "stat": {
+    "value": "2",
+    "label": "OKA desteğiyle imzalanan proje sayısı"
+   },
+   "body": "Aile ve Sosyal Hizmetler İl Müdürlüğünün hazırladığı iki projenin sözleşmesi, OKA Genel Sekreteri Mehlika Dicle ve İl Müdürü Kemal Gümrükçü arasında imzalandı.\nProjelerle aile içi risklerin erken tespiti ve çocuk koruma alanında saha kapasitesinin güçlendirilmesi hedefleniyor.",
+   "why": "Kentteki aile destek hizmetlerinin ve çocuk koruma sisteminin sahadaki uygulama kalitesini doğrudan geliştirecek.",
+   "sources": [
+    "İHA",
+    "Haberler.com"
+   ],
+   "n": 3
+  },
+  {
+   "category": "Ekonomi",
+   "district": "Bafra",
+   "location": "Bafra Fırıncılar Odası",
+   "title": "Bafra Fırıncılar Odası ekmek zammı yerine maliyet desteği istedi",
+   "short_title": "Bafra'da fırıncılardan girdi maliyeti çağrısı",
+   "stat": {
+    "value": "1.450 TL",
+    "label": "950 liradan yükselen un çuvalı fiyatı"
+   },
+   "body": "Bafra Fırıncılar Odası Başkanı Koray Çatan, un çuvalının 950 TL'den 1.400-1.450 TL'ye, odunun ise 5 bin TL'den 7 bin TL'ye çıktığını açıkladı.\nEkmeğe zam talep etmediklerini belirten Çatan, un ve diğer üretim girdisi fiyatlarının sabitlenerek esnafın desteklenmesini istedi.",
+   "why": "Temel gıda maddesi olan ekmeğin fiyatının korunması için fırıncı esnafının girdi maliyetlerine dikkat çekiyor.",
+   "sources": [
+    "İHA",
+    "Habertürk"
+   ],
+   "n": 4
+  },
+  {
+   "category": "Etkinlik",
+   "district": "Canik",
+   "location": "Canik Keşif Kampüsü",
+   "title": "Canik'te ara tatilde 10 atölyede bilim ve teknoloji eğitimi",
+   "short_title": "Canik'te ara tatilde bilim ve teknoloji",
+   "stat": {
+    "value": "10",
+    "label": "Eğitim verilen atölye ve keşif alanı"
+   },
+   "body": "Canik Belediyesi, Özdemir Bayraktar Keşif Kampüsü'nde çocuklara ve gençlere yönelik Ara Tatil Eğitim Programı düzenliyor.\nÖğrenciler 10 farklı atölyede yapay zeka, yazılım, robotik kodlama ve deney çalışmalarına katılırken yerli teknolojileri de yakından tanıyor.",
+   "why": "Ara tatildeki çocuk ve gençlere uygulamalı bilim, robotik kodlama ve yapay zeka alanlarında eğitim imkanı sunuyor.",
+   "sources": [
+    "DHA",
+    "Hürriyet",
+    "Canik Belediyesi"
+   ],
+   "n": 5
+  },
+  {
+   "category": "Kültür",
+   "district": "Samsun",
+   "location": "Gazi Halk Kütüphanesi",
+   "title": "Samsun Gazi Halk Kütüphanesi uluslararası iklim zirvesinde tanıtıldı",
+   "short_title": "Gazi Halk Kütüphanesi COP31 İklim Zirvesi'nde",
+   "stat": {
+    "value": "",
+    "label": ""
+   },
+   "body": "Antalya'daki COP31 İklim Zirvesi'nde kurulan İklim Kütüphanesi'nin koordinasyonunu 17-19 Kasım'da Samsun'dan kütüphaneci Merve Gedik Çoban üstlendi.\nZirvede Gazi Halk Kütüphanesi'nin çevre duyarlılığı ve sürdürülebilirlik çalışmaları uluslararası ziyaretçilere tanıtıldı.",
+   "why": "Samsun'daki kamu kütüphaneciliği ve sürdürülebilirlik çalışmalarının uluslararası düzeyde tanıtılmasını sağlıyor.",
+   "sources": [
+    "AA",
+    "Samsun Gazetesi",
+    "Samsun İl Kültür ve Turizm Müdürlüğü"
+   ],
+   "n": 6
+  }
+ ],
+ "briefs": [
+  {
+   "category": "Gündem",
+   "district": "Samsun",
+   "text": "Bireysel ve kurumsal gönüllülüğü dijitalde buluşturan İyilik Var-Milli Gönüllülük Platformu Samsun'da tanıtıldı.",
+   "sources": [
+    "AA",
+    "Hürriyet"
+   ],
+   "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"3\" y=\"4\" width=\"18\" height=\"16\" rx=\"2\"/><path d=\"M7 8h10M7 12h10M7 16h6\"/></svg>"
+  },
+  {
+   "category": "Kültür",
+   "district": "Vezirköprü",
+   "text": "Samsun Tanıtım Merkezi'nde düzenlenen ilçe tanıtım günlerinde bu hafta Vezirköprü'nün değerleri tanıtılıyor.",
+   "sources": [
+    "Kapsam Haber",
+    "Samsun Büyükşehir Belediyesi"
+   ],
+   "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M2 5h6a4 4 0 0 1 4 4v11a3 3 0 0 0-3-3H2zM22 5h-6a4 4 0 0 0-4 4v11a3 3 0 0 1 3-3h7z\"/></svg>"
+  },
+  {
+   "category": "Afet",
+   "district": "Terme",
+   "text": "AFAD ve Terme Kaymakamlığı koordinasyonunda kamu personeline afet müdahale eğitimi verilerek tatbikat yapıldı.",
+   "sources": [
+    "AA",
+    "Hürriyet",
+    "AFAD"
+   ],
+   "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M12 3l10 18H2z\"/><path d=\"M12 10v5M12 18v.01\"/></svg>"
+  },
+  {
+   "category": "Gündem",
+   "district": "İlkadım",
+   "text": "İlkadım'da tamirci Süleyman Altunay, iş yeri önünde bulunan para dolu çantayı sahibine ulaştırmak için cama astı.",
+   "sources": [
+    "İHA",
+    "Son Dakika"
+   ],
+   "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"3\" y=\"4\" width=\"18\" height=\"16\" rx=\"2\"/><path d=\"M7 8h10M7 12h10M7 16h6\"/></svg>"
+  }
+ ],
+ "outages": [],
+ "scoreboard": null,
+ "hook": "İlkadım'da beş mahalleyi kapsayan 2 bin 104 bağımsız bölümlü kentsel dönüşüm projesinde ilk etabın inşaatı yükselirken iki yeni etap için ihale sürecine geçildi.",
+ "edition": "gundem",
+ "date": "2026-11-20",
+ "issue_no": 3,
+ "practical": {
+  "outages": [],
+  "pharmacy": "Nöbetçi eczaneleri e-Devlet'ten ya da Samsun Eczacı Odası'ndan öğrenebilirsin."
+ },
+ "permalink": "https://www.instagram.com/p/Df82ySiFzYY/"
+}
