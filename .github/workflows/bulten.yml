@@ -8,7 +8,7 @@ on:
       edition:
         description: "Bülten"
         type: choice
-        options: [gundem, ekonomi, spor]
+        options: [gundem, ekonomi, spor, reels]
         default: gundem
       publish:
         description: "Instagram'a gönder (kapalıysa yalnızca görselleri hazırlar)"

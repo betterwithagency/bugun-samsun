@@ -1,13 +1,15 @@
-"""Publish a carousel with the Instagram API.
+"""Publish carousels and Reels with the Instagram API.
 
 Works with both token kinds Meta hands out:
 - system-user tokens from "API setup with Unified login" (start with "EAA", never expire) → graph.facebook.com,
   account id from the IG_USER_ID variable;
 - Instagram Login tokens (start with "IG", 60 days, refreshable) → graph.instagram.com.
 """
+import json
 import os
 import time
 from datetime import datetime
+from pathlib import Path
 
 import requests
 
@@ -91,11 +93,12 @@ def posted_since(token: str, user_id: str, marker: str, since: datetime) -> str:
 def _wait_ready(token: str, container_id: str, timeout: int = 300):
     deadline = time.time() + timeout
     while True:
-        status = _call("GET", container_id, token, fields="status_code").get("status_code")
+        info = _call("GET", container_id, token, fields="status_code,status")
+        status = info.get("status_code")
         if status == "FINISHED":
             return
         if status in ("ERROR", "EXPIRED"):
-            raise InstagramError(f"container {container_id} status {status}")
+            raise InstagramError(f"container {container_id} status {status}: {info.get('status', '')}")
         if time.time() > deadline:
             raise InstagramError(f"container {container_id} not ready after {timeout}s (last: {status})")
         time.sleep(5)
@@ -121,6 +124,46 @@ def publish_carousel(token: str, user_id: str, image_urls: list, caption: str) -
     except InstagramError as exc:  # the post is live; a missing permalink is not a failure
         print(f"[instagram] permalink lookup failed: {exc}")
     return {"id": published["id"], "permalink": info.get("permalink", "")}
+
+
+def publish_reel(token: str, user_id: str, video_path, caption: str, trial: bool = False,
+                 thumb_offset_ms: int | None = None) -> dict:
+    """Upload an MP4 straight to Meta (resumable upload, no public hosting needed), then publish it as a Reels.
+
+    trial=True posts a trial reel: shown to non-followers first, shared with followers automatically if it
+    performs well. Returns {'id', 'permalink', 'trial'}.
+    """
+    params = {"media_type": "REELS", "upload_type": "resumable", "caption": caption}
+    if thumb_offset_ms is not None:
+        params["thumb_offset"] = str(int(thumb_offset_ms))
+    if trial:
+        params["trial_params"] = json.dumps({"graduation_strategy": "SS_PERFORMANCE"})
+    container = _call("POST", f"{user_id}/media", token, **params)
+    cid = container["id"]
+    uri = container.get("uri") or f"https://rupload.facebook.com/ig-api-upload/{VERSION}/{cid}"
+    data = Path(video_path).read_bytes()
+    for attempt in range(3):
+        try:
+            r = requests.post(uri, data=data, timeout=600, headers={
+                "Authorization": f"OAuth {token}", "offset": "0", "file_size": str(len(data))})
+        except requests.RequestException as exc:  # never print the request: its header carries the token
+            if attempt < 2:
+                time.sleep(15)
+                continue
+            raise InstagramError(f"reel upload: network error {type(exc).__name__}") from None
+        if r.ok:
+            break
+        if r.status_code < 500 or attempt == 2:
+            raise InstagramError(f"reel upload failed: HTTP {r.status_code} {r.text[:300]}")
+        time.sleep(15)
+    _wait_ready(token, cid, timeout=900)  # Meta transcodes the video first
+    published = _call("POST", f"{user_id}/media_publish", token, creation_id=cid)
+    info = {}
+    try:
+        info = _call("GET", published["id"], token, fields="permalink")
+    except InstagramError as exc:
+        print(f"[instagram] permalink lookup failed: {exc}")
+    return {"id": published["id"], "permalink": info.get("permalink", ""), "trial": trial}
 
 
 def refresh_token(token: str) -> dict:

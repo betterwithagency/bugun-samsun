@@ -3,6 +3,7 @@
   python -m bulten run --edition gundem                 # prepare slides + caption only (no publishing)
   python -m bulten run --edition gundem --publish --wait  # what the scheduled workflow does
   python -m bulten run --edition gundem --issue samples/gundem2.json   # skip the AI, test rendering
+  python -m bulten run --edition reels --publish --wait  # 17.30 Reels from today's Gündem bulletin
   python -m bulten candidates --edition spor            # show today's candidate headlines
   python -m bulten check                                 # verify the Instagram and Anthropic credentials
 """
@@ -18,7 +19,7 @@ def main(argv=None) -> int:
     p = argparse.ArgumentParser(prog="bulten")
     sub = p.add_subparsers(dest="cmd", required=True)
     r = sub.add_parser("run")
-    r.add_argument("--edition", required=True, choices=["gundem", "ekonomi", "spor"])
+    r.add_argument("--edition", required=True, choices=["gundem", "ekonomi", "spor", "reels"])
     r.add_argument("--publish", action="store_true", help="post to Instagram")
     r.add_argument("--wait", action="store_true", help="wait until the edition's publish time")
     r.add_argument("--force", action="store_true", help="publish even if this edition already ran today")
@@ -38,6 +39,9 @@ def main(argv=None) -> int:
         return 0
 
     from .pipeline import Skip, run
+    if args.edition == "reels":
+        from .reels import run as run_reels
+        run = lambda edition, **kw: run_reels(**kw)  # noqa: E731
     try:
         result = run(args.edition, publish=args.publish, wait=args.wait, force=args.force, issue_file=args.issue)
     except Skip as exc:
