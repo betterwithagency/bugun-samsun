@@ -2,7 +2,7 @@
 
 No AI step: the stories come from the Gündem bulletin already published this morning
 (data/issues/<date>-gundem.json). The HTML template is stepped frame by frame (Web Animations API),
-screenshotted with Playwright and piped into ffmpeg (H.264 + silent AAC, what Instagram expects).
+screenshotted with Playwright and piped into ffmpeg (H.264 + AAC) over a calm music bed of our own.
 
 By default the Reels goes out as a trial reel: Instagram shows it to non-followers first, so followers'
 feeds still get three posts a day. If the account cannot post trial reels yet, it is posted as a normal Reels.
@@ -30,6 +30,7 @@ COVER, PER_STORY, CTA = 2.8, 4.8, 3.8  # seconds
 MARKER = "#samsunhaberleri"  # only Reels captions carry it (duplicate check); never used by the bulletins
 TRIAL = (os.environ.get("BULTEN_REELS_TRIAL") or "1") != "0"
 CROP = "-10 58 970 540"
+MUSIC = ASSETS / "audio" / "haber-fon.m4a"  # made by tools/make_music.py (our own composition)
 
 
 def _ffmpeg() -> str:
@@ -101,10 +102,15 @@ def render_video(issue: dict, out_dir: Path) -> dict:
             print(f"[reels] {bad} text block(s) still too big at the smallest size")
         page.evaluate("ms => seek(ms)", 1800)
         page.screenshot(path=str(cover), type="jpeg", quality=92)
+        dur = ctx["duration"]
+        if MUSIC.exists():  # calm bed, faded out under the closing card
+            audio = ["-i", str(MUSIC), "-af", f"afade=t=in:st=0:d=0.3,afade=t=out:st={dur - 1.8:.2f}:d=1.8"]
+        else:
+            audio = ["-f", "lavfi", "-i", "anullsrc=r=48000:cl=stereo"]
         ff = subprocess.Popen(
             [_ffmpeg(), "-y", "-loglevel", "error",
              "-f", "image2pipe", "-framerate", str(FPS), "-c:v", "png", "-i", "-",
-             "-f", "lavfi", "-i", "anullsrc=r=48000:cl=stereo", "-map", "0:v", "-map", "1:a", "-shortest",
+             *audio, "-map", "0:v", "-map", "1:a", "-t", f"{dur:.2f}",
              "-vf", "scale=out_color_matrix=bt709:out_range=tv,format=yuv420p",
              "-colorspace", "bt709", "-color_primaries", "bt709", "-color_trc", "bt709", "-color_range", "tv",
              "-c:v", "libx264", "-preset", "medium", "-crf", "18", "-profile:v", "high",
