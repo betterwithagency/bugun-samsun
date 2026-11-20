@@ -16,10 +16,11 @@ PAUSE = DATA / "PAUSE"
 PHARMACY = "Nöbetçi eczaneleri e-Devlet'ten ya da Samsun Eczacı Odası'ndan öğrenebilirsin."
 
 BASE_TAGS = {
-    "gundem": ["#samsun", "#samsunhaber", "#samsungündem", "#bugunsamsun"],
-    "ekonomi": ["#samsun", "#samsunekonomi", "#samsunişdünyası", "#bugunsamsun"],
-    "spor": ["#samsun", "#samsunspor", "#samsunsporhaber", "#bugunsamsun"],
+    "gundem": ["#samsun", "#samsunhaber", "#samsungündem"],
+    "ekonomi": ["#samsun", "#samsunekonomi", "#samsunişdünyası"],
+    "spor": ["#samsun", "#samsunspor", "#samsunsporhaber"],
 }
+MAX_TAGS = 5  # Instagram's cap since Dec 2025; more reads as hashtag spam
 MARKER = {"gundem": "#samsungündem", "ekonomi": "#samsunekonomi", "spor": "#samsunsporhaber"}  # one per edition
 MIN_GAP = timedelta(hours=14)  # an edition goes out once a day: two posts closer than this are a duplicate
 WINDOW = (timedelta(hours=3), timedelta(hours=2))  # automated (--wait) runs publish only from publish_at-3h to +2h
@@ -64,7 +65,7 @@ def caption(issue: dict) -> str:
             tag = "#" + re.sub(r"\s+", "", _tr_lower(d))
             if tag not in tags:
                 tags.append(tag)
-    lines += ["", " ".join(tags[:12])]
+    lines += ["", " ".join(tags[:MAX_TAGS])]
     return "\n".join(lines)[:2200]
 
 
