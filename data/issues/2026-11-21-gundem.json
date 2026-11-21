@@ -1,0 +1,165 @@
+{
+ "stories": [
+  {
+   "category": "Altyapı",
+   "district": "Samsun",
+   "location": "Salıpazarı Barajı",
+   "title": "Salıpazarı Barajı arıtma tesisiyle 3 ilçenin su sorunu çözülecek",
+   "short_title": "Üç ilçenin su sorunu 2027'de çözülecek",
+   "stat": {
+    "value": "100 bin m³",
+    "label": "Günlük içme suyu arıtma kapasitesi"
+   },
+   "body": "SASKİ tarafından 1 milyar 100 milyon TL yatırımla inşa edilen Salıpazarı Barajı İçmesuyu Arıtma Tesisi'nin Ağustos 2027'de bitirilmesi hedefleniyor.\nGünlük 100 bin metreküp kapasiteli tesis; Terme, Salıpazarı ve Çarşamba'nın içme suyu ihtiyacını karşılayacak.",
+   "why": "Terme'de yazın ve yağışlı havalarda yaşanan su kesintileri ile Çarşamba'daki altyapı sorunları giderilecek.",
+   "sources": [
+    "İHA",
+    "Habertürk",
+    "Yeni Şafak"
+   ],
+   "n": 1
+  },
+  {
+   "category": "Eğitim",
+   "district": "Samsun",
+   "location": "Ballıca Kampüsü",
+   "title": "Samsun Üniversitesi yapay zekâ merkezine KOSGEB'den 19,5 milyon TL",
+   "short_title": "Yapay zekâ merkezine 19,5 milyon TL destek",
+   "stat": {
+    "value": "19,5 milyon",
+    "label": "KOSGEB geri ödemesiz kuruluş desteği (TL)"
+   },
+   "body": "Samsun Üniversitesi öncülüğünde Ballıca Kampüsü'nde kurulacak DELTA AI Yapay Zekâ ve Dijitalleşme Teknoloji Merkezi, KOSGEB'den resmî onay aldı.\nKOSGEB'in 19,5 milyon TL destek sağlayacağı merkezde beş yılda 30 teknoloji girişiminin desteklenmesi hedefleniyor.",
+   "why": "Girişimci, akademisyen ve öğrencilere kuluçka, Ar-Ge ve mentörlük desteği sunularak yeni şirketler kurulacak.",
+   "sources": [
+    "Samsun Üniversitesi",
+    "Samsun Kent Haber"
+   ],
+   "n": 2
+  },
+  {
+   "category": "Çevre",
+   "district": "Samsun",
+   "location": "Samsun",
+   "title": "Büyükşehir Belediyesi COP31 İklim Zirvesi'nde 6 projesini tanıttı",
+   "short_title": "Samsun'un 6 çevre projesi COP31'de tanıtıldı",
+   "stat": {
+    "value": "6",
+    "label": "COP31'de tanıtılan yerel çevre projesi"
+   },
+   "body": "Samsun Büyükşehir Belediyesi, Antalya'daki BM İklim Değişikliği Konferansı COP31'de güneş enerjisi, sıfır atık ve su arıtma alanındaki 6 projesini tanıttı.\nZirveye 30 elektrikli otobüsle destek veren belediye, uluslararası iklim finansmanı için iş birliği temasları yürüttü.",
+   "why": "Kentteki temiz enerji ve atık projelerinin uluslararası iklim finansmanından yararlanmasına zemin hazırlıyor.",
+   "sources": [
+    "DHA",
+    "İHA",
+    "Habertürk"
+   ],
+   "n": 3
+  },
+  {
+   "category": "Kültür",
+   "district": "İlkadım",
+   "location": "Cumhuriyet Meydanı",
+   "title": "İlkadım Anıtı'ndan sökülen gençlik heykelleri onarıma alındı",
+   "short_title": "İlkadım Anıtı'ndaki heykeller onarıma alındı",
+   "stat": {
+    "value": "",
+    "label": ""
+   },
+   "body": "Cumhuriyet Meydanı'ndaki İlkadım Anıtı'nda yürütülen bakım kapsamında, gençliği temsil eden kız ve erkek figürleri sökülerek atölyeye taşındı.\nBüyükşehir Belediyesi, korozyon ve çatlak tespit edilen iki heykelin onarım sonrası yeniden yerine yerleştirileceğini açıkladı.",
+   "why": "Kentin simge anıtındaki iki figürün kaldırılması üzerine kamuoyunda oluşan soru işaretlerine netlik kazandırıldı.",
+   "sources": [
+    "Cumhuriyet",
+    "Gazete Arena"
+   ],
+   "n": 4
+  },
+  {
+   "category": "Gündem",
+   "district": "Atakum",
+   "location": "Atakum",
+   "title": "Atakum'daki aykırılık nedeniyle yapı denetim şirketine 1 yıl men",
+   "short_title": "Yapı denetim şirketine 1 yıl yeni iş yasağı",
+   "stat": {
+    "value": "1 yıl",
+    "label": "Yeni yapı denetim işi almaktan men süresi"
+   },
+   "body": "Çevre, Şehircilik ve İklim Değişikliği Bakanlığı, Atakum'daki bir yapıda tespit edilen aykırılıklar nedeniyle Samtek Yapı Denetim'e yaptırım uyguladı.\nResmî Gazete'deki kararla şirkete 1 yıl yeni iş almaktan men cezası verilirken kuruluş ortağına da görev yasağı getirildi.",
+   "why": "Yapı güvenliği denetimlerindeki mevzuat aykırılıklarına uygulanan yaptırımla firma 1 yıl yeni iş üstlenemeyecek.",
+   "sources": [
+    "Samsun Gazetesi"
+   ],
+   "n": 5
+  },
+  {
+   "category": "Etkinlik",
+   "district": "Samsun",
+   "location": "Samsun Valiliği",
+   "title": "Çocukların hazırladığı iklim ve haklar bildirgesi Vali Tavlı'da",
+   "short_title": "Çocuklardan iklim ve haklar bildirgesi",
+   "stat": {
+    "value": "",
+    "label": ""
+   },
+   "body": "20 Kasım Dünya Çocuk Hakları Günü kapsamında düzenlenen çalıştayda çocuklar, Samsun Çocuk Hakları ve İklim Bildirgesi'ni hazırladı.\nÇocuk temsilcileri çevre, sıfır atık ve dijital dünya önerilerini içeren bildirgeyi Samsun Valisi Orhan Tavlı'ya sundu.",
+   "why": "Farklı ilçelerden çocukların çevre ve çocuk haklarına dair çözüm önerileri kamu kurumlarının gündemine taşınıyor.",
+   "sources": [
+    "İHA",
+    "Haberler.com",
+    "Aydınlık"
+   ],
+   "n": 6
+  }
+ ],
+ "briefs": [
+  {
+   "category": "Kültür",
+   "district": "Atakum",
+   "text": "Atakum Karakavuk Mahallesi'nde kaçak kazı yapılan 2 bin 863 metrekarelik alan 3. derece arkeolojik sit alanı oldu.",
+   "sources": [
+    "Gazete Gerçek"
+   ],
+   "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M2 5h6a4 4 0 0 1 4 4v11a3 3 0 0 0-3-3H2zM22 5h-6a4 4 0 0 0-4 4v11a3 3 0 0 1 3-3h7z\"/></svg>"
+  },
+  {
+   "category": "Belediye",
+   "district": "Canik",
+   "text": "Canik Belediyesi vergi tahsilat vezneleri, 21-22 Kasım hafta sonunda 10.00-16.00 saatleri arasında açık olacak.",
+   "sources": [
+    "DHA"
+   ],
+   "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M3 21h18M4 10h16M12 3l8.5 7h-17z\"/><path d=\"M6.5 10v11M10.5 10v11M13.5 10v11M17.5 10v11\"/></svg>"
+  },
+  {
+   "category": "Kültür",
+   "district": "Salıpazarı",
+   "text": "Salıpazarı'nda yöresel mutfağı yaşatmak ve kadın kooperatiflerini desteklemek için Gastronomi Otağı hizmete girdi.",
+   "sources": [
+    "AA",
+    "Habertürk"
+   ],
+   "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M2 5h6a4 4 0 0 1 4 4v11a3 3 0 0 0-3-3H2zM22 5h-6a4 4 0 0 0-4 4v11a3 3 0 0 1 3-3h7z\"/></svg>"
+  },
+  {
+   "category": "Etkinlik",
+   "district": "Atakum",
+   "text": "Atakum Belediyesi, Öğretmenler Günü için 24 Kasım Salı 19.30'da Ata Sahne'de halk müziği konseri düzenleyecek.",
+   "sources": [
+    "İHA",
+    "Habertürk"
+   ],
+   "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"3\" y=\"5\" width=\"18\" height=\"16\" rx=\"2\"/><path d=\"M3 10h18M8 3v4M16 3v4\"/></svg>"
+  }
+ ],
+ "outages": [],
+ "scoreboard": null,
+ "hook": "Üç ilçenin içme suyu sorununu çözecek yeni arıtma tesisinden Samsun Üniversitesi'nin yapay zekâ merkezine kadar bugün Samsun gündeminde öne çıkan gelişmeleri derledik.",
+ "edition": "gundem",
+ "date": "2026-11-21",
+ "issue_no": 4,
+ "practical": {
+  "outages": [],
+  "pharmacy": "Nöbetçi eczaneleri e-Devlet'ten ya da Samsun Eczacı Odası'ndan öğrenebilirsin."
+ },
+ "permalink": "https://www.instagram.com/p/Df_bieoF40d/"
+}
