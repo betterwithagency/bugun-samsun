@@ -1,0 +1,141 @@
+{
+ "stories": [
+  {
+   "category": "Ulaşım",
+   "district": "Samsun",
+   "location": "Havza - Tekkeköy hattı",
+   "title": "Hızlı trenin Havza-Tekkeköy etabı için 2027'de ihale hedefleniyor",
+   "short_title": "Hızlı trende 2027 ihale hedefi",
+   "stat": {
+    "value": "2,5 saat",
+    "label": "Hedeflenen Ankara-Samsun yolculuk süresi"
+   },
+   "body": "Büyükşehir Belediye Başkanı Halit Doğan, hızlı tren projesinin Havza-Tekkeköy etabında 2027'de ihale hedeflendiğini açıkladı.\nKavak ve Havza OSB'den geçecek hatla yılda 12 milyon yolcu ve 14 milyon ton yük taşınması, ihracatın 5 milyar dolara çıkması planlanıyor.",
+   "why": "Proje, Ankara ulaşımını 2,5 saate indirirken OSB'leri demir yoluyla limanlara bağlayarak ihracatı büyütecek.",
+   "sources": [
+    "İHA",
+    "24 Haber",
+    "Gazete Arena"
+   ],
+   "n": 1
+  },
+  {
+   "category": "Ticaret",
+   "district": "Samsun",
+   "location": "Samsun Sebze ve Meyve Hali",
+   "title": "Samsun Hali'nde meyve bolluğu ve ihracat daralması fiyatları düşürdü",
+   "short_title": "Halde meyve fiyatları geriledi",
+   "stat": {
+    "value": "15 TL",
+    "label": "Halde mandalinanın kilogram satış fiyatı"
+   },
+   "body": "Hal Komisyoncuları Derneği Başkanı Burhan Ekiz, üretim bolluğu ve ihracattaki daralmanın meyve fiyatlarını düşürdüğünü açıkladı.\nDepoların dolduğu halde mandalinanın kilosu 15 TL'den, elma ve geçen yıl 200 TL'ye kadar çıkan ayvanın kilosu ise 20 TL'den satılıyor.",
+   "why": "Fiyat düşüşü tüketicinin meyveye erişimini ucuzlatırken artan maliyetler karşısında üretici ve esnafı zorluyor.",
+   "sources": [
+    "Gazete Arena"
+   ],
+   "n": 2
+  },
+  {
+   "category": "Tarım",
+   "district": "Bafra",
+   "location": "Bafra Ziraat Odası",
+   "title": "Bafra'da tütün üreticilerine kalite için geleneksel dizim çağrısı",
+   "short_title": "Bafra'da tütün üreticilerine kalite uyarısı",
+   "stat": {
+    "value": "40 bin dekar",
+    "label": "Bafra'da 42 mahalledeki tütün ekim alanı"
+   },
+   "body": "Bafra Ziraat Odası Başkanı Osman Tosuner, 18 mahallenin tek geçim kaynağı olan tütün için üreticilerle alıcı firmaları buluşturdu.\nÜfleme makinelerinin kaliteyi düşürdüğünü belirten Tosuner, geleneksel dizime dönülmesini ve ürünün son kez mevcut fiyattan alınmasını istedi.",
+   "why": "Tütündeki kalite standartları ve alım şartları, 42 mahalledeki üretici ailelerin gelirini doğrudan belirliyor.",
+   "sources": [
+    "AA",
+    "Habertürk"
+   ],
+   "n": 3
+  },
+  {
+   "category": "İstihdam",
+   "district": "Bafra",
+   "location": "Bafra TSO",
+   "title": "Bafra TSO'dan nitelikli iş gücü için OSB'ye meslek lisesi talebi",
+   "short_title": "Bafra OSB'ye meslek lisesi talebi",
+   "stat": {
+    "value": "",
+    "label": ""
+   },
+   "body": "Bafra TSO Başkanı Göksel Başar, Milletvekili İlyas Topsakal ile görüşmesinde Bafra OSB içerisine bir meslek lisesi kurulmasını talep etti.\nBu adımla OSB'deki firmaların nitelikli iş gücü ihtiyacının çözülmesi ve gençlerin istihdam olanaklarının artırılması hedefleniyor.",
+   "why": "OSB içinde açılacak meslek lisesi, gençlerin eğitimle doğrudan yerel sanayide iş bulmasını kolaylaştıracak.",
+   "sources": [
+    "Kızılırmak Gazetesi"
+   ],
+   "n": 4
+  },
+  {
+   "category": "Ekonomi",
+   "district": "Salıpazarı",
+   "location": "Salıpazarı",
+   "title": "Salıpazarı'nda kadın emeğini destekleyen Gastronomi Otağı açıldı",
+   "short_title": "Salıpazarı'nda Gastronomi Otağı hizmete girdi",
+   "stat": {
+    "value": "",
+    "label": ""
+   },
+   "body": "Belediye, YEG ve TKDK desteğiyle kadın kooperatiflerinin üretimini desteklemek için kurulan Gastronomi Otağı hizmete girdi.\nBaşkan Refattin Karaca, projeyle kadın emeğinin ekonomik değere dönüştürülmesinin ve kırsal turizmin geliştirilmesinin hedeflendiğini belirtti.",
+   "why": "Merkez, kadın üreticilerin yöresel ürünlerini doğrudan tüketiciye sunarak gelir elde etmesini sağlıyor.",
+   "sources": [
+    "AA",
+    "Habertürk"
+   ],
+   "n": 5
+  }
+ ],
+ "briefs": [
+  {
+   "category": "Çevre",
+   "district": "Terme",
+   "text": "Terme Belediye Başkanı Şenol Kul, COP31'de ilçedeki çeltik ve fındık atıklarının ekonomiye dönüşümünü anlattı.",
+   "sources": [
+    "AA",
+    "Habertürk",
+    "Haberport"
+   ],
+   "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M5 20c0-9 6-15 15-15 0 9-6 15-15 15z\"/><path d=\"M5 20l8-8\"/></svg>"
+  },
+  {
+   "category": "İstihdam",
+   "district": "Samsun",
+   "text": "Samsun Diş Hekimleri Odası Başkanı Övgü Tunçdemir, genç hekimler için aile diş hekimliği ve uygun kredi istedi.",
+   "sources": [
+    "Gazete Arena"
+   ],
+   "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"3\" y=\"7\" width=\"18\" height=\"13\" rx=\"2\"/><path d=\"M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2M3 13h18\"/></svg>"
+  },
+  {
+   "category": "Enerji",
+   "district": "Samsun",
+   "text": "PÜİS Samsun Şube Başkanı Zafer Güler, Kerkük-Ceyhan Hattı'nın akaryakıt pompa fiyatlarını rahatlatacağını açıkladı.",
+   "sources": [
+    "İHA",
+    "Habertürk"
+   ],
+   "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M13 2L4 14h7l-1 8 9-12h-7z\"/></svg>"
+  },
+  {
+   "category": "Duyuru",
+   "district": "Canik",
+   "text": "Canik Belediyesi vezneleri, 30 Kasım'da bitecek vergi ödemeleri için hafta sonu 10.00-16.00 arasında açık olacak.",
+   "sources": [
+    "DHA"
+   ],
+   "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M3 10v4h3l7 5V5l-7 5z\"/><path d=\"M17 9a4 4 0 0 1 0 6M19.5 6.5a7.5 7.5 0 0 1 0 11\"/></svg>"
+  }
+ ],
+ "outages": [],
+ "scoreboard": null,
+ "hook": "Samsun-Ankara Hızlı Tren Hattı'nın Havza-Tekkeköy etabı için 2027 ihale hedefi açıklanırken, Samsun Hali'nde ihracat daralması ve ürün bolluğu meyve fiyatlarını düşürdü.",
+ "edition": "ekonomi",
+ "date": "2026-11-21",
+ "issue_no": 4,
+ "permalink": "https://www.instagram.com/p/Df_6d1blcQZ/"
+}
