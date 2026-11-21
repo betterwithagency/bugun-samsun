@@ -1,0 +1,142 @@
+{
+ "stories": [
+  {
+   "category": "Samsunspor",
+   "district": "Samsun",
+   "location": "Fatih Terim Stadyumu",
+   "title": "Samsunspor, Galatasaray deplasmanında 2-1 mağlup oldu",
+   "short_title": "Samsunspor deplasmanda 2-1",
+   "stat": {
+    "value": "7",
+    "label": "Samsunspor'un 12. hafta sonundaki puanı"
+   },
+   "body": "Süper Lig'in 12. haftasında Galatasaray'a konuk olan Samsunspor 2-1 yenildi. Ev sahibinin gollerini Lucas Torreira ve Yunus Akgün attı.\nSamsunspor'un tek golünü 57. dakikada Mohamed Bayo kaydetti.",
+   "why": "Samsunspor, bu mağlubiyetle 12. haftayı 7 puanla 17. sırada tamamladı.",
+   "sources": [
+    "Yeni Şafak",
+    "Samsun Gazetesi"
+   ],
+   "n": 1
+  },
+  {
+   "category": "Voleybol",
+   "district": "Samsun",
+   "location": "Mustafa Dağıstanlı Spor Salonu",
+   "title": "Samsunspor Kadın Voleybol Takımı seriyi 8 maça çıkardı",
+   "short_title": "Kadın Voleybol Takımı'ndan 8'de",
+   "stat": {
+    "value": "8",
+    "label": "Kırmızı-beyazlı ekibin galibiyet serisi"
+   },
+   "body": "Konelsis Enerji Samsunspor Kadın Voleybol Takımı, Uzman Posta Kadınlar Voleybol 2. Ligi 8. haftasında Sivas Pars Akademi S.K. ile karşılaştı.\nMustafa Dağıstanlı Spor Salonu'nda rakibini 3-0 yenen kırmızı-beyazlı ekip, tüm maçlarını kazanarak galibiyet serisini 8 maça çıkardı.",
+   "why": "Samsunspor'un kadın voleybol temsilcisi, ligdeki namağlup unvanını ve 8 maçlık galibiyet serisini sürdürdü.",
+   "sources": [
+    "Gazete Arena"
+   ],
+   "n": 2
+  },
+  {
+   "category": "Spor",
+   "district": "Tekkeköy",
+   "location": "Yaşar Doğu Spor Salonu",
+   "title": "Güreş 2. Lig finallerinde Çarşamba Belediyesi SK dördüncü oldu",
+   "short_title": "Güreş 2. Lig'de Çarşamba",
+   "stat": {
+    "value": "4.",
+    "label": "Çarşamba Belediyesi SK'nin lig derecesi"
+   },
+   "body": "Tekkeköy Yaşar Doğu Spor Salonu'nda yapılan 2026-2027 sezonu güreş müsabakaları, 2. Lig finalleriyle sona erdi.\nGrekoromen Stil'de Eti Maden Spor Kulübü şampiyon olurken, Samsun temsilcisi Çarşamba Belediyesi Spor Kulübü dördüncü sırada yer aldı.",
+   "why": "Samsun'un ev sahipliği yaptığı ulusal güreş organizasyonu, Çarşamba temsilcisinin dördüncülüğüyle tamamlandı.",
+   "sources": [
+    "Samsun Gazetesi"
+   ],
+   "n": 3
+  },
+  {
+   "category": "Futbol",
+   "district": "Samsun",
+   "location": "Ordu",
+   "title": "Kadıköyspor U12 Takımı uluslararası turnuvada şampiyon oldu",
+   "short_title": "Kadıköyspor U12'den",
+   "stat": {
+    "value": "16",
+    "label": "Turnuvada mücadele eden toplam takım"
+   },
+   "body": "Samsun temsilcisi Kadıköyspor U12 Takımı, Ordu'da ikisi Gürcistan'dan toplam 16 takımın katıldığı Uluslararası Summer Cup Turnuvası'nda şampiyon oldu.\nTurnuvada Kadıköyspor'dan Taha Gül en değerli oyuncu seçilirken, antrenör Atakan Malkoç en başarılı teknik adam ödülünü aldı.",
+   "why": "Samsun temsilcisi Kadıköyspor, 16 takımlı uluslararası turnuvadan şampiyonluk ve iki bireysel ödülle döndü.",
+   "sources": [
+    "Samsun Gazetesi"
+   ],
+   "n": 4
+  },
+  {
+   "category": "Futbol",
+   "district": "Samsun",
+   "location": "Samsun",
+   "title": "Çarşambaspor ve Ladik Belediyespor yarın deplasmana çıkıyor",
+   "short_title": "Çarşamba ve Ladik yarın",
+   "stat": {
+    "value": "13.00",
+    "label": "İki karşılaşmanın da başlama saati"
+   },
+   "body": "Profesyonelliğe Geçiş Ligi'nin 6. haftasında Samsun temsilcileri 22 Kasım Pazar günü saat 13.00'te deplasmanda sahaya çıkacak.\nÇarşambaspor, Bayburtspor'a; Ladik Belediyespor ise 1926 Bulancakspor'a konuk olacak. Tekkeköyspor ise haftayı BAY geçecek.",
+   "why": "Samsun'u Profesyonelliğe Geçiş Ligi'nde temsil eden ilçe takımlarının haftalık resmi maç programı netleşti.",
+   "sources": [
+    "Samsun Gazetesi"
+   ],
+   "n": 5
+  }
+ ],
+ "briefs": [
+  {
+   "category": "Samsunspor",
+   "district": "Samsun",
+   "text": "Samsunspor U19 Takımı, U19 PAF Ligi'nin 12. haftasında konuk olduğu Galatasaray U19'a 3-1 mağlup oldu.",
+   "sources": [
+    "Galatasaray SK"
+   ],
+   "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"12\" cy=\"12\" r=\"9\"/><path d=\"M12 7.5l4 2.9-1.5 4.6h-5L8 10.4z\"/><path d=\"M12 3v4.5M21 10.5l-5 0M17.5 19.5l-3-4.5M6.5 19.5l3-4.5M3 10.5h5\"/></svg>"
+  },
+  {
+   "category": "Samsunspor",
+   "district": "Samsun",
+   "text": "Samsunsporlu oyuncular, Galatasaray maçı öncesi ısınmaya kadına yönelik şiddete karşı özel tişörtlerle çıktı.",
+   "sources": [
+    "Samsun Gazetesi"
+   ],
+   "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"12\" cy=\"12\" r=\"9\"/><path d=\"M12 7.5l4 2.9-1.5 4.6h-5L8 10.4z\"/><path d=\"M12 3v4.5M21 10.5l-5 0M17.5 19.5l-3-4.5M6.5 19.5l3-4.5M3 10.5h5\"/></svg>"
+  },
+  {
+   "category": "Samsunspor",
+   "district": "Samsun",
+   "text": "Galatasaray maçına ilk 11'de başlayan Joe Mendes, kırmızı-beyazlı formayla 55. karşılaşmasına çıktı.",
+   "sources": [
+    "Samsun Gazetesi"
+   ],
+   "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"12\" cy=\"12\" r=\"9\"/><path d=\"M12 7.5l4 2.9-1.5 4.6h-5L8 10.4z\"/><path d=\"M12 3v4.5M21 10.5l-5 0M17.5 19.5l-3-4.5M6.5 19.5l3-4.5M3 10.5h5\"/></svg>"
+  },
+  {
+   "category": "Basketbol",
+   "district": "Samsun",
+   "text": "Samsunlu basketbol hakemi Alper Özgök, Beşiktaş Fuzul - Fenerbahçe Tarfin derbisinde görevlendirildi.",
+   "sources": [
+    "Samsun Gazetesi"
+   ],
+   "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"12\" cy=\"12\" r=\"9\"/><path d=\"M12 7.5l4 2.9-1.5 4.6h-5L8 10.4z\"/><path d=\"M12 3v4.5M21 10.5l-5 0M17.5 19.5l-3-4.5M6.5 19.5l3-4.5M3 10.5h5\"/></svg>"
+  }
+ ],
+ "outages": [],
+ "scoreboard": {
+  "present": true,
+  "competition": "Trendyol Süper Lig",
+  "home": "Galatasaray",
+  "away": "Samsunspor",
+  "home_score": 2,
+  "away_score": 1
+ },
+ "hook": "Samsunspor'un Galatasaray deplasmanından çıkan sonuç, kadın voleybol takımının 8 maçlık galibiyet serisi ve kentteki spor gelişmeleri bugünkü bültende.",
+ "edition": "spor",
+ "date": "2026-11-21",
+ "issue_no": 4,
+ "permalink": "https://www.instagram.com/p/DgAnD2DF97K/"
+}
