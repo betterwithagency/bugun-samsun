@@ -1,0 +1,204 @@
+{
+ "stories": [
+  {
+   "category": "Altyapı",
+   "district": "İlkadım",
+   "location": "Osmaniye Caddesi",
+   "title": "İlkadım'da sağanak nedeniyle çöken yoldaki 4 araç hasar gördü",
+   "short_title": "İlkadım'da çöken yolda 4 araç hasar gördü",
+   "stat": {
+    "value": "4",
+    "label": "Çöken yolda hasar gören araç sayısı"
+   },
+   "body": "Kentte etkili olan sağanak yağış sonrası, altyapı çalışması yürütülen Osmaniye Caddesi'nde yaklaşık 30 santimetrelik çökme meydana geldi.\nYolda oluşan çukura düşen park halindeki 4 araç hasar görürken, araçların çekiciyle kaldırılması için çalışma başlatıldı.",
+   "why": "Altyapı çalışması süren caddedeki çökme, bölgedeki araç sahiplerini ve ulaşım güvenliğini doğrudan etkiliyor.",
+   "sources": [
+    "AA",
+    "TRT Haber",
+    "GZT"
+   ],
+   "n": 1
+  },
+  {
+   "category": "Hava",
+   "district": "Samsun",
+   "location": "Samsun geneli",
+   "title": "Samsun'da sabah sağanak geçişleri, öğleden sonra güneş bekleniyor",
+   "short_title": "Sabah sağanak, öğleden sonra güneş bekleniyor",
+   "stat": {
+    "value": "17°C",
+    "label": "Kent merkezinde beklenen en yüksek derece"
+   },
+   "body": "Meteoroloji verilerine göre bugün 09.00-11.00 saatleri arasında sağanak geçişleri, saat 12.00'den itibaren ise güneşli bir hava bekleniyor.\nMerkezde sıcaklık en yüksek 17 derece olurken, kıyı kesimlerde rüzgârın saatte 40-60 kilometre hıza ulaşacağı tahmin ediliyor.",
+   "why": "Pazar günü dışarı çıkacakların sabahki yağışa ve kıyıdaki kuvvetli rüzgâra göre plan yapmasını sağlıyor.",
+   "sources": [
+    "Meteoroloji Genel Müdürlüğü",
+    "Kapsam Haber",
+    "Samsun Gazetesi"
+   ],
+   "n": 2
+  },
+  {
+   "category": "Duyuru",
+   "district": "Canik",
+   "location": "Canik Belediyesi",
+   "title": "Canik'te vergi ödemeleri için belediye vezneleri bugün de açık",
+   "short_title": "Canik'te vergi vezneleri hafta sonu açık",
+   "stat": {
+    "value": "30 Kasım",
+    "label": "Vergi 2. taksit ödemelerinde son gün"
+   },
+   "body": "Canik Belediyesi; emlak, çevre temizlik ve ilan reklam vergisi ikinci taksit ödemelerinin 30 Kasım Pazartesi sona ereceğini duyurdu.\nHizmet binasındaki vezneler bugün 10.00-16.00 saatlerinde açık olurken, ödemeler e-Devlet ve mobil uygulamadan da yapılabiliyor.",
+   "why": "Mükelleflerin gecikme zammıyla karşılaşmaması için bugün saat 16.00'ya kadar vezne hizmeti sunuluyor.",
+   "sources": [
+    "Canik Belediyesi",
+    "Kapsam Haber"
+   ],
+   "n": 3
+  },
+  {
+   "category": "Etkinlik",
+   "district": "Atakum",
+   "location": "Ata Sahne ve Türkiş sahili",
+   "title": "Atakum'da kadına yönelik şiddete karşı dört günlük program başlıyor",
+   "short_title": "Atakum'da şiddetle mücadele etkinlikleri",
+   "stat": {
+    "value": "4 gün",
+    "label": "23-26 Kasım arası sürecek etkinlik süresi"
+   },
+   "body": "Atakum Belediyesi, 23-26 Kasım'da 'Şiddetsiz Dünya Mümkün' programı kapsamında film gösterimi, fotoğraf sergisi ve yürüyüş düzenleyecek.\nProgram yarın 11.00'de Ata Sahne'deki 'Gizli Sayılar' filmiyle başlayacak; 26 Kasım'da Türkiş sahilinde farkındalık yürüyüşü yapılacak.",
+   "why": "Hafta boyunca ilçede ücretsiz yapılacak film gösterimi, sergi ve yürüyüşe katılmak isteyenlere takvim sunuyor.",
+   "sources": [
+    "Atakum Belediyesi",
+    "Kapsam Haber"
+   ],
+   "n": 4
+  },
+  {
+   "category": "Çevre",
+   "district": "Bafra",
+   "location": "Bafra",
+   "title": "Bafra Belediyesi temizlik filosuna elektrikli süpürme aracı eklendi",
+   "short_title": "Bafra'da elektrikli yol süpürme aracı",
+   "stat": {
+    "value": "750 L",
+    "label": "Elektrikli yol süpürme aracının kapasitesi"
+   },
+   "body": "Bafra Belediyesi, Türkiye Çevre Ajansı'nın hibe desteğiyle alınan yüzde 100 elektrikli yol süpürme aracını filosuna kattı.\nGeri dönüşümlü su sistemine ve 750 litre kapasiteye sahip sessiz araç, dar sokaklar ile yoğun şehir trafiğinde kullanılacak.",
+   "why": "Dar sokaklarda egzoz emisyonu ve gürültü oluşturmadan temizlik hizmeti sunulmasını sağlayacak.",
+   "sources": [
+    "AA",
+    "Bafra Belediyesi"
+   ],
+   "n": 5
+  },
+  {
+   "category": "Sağlık",
+   "district": "Samsun",
+   "location": "VM Medical Park Hastanesi",
+   "title": "Prematüre doğan üçüz bebekler bir aylık tedaviyle sağlığına kavuştu",
+   "short_title": "Prematüre üçüz bebekler sağlığına kavuştu",
+   "stat": {
+    "value": "1 ay",
+    "label": "Üçüz bebeklerin yoğun bakım tedavi süresi"
+   },
+   "body": "Kirazlı çiftinin 30 haftalık doğan üçüzleri, bir aylık yoğun bakım tedavisinin ardından sağlıkla taburcu edildi.\nDr. Öğr. Üyesi Didem Cemile Yeşilırmak, Göktürk, Ece ve Toprak adlı bebeklerin komplikasyon yaşanmadan hayata tutunduğunu belirtti.",
+   "why": "Kentteki yenidoğan yoğun bakım olanaklarını ve erken doğumda tıbbi takibin önemini gösteriyor.",
+   "sources": [
+    "İHA",
+    "Habertürk"
+   ],
+   "n": 6
+  }
+ ],
+ "briefs": [
+  {
+   "category": "Ekonomi",
+   "district": "Samsun",
+   "text": "Sezon başından beri 120 tonu aşkın palamut avlandı; bolluğun 10 gün daha süreceği açıklandı.",
+   "sources": [
+    "DHA"
+   ],
+   "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M3 17l6-6 4 4 8-8\"/><path d=\"M15 7h6v6\"/></svg>"
+  },
+  {
+   "category": "Kültür",
+   "district": "Atakum",
+   "text": "Atakum Belediyesi THM Korosu, 24 Kasım Salı 19.30'da Ata Sahne'de öğretmenlere özel konser verecek.",
+   "sources": [
+    "İHA",
+    "Atakum Belediyesi"
+   ],
+   "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M2 5h6a4 4 0 0 1 4 4v11a3 3 0 0 0-3-3H2zM22 5h-6a4 4 0 0 0-4 4v11a3 3 0 0 1 3-3h7z\"/></svg>"
+  },
+  {
+   "category": "Eğitim",
+   "district": "İlkadım",
+   "text": "İlkadım Belediyesi, Emniyet ve ANDA Akademi iş birliğiyle ilk yardım ve bağımlılık eğitimi verildi.",
+   "sources": [
+    "İHA",
+    "İlkadım Belediyesi"
+   ],
+   "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M2 9l10-5 10 5-10 5z\"/><path d=\"M6 11v5c0 1.5 3 3 6 3s6-1.5 6-3v-5M22 9v6\"/></svg>"
+  },
+  {
+   "category": "Yönetim",
+   "district": "Samsun",
+   "text": "Büyükşehir Başkanı Halit Doğan, kardeş şehir Sumqayıt'ın 77. kuruluş yıl dönümü kutlamalarına katıldı.",
+   "sources": [
+    "İHA",
+    "Samsun Büyükşehir Belediyesi"
+   ],
+   "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M3 21h18M4 10h16M12 3l8.5 7h-17z\"/><path d=\"M6.5 10v11M10.5 10v11M13.5 10v11M17.5 10v11\"/></svg>"
+  }
+ ],
+ "outages": [
+  {
+   "kind": "bolt",
+   "title": "Canik planlı elektrik kesintisi",
+   "text": "Tuzaklı ve Toygar mahallelerinde 09.15-17.30 saatleri arasında planlı elektrik kesintisi uygulanacak.",
+   "source": "YEDAŞ"
+  },
+  {
+   "kind": "bolt",
+   "title": "Çarşamba planlı elektrik kesintisi",
+   "text": "Beylerce Mahallesi'nin farklı mevkilerinde 09.00-13.00 ve 13.00-17.00 saatlerinde kesinti yapılacak.",
+   "source": "YEDAŞ"
+  },
+  {
+   "kind": "bolt",
+   "title": "Tekkeköy planlı elektrik kesintisi",
+   "text": "Cumhuriyet ve İstiklal mahallelerinde 18.00-20.00 saatleri arasında planlı elektrik kesintisi uygulanacak.",
+   "source": "YEDAŞ"
+  }
+ ],
+ "scoreboard": null,
+ "hook": "İlkadım'da sağanak sonrası altyapı çalışması yapılan yolun çökmesiyle 4 araç hasar görürken, pazar günü saatlik hava tahmini ve açık vergi vezneleri bugünkü bültende.",
+ "edition": "gundem",
+ "date": "2026-11-22",
+ "issue_no": 5,
+ "practical": {
+  "outages": [
+   {
+    "kind": "bolt",
+    "title": "Canik planlı elektrik kesintisi",
+    "text": "Tuzaklı ve Toygar mahallelerinde 09.15-17.30 saatleri arasında planlı elektrik kesintisi uygulanacak.",
+    "source": "YEDAŞ"
+   },
+   {
+    "kind": "bolt",
+    "title": "Çarşamba planlı elektrik kesintisi",
+    "text": "Beylerce Mahallesi'nin farklı mevkilerinde 09.00-13.00 ve 13.00-17.00 saatlerinde kesinti yapılacak.",
+    "source": "YEDAŞ"
+   },
+   {
+    "kind": "bolt",
+    "title": "Tekkeköy planlı elektrik kesintisi",
+    "text": "Cumhuriyet ve İstiklal mahallelerinde 18.00-20.00 saatleri arasında planlı elektrik kesintisi uygulanacak.",
+    "source": "YEDAŞ"
+   }
+  ],
+  "pharmacy": "Nöbetçi eczaneleri e-Devlet'ten ya da Samsun Eczacı Odası'ndan öğrenebilirsin."
+ },
+ "permalink": "https://www.instagram.com/p/DgCAVS1Fzbh/"
+}
