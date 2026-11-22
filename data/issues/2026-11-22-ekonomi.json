@@ -1,0 +1,141 @@
+{
+ "stories": [
+  {
+   "category": "Ekonomi",
+   "district": "Samsun",
+   "location": "Samsun",
+   "title": "Samsun'da sezon başından beri 120 tonu aşkın palamut avlandı",
+   "short_title": "Sezon başından beri 120 ton palamut avı",
+   "stat": {
+    "value": "120 ton",
+    "label": "Sezon başından beri avlanan palamut"
+   },
+   "body": "Samsun Su Ürünleri Kooperatifleri Birliği Başkanı Atıf Malkoç, sezon başından bu yana kentte 100-120 tonun üzerinde palamut avlandığını açıkladı.\nBolluğun ortalama 10 gün daha süreceğini belirten Malkoç, palamut çekilince diğer balık türlerinin avlanacağını kaydetti.",
+   "why": "Tezgâhlardaki palamut bolluğunun ne kadar süreceğini ve diğer balıkların ne zaman çoğalacağını gösteriyor.",
+   "sources": [
+    "DHA",
+    "Habertürk"
+   ],
+   "n": 1
+  },
+  {
+   "category": "Tarım",
+   "district": "Samsun",
+   "location": "Çarşamba ve il geneli",
+   "title": "Samsun'da kivi üretim alanı son 6 yılda yüzde 120 büyüdü",
+   "short_title": "Kivi üretim alanında yüzde 120 büyüme",
+   "stat": {
+    "value": "%120",
+    "label": "Son 6 yılda kivi üretim alanındaki artış"
+   },
+   "body": "Samsun'da 2020'de 2 bin 772 dekar olan kivi üretim alanı, 2026'da 6 bin 71 dekara ulaştı. Kent, Türkiye'deki kivi üretiminin yaklaşık %20'sini karşılıyor.\nYaklaşık 13 bin 710 ton kivi yetiştirilen Çarşamba ilçesi ise il genelindeki üretimin %96'sını tek başına sağlıyor.",
+   "why": "Kentin tarımsal üretim kapasitesindeki büyümeyi ve Türkiye kivi pazarındaki yüzde 20'lik payını ortaya koyuyor.",
+   "sources": [
+    "Samsun Tarım ve Orman İl Müdürlüğü",
+    "Aydınlık"
+   ],
+   "n": 2
+  },
+  {
+   "category": "Ticaret",
+   "district": "Samsun",
+   "location": "Samsun",
+   "title": "Samsun'da esnafa yüksek komisyona karşı 4 yerli dijital proje",
+   "short_title": "Esnafa komisyonsuz 4 yerli dijital proje",
+   "stat": {
+    "value": "4",
+    "label": "Esnaf ve kuryelere tanıtılan yerli proje"
+   },
+   "body": "Doyasıya Platformu İl Temsilcisi Cemal Uz ve heyeti, Samsun'daki işletmeleri ziyaret ederek yüksek komisyonlara karşı 4 yerli proje tanıttı.\nKETDAY, DOYASIYA, RUTAPI ve KURKOM adlı projelerle esnaf ve kuryelerin dijital pazarda maliyetlerinin düşürülmesi hedefleniyor.",
+   "why": "Yerel işletmelerin ve kuryelerin dijital sipariş platformlarındaki komisyon giderlerini düşürmeyi amaçlıyor.",
+   "sources": [
+    "Gazete Arena"
+   ],
+   "n": 3
+  },
+  {
+   "category": "İstihdam",
+   "district": "Samsun",
+   "location": "Samsun",
+   "title": "Samsun Diş Hekimleri Odası'ndan istihdam ve uygun kredi çağrısı",
+   "short_title": "Diş hekimlerinden istihdam ve kredi çağrısı",
+   "stat": {
+    "value": "",
+    "label": ""
+   },
+   "body": "Samsun Diş Hekimleri Odası Başkanı Övgü Tunçdemir, sınırlı atama ve yüksek maliyetler nedeniyle yeni mezunların iş bulmakta zorlandığını belirtti.\nTunçdemir, muayenehane açmak için uygun kredi sağlanmasını ve aile diş hekimliği uygulamasının başlatılmasını istedi.",
+   "why": "Genç diş hekimlerinin istihdam koşullarını ve yurttaşların diş sağlığı hizmetlerine erişimini ilgilendiriyor.",
+   "sources": [
+    "Samsun Diş Hekimleri Odası",
+    "Gazete Arena"
+   ],
+   "n": 4
+  },
+  {
+   "category": "Ekonomi",
+   "district": "Havza",
+   "location": "Havza ve Samsun",
+   "title": "Havza PROGEL projesindeki 18 genç TKDK ve OKA'yı ziyaret etti",
+   "short_title": "Havza PROGEL'den TKDK ve OKA'ya teknik gezi",
+   "stat": {
+    "value": "400 bin TL",
+    "label": "Projeye sağlanan yüzde 100 hibe desteği"
+   },
+   "body": "Havza PROGEL'in 400 bin TL hibeli projesiyle 5 günlük eğitimi tamamlayan 18 genç, TKDK ve OKA'yı ziyaret ederek hibe ve destekler hakkında bilgi aldı.\nDernek Başkanı Seyit Ahmet Dikmen, üçüncü aşamada teknik lise öğrencileriyle Havza OSB'ye teknik gezi yapılacağını açıkladı.",
+   "why": "Gençlerin hibe desteklerinden yararlanma becerisini geliştirirken teknik öğrencileri sanayiyle buluşturuyor.",
+   "sources": [
+    "Kapsam Haber",
+    "Samsun İlk Haber"
+   ],
+   "n": 5
+  }
+ ],
+ "briefs": [
+  {
+   "category": "Sanayi",
+   "district": "Samsun",
+   "text": "Vali Orhan Tavlı, Samsun Merkez OSB'nin yaptırdığı Merkez OSB Anaokulu'nu ziyaret ederek incelemelerde bulundu.",
+   "sources": [
+    "İHA",
+    "Habertürk"
+   ],
+   "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M3 21V11l5 3v-3l5 3v-3l5 3V4h3v17z\"/><path d=\"M7 17h2M12 17h2\"/></svg>"
+  },
+  {
+   "category": "Ticaret",
+   "district": "Samsun",
+   "text": "SAMGİAD Başkanı Aytekin Demir, Samsun TSO seçimlerinde 19 üyelerinin meclis ve komitelere seçildiğini açıkladı.",
+   "sources": [
+    "Gazete Gerçek",
+    "Samsun İlk Haber"
+   ],
+   "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M4 10v10h16V10M3 10l2-6h14l2 6z\"/><path d=\"M9 20v-6h6v6\"/></svg>"
+  },
+  {
+   "category": "Tarım",
+   "district": "Bafra",
+   "text": "Samsun Milletvekili İlyas Topsakal, Bafra'daki odalardan ilçeye ziraat fakültesi için çalışma yapmalarını istedi.",
+   "sources": [
+    "AA",
+    "Habertürk"
+   ],
+   "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M12 21V11\"/><path d=\"M12 11C12 7 9 5 5 5c0 4 3 6 7 6zM12 14c0-4 3-6 7-6 0 4-3 6-7 6z\"/></svg>"
+  },
+  {
+   "category": "Ticaret",
+   "district": "Havza",
+   "text": "Havza TSO Başkanı Erkan Acar'a yapılan ziyarette, Vezirköprü ile ortak projeler ve OSB yatırımları görüşüldü.",
+   "sources": [
+    "Kapsam Haber"
+   ],
+   "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M4 10v10h16V10M3 10l2-6h14l2 6z\"/><path d=\"M9 20v-6h6v6\"/></svg>"
+  }
+ ],
+ "outages": [],
+ "scoreboard": null,
+ "hook": "Samsun'da bu sezon 120 tonu aşan palamut avından son 6 yılda iki katından fazla büyüyen kivi bahçelerine, günün öne çıkan ekonomi ve iş dünyası gelişmeleri.",
+ "edition": "ekonomi",
+ "date": "2026-11-22",
+ "issue_no": 5,
+ "permalink": "https://www.instagram.com/p/DgCfOA3lKC2/"
+}
