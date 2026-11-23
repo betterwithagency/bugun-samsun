@@ -1,0 +1,165 @@
+{
+ "stories": [
+  {
+   "category": "Gündem",
+   "district": "Samsun",
+   "location": "Büyük Cami ve Kıranköy",
+   "title": "Şehit Astsubay Yalın Gergün bugün Samsun'da toprağa verilecek",
+   "short_title": "Şehit Yalın Gergün bugün uğurlanıyor",
+   "stat": {
+    "value": "",
+    "label": ""
+   },
+   "body": "Şırnak Uludere'de silah kazasında şehit olan 22 yaşındaki İstihkam Astsubay Çavuş Yalın Gergün'ün naaşı dün askeri uçakla Samsun'a getirildi.\nŞehidin cenazesi bugün Büyük Cami'de öğle namazının ardından kılınacak cenaze namazı sonrası Garnizon Şehitliği'nde defnedilecek.",
+   "why": "Kent merkezindeki cenaze töreni ve defin programı törene katılacak vatandaşları doğrudan ilgilendiriyor.",
+   "sources": [
+    "DHA",
+    "AA"
+   ],
+   "n": 1
+  },
+  {
+   "category": "Ulaşım",
+   "district": "Canik",
+   "location": "Belediye Evleri Viyadüğü",
+   "title": "Samsun-Ordu yolu Belediye Evleri Viyadüğü'nde gece ulaşımı değişti",
+   "short_title": "Belediye Evleri Viyadüğü'nde gece onarımı",
+   "stat": {
+    "value": "22.00-06.00",
+    "label": "Gece tali yola yönlendirme saatleri"
+   },
+   "body": "Samsun-Ordu yolunun 9. kilometresindeki Belediye Evleri Viyadüğü'nde genleşme derzi onarım çalışmaları yürütülüyor.\nÇalışmalar nedeniyle her gece 22.00 ile 06.00 saatleri arasında ulaşım viyadük yerine alt tali yoldan kontrollü olarak sağlanıyor.",
+   "why": "Samsun-Ordu yolunu gece saatlerinde kullanacak sürücülerin trafik düzenlemesine göre tedbir alması gerekiyor.",
+   "sources": [
+    "KGM",
+    "AA"
+   ],
+   "n": 2
+  },
+  {
+   "category": "Hava",
+   "district": "Samsun",
+   "location": "Samsun geneli",
+   "title": "Samsun'da yarın kuvvetli yağmur ve iç kesimlerde kar bekleniyor",
+   "short_title": "Yarın kuvvetli yağmur ve kar bekleniyor",
+   "stat": {
+    "value": "-5 °C",
+    "label": "Akdağ'da yarın beklenen en düşük sıcaklık"
+   },
+   "body": "Bugün merkezde 19 derece ve güneşli olan havanın ardından yarın sıcaklıkların düşmesiyle kıyı ilçelerde kuvvetli yağmur bekleniyor.\nMeteoroloji tahminlerine göre yarın Ladik ve Asarcık'ta kar, Havza ve Kavak ilçelerinde ise karla karışık yağmur görülecek.",
+   "why": "Kuvvetli yağış ile yüksek kesimlerdeki kar ve buzlanma riskine karşı sürücülerin hazırlıklı olması gerekiyor.",
+   "sources": [
+    "Meteoroloji 10. Bölge Müdürlüğü",
+    "Samsun Gazetesi"
+   ],
+   "n": 3
+  },
+  {
+   "category": "Belediye",
+   "district": "Canik",
+   "location": "Canik Meşe Tesisleri",
+   "title": "Canik Meşe Tesisleri'nde öğretmenlere hafta boyunca yüzde 30 indirim",
+   "short_title": "Meşe Tesisleri'nde öğretmenlere %30 indirim",
+   "stat": {
+    "value": "%30",
+    "label": "23-27 Kasım arası öğretmen indirimi"
+   },
+   "body": "Canik Belediyesi, 24 Kasım Öğretmenler Günü dolayısıyla 23-27 Kasım tarihleri arasında Meşe Tesisleri'nde öğretmenlere yüzde 30 indirim uyguluyor.\nBugün başlayan 5 günlük kampanyadan yararlanmak için tesisin tüm bölümlerinde öğretmen görev belgesini ibraz etmek yeterli olacak.",
+   "why": "Öğretmenler bugün itibarıyla cuma gününe kadar görev belgelerini göstererek tesisten indirimli yararlanabilecek.",
+   "sources": [
+    "Canik Belediyesi",
+    "DHA"
+   ],
+   "n": 4
+  },
+  {
+   "category": "Belediye",
+   "district": "İlkadım",
+   "location": "İlkadım",
+   "title": "İlkadım'da 2,5 yılda ihtiyaç sahiplerine 80 milyon TL nakdi destek",
+   "short_title": "İlkadım'da 2,5 yılda 80 milyon TL destek",
+   "stat": {
+    "value": "80,3 milyon",
+    "label": "2,5 yılda yapılan toplam nakdi yardım (TL)"
+   },
+   "body": "İlkadım Belediye Başkanı İhsan Kurnaz, 2,5 yılda ihtiyaç sahiplerine toplam 80 milyon 370 bin 889 TL nakdi yardım yapıldığını açıkladı.\nİlçede 4 bin 700 aileye gıda ve 4,5 milyonu aşkın ekmek ulaştırılırken her gün 250 aileye sıcak yemek desteği sürdürülüyor.",
+   "why": "Veriler, ilçede yürütülen sosyal yardımların kapsamını ve belediye bütçesinden ayrılan kaynağı ortaya koyuyor.",
+   "sources": [
+    "İlkadım Belediyesi",
+    "DHA"
+   ],
+   "n": 5
+  },
+  {
+   "category": "Gündem",
+   "district": "Bafra",
+   "location": "15 Temmuz Demokrasi Meydanı",
+   "title": "Bafra'da kayıp 8 denizcinin ailelerinden aramalar başlasın çağrısı",
+   "short_title": "Bafra'da kayıp denizci ailelerinden çağrı",
+   "stat": {
+    "value": "81 gün",
+    "label": "Gemi kazasının üzerinden geçen süre"
+   },
+   "body": "Marmara Denizi'nde 2 Eylül'de batan Tuğberk İmamoğlu gemisindeki kayıp 8 denizcinin yakınları Bafra'da basın açıklaması yaptı.\nKazadan 81 gün sonra çalışmaların sonlandırıldığını belirten aileler, teknik raporların paylaşılmasını ve aramaların sürmesini talep etti.",
+   "why": "Kayıp denizci ailelerinin arama sonlandırma kararına karşı yürüttüğü arayış ilçede yakından takip ediliyor.",
+   "sources": [
+    "İHA",
+    "Habertürk"
+   ],
+   "n": 6
+  }
+ ],
+ "briefs": [
+  {
+   "category": "Çevre",
+   "district": "Atakum",
+   "text": "Kurupelit Yat Limanı'ndaki dip temizliğinden çıkarılan kumlar Çakırlar Yalı sahil düzenlemesinde kullanılıyor.",
+   "sources": [
+    "Samsun Büyükşehir Belediyesi",
+    "Samsun Gazetesi"
+   ],
+   "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M5 20c0-9 6-15 15-15 0 9-6 15-15 15z\"/><path d=\"M5 20l8-8\"/></svg>"
+  },
+  {
+   "category": "Sağlık",
+   "district": "Samsun",
+   "text": "Samsun Eczacı Odası, risk grubuna ücretsiz olan grip aşısının şubat ayına kadar yaptırılabileceğini açıkladı.",
+   "sources": [
+    "Samsun Eczacı Odası",
+    "Samsun Gazetesi"
+   ],
+   "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"3\" y=\"3\" width=\"18\" height=\"18\" rx=\"5\"/><path d=\"M12 8v8M8 12h8\"/></svg>"
+  },
+  {
+   "category": "Eğitim",
+   "district": "Ladik",
+   "text": "Öğretmenler Günü etkinlikleri kapsamında Ladik Akdağ'da öğretmenlere yönelik anne-kız temalı doğa kampı yapıldı.",
+   "sources": [
+    "İHA",
+    "Habertürk"
+   ],
+   "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M2 9l10-5 10 5-10 5z\"/><path d=\"M6 11v5c0 1.5 3 3 6 3s6-1.5 6-3v-5M22 9v6\"/></svg>"
+  },
+  {
+   "category": "Çevre",
+   "district": "Canik",
+   "text": "Canik Gürgenyatak Mahallesi'ndeki kampüs yolunda sonbahar renklerine bürünen ormanlık alan dronla görüntülendi.",
+   "sources": [
+    "İHA",
+    "Habertürk"
+   ],
+   "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M5 20c0-9 6-15 15-15 0 9-6 15-15 15z\"/><path d=\"M5 20l8-8\"/></svg>"
+  }
+ ],
+ "outages": [],
+ "scoreboard": null,
+ "hook": "Şehit Astsubay Yalın Gergün bugün Samsun'da son yolculuğuna uğurlanırken, Samsun-Ordu yolunda gece ulaşımı değişiyor ve yarın iç kesimlerde kar yağışı bekleniyor.",
+ "edition": "gundem",
+ "date": "2026-11-23",
+ "issue_no": 6,
+ "practical": {
+  "outages": [],
+  "pharmacy": "Nöbetçi eczaneleri e-Devlet'ten ya da Samsun Eczacı Odası'ndan öğrenebilirsin."
+ },
+ "permalink": "https://www.instagram.com/p/DgElJYfmgYQ/"
+}
