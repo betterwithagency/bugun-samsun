@@ -1,0 +1,142 @@
+{
+ "stories": [
+  {
+   "category": "Samsunspor",
+   "district": "Atakum",
+   "location": "Atakum-Türkiş hattı",
+   "title": "Samsunspor'a destek kampanyası Atakum'da 110 minibüsle başladı",
+   "short_title": "Samsunspor için 110 minibüste kampanya",
+   "stat": {
+    "value": "110",
+    "label": "Kampanya çıkartması takılan minibüs"
+   },
+   "body": "1965 Samsunspor Derneği, şehirde birliktelik oluşturmak amacıyla \"Sen yeter ki inan, bir şehir gelecek arkandan\" kampanyasını başlattı.\nAtakum-Türkiş Minibüsçüleri Kooperatifi iş birliğiyle 110 minibüse çıkartma takılırken çalışma farklı esnaf gruplarıyla genişletilecek.",
+   "why": "Toplu ulaşımda başlayan kampanya, esnaf ve taraftarın Samsunspor etrafında kenetlenmesini görünür kılıyor.",
+   "sources": [
+    "İHA",
+    "Haber Expres",
+    "Samsun Gazetesi",
+    "Gazete Arena"
+   ],
+   "n": 1
+  },
+  {
+   "category": "Samsunspor",
+   "district": "Samsun",
+   "location": "Yeni 19 Mayıs Stadyumu",
+   "title": "Samsunspor ile Gençlerbirliği 50. randevuda karşı karşıya gelecek",
+   "short_title": "Samsunspor-Gençlerbirliği rekabetinde 50. maç",
+   "stat": {
+    "value": "50.",
+    "label": "İki takım arasındaki toplam karşılaşma"
+   },
+   "body": "Süper Lig'de 12 haftada topladığı 7 puanla 17. sırada bulunan Samsunspor, 28 Kasım Cumartesi saat 16.00'da Gençlerbirliği'ni ağırlayacak.\nİki takım arasındaki 50. randevu öncesinde geride kalan 49 maçta Gençlerbirliği 16, Samsunspor 15 galibiyet aldı; 18 maç berabere bitti.",
+   "why": "Düşme hattındaki Samsunspor için maç, alt sıralarla puan farkının açılmaması ve rekabette eşitlik için kritik.",
+   "sources": [
+    "Gazete Arena",
+    "Gazete Gerçek"
+   ],
+   "n": 2
+  },
+  {
+   "category": "Spor",
+   "district": "Samsun",
+   "location": "Samsun TOHM",
+   "title": "Samsun TOHM katkılı Genç Judo Millî Takımı dünya ikincisi oldu",
+   "short_title": "Judo şampiyonasında Samsun TOHM başarısı",
+   "stat": {
+    "value": "3",
+    "label": "Dünya şampiyonasında kazanılan madalya"
+   },
+   "body": "Taşkent'teki Dünya Judo Şampiyonası'nda Samsun TOHM antrenörlerinin de görev aldığı Genç Judo Millî Takımı 2 altın ve 1 gümüşle dünya ikincisi oldu.\nSamsun TOHM sporcusu Mahmut Can Maden ise dünya beşincisi olarak 2028 Los Angeles Olimpiyatları yolunda ilk puanını kazandı.",
+   "why": "Kazanılan dereceler ve 2028 Olimpiyatları için alınan ilk puan, kentin olimpik branşlardaki katkısını gösteriyor.",
+   "sources": [
+    "Samsun Gazetesi"
+   ],
+   "n": 3
+  },
+  {
+   "category": "Futbol",
+   "district": "Atakum",
+   "location": "Baruthane Futbol Sahası",
+   "title": "Samsunspor'un eski futbolcuları öğretmenlerle dostluk maçı yaptı",
+   "short_title": "Eski futbolcular ve öğretmenlerden özel maç",
+   "stat": {
+    "value": "",
+    "label": ""
+   },
+   "body": "Atakum İlçe Millî Eğitim Müdürlüğü, 24 Kasım Öğretmenler Günü dolayısıyla Baruthane Futbol Sahası'nda dostluk maçı düzenledi.\nSamsunspor'un eski futbolcuları Musa Aydın, Adnan Güngör ve Dobi Hasan, Atakum'da görev yapan öğretmenlerle sahaya çıkarak forma imzaladı.",
+   "why": "Eski futbolcular ile öğretmenleri aynı sahada buluşturan etkinlik, sporun birleştirici yönünü öne çıkarıyor.",
+   "sources": [
+    "Haber Expres",
+    "Haber55",
+    "Samsun İlk Haber"
+   ],
+   "n": 4
+  },
+  {
+   "category": "Spor",
+   "district": "Bafra",
+   "location": "Bafra",
+   "title": "Bafralı badmintoncu Buğra Aktaş uluslararası turnuvada şampiyon oldu",
+   "short_title": "Bafralı badmintoncu Buğra Aktaş'tan altın",
+   "stat": {
+    "value": "",
+    "label": ""
+   },
+   "body": "Bafra'dan yetişen badmintoncu Buğra Aktaş, Navek Türkiye International Future Series 2026 Badminton Turnuvası'nda mücadele etti.\nPartneri Sinem Yıldız ile karışık çiftler kategorisinde yarışan Aktaş, final sonunda şampiyonluğa ulaşarak altın madalya kazandı.",
+   "why": "Bafralı sporcunun uluslararası turnuvada altın madalya alması, kentin bireysel spor başarılarına katkı sağladı.",
+   "sources": [
+    "Bafra55.net",
+    "Gazete Gerçek"
+   ],
+   "n": 5
+  }
+ ],
+ "briefs": [
+  {
+   "category": "Futbol",
+   "district": "Samsun",
+   "text": "Süper Amatör Lig'de 10 kişi kalan Karasamsunspor, Atakum Belediyespor'u 3-2 yenerek puanını 10'a yükseltti.",
+   "sources": [
+    "Haber Expres",
+    "Bizim Samsun"
+   ],
+   "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"12\" cy=\"12\" r=\"9\"/><path d=\"M12 7.5l4 2.9-1.5 4.6h-5L8 10.4z\"/><path d=\"M12 3v4.5M21 10.5l-5 0M17.5 19.5l-3-4.5M6.5 19.5l3-4.5M3 10.5h5\"/></svg>"
+  },
+  {
+   "category": "Futbol",
+   "district": "Samsun",
+   "text": "PGL 2. Grup'ta 29 Kasım'da Çarşambaspor ve Ladik Belediyespor evinde, Tekkeköy Spor deplasmanda oynayacak.",
+   "sources": [
+    "Haber Expres"
+   ],
+   "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"12\" cy=\"12\" r=\"9\"/><path d=\"M12 7.5l4 2.9-1.5 4.6h-5L8 10.4z\"/><path d=\"M12 3v4.5M21 10.5l-5 0M17.5 19.5l-3-4.5M6.5 19.5l3-4.5M3 10.5h5\"/></svg>"
+  },
+  {
+   "category": "Samsunspor",
+   "district": "Samsun",
+   "text": "Samsunspor'un Gineli santrforu Mohamed Bayo, Galatasaray maçının 57. dakikasında Süper Lig'deki ilk golünü attı.",
+   "sources": [
+    "Gazete Arena"
+   ],
+   "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"12\" cy=\"12\" r=\"9\"/><path d=\"M12 7.5l4 2.9-1.5 4.6h-5L8 10.4z\"/><path d=\"M12 3v4.5M21 10.5l-5 0M17.5 19.5l-3-4.5M6.5 19.5l3-4.5M3 10.5h5\"/></svg>"
+  },
+  {
+   "category": "Samsunspor",
+   "district": "Samsun",
+   "text": "Galatasaray'a 2-1 yenilen Samsunspor; toplam şutta 18'e 11, gol beklentisinde ise 1,70'e 0,88 üstünlük sağladı.",
+   "sources": [
+    "Samsun Gazetesi"
+   ],
+   "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"12\" cy=\"12\" r=\"9\"/><path d=\"M12 7.5l4 2.9-1.5 4.6h-5L8 10.4z\"/><path d=\"M12 3v4.5M21 10.5l-5 0M17.5 19.5l-3-4.5M6.5 19.5l3-4.5M3 10.5h5\"/></svg>"
+  }
+ ],
+ "outages": [],
+ "scoreboard": null,
+ "hook": "Samsunspor'a destek için Atakum'da 110 minibüsle başlayan kampanya, Gençlerbirliği ile oynanacak 50. randevu ve uluslararası madalyalar bugünkü spor bültenimizde.",
+ "edition": "spor",
+ "date": "2026-11-23",
+ "issue_no": 6,
+ "permalink": "https://www.instagram.com/p/DgFwqczCf2Q/"
+}
