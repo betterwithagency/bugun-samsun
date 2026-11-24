@@ -1,0 +1,138 @@
+{
+ "stories": [
+  {
+   "category": "Sanayi",
+   "district": "Samsun",
+   "location": "Samsun Teknoloji OSB",
+   "title": "ROKETSAN'a Samsun Teknoloji OSB'de 340 dönüm alan tahsis edildi",
+   "short_title": "ROKETSAN'a Teknoloji OSB'de 340 dönüm yer",
+   "stat": {
+    "value": "340 dönüm",
+    "label": "ROKETSAN'a tahsis edilen yatırım alanı"
+   },
+   "body": "TBMM Plan ve Bütçe Komisyonu Başkanı Mehmet Muş, MKE ve BAYKAR'ın ardından ROKETSAN'a da Samsun Teknoloji OSB'de 340 dönüm yer tahsis edildiğini açıkladı.\nROKETSAN 250 dönüm ek alan da talep ederken, Havza OSB'de Unity firmasına ve tedarikçilere yer tahsis edilecek.",
+   "why": "Savunma sanayisi ve tedarikçi yatırımları kentin istihdam ile ihracat kapasitesini doğrudan artıracak.",
+   "sources": [
+    "Samsun Gazetesi"
+   ],
+   "n": 1
+  },
+  {
+   "category": "Ekonomi",
+   "district": "Samsun",
+   "location": "Samsun TSO",
+   "title": "Samsun'daki KOBİ'lere yeşil dönüşüm için 7 milyon TL destek çağrısı",
+   "short_title": "KOBİ'lere 7 milyon TL yeşil dönüşüm desteği",
+   "stat": {
+    "value": "7 milyon TL",
+    "label": "Proje başına faizsiz üst destek tutarı"
+   },
+   "body": "Samsun TSO Başkanı Salih Zeki Murzioğlu, KOSGEB Yeşil Sanayi Destek Programı ile KOBİ'lere %70 oranla 7 milyon TL'ye kadar destek verileceğini açıkladı.\n24 ayı ödemesiz toplam 36 ay vadeli faizsiz destek için ön başvurular 9 Aralık 2026'ya kadar yapılabilecek.",
+   "why": "İmalat ve ihracat yapan işletmelere üretim maliyetlerini düşürmeleri için faizsiz finansman imkânı sunuyor.",
+   "sources": [
+    "İHA",
+    "Samsun Gazetesi",
+    "Gazete Arena"
+   ],
+   "n": 2
+  },
+  {
+   "category": "İstihdam",
+   "district": "Samsun",
+   "location": "Samsun",
+   "title": "Samsun'da belediye işçilerinin 2027 yılı zam kriterleri açıklandı",
+   "short_title": "Belediye işçilerinin 2027 zam kriterleri",
+   "stat": {
+    "value": "%3",
+    "label": "Ladik ve Alaçam'da ek refah payı oranı"
+   },
+   "body": "Belediye-İş Şube Başkanı Taha Yasin Mutlu, Büyükşehir, SASKİ ve Salıpazarı'nda 2027 zamlarının memur zammı ve enflasyon farkıyla belirleneceğini duyurdu.\nBafra'da yıllık enflasyon, Asarcık'ta asgari ücret zammı, Ladik ve Alaçam'da 6 aylık enflasyona ek %3 pay uygulanacak.",
+   "why": "Büyükşehir, SASKİ ve beş ilçe belediyesindeki binlerce işçinin 2027 yılı gelir artışı yöntemini belirliyor.",
+   "sources": [
+    "Haber Expres"
+   ],
+   "n": 3
+  },
+  {
+   "category": "Ticaret",
+   "district": "Kavak",
+   "location": "Kavak Otogarı çevresi",
+   "title": "Kavak'ta belediye tesisinde 5 TL'lik çay satışına esnaftan tepki",
+   "short_title": "Kavak'ta 5 TL'lik çay satışına esnaf tepkisi",
+   "stat": {
+    "value": "5 TL",
+    "label": "Belediye tesisindeki çay satış fiyatı"
+   },
+   "body": "Kavak Otogarı çevresinde çayı 15 TL'ye satan esnaf, belediye tesisinde çayın 5 TL olması ve perşembe günleri ücretsiz verilmesine tepki gösterdi.\nBelediye Başkanı Şerif Ün ise uygulamanın yalnızca yaşlı ve emeklilerin oturduğu bu tesiste geçerli olduğunu belirtti.",
+   "why": "Belediyenin sosyal fiyatlandırması hem emeklilerin bütçesini hem de yerel esnafın rekabet koşullarını etkiliyor.",
+   "sources": [
+    "İHA",
+    "Gazete Gerçek",
+    "Samsun Gazetesi"
+   ],
+   "n": 4
+  },
+  {
+   "category": "Ekonomi",
+   "district": "Samsun",
+   "location": "Samsun balık tezgâhları",
+   "title": "Samsun'da palamut stokları kışın balık fiyatlarında artışı önleyecek",
+   "short_title": "Palamut stokları balık fiyatlarını tutacak",
+   "stat": {
+    "value": "75-100 TL",
+    "label": "Tezgâhlardaki palamudun adet satış fiyatı"
+   },
+   "body": "Su Ürünleri Kooperatifleri Birliği Başkanı Atıf Malkoç, palamudun Samsun'dan geçtiğini ve il dışından gelen balığın adetinin 75-100 TL'ye satıldığını belirtti.\nStoklar sayesinde palamut en az bir ay daha tezgâhta kalırken hamsinin kilosunun 200-300 TL olması öngörülüyor.",
+   "why": "Hem balıkçı esnafının maliyetlerini hem de tüketicilerin kış boyunca karşılaşacağı tezgâh fiyatlarını etkiliyor.",
+   "sources": [
+    "Samsun Gazetesi"
+   ],
+   "n": 5
+  }
+ ],
+ "briefs": [
+  {
+   "category": "İstihdam",
+   "district": "Atakum",
+   "text": "Atakum Belediyesi'nden çıkarıldığını belirten 35 işçi, Valilik önünde işe iade ve alacakları için açıklama yaptı.",
+   "sources": [
+    "Samsun Gazetesi"
+   ],
+   "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"3\" y=\"7\" width=\"18\" height=\"13\" rx=\"2\"/><path d=\"M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2M3 13h18\"/></svg>"
+  },
+  {
+   "category": "Belediye",
+   "district": "Havza",
+   "text": "Sayıştay 2025 raporuna göre Havza Belediyesi'nin giderleri %50 arttı ve ihale alımlarında %10 sınırı aşıldı.",
+   "sources": [
+    "Gazete Gerçek"
+   ],
+   "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M3 21h18M4 10h16M12 3l8.5 7h-17z\"/><path d=\"M6.5 10v11M10.5 10v11M13.5 10v11M17.5 10v11\"/></svg>"
+  },
+  {
+   "category": "Kültür",
+   "district": "Samsun",
+   "text": "Yeni yerine taşınan Bandırma Vapuru'nda çevre düzenlemesiyle 2027'de 1,5 ila 2 milyon ziyaretçi hedefleniyor.",
+   "sources": [
+    "Haber Expres"
+   ],
+   "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M2 5h6a4 4 0 0 1 4 4v11a3 3 0 0 0-3-3H2zM22 5h-6a4 4 0 0 0-4 4v11a3 3 0 0 1 3-3h7z\"/></svg>"
+  },
+  {
+   "category": "İstihdam",
+   "district": "Samsun",
+   "text": "Sahil Güvenlik'in Samsun için açtığı 1 psikolog kadrosuna başvurular 27 Kasım'a kadar e-Devlet'ten sürecek.",
+   "sources": [
+    "Samsun Gazetesi"
+   ],
+   "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"3\" y=\"7\" width=\"18\" height=\"13\" rx=\"2\"/><path d=\"M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2M3 13h18\"/></svg>"
+  }
+ ],
+ "outages": [],
+ "scoreboard": null,
+ "hook": "MKE ve BAYKAR'ın ardından ROKETSAN'a da Samsun Teknoloji OSB'de 340 dönümlük yatırım alanı tahsis edilirken, KOBİ'lere 7 milyon TL'lik yeşil dönüşüm desteği çağrısı yapıldı.",
+ "edition": "ekonomi",
+ "date": "2026-11-24",
+ "issue_no": 7,
+ "permalink": "https://www.instagram.com/p/DgHo1SxAN7s/"
+}
