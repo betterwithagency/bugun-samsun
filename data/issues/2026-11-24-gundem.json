@@ -1,0 +1,167 @@
+{
+ "stories": [
+  {
+   "category": "Altyapı",
+   "district": "Samsun",
+   "location": "Samsun geneli",
+   "title": "SASKİ 2027 yılı için 11 milyar 837 milyon TL bütçe öngördü",
+   "short_title": "SASKİ'nin 2027 bütçesi ve altyapı yatırımları",
+   "stat": {
+    "value": "2.265 km",
+    "label": "Tamamlanan içme suyu hattı uzunluğu"
+   },
+   "body": "Başkan Halit Doğan, SASKİ'nin 11 milyar 837 milyon TL'lik 2027 gider bütçesinin yaklaşık yarısının yatırımlara ayrılacağını açıkladı.\\nKentte 2 bin 265 km içme suyu hattı tamamlanırken Selahattin Ererler İçme Suyu Tesisi'nin kapasitesi de iki katına çıkarılacak.",
+   "why": "Kent genelinde su ve kanalizasyon altyapısının yenilenmesini ve arıtma kapasitesinin artırılmasını sağlıyor.",
+   "sources": [
+    "İHA",
+    "Habertürk",
+    "Samsun Gazetesi"
+   ],
+   "n": 1
+  },
+  {
+   "category": "Tarım",
+   "district": "Canik",
+   "location": "Kozlu Mahallesi",
+   "title": "Canik'te kadın çiftçilere 500 kilogram salep orkidesi dağıtıldı",
+   "short_title": "Canik'te kadın çiftçilere salep desteği",
+   "stat": {
+    "value": "500 kg",
+    "label": "Kadın çiftçilere dağıtılan salep orkidesi"
+   },
+   "body": "Canik Belediyesi, fındık üreticilerinin gelirini çeşitlendirmek amacıyla özel izinle üretilen 500 kilogram salep orkidesini 5 kadın çiftçiye teslim etti.\\nKozlu Mahallesi'nde toprakla buluşan salep orkidesinde tohum desteğinin gelecek yıl 5 tona çıkarılması hedefleniyor.",
+   "why": "Fındığa alternatif olan katma değeri yüksek salep üretimiyle kırsaldaki kadın çiftçilerin gelirini artırıyor.",
+   "sources": [
+    "AA",
+    "İHA",
+    "Milliyet",
+    "Habertürk"
+   ],
+   "n": 2
+  },
+  {
+   "category": "Belediye",
+   "district": "Terme",
+   "location": "15 Temmuz Milli İrade Meydanı",
+   "title": "Terme'de güvercinlerin telef olduğu olayda zabıta görevden alındı",
+   "short_title": "Terme'deki olayda zabıta görevden alındı",
+   "stat": {
+    "value": "",
+    "label": ""
+   },
+   "body": "İlçe meydanında zabıta aracının geçişi sırasında güvercinlerin telef olması üzerine adli soruşturma ve idari inceleme başlatıldı.\\nTerme Belediyesi ilgili personeli görevden alırken meydanlardaki araç geçiş kuralları ve güvenlik tedbirlerinin artırılacağını duyurdu.",
+   "why": "İlçe meydanlarındaki araç geçiş kurallarının ve güvenlik önlemlerinin yeniden düzenlenmesini içeriyor.",
+   "sources": [
+    "İHA",
+    "Habertürk",
+    "Gazete Gerçek"
+   ],
+   "n": 3
+  },
+  {
+   "category": "Yönetim",
+   "district": "Kavak",
+   "location": "S Tipi Kapalı Cezaevi",
+   "title": "TBMM alt komisyonu Kavak'taki cezaevinde 398 başvuruyu inceliyor",
+   "short_title": "TBMM komisyonu Kavak'ta cezaevini inceliyor",
+   "stat": {
+    "value": "398",
+    "label": "Samsun cezaevlerinden yapılan başvuru"
+   },
+   "body": "TBMM Hükümlü ve Tutuklu Haklarını İnceleme Alt Komisyonu, Samsun'daki 398 başvuru kapsamında Kavak S Tipi Kapalı Cezaevi'nde inceleme yaptı.\\nSağlık, suya erişim ve meslek edinme olanaklarını değerlendiren heyet, hazırlayacağı raporu TBMM ve kamuoyuyla paylaşacak.",
+   "why": "Samsun'daki cezaevlerinde kalanların yaşam koşullarına dair 398 başvurunun yerinde denetlenmesini sağlıyor.",
+   "sources": [
+    "AA",
+    "Memurlar.Net"
+   ],
+   "n": 4
+  },
+  {
+   "category": "Eğitim",
+   "district": "Atakum",
+   "location": "Zafer Özel Eğitim Meslek Okulu",
+   "title": "Serebral palsili öğretmen özel öğrencilere müzikle eğitim veriyor",
+   "short_title": "Özel öğrencilere müzikle dokunan öğretmen",
+   "stat": {
+    "value": "10. yıl",
+    "label": "Nasuhi Can Özaydın'ın meslekteki süresi"
+   },
+   "body": "Serebral palsi hastası müzik öğretmeni Nasuhi Can Özaydın, Atakum'daki Zafer Özel Eğitim Meslek Okulu'nda özel öğrencilere ders veriyor.\\nMutlak kulak yeteneğiyle doğadaki sesleri notaya döken 10 yıllık öğretmen, öğrencilerin müzikle yaşayarak öğrenmesine katkı sağlıyor.",
+   "why": "24 Kasım Öğretmenler Günü'nde özel eğitim öğrencilerinin müzik aracılığıyla eğitime katılımını görünür kılıyor.",
+   "sources": [
+    "İHA",
+    "Habertürk"
+   ],
+   "n": 5
+  },
+  {
+   "category": "Sağlık",
+   "district": "Atakum",
+   "location": "OMÜ Eğitim Fakültesi",
+   "title": "OMÜ'deki panelde alkolün sağlık ve topluma etkileri ele alındı",
+   "short_title": "OMÜ'de bağımlılıkla mücadele paneli",
+   "stat": {
+    "value": "",
+    "label": ""
+   },
+   "body": "OMÜ ve Yeşilay iş birliğiyle düzenlenen panelde akademisyenler alkolün sağlık, psikoloji ve toplum üzerindeki etkilerini değerlendirdi.\\nUzmanlar; karaciğer ve sinir sistemi hasarlarının yanı sıra kaygı, uyku bozukluğu, aile yaşamı ve trafik güvenliği risklerine dikkat çekti.",
+   "why": "Bağımlılıkla mücadele kapsamında fiziksel sağlık, ruh sağlığı ve aile yaşamına dair bilimsel uyarılar sunuyor.",
+   "sources": [
+    "İHA",
+    "Aydınlık"
+   ],
+   "n": 6
+  }
+ ],
+ "briefs": [
+  {
+   "category": "Eğitim",
+   "district": "Samsun",
+   "text": "İl Milli Eğitim Müdürlüğünce 24 Kasım Öğretmenler Günü kapsamında 100. Yıl Kurtuluş Ormanı'na fidan dikildi.",
+   "sources": [
+    "AA",
+    "Habertürk"
+   ],
+   "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M2 9l10-5 10 5-10 5z\"/><path d=\"M6 11v5c0 1.5 3 3 6 3s6-1.5 6-3v-5M22 9v6\"/></svg>"
+  },
+  {
+   "category": "Çevre",
+   "district": "İlkadım",
+   "text": "İlkadım Belediyesi, ambalaj atıklarının 24 ay süreyle toplanıp ayrıştırılması için 2 Aralık'ta ihale yapacak.",
+   "sources": [
+    "İlan.gov.tr"
+   ],
+   "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M5 20c0-9 6-15 15-15 0 9-6 15-15 15z\"/><path d=\"M5 20l8-8\"/></svg>"
+  },
+  {
+   "category": "Sağlık",
+   "district": "Samsun",
+   "text": "İl Sağlık Müdürlüğü, İl Tarım ve Orman Müdürlüğü personeline ücretsiz kanser tarama programlarını anlattı.",
+   "sources": [
+    "Gazete Arena"
+   ],
+   "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"3\" y=\"3\" width=\"18\" height=\"18\" rx=\"5\"/><path d=\"M12 8v8M8 12h8\"/></svg>"
+  },
+  {
+   "category": "Asayiş",
+   "district": "Canik",
+   "text": "Canik'te yapılan aramada 51 bin 220 adet sentetik ecza hap ele geçirilirken 1 şüpheli gözaltına alındı.",
+   "sources": [
+    "İHA",
+    "Habertürk"
+   ],
+   "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z\"/></svg>"
+  }
+ ],
+ "outages": [],
+ "scoreboard": null,
+ "hook": "SASKİ'nin 11 milyar 837 milyon TL'lik 2027 bütçesi ve içme suyu kapasitesini ikiye katlayacak altyapı yatırımlarıyla Samsun'da günün öne çıkan gelişmeleri bültenimizde.",
+ "edition": "gundem",
+ "date": "2026-11-24",
+ "issue_no": 7,
+ "practical": {
+  "outages": [],
+  "pharmacy": "Nöbetçi eczaneleri e-Devlet'ten ya da Samsun Eczacı Odası'ndan öğrenebilirsin."
+ },
+ "permalink": "https://www.instagram.com/p/DgHJ9fDkrSH/"
+}
