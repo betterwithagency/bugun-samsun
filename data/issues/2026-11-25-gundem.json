@@ -1,0 +1,165 @@
+{
+ "stories": [
+  {
+   "category": "Hava",
+   "district": "Samsun",
+   "location": "Samsun açıkları",
+   "title": "Samsun açıklarında bugün saat 21.00'e kadar fırtına bekleniyor",
+   "short_title": "Samsun açıkları için fırtına uyarısı",
+   "stat": {
+    "value": "50-75 km/sa",
+    "label": "Beklenen rüzgâr hızı"
+   },
+   "body": "Samsun Valiliği, Meteoroloji verilerine dayanarak bugün 00.10-21.00 saatleri arasında Samsun açıklarında fırtına beklendiğini duyurdu.\nBatı ve kuzeybatıdan 6-8 kuvvetinde esecek rüzgârın akşam etkisini kaybetmesi öngörülürken denizci ve vatandaşlara tedbir çağrısı yapıldı.",
+   "why": "Deniz ulaşımı, balıkçılık ve kıyı kesimlerinde saat 21.00'e kadar olası olumsuzluklara karşı tedbir alınmalı.",
+   "sources": [
+    "Samsun Valiliği",
+    "Meteoroloji Genel Müdürlüğü",
+    "İHA"
+   ],
+   "n": 1
+  },
+  {
+   "category": "Ulaşım",
+   "district": "Samsun",
+   "location": "Samsun Çarşamba Havalimanı",
+   "title": "Çarşamba Havalimanı'na 3 milyon yolcu kapasiteli yeni terminal",
+   "short_title": "Çarşamba Havalimanı'na yeni terminal binası",
+   "stat": {
+    "value": "3 milyon",
+    "label": "Yeni terminalin yıllık yolcu kapasitesi"
+   },
+   "body": "Ulaştırma ve Altyapı Bakanı Abdulkadir Uraloğlu, TBMM'deki bütçe sunumunda Samsun Çarşamba Havalimanı'na yeni terminal yapılacağını açıkladı.\nYıllık 3 milyon yolcu kapasiteli terminalin yanı sıra Samsun-Doğu Karadeniz Hızlı Tren Hattı proje çalışmalarının sürdüğü bildirildi.",
+   "why": "Yeni terminal ve hızlı tren projesi, kentin hava ve demir yolu ulaşım kapasitesini doğrudan ilgilendiriyor.",
+   "sources": [
+    "İHA",
+    "Samsun Gazetesi"
+   ],
+   "n": 2
+  },
+  {
+   "category": "Belediye",
+   "district": "Samsun",
+   "location": "Engelsiz Yaşam Merkezi",
+   "title": "Engelsiz Yaşam Merkezi'nde çocuklar için ergoterapi hizmeti başlıyor",
+   "short_title": "Çocuklar için ergoterapi hizmeti başlıyor",
+   "stat": {
+    "value": "",
+    "label": ""
+   },
+   "body": "Samsun Büyükşehir Belediyesi, özel gereksinimli çocukların gelişimini desteklemek amacıyla Engelsiz Yaşam Merkezi'nde ergoterapi hizmeti başlatıyor.\nÇÖZGER raporu şartı aranan hizmete başvurular ALO 153 Çözüm Merkezi veya 0501 737 11 68 numaralı telefondan yapılabiliyor.",
+   "why": "ÇÖZGER raporu bulunan çocukların aileleri, telefonla başvurarak rehabilitasyon ve gelişim desteği alabilecek.",
+   "sources": [
+    "Samsun Büyükşehir Belediyesi",
+    "İHA"
+   ],
+   "n": 3
+  },
+  {
+   "category": "Eğitim",
+   "district": "Samsun",
+   "location": "Atatürk Kültür Merkezi",
+   "title": "Öğretmenler Günü töreninde aday öğretmenler asil memurluğa geçti",
+   "short_title": "Aday öğretmenler asil memurluğa geçti",
+   "stat": {
+    "value": "21.515",
+    "label": "Bilet hediye edilen öğretmen sayısı"
+   },
+   "body": "Atatürk Kültür Merkezi'ndeki 24 Kasım töreninde aday öğretmenler yemin ederek asil memurluğa geçti, emeklilere hizmet şeref belgesi verildi.\nBüyükşehir Belediyesi de kentteki 1.130 okula Bandırma Vapuru maketi, 21 bin 515 öğretmene ise Astorya bileti hediye etti.",
+   "why": "Törenle aday öğretmenler asil görevlerine başlarken 21 bin 515 öğretmen ve 1.130 okul belediye hediyesi aldı.",
+   "sources": [
+    "DHA",
+    "Hürriyet"
+   ],
+   "n": 4
+  },
+  {
+   "category": "Sağlık",
+   "district": "Samsun",
+   "location": "Samsun Şehir Hastanesi",
+   "title": "Samsun Şehir Hastanesi'nden gereksiz antibiyotik kullanımı uyarısı",
+   "short_title": "Gereksiz antibiyotik kullanımına karşı uyarı",
+   "stat": {
+    "value": "",
+    "label": ""
+   },
+   "body": "Samsun Şehir Hastanesi'nden Prof. Dr. Özgür Günal, viral hastalıklarda ve yanlış dozda antibiyotik kullanımının direnç geliştirdiğini söyledi.\nDirenç nedeniyle mevcut ilaçların yetersiz kaldığı ve hastaların yatış gerektiren kuvvetli tedavilere mecbur kaldığı vurgulandı.",
+   "why": "Yanlış antibiyotik kullanımı bakterilerde direnç geliştirerek basit enfeksiyonların ağırlaşmasına yol açıyor.",
+   "sources": [
+    "AA"
+   ],
+   "n": 5
+  },
+  {
+   "category": "Kültür",
+   "district": "Samsun",
+   "location": "Yalı Sergi Salonu",
+   "title": "Otizmli çocuklar yararına 188 eserlik karma resim sergisi açılacak",
+   "short_title": "Otizmli çocuklar yararına karma resim sergisi",
+   "stat": {
+    "value": "188",
+    "label": "47 sanatçının sergide yer alacak eseri"
+   },
+   "body": "Samsun Plastik Sanatlar Derneği ve Samsun Otizmli Çocuklar Derneği iş birliğiyle hazırlanan karma sergi 1 Aralık'ta Yalı Sergi Salonu'nda açılacak.\n8 Aralık'a dek sürecek sergide 47 sanatçının 188 eseri satışa sunulacak, gelirin bir kısmı derneğe bağışlanacak.",
+   "why": "Sanatseverler 1-8 Aralık'ta sergiyi gezerek eser satın alıp Samsun Otizmli Çocuklar Derneğine destek olabilecek.",
+   "sources": [
+    "AA",
+    "Habertürk"
+   ],
+   "n": 6
+  }
+ ],
+ "briefs": [
+  {
+   "category": "Hava",
+   "district": "Kavak",
+   "text": "Kavak ilçesinin yüksek kesimlerindeki Doruk ve Toptepe mevkileri etkili olan kar yağışıyla beyaza büründü.",
+   "sources": [
+    "İHA",
+    "Habertürk"
+   ],
+   "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M7 18h10a4 4 0 0 0 .4-8A6 6 0 0 0 6 9.6 4.3 4.3 0 0 0 7 18z\"/></svg>"
+  },
+  {
+   "category": "Ulaşım",
+   "district": "Bafra",
+   "text": "Jandarmanın mobil kaza simülasyon aracı bugün 10.00-16.00 saatlerinde Bafra 15 Temmuz Kent Meydanı'nda olacak.",
+   "sources": [
+    "İHA",
+    "Samsun Gazetesi"
+   ],
+   "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"5\" y=\"3\" width=\"14\" height=\"15\" rx=\"3\"/><path d=\"M5 11h14M8 18v3M16 18v3\"/><circle cx=\"8.5\" cy=\"14.5\" r=\".6\"/><circle cx=\"15.5\" cy=\"14.5\" r=\".6\"/></svg>"
+  },
+  {
+   "category": "Asayiş",
+   "district": "Bafra",
+   "text": "Bafra'da elektrikli şok cihazıyla kaçak avlanan 2 kişiye ceza kesilirken 20 kilo sazan ve tekneye el konuldu.",
+   "sources": [
+    "AA",
+    "Milliyet"
+   ],
+   "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z\"/></svg>"
+  },
+  {
+   "category": "Gündem",
+   "district": "Havza",
+   "text": "Havza Müftülüğü, ilçeden umreye gidecek 109 kişiye Kevser Camisi'nde uygulamalı bilgilendirme eğitimi verdi.",
+   "sources": [
+    "AA",
+    "Hürriyet"
+   ],
+   "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"3\" y=\"4\" width=\"18\" height=\"16\" rx=\"2\"/><path d=\"M7 8h10M7 12h10M7 16h6\"/></svg>"
+  }
+ ],
+ "outages": [],
+ "scoreboard": null,
+ "hook": "Samsun açıklarında bugün akşam saatlerine kadar sürecek fırtına uyarısı, Çarşamba Havalimanı'na yeni terminal planı ve kent gündeminden öne çıkan gelişmeler bültenimizde.",
+ "edition": "gundem",
+ "date": "2026-11-25",
+ "issue_no": 8,
+ "practical": {
+  "outages": [],
+  "pharmacy": "Nöbetçi eczaneleri e-Devlet'ten ya da Samsun Eczacı Odası'ndan öğrenebilirsin."
+ },
+ "permalink": "https://www.instagram.com/p/DgJuvcWnQ1X/"
+}
