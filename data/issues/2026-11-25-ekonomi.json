@@ -1,0 +1,142 @@
+{
+ "stories": [
+  {
+   "category": "Sanayi",
+   "district": "Samsun",
+   "location": "Samsun TSO",
+   "title": "Samsun TSO'dan KOBİ'lere yeşil dönüşüm ve karbon desteği",
+   "short_title": "KOBİ'lere yeşil dönüşüm ve karbon desteği",
+   "stat": {
+    "value": "20 KOBİ",
+    "label": "Karbon ve sürdürülebilirlik danışmanlığı"
+   },
+   "body": "Samsun TSO, Romanya TSO ve Adana Sanayi Odası ortaklığındaki Doğudan Batıya Sürdürülebilirlik Köprüsü projesinin ilk çalıştayı Samsun'da yapıldı.\nAB destekli projede 50 işletmenin sınırda karbon hazırlığı ölçüldü; 20 KOBİ'ye emisyon ölçümü ve eylem planı danışmanlığı sunuldu.",
+   "why": "Yerel firmaların AB sınırda karbon kurallarına uyum sağlayıp ihracatta rekabet gücünü korumasını destekliyor.",
+   "sources": [
+    "İHA",
+    "Samsun TSO",
+    "Gazete Arena"
+   ],
+   "n": 1
+  },
+  {
+   "category": "Enerji",
+   "district": "Samsun",
+   "location": "Samsun geneli",
+   "title": "Samsun'da motorinin litresine 4,32 TL indirim bekleniyor",
+   "short_title": "Motorinde 4,32 TL'lik indirim bekleniyor",
+   "stat": {
+    "value": "4,32 TL",
+    "label": "Motorinde beklenen litre başı indirim"
+   },
+   "body": "Samsun merkezde 25 Kasım itibarıyla benzinin litresi 70,02 TL, motorin 90,57 TL ve otogaz 52,10 TL seviyesinden satılıyor.\nKüresel petrol piyasasındaki arz artışına bağlı fiyat düşüşüyle 26 Kasım Perşembe gününden itibaren motorinde 4,32 TL indirim bekleniyor.",
+   "why": "Motorinde beklenen düşüş, bireysel sürücülerin yanı sıra ticari taşımacılık ve ulaşım maliyetlerini etkiliyor.",
+   "sources": [
+    "Samsun İlk Haber",
+    "Gazete Arena"
+   ],
+   "n": 2
+  },
+  {
+   "category": "Ekonomi",
+   "district": "Samsun",
+   "location": "Samsun geneli",
+   "title": "Samsun'da ortalama konut kirası 20 bin TL'ye ulaştı",
+   "short_title": "Samsun'da ortalama kira 20 bin TL'ye ulaştı",
+   "stat": {
+    "value": "20 bin TL",
+    "label": "Samsun genelinde ortalama konut kirası"
+   },
+   "body": "Evdeğer raporuna göre Samsun'da ortalama konut kirası kasım ayında 20 bin TL'ye ulaştı. Net asgari ücretin yaklaşık %71'i kiraya gidiyor.\nİlçelerde ortalama kira 17 bin ile 22 bin TL arasında değişirken, kirada tek yaşayan bir çalışanın aylık gideri 35 bin 910 TL'ye çıkıyor.",
+   "why": "Asgari ücret görüşmeleri öncesinde barınma ve mutfak giderlerinin çalışan bütçesindeki yükünü gösteriyor.",
+   "sources": [
+    "Samsun Haber"
+   ],
+   "n": 3
+  },
+  {
+   "category": "Sanayi",
+   "district": "Samsun",
+   "location": "Toybelen Sanayi Sitesi",
+   "title": "Toybelen Küçük Sanayi Sitesi için 3 boyutlu dijital kroki",
+   "short_title": "Toybelen Sanayi Sitesi'ne 3 boyutlu kroki",
+   "stat": {
+    "value": "597",
+    "label": "Dijital krokiye kaydedilen işletme sayısı"
+   },
+   "body": "Bilişim Teknolojileri Öğretmeni Özgür Koca, 75 blok ve 1.570 dükkânlı Toybelen Küçük Sanayi Sitesi için 3 boyutlu dijital kroki geliştirdi.\nŞu ana kadar 597 işletmenin eklendiği sistemde meslek dalı, firma adı veya kapı numarasıyla arama yapılıp yol tarifi alınabiliyor.",
+   "why": "Sanayi sitesindeki adres bulma sorununu çözerek vatandaşların aradıkları dükkâna hızlıca ulaşmasını sağlıyor.",
+   "sources": [
+    "İHA",
+    "Gazete Arena",
+    "Gazete Gerçek"
+   ],
+   "n": 4
+  },
+  {
+   "category": "Sanayi",
+   "district": "Samsun",
+   "location": "Samsun Teknoloji OSB",
+   "title": "ROKETSAN Samsun'daki yatırımı için 250 dönüm ek alan istedi",
+   "short_title": "ROKETSAN Samsun'da 250 dönüm ek alan istedi",
+   "stat": {
+    "value": "250 dönüm",
+    "label": "ROKETSAN'ın talep ettiği ek yatırım alanı"
+   },
+   "body": "Milletvekili Mehmet Muş, Samsun Teknoloji OSB'de 340 dönüm yer tahsis edilen ROKETSAN'ın 250 dönüm ek alan talebinde bulunduğunu açıkladı.\nHavza OSB'deki Unity ve tedarikçi yatırımlarıyla üretimin büyüyeceği belirtilirken, SAMGİAD savunma sanayisinde kümelenme çağrısı yaptı.",
+   "why": "Savunma yatırımlarının büyümesi, yerel KOBİ'lere yan sanayi fırsatı ve gençlere nitelikli istihdam alanı açıyor.",
+   "sources": [
+    "Samsun Gazetesi",
+    "SAMGİAD"
+   ],
+   "n": 5
+  }
+ ],
+ "briefs": [
+  {
+   "category": "Sanayi",
+   "district": "Çarşamba",
+   "text": "Çarşamba OSB'de bugün saat 14.00'te 7 milyon TL üst limitli KOSGEB Yeşil Sanayi Destek Programı tanıtılacak.",
+   "sources": [
+    "Haber Expres"
+   ],
+   "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M3 21V11l5 3v-3l5 3v-3l5 3V4h3v17z\"/><path d=\"M7 17h2M12 17h2\"/></svg>"
+  },
+  {
+   "category": "Tarım",
+   "district": "Samsun",
+   "text": "Samsun'daki Eti Bakır tesislerinde üretim yapan Eti Gübre, Growtech Antalya Uluslararası Tarım Fuarı'na katıldı.",
+   "sources": [
+    "Hergün Gazete",
+    "Kapsül Haber Ajansı"
+   ],
+   "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M12 21V11\"/><path d=\"M12 11C12 7 9 5 5 5c0 4 3 6 7 6zM12 14c0-4 3-6 7-6 0 4-3 6-7 6z\"/></svg>"
+  },
+  {
+   "category": "Ticaret",
+   "district": "Kavak",
+   "text": "Kavak Belediye Başkanı Şerif Ün, Tataristan'dan gelen mevkidaşı Pavlov ile ilçenin ticari potansiyelini görüştü.",
+   "sources": [
+    "AA",
+    "Gazete Arena"
+   ],
+   "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M4 10v10h16V10M3 10l2-6h14l2 6z\"/><path d=\"M9 20v-6h6v6\"/></svg>"
+  },
+  {
+   "category": "Ticaret",
+   "district": "Samsun",
+   "text": "Samsun Ticaret Borsası ile Anadolu ÜPAK arasında ürün piyasası iş birliklerini geliştirme görüşmesi yapıldı.",
+   "sources": [
+    "Samsun Ticaret Borsası"
+   ],
+   "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M4 10v10h16V10M3 10l2-6h14l2 6z\"/><path d=\"M9 20v-6h6v6\"/></svg>"
+  }
+ ],
+ "outages": [],
+ "scoreboard": null,
+ "hook": "Samsun'da KOBİ'lere yeşil dönüşüm desteğinden 20 bin TL'ye çıkan kira ortalamasına, motorinde indirim beklentisinden ROKETSAN'ın ek alan talebine günün iş ve ekonomi gündemi.",
+ "edition": "ekonomi",
+ "date": "2026-11-25",
+ "issue_no": 8,
+ "permalink": "https://www.instagram.com/p/DgKNnlZieHK/"
+}
