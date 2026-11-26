@@ -1,0 +1,157 @@
+{
+ "stories": [
+  {
+   "category": "Belediye",
+   "district": "Canik",
+   "location": "Gülsan Sanayi Sitesi",
+   "title": "Gülsan Sanayi Sitesi'nde yıkımların yüzde 85'i tamamlandı",
+   "short_title": "Gülsan'da yıkımların %85'i tamamlandı",
+   "stat": {
+    "value": "%85",
+    "label": "Tamamlanan yıkım oranı"
+   },
+   "body": "Samsun Büyükşehir Belediyesinin Gülsan Sanayi Sitesi'ndeki dönüşüm projesinde hak sahiplerinin %96'sıyla uzlaşıldı. Yapıların %99'u tahliye edilirken 744 yapı ve 1.496 bağımsız birim yıkıldı.\nEsnafın Toybelen Sanayi Sitesi'ne taşınma süreci devam ediyor.",
+   "why": "Kent merkezindeki dönüşüm, Toybelen'e taşınan esnafı ve sanayiden hizmet alan vatandaşları doğrudan etkiliyor.",
+   "sources": [
+    "DHA",
+    "Samsun Büyükşehir Belediyesi"
+   ],
+   "n": 1
+  },
+  {
+   "category": "Gündem",
+   "district": "Samsun",
+   "location": "SASKİ Genel Kurulu",
+   "title": "SASKİ komisyonunda su tarifelerine yüzde 11 zam teklifi geçti",
+   "short_title": "Su tarifelerine %11 zam teklifi komisyonda",
+   "stat": {
+    "value": "%11",
+    "label": "Komisyonda kabul edilen su zammı teklifi"
+   },
+   "body": "SASKİ 2. Olağan Genel Kurulu komisyon toplantısında su tarifelerine %11 zam yapılması teklifi oy çokluğuyla kabul edildi.\nBazı meclis üyeleri aylık otomatik artışı hatırlatarak ek zamma itiraz ederken, yönetim düzenlemenin yatırımların sürmesi için yapıldığını belirtti.",
+   "why": "Komisyonda kabul edilen %11'lik artış teklifi, Samsun'daki tüm abonelerin su faturalarını doğrudan etkiliyor.",
+   "sources": [
+    "Haber Expres"
+   ],
+   "n": 2
+  },
+  {
+   "category": "Sağlık",
+   "district": "Samsun",
+   "location": "Samsun genelindeki okullar",
+   "title": "Samsun'da 298 okul kantini çalışanına hijyen eğitimi verildi",
+   "short_title": "298 kantin çalışanına hijyen eğitimi verildi",
+   "stat": {
+    "value": "298",
+    "label": "Hijyen eğitimi alan kantin çalışanı"
+   },
+   "body": "İl Millî Eğitim Müdürlüğünün talebiyle İl Tarım ve Orman Müdürlüğü uzmanlarınca 298 okul kantini çalışanına zorunlu hijyen ve güvenilir gıda eğitimi verildi.\nGıdaların sağlıklı hazırlanması ve saklanmasının anlatıldığı eğitimlerin denetimlerle süreceği bildirildi.",
+   "why": "Kantinlerde hijyen standartlarının artırılması, öğrencilerin güvenilir gıdaya erişimini ve sağlığını koruyor.",
+   "sources": [
+    "Haberport"
+   ],
+   "n": 3
+  },
+  {
+   "category": "Yönetim",
+   "district": "Samsun",
+   "location": "Samsun ve ilçe adliyeleri",
+   "title": "HSK kararnamesiyle Samsun'da 18 hâkim ve savcının görev yeri değişti",
+   "short_title": "HSK kararnamesiyle Samsun'da 18 yeni atama",
+   "stat": {
+    "value": "18",
+    "label": "Görev yeri değişen hâkim ve savcı sayısı"
+   },
+   "body": "HSK mazeret kararnameleriyle Samsun'a başka illerden 5, kentten başka illere 8 hâkim ve savcı atandı; 5 yargı mensubunun ise il içindeki görev yeri değişti.\nAtamalar merkezdeki mahkemeler ile Bafra, Terme, Vezirköprü, Alaçam ve Çarşamba adliyelerini kapsıyor.",
+   "why": "Merkez ve beş ilçedeki yargı birimlerine yapılan atamalar, kentteki mahkemelerin idari işleyişini ilgilendiriyor.",
+   "sources": [
+    "Samsun Gazetesi"
+   ],
+   "n": 4
+  },
+  {
+   "category": "Etkinlik",
+   "district": "Samsun",
+   "location": "Bafra, Terme ve Atakum",
+   "title": "Üç ilçede kadına yönelik şiddetle mücadele etkinlikleri düzenlendi",
+   "short_title": "Üç ilçede şiddetle mücadele etkinlikleri",
+   "stat": {
+    "value": "733",
+    "label": "Bafra'da KADES bilgisi verilen vatandaş"
+   },
+   "body": "25 Kasım kapsamında Bafra'da 733 kişiye KADES ve ALO 183 anlatılırken, Terme'de emniyet ve jandarma ekiplerince sunum yapılıp broşür dağıtıldı.\nAtakum Belediyesinin programında ise Ata Sahne'de film gösterimi ve Özgecan Kadın Danışma Merkezi önünde açıklama yapıldı.",
+   "why": "Etkinliklerle vatandaşlara şiddet durumunda başvurabilecekleri KADES, ALO 183 ve danışma merkezleri tanıtıldı.",
+   "sources": [
+    "AA",
+    "İHA"
+   ],
+   "n": 5
+  },
+  {
+   "category": "Çevre",
+   "district": "Samsun",
+   "location": "Atatürk Botanik Orman Parkı",
+   "title": "91 yaşındaki emekli öğretmen kıraç araziyi botanik ormanına çevirdi",
+   "short_title": "Emekli öğretmen kıraç araziyi ormana çevirdi",
+   "stat": {
+    "value": "155 metre",
+    "label": "Arazide sondajla suya ulaşılan derinlik"
+   },
+   "body": "Emekli öğretmen 91 yaşındaki Recep Öztürk, kıraç arazide 155 metreden su çıkarıp binlerce ağaç dikerek Yüzüncü Yıl Atatürk Botanik Ormanı'nı kurdu.\nÖğretmenler Günü'nde ziyaret edilen Öztürk, 19 Mayıs 1919'u simgeleyen palmiyelerin yer aldığı parkı belediyeye devretti.",
+   "why": "Emekli öğretmenin kurup belediyeye devrettiği botanik orman parkı, kente yeni bir kamusal yeşil alan kazandırdı.",
+   "sources": [
+    "İHA"
+   ],
+   "n": 6
+  }
+ ],
+ "briefs": [
+  {
+   "category": "Hava",
+   "district": "Ladik",
+   "text": "Samsun'un kış turizmi merkezlerinden Ladik'teki Akdağ, etkili olan kar yağışının ardından beyaza büründü.",
+   "sources": [
+    "İHA"
+   ],
+   "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M7 18h10a4 4 0 0 0 .4-8A6 6 0 0 0 6 9.6 4.3 4.3 0 0 0 7 18z\"/></svg>"
+  },
+  {
+   "category": "Belediye",
+   "district": "Canik",
+   "text": "Canik Belediyesi, kurayla 1 öğretmene umre, 20 öğretmene Doğu ve Güneydoğu Anadolu gezisi hediye etti.",
+   "sources": [
+    "DHA"
+   ],
+   "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M3 21h18M4 10h16M12 3l8.5 7h-17z\"/><path d=\"M6.5 10v11M10.5 10v11M13.5 10v11M17.5 10v11\"/></svg>"
+  },
+  {
+   "category": "Belediye",
+   "district": "İlkadım",
+   "text": "İlkadım Belediyesi, kurumsal veri güvenliğini güçlendirmek amacıyla personeline bilgi güvenliği eğitimi verdi.",
+   "sources": [
+    "DHA"
+   ],
+   "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M3 21h18M4 10h16M12 3l8.5 7h-17z\"/><path d=\"M6.5 10v11M10.5 10v11M13.5 10v11M17.5 10v11\"/></svg>"
+  },
+  {
+   "category": "Eğitim",
+   "district": "Bafra",
+   "text": "Bafra Gençlik Merkezi, Bafra Anadolu İmam Hatip Lisesinde öğrencilere sertifikalı yapay zekâ eğitimi düzenledi.",
+   "sources": [
+    "AA"
+   ],
+   "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M2 9l10-5 10 5-10 5z\"/><path d=\"M6 11v5c0 1.5 3 3 6 3s6-1.5 6-3v-5M22 9v6\"/></svg>"
+  }
+ ],
+ "outages": [],
+ "scoreboard": null,
+ "hook": "Gülsan Sanayi Sitesi'nde yıkımların yüzde 85'e ulaşması ve SASKİ komisyonunda kabul edilen yüzde 11'lik su zammı teklifi bugün Samsun gündeminin ilk sıralarında yer alıyor.",
+ "edition": "gundem",
+ "date": "2026-11-26",
+ "issue_no": 9,
+ "practical": {
+  "outages": [],
+  "pharmacy": "Nöbetçi eczaneleri e-Devlet'ten ya da Samsun Eczacı Odası'ndan öğrenebilirsin."
+ },
+ "permalink": "https://www.instagram.com/p/DgMTh6OGtpf/"
+}
