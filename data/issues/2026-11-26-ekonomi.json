@@ -1,0 +1,139 @@
+{
+ "stories": [
+  {
+   "category": "Ticaret",
+   "district": "Samsun",
+   "location": "Samsun, Çarşamba, Salıpazarı",
+   "title": "Samsun ve ilçelerinde serbest piyasa ile borsa fındık fiyatları",
+   "short_title": "Samsun ve ilçelerinde güncel fındık fiyatları",
+   "stat": {
+    "value": "211,07 TL",
+    "label": "Samsun Ticaret Borsası ortalama fiyatı"
+   },
+   "body": "Serbest piyasada 50 randıman tombul fındık merkezde 148-175,25, Çarşamba'da 139,75-147,75, Salıpazarı'nda 142-143,25 TL'den işlem gördü.\nBorsa ortalaması Samsun'da 211,07 TL, Çarşamba'da 189,30 TL oldu. TMO Levant fındığı 250 TL, FİSKOBİRLİK ortaklarından 195 TL'ye alıyor.",
+   "why": "Serbest piyasa, borsa, TMO ve FİSKOBİRLİK fiyatları arasındaki fark üreticinin satış kararını doğrudan etkiliyor.",
+   "sources": [
+    "Samsun Gazetesi"
+   ],
+   "n": 1
+  },
+  {
+   "category": "Ekonomi",
+   "district": "Samsun",
+   "location": "Samsun genelinde 4 ilçe",
+   "title": "Kentsel Dönüşüm Başkanlığı Samsun'da 44 arsayı satışa çıkardı",
+   "short_title": "Dört ilçede 44 arsa açık artırmayla satılacak",
+   "stat": {
+    "value": "44 arsa",
+    "label": "Samsun'da satışa çıkarılan arsa sayısı"
+   },
+   "body": "Kentsel Dönüşüm Başkanlığı; 19 Mayıs, Canik, Ladik ve Tekkeköy'deki 44 arsayı 3 Aralık saat 10.30'da açık artırmayla satışa çıkaracak.\nKDV'siz satışta %25 peşinat ve 60 ay vade, peşin ödemede ise %20 indirim sunuluyor. Müzayedeye çevrim içi de katılım sağlanabilecek.",
+   "why": "Vatandaşlara ve işletmelere dört ilçede KDV'siz, 60 ay vadeli veya peşinde %20 indirimli arsa alma imkânı sunuyor.",
+   "sources": [
+    "İlan.gov.tr",
+    "Gazete Gerçek",
+    "Akasyam"
+   ],
+   "n": 2
+  },
+  {
+   "category": "İstihdam",
+   "district": "Samsun",
+   "location": "Orta Karadeniz Kalkınma Ajansı",
+   "title": "Kadın Mühendis Dönüşüm Okulu mezunlarının yüzde 70'i istihdam edildi",
+   "short_title": "Kadın Mühendis Dönüşüm Okulu'nda 3. mezuniyet",
+   "stat": {
+    "value": "%70",
+    "label": "Mezun kadın mühendislerin istihdam oranı"
+   },
+   "body": "OKA, TOBB Samsun Kadın Girişimciler Kurulu ve Samsun Model Fabrika iş birliğindeki Kadın Mühendis Dönüşüm Okulu 3. dönem mezunlarını verdi.\nİlk üç dönemde 40 kadın mühendis mezun olurken, yaklaşık %70'e karşılık gelen 30 mezun OSB'ler ve sanayi tesislerinde istihdam edildi.",
+   "why": "Kadın mühendislere iş imkânı sağlarken sanayi işletmelerinin dönüşümüne nitelikli iş gücü kazandırıyor.",
+   "sources": [
+    "İHA",
+    "Haberler.com"
+   ],
+   "n": 3
+  },
+  {
+   "category": "Tarım",
+   "district": "Samsun",
+   "location": "Samsun Tarım Fuarı",
+   "title": "Samsun'da tanıtılan yerli tarım dronuna hasat taşıma sistemi eklendi",
+   "short_title": "Yerli tarım dronuna 100 kiloluk taşıma sistemi",
+   "stat": {
+    "value": "100 kg",
+    "label": "Yerli tarım dronunun yük taşıma kapasitesi"
+   },
+   "body": "Samsun'daki fuarda tanıtılan %67 yerlilik oranlı 80 litrelik tarım dronuna, ilaçlama ve gübrelemenin yanında hasat taşıma modülü eklendi.\n100 kilogram yükle 3 kilometreyi 120 saniyede aşan cihaz, ilaç ve suda %80'e varan tasarruf sağlıyor; yerlilik oranında hedef ise %75.",
+   "why": "Eğimli fındık ve çay arazilerinde hasat edilen ürünlerin taşınmasındaki iş gücü ihtiyacını ve maliyeti azaltıyor.",
+   "sources": [
+    "AA",
+    "Habertürk"
+   ],
+   "n": 4
+  },
+  {
+   "category": "Sanayi",
+   "district": "Samsun",
+   "location": "Samsun OSB",
+   "title": "Borsan Kablo OSB Yıldızları araştırmasında 6 kategoride ilk 100'de",
+   "short_title": "Borsan Kablo 6 kategoride Türkiye ilk 100'ünde",
+   "stat": {
+    "value": "6 kategori",
+    "label": "Türkiye ilk 100'üne girdiği alan sayısı"
+   },
+   "body": "Borsan Kablo, 98 OSB'nin incelendiği 6. OSB Yıldızları Araştırması 2026'da altı kategoride Türkiye'nin ilk 100 firması arasına girdi.\nİhracatta 30'uncu olarak ilk 100'deki tek kablo üreticisi olan firma; ihracat artışında 50'nci, Ar-Ge'de 57'nci ve satışta 64'üncü oldu.",
+   "why": "Samsunlu üreticinin ihracat, Ar-Ge, satış ve kadın istihdamında Türkiye genelindeki rekabet gücünü ortaya koyuyor.",
+   "sources": [
+    "Enerji Ekonomisi"
+   ],
+   "n": 5
+  }
+ ],
+ "briefs": [
+  {
+   "category": "İstihdam",
+   "district": "Samsun",
+   "text": "SGK İl Müdürü Ünal Kaya, sigortasız işçi çalıştırma ve eksik prim bildiriminin ağır yaptırımları konusunda uyardı.",
+   "sources": [
+    "Ekonomim"
+   ],
+   "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"3\" y=\"7\" width=\"18\" height=\"13\" rx=\"2\"/><path d=\"M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2M3 13h18\"/></svg>"
+  },
+  {
+   "category": "İstihdam",
+   "district": "Samsun",
+   "text": "Büyükşehir İstihdam ve Kariyer Merkezi, özgeçmiş başvurusu ve mülakatlarla iş arayanları işverenlerle buluşturuyor.",
+   "sources": [
+    "Ekonomim"
+   ],
+   "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"3\" y=\"7\" width=\"18\" height=\"13\" rx=\"2\"/><path d=\"M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2M3 13h18\"/></svg>"
+  },
+  {
+   "category": "Ticaret",
+   "district": "Samsun",
+   "text": "Samsun TSO Başkanı Murzioğlu, kentte iş kurup istihdam oluşturan genç girişimcilerin yanında olduklarını söyledi.",
+   "sources": [
+    "İHA",
+    "Vitrin Haber"
+   ],
+   "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M4 10v10h16V10M3 10l2-6h14l2 6z\"/><path d=\"M9 20v-6h6v6\"/></svg>"
+  },
+  {
+   "category": "Tarım",
+   "district": "Canik",
+   "text": "Canik'te öğrencilere 300 kilo palamut ikram edilen etkinlikte İl Tarım Müdürü Yılmaz balık tüketimi çağrısı yaptı.",
+   "sources": [
+    "Haber Expres"
+   ],
+   "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M12 21V11\"/><path d=\"M12 11C12 7 9 5 5 5c0 4 3 6 7 6zM12 14c0-4 3-6 7-6 0 4-3 6-7 6z\"/></svg>"
+  }
+ ],
+ "outages": [],
+ "scoreboard": null,
+ "hook": "Samsun ve ilçelerinde serbest piyasa ile borsa fındık fiyatları arasındaki fark dikkat çekerken, dört ilçede 44 arsanın KDV'siz ve 60 ay vadeyle satış takvimi belli oldu.",
+ "edition": "ekonomi",
+ "date": "2026-11-26",
+ "issue_no": 9,
+ "permalink": "https://www.instagram.com/p/DgMyay-n5K6/"
+}
