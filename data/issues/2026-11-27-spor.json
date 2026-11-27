@@ -1,0 +1,137 @@
+{
+ "stories": [
+  {
+   "category": "Samsunspor",
+   "district": "Samsun",
+   "location": "Samsun Yeni 19 Mayıs Stadı",
+   "title": "Bjelica'dan Gençlerbirliği maçı öncesi taraftara destek çağrısı",
+   "short_title": "Samsunspor'da kritik Gençlerbirliği mesaisi",
+   "stat": {
+    "value": "6",
+    "label": "Gençlerbirliği'nde sakat oyuncu sayısı"
+   },
+   "body": "Samsunspor, Süper Lig'in 13. haftasında yarın saat 16.00'da Gençlerbirliği'ni konuk edecek. Maçı 6 puanlık karşılaşma olarak niteleyen Teknik Direktör Nenad Bjelica, taraftardan 90 dakika destek istedi. Konuk ekipte sakatlığı süren 6 futbolcu kadroda yer alamayacak.",
+   "why": "Ligde kalma yarışındaki kritik maç öncesi teknik heyetin beklentisini ve rakip takımdaki eksikleri gösteriyor.",
+   "sources": [
+    "DHA",
+    "İHA",
+    "AA"
+   ],
+   "n": 1
+  },
+  {
+   "category": "Samsunspor",
+   "district": "Samsun",
+   "location": "Samsun",
+   "title": "Samsunspor'dan Beşiktaş taraftarına yapılan müdahaleye kınama",
+   "short_title": "Samsunspor'dan Beşiktaş'a destek açıklaması",
+   "stat": {
+    "value": "",
+    "label": ""
+   },
+   "body": "Samsunspor, Gürcistan'daki Hapoel Beer-Sheva maçında Beşiktaş taraftarına yapılan orantısız müdahaleyi kınadı. Türk kulüplerinin İsrail takımlarıyla kendi sahasında oynama hakkının alınması nedeniyle UEFA'ya tepki gösteren kulüp, yaralılara şifa diledi.",
+   "why": "Samsunspor'un Avrupa kupalarındaki tarafsız saha uygulamasına karşı aldığı kurumsal tutumu ortaya koyuyor.",
+   "sources": [
+    "DHA"
+   ],
+   "n": 2
+  },
+  {
+   "category": "Futbol",
+   "district": "Samsun",
+   "location": "Çarşamba ve Ladik",
+   "title": "Profesyonelliğe Geçiş Ligi'nde üç Samsun takımı sahaya çıkıyor",
+   "short_title": "Samsun'un üç temsilcisinin 7. hafta maçları",
+   "stat": {
+    "value": "13.00",
+    "label": "Cumartesi günkü maçların başlama saati"
+   },
+   "body": "Profesyonelliğe Geçiş Ligi'nin 7. haftasında Samsun temsilcileri 28 Kasım Cumartesi günü saat 13.00'te sahaya çıkacak. Çarşambaspor sahasında Aybastıspor'u, Ladik Belediyespor ise Bayburtspor'u ağırlarken Tekkeköyspor deplasmanda Keşapspor ile karşılaşacak.",
+   "why": "İlçelerdeki futbolseverlere hafta sonu oynanacak resmi lig karşılaşmalarının yer ve saat bilgisini veriyor.",
+   "sources": [
+    "Samsun Gazetesi"
+   ],
+   "n": 3
+  },
+  {
+   "category": "Basketbol",
+   "district": "Samsun",
+   "location": "Yaşar Doğu Spor Salonu",
+   "title": "12 Dev Adam Basketbol Okulları Samsun'da yetenek taraması yapacak",
+   "short_title": "Samsun'da genç basketbolcu taraması yapılacak",
+   "stat": {
+    "value": "5 Aralık",
+    "label": "Yetenek taramasının yapılacağı tarih"
+   },
+   "body": "12 Dev Adam Basketbol Okulları projesi kapsamındaki yetenek taraması 5 Aralık Cumartesi günü Yaşar Doğu Spor Salonu'nda yapılacak. Lisans şartı aranmayan seçmelere 2013, 2014 ve 2015 doğumlu çocuklar katılarak TBF final kampına ve oyuncu havuzuna girme olanağı bulacak.",
+   "why": "Samsun'daki 2013-2015 doğumlu çocuklara lisans şartı aranmadan federasyon altyapısına seçilme olanağı sunuyor.",
+   "sources": [
+    "DHA"
+   ],
+   "n": 4
+  },
+  {
+   "category": "Spor",
+   "district": "Samsun",
+   "location": "Samsun",
+   "title": "Samsunlu iki genç sporcu U16 Hentbol Milli Takımı'na seçildi",
+   "short_title": "Samsunlu iki hentbolcuya milli takım daveti",
+   "stat": {
+    "value": "2",
+    "label": "Milli kadroya seçilen Samsunlu sporcu"
+   },
+   "body": "2011 doğumlu Samsunlu sporcular Nisa Kırcalı ve Dilasu Bülbül, açıklanan U16 Hentbol Milli Takımı kadrosuna seçildi. Hazırlık kamplarına katılacak iki genç sporcu, 10-12 Aralık'ta Kuzey Makedonya'da yapılacak Avrupa Şampiyonası'nda Türkiye'yi temsil edecek.",
+   "why": "Samsun altyapısından yetişen iki genç sporcunun Avrupa Şampiyonası'nda milli formayı giyeceğini belgeliyor.",
+   "sources": [
+    "Samsun Gençlik ve Spor İl Müdürlüğü",
+    "Çarşamba Medya"
+   ],
+   "n": 5
+  }
+ ],
+ "briefs": [
+  {
+   "category": "Samsunspor",
+   "district": "Samsun",
+   "text": "Samsunspor, kalp krizi geçirip hastanede gözlem altına alınan eski futbolcusu Adnan Güngör'e acil şifa diledi.",
+   "sources": [
+    "Samsun Gazetesi"
+   ],
+   "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"12\" cy=\"12\" r=\"9\"/><path d=\"M12 7.5l4 2.9-1.5 4.6h-5L8 10.4z\"/><path d=\"M12 3v4.5M21 10.5l-5 0M17.5 19.5l-3-4.5M6.5 19.5l3-4.5M3 10.5h5\"/></svg>"
+  },
+  {
+   "category": "Futbol",
+   "district": "İlkadım",
+   "text": "Samsun Türk Telekom Spor Başkanı Yusuf İman, yıllık 200 bin lirayı aşan lisans ve vize ücretlerine dikkat çekti.",
+   "sources": [
+    "Haber Expres"
+   ],
+   "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"12\" cy=\"12\" r=\"9\"/><path d=\"M12 7.5l4 2.9-1.5 4.6h-5L8 10.4z\"/><path d=\"M12 3v4.5M21 10.5l-5 0M17.5 19.5l-3-4.5M6.5 19.5l3-4.5M3 10.5h5\"/></svg>"
+  },
+  {
+   "category": "Spor",
+   "district": "Yakakent",
+   "text": "Yakakent'te kamu ve sivil toplum temsilcileri, bağımlılıkla mücadeleye dikkat çekmek için dostluk maçı yaptı.",
+   "sources": [
+    "AA"
+   ],
+   "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"12\" cy=\"12\" r=\"9\"/><path d=\"M12 7.5l4 2.9-1.5 4.6h-5L8 10.4z\"/><path d=\"M12 3v4.5M21 10.5l-5 0M17.5 19.5l-3-4.5M6.5 19.5l3-4.5M3 10.5h5\"/></svg>"
+  },
+  {
+   "category": "Samsunspor",
+   "district": "Tekkeköy",
+   "text": "Samsunspor, Gençlerbirliği maçı öncesi stadyumda kulübün mobil uygulamasını deneyen taraftarlara hediye verecek.",
+   "sources": [
+    "Gazete Gerçek"
+   ],
+   "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"12\" cy=\"12\" r=\"9\"/><path d=\"M12 7.5l4 2.9-1.5 4.6h-5L8 10.4z\"/><path d=\"M12 3v4.5M21 10.5l-5 0M17.5 19.5l-3-4.5M6.5 19.5l3-4.5M3 10.5h5\"/></svg>"
+  }
+ ],
+ "outages": [],
+ "scoreboard": null,
+ "hook": "Samsunspor'da Gençlerbirliği maçı öncesi Teknik Direktör Nenad Bjelica'nın 6 puanlık maç vurgusu ve Samsun spor gündeminden öne çıkan gelişmeler bugünkü bültenimizde.",
+ "edition": "spor",
+ "date": "2026-11-27",
+ "issue_no": 10,
+ "permalink": "https://www.instagram.com/p/DgQD1YcDeRl/"
+}
