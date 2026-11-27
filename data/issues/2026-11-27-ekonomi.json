@@ -1,0 +1,146 @@
+{
+ "stories": [
+  {
+   "category": "Ticaret",
+   "district": "Samsun",
+   "location": "Samsun Kuyumcular Odası",
+   "title": "Samsun'da kuyumcu mağazası ve toptancı sayısı yüzde 15 arttı",
+   "short_title": "Samsun'da kuyumcu sayısı yüzde 15 arttı",
+   "stat": {
+    "value": "%15",
+    "label": "2026'da kuyumcu ve toptancı artışı"
+   },
+   "body": "Samsun Kuyumcular Odası Başkanı Salih Özman, 2026'da kentteki kuyumcu mağazası ve toptancı sayısının yaklaşık %15 arttığını açıkladı.\nİnternet satışlarındaki yetki belgesi şartının oda kayıtlarını artırdığını belirten Özman, sektöre yeni girenlere uzmanlık uyarısı yaptı.",
+   "why": "Kentteki kuyumculuk sektörünün büyüme verilerini ve internet satışlarındaki yetki belgesi şartını ortaya koyuyor.",
+   "sources": [
+    "İHA",
+    "Yeni Şafak",
+    "Habertürk"
+   ],
+   "n": 1
+  },
+  {
+   "category": "Tarım",
+   "district": "Samsun",
+   "location": "İl Tarım ve Orman Müdürlüğü",
+   "title": "Hayvancılık destekleme başvuruları 1 Aralık'ta sona eriyor",
+   "short_title": "Hayvancılık desteğinde son gün 1 Aralık",
+   "stat": {
+    "value": "1 Aralık",
+    "label": "Destekleme başvurularında son tarih"
+   },
+   "body": "Samsun İl Tarım ve Orman Müdürlüğü, 2026 yılı 1. dönem hayvancılık destekleme başvurularının 1 Aralık 2026'da sona ereceğini duyurdu.\nBireysel büyükbaş yetiştiricileri tarım müdürlükleri, örgüt üyeleri ve küçükbaş üreticileri ise birlik veya kooperatifler üzerinden başvuruyor.",
+   "why": "Büyükbaş ve küçükbaş yetiştiricilerinin destekten yararlanması için 1 Aralık'ta dolacak süreyi hatırlatıyor.",
+   "sources": [
+    "Samsun İl Tarım ve Orman Müdürlüğü",
+    "Çarşamba Medya"
+   ],
+   "n": 2
+  },
+  {
+   "category": "Belediye",
+   "district": "Bafra",
+   "location": "Bafra Belediyesi",
+   "title": "Bafra'da emlak ve çevre temizlik vergisinde son gün 30 Kasım",
+   "short_title": "Bafra'da vergi ödemelerinde son gün 30 Kasım",
+   "stat": {
+    "value": "30 Kasım",
+    "label": "Vergi 2. taksit ödemelerinde son gün"
+   },
+   "body": "Bafra Belediyesi, emlak vergisi ile iş yeri çevre temizlik vergisi 2. taksit ödeme süresinin 30 Kasım 2026'da sona ereceğini açıkladı.\nMükellefler ödemelerini belediye veznelerinden nakit veya kredi kartıyla, ayrıca e-Devlet ve belediyenin internet sitesinden yapabiliyor.",
+   "why": "Konut ve iş yeri sahiplerinin gecikme cezasıyla karşılaşmaması için ödeme takvimini ve kanallarını duyuruyor.",
+   "sources": [
+    "AA",
+    "Bafra Belediyesi",
+    "Habertürk"
+   ],
+   "n": 3
+  },
+  {
+   "category": "Tarım",
+   "district": "Samsun",
+   "location": "Samsun fındık havzası",
+   "title": "Samsun'da fındık satışında TMO ile serbest piyasa şartları",
+   "short_title": "Fındık satışında TMO ve serbest piyasa farkı",
+   "stat": {
+    "value": "21 gün",
+    "label": "TMO fındık alımlarında ödeme süresi"
+   },
+   "body": "TMO'nun 2026-2027 fındık alımlarında en fazla %6,5 rutubet ve en az %40 sağlam iç oranı aranırken ödemeler 21. günden itibaren yapılıyor.\nÇKS ve randevu şartı olan TMO'ya karşılık tüccarlar randevusuz peşin alım yapabiliyor; üreticinin ise net tutara dikkat etmesi gerekiyor.",
+   "why": "Fındık üreticilerinin TMO ile serbest piyasa arasında tercih yaparken bilmesi gereken alım şartlarını açıklıyor.",
+   "sources": [
+    "Samsun Gazetesi"
+   ],
+   "n": 4
+  },
+  {
+   "category": "Ulaşım",
+   "district": "Samsun",
+   "location": "Samsun-Sinop ulaşım koridoru",
+   "title": "Samsun koridorundaki Boyabat Çevre Yolu 28 Kasım'da açılıyor",
+   "short_title": "Boyabat Çevre Yolu 28 Kasım'da açılıyor",
+   "stat": {
+    "value": "434 milyon",
+    "label": "Yıllık zaman ve akaryakıt tasarrufu (TL)"
+   },
+   "body": "Bakan Abdulkadir Uraloğlu, Samsun, Sinop, Kastamonu ve Çorum koridorundaki 8,7 kilometrelik Boyabat Çevre Yolu'nun 28 Kasım'da açılacağını bildirdi.\nGeçiş süresini 20 dakikadan 5 dakikaya düşürecek proje ile zaman ve akaryakıttan yılda toplam 434 milyon lira tasarruf sağlanacak.",
+   "why": "Samsun ile çevre iller arasında ticaret ve taşımacılık yapanların ulaşım süresini ve yakıt maliyetini düşürecek.",
+   "sources": [
+    "AA",
+    "Ulaştırma ve Altyapı Bakanlığı",
+    "Samsun Gazetesi"
+   ],
+   "n": 5
+  }
+ ],
+ "briefs": [
+  {
+   "category": "İstihdam",
+   "district": "Samsun",
+   "text": "Samsun TSO Başkanı Murzioğlu, kentte iş kurup istihdam sağlayan genç girişimcilerin yanında olduklarını söyledi.",
+   "sources": [
+    "İHA",
+    "Samsun TSO",
+    "Habertürk"
+   ],
+   "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"3\" y=\"7\" width=\"18\" height=\"13\" rx=\"2\"/><path d=\"M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2M3 13h18\"/></svg>"
+  },
+  {
+   "category": "Belediye",
+   "district": "Vezirköprü",
+   "text": "Vezirköprü'de zabıta ve tarım müdürlüğü ekipleri, ilçedeki fırınlarda hijyen ve ekmek gramajı denetimi yaptı.",
+   "sources": [
+    "Vezirköprü Belediyesi",
+    "Samsun Güncel Haber"
+   ],
+   "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M3 21h18M4 10h16M12 3l8.5 7h-17z\"/><path d=\"M6.5 10v11M10.5 10v11M13.5 10v11M17.5 10v11\"/></svg>"
+  },
+  {
+   "category": "Tarım",
+   "district": "Samsun",
+   "text": "Samsun'da Lider Çocuk Tarım Kampı'na katılan öğrenciler, iklime dayanıklı bitki çeşitlerini yerinde inceledi.",
+   "sources": [
+    "İHA",
+    "Samsun İl Tarım ve Orman Müdürlüğü",
+    "Habertürk"
+   ],
+   "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M12 21V11\"/><path d=\"M12 11C12 7 9 5 5 5c0 4 3 6 7 6zM12 14c0-4 3-6 7-6 0 4-3 6-7 6z\"/></svg>"
+  },
+  {
+   "category": "Altyapı",
+   "district": "Çarşamba",
+   "text": "Çarşamba'da yol çalışması nedeniyle müşteri kaybeden bir esnaf, kazılan caddede metal dedektörüyle tepki gösterdi.",
+   "sources": [
+    "Kanal 362"
+   ],
+   "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M12 3s7 7.5 7 12a7 7 0 0 1-14 0c0-4.5 7-12 7-12z\"/></svg>"
+  }
+ ],
+ "outages": [],
+ "scoreboard": null,
+ "hook": "Samsun'da kuyumcu mağazalarının sayısı bir yılda yüzde 15 artarken, hayvancılık destekleri ve fındık alım şartlarında üreticileri ilgilendiren kritik takvim işliyor.",
+ "edition": "ekonomi",
+ "date": "2026-11-27",
+ "issue_no": 10,
+ "permalink": "https://www.instagram.com/p/DgPXMafDerU/"
+}
