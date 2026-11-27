@@ -1,0 +1,177 @@
+{
+ "stories": [
+  {
+   "category": "Ulaşım",
+   "district": "Samsun",
+   "location": "SAMULAŞ depo sahası",
+   "title": "12 yeni tramvaydan 5'incisi Samsun'a ulaşıp raya indirildi",
+   "short_title": "5'inci yeni tramvay raya indirildi",
+   "stat": {
+    "value": "41",
+    "label": "Filonun ulaşacağı toplam tramvay sayısı"
+   },
+   "body": "Ulaştırma ve Altyapı Bakanlığınca üstlenilen 12 yeni tramvaydan 5'incisi Ankara'dan Samsun'a getirilerek Tekkeköy'deki SAMULAŞ depo sahasında raya indirildi.\n42 metre uzunluğunda ve 402 yolcu kapasiteli araç, montaj ve testlerin ardından hizmete girecek.",
+   "why": "12 yeni aracın tamamı devreye girdiğinde raylı sistem filosundaki tramvay sayısı 29'dan 41'e yükselecek.",
+   "sources": [
+    "DHA",
+    "AA",
+    "İHA"
+   ],
+   "n": 1
+  },
+  {
+   "category": "Sağlık",
+   "district": "Atakum",
+   "location": "Balaç Mahallesi",
+   "title": "Atakum Devlet Hastanesi inşaatının Mayıs 2027'de bitmesi hedefleniyor",
+   "short_title": "Atakum Devlet Hastanesi'nde hedef Mayıs 2027",
+   "stat": {
+    "value": "350",
+    "label": "Yeni devlet hastanesinin yatak kapasitesi"
+   },
+   "body": "Sağlık Bakanlığınca Balaç Mahallesi'nde yaklaşık 2,4 milyar TL yatırımla inşa edilen 350 yataklı hastanenin karkas binası ortaya çıktı.\n82 poliklinik ve 15 ameliyat masalı ameliyathanenin yer alacağı projenin 6 Mayıs 2027'de tamamlanması hedefleniyor.",
+   "why": "Yaklaşık 253 bin nüfuslu Atakum ve çevresinde yaşayanların sağlık hizmetlerine erişim kapasitesini artıracak.",
+   "sources": [
+    "İHA",
+    "Habertürk"
+   ],
+   "n": 2
+  },
+  {
+   "category": "Yönetim",
+   "district": "Canik",
+   "location": "Canik",
+   "title": "Canik ve İlkadım'ın ortak jandarma binası yüzde 87 tamamlandı",
+   "short_title": "Ortak jandarma binasının %87'si tamamlandı",
+   "stat": {
+    "value": "%87",
+    "label": "Yeni jandarma binasının tamamlanma oranı"
+   },
+   "body": "Canik'te inşa edilen 4 katlı ve 3 bin 166 metrekare kapalı alanlı yeni İlçe Jandarma Komutanlığı binasının yüzde 87'si tamamlandı.\nHem Canik hem de İlkadım İlçe Jandarma Komutanlığına hizmet verecek binada peyzaj ve çevre düzenlemesi sürüyor.",
+   "why": "Canik ve İlkadım jandarma komutanlıkları tek merkezde birleşerek iki ilçeye ortak binadan hizmet sunacak.",
+   "sources": [
+    "AA",
+    "DHA"
+   ],
+   "n": 3
+  },
+  {
+   "category": "Sanayi",
+   "district": "Samsun",
+   "location": "Samsun",
+   "title": "SANTEK toplantısında Samsun Teknoport çalışmaları ele alındı",
+   "short_title": "SANTEK'te Samsun Teknoport görüşüldü",
+   "stat": {
+    "value": "",
+    "label": ""
+   },
+   "body": "Samsun Sanayi ve Teknoloji İş Birliği Kurulu 2026 yılı 2. toplantısı Vali Orhan Tavlı başkanlığında üniversite ve sanayi temsilcileriyle yapıldı.\nToplantıda OKA koordinasyonundaki Samsun Teknoport kuruluş çalışmaları ile Ar-Ge ve tasarım merkezi destekleri değerlendirildi.",
+   "why": "Kentin üniversite-sanayi iş birliğini ve yeni teknoloji geliştirme bölgesinin kuruluş yol haritasını belirliyor.",
+   "sources": [
+    "İHA",
+    "Habertürk"
+   ],
+   "n": 4
+  },
+  {
+   "category": "Eğitim",
+   "district": "Çarşamba",
+   "location": "Şehit Nuri Pamir İlkokulu",
+   "title": "Çarşamba'da kantin görevlisi öğrenciyi Heimlich ile kurtardı",
+   "short_title": "Kantin görevlisi öğrenciyi kurtardı",
+   "stat": {
+    "value": "",
+    "label": ""
+   },
+   "body": "Çarşamba Sarıcalı Mahallesi'ndeki Şehit Nuri Pamir İlkokulu'nda bir öğrencinin soluk borusuna kantinden aldığı simit parçası kaçtı.\nNefes almakta zorlanan öğrenci, kantin görevlisi Azize Taşkın'ın uyguladığı Heimlich manevrasıyla kurtarıldı.",
+   "why": "Okul personelinin ilk yardım bilgisinin acil durumlarda öğrencilerin hayatını kurtarmadaki önemini gösteriyor.",
+   "sources": [
+    "DHA"
+   ],
+   "n": 5
+  },
+  {
+   "category": "Gündem",
+   "district": "Çarşamba",
+   "location": "Çarşamba Adliyesi",
+   "title": "Adliye mübaşiri yanlış gönderilen 1 milyon 180 bin TL'yi iade etti",
+   "short_title": "Mübaşir yanlış gelen parayı iade etti",
+   "stat": {
+    "value": "3 saat",
+    "label": "Yanlış gönderilen paranın iade süresi"
+   },
+   "body": "Çarşamba'da mübaşir Ziya Öztürk, 5 bin TL borç ödemek isteyen bir kişinin yanlışlıkla hesabına gönderdiği 1 milyon 180 bin TL'yi fark etti.\nBankaya bilgi verip göndericiye ulaşan Öztürk, parayı yaklaşık 3 saatte sahibine iade etti.",
+   "why": "Mobil bankacılıkta hatalı para transferlerine karşı dikkatli olunması gerektiğini hatırlatıyor.",
+   "sources": [
+    "İHA",
+    "Habertürk"
+   ],
+   "n": 6
+  }
+ ],
+ "briefs": [
+  {
+   "category": "Afet",
+   "district": "Ladik",
+   "text": "1943 Ladik Depremi'nin 83. yıl dönümünde Şehit Ersan Sancı Anadolu Lisesinde deprem tatbikatı yapıldı.",
+   "sources": [
+    "İHA"
+   ],
+   "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M12 3l10 18H2z\"/><path d=\"M12 10v5M12 18v.01\"/></svg>"
+  },
+  {
+   "category": "Eğitim",
+   "district": "Bafra",
+   "text": "Bafra'da Dünya Balıkçılık Günü kapsamında Kolay Ortaokulu öğrencilerine balıkçılık eğitimi verildi.",
+   "sources": [
+    "AA",
+    "Samsun Gazetesi"
+   ],
+   "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M2 9l10-5 10 5-10 5z\"/><path d=\"M6 11v5c0 1.5 3 3 6 3s6-1.5 6-3v-5M22 9v6\"/></svg>"
+  },
+  {
+   "category": "Sağlık",
+   "district": "Vezirköprü",
+   "text": "Vezirköprü'de öğrenciler ve Türk Kızılay iş birliğiyle yapılan kampanyada 17 kişiden kan bağışı alındı.",
+   "sources": [
+    "İHA"
+   ],
+   "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"3\" y=\"3\" width=\"18\" height=\"18\" rx=\"5\"/><path d=\"M12 8v8M8 12h8\"/></svg>"
+  },
+  {
+   "category": "Çevre",
+   "district": "Havza",
+   "text": "Samsun Büyükşehir Belediyesi ekipleri, Havza genelindeki üreme alanlarında biyolojik ilaçlama yaptı.",
+   "sources": [
+    "İHA",
+    "Habertürk"
+   ],
+   "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M5 20c0-9 6-15 15-15 0 9-6 15-15 15z\"/><path d=\"M5 20l8-8\"/></svg>"
+  }
+ ],
+ "outages": [
+  {
+   "kind": "bolt",
+   "title": "15 ilçede planlı elektrik kesintisi",
+   "text": "YEDAŞ bakım ve şebeke yenileme çalışmaları kapsamında bugün İlkadım, Atakum, Canik, Bafra, Çarşamba, Terme, Vezirköprü, Havza, Alaçam, Asarcık, Ayvacık, Kavak, Ladik, Salıpazarı ve Yakakent'in çeşitli mahallelerinde 08.30-17.30 saatleri arasında planlı elektrik kesintisi uygulanıyor.",
+   "source": "YEDAŞ"
+  }
+ ],
+ "scoreboard": null,
+ "hook": "Samsun'un toplu taşıma filosunu büyütecek 12 yeni tramvaydan 5'incisi raya indirilirken, Atakum'daki 350 yataklı yeni devlet hastanesi inşaatı yükseliyor.",
+ "edition": "gundem",
+ "date": "2026-11-27",
+ "issue_no": 10,
+ "practical": {
+  "outages": [
+   {
+    "kind": "bolt",
+    "title": "15 ilçede planlı elektrik kesintisi",
+    "text": "YEDAŞ bakım ve şebeke yenileme çalışmaları kapsamında bugün İlkadım, Atakum, Canik, Bafra, Çarşamba, Terme, Vezirköprü, Havza, Alaçam, Asarcık, Ayvacık, Kavak, Ladik, Salıpazarı ve Yakakent'in çeşitli mahallelerinde 08.30-17.30 saatleri arasında planlı elektrik kesintisi uygulanıyor.",
+    "source": "YEDAŞ"
+   }
+  ],
+  "pharmacy": "Nöbetçi eczaneleri e-Devlet'ten ya da Samsun Eczacı Odası'ndan öğrenebilirsin."
+ },
+ "permalink": "https://www.instagram.com/p/DgO4UsuJYWu/"
+}
