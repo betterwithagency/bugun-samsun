@@ -1,0 +1,139 @@
+{
+ "stories": [
+  {
+   "category": "Sanayi",
+   "district": "Samsun",
+   "location": "Teknoloji ve Merkez OSB",
+   "title": "OSB toplantılarında ROKETSAN yatırımı ve yeni projeler ele alındı",
+   "short_title": "OSB'lerde ROKETSAN yatırımı ve tam doluluk",
+   "stat": {
+    "value": "%100",
+    "label": "Merkez OSB sanayi parseli doluluk oranı"
+   },
+   "body": "Vali Orhan Tavlı başkanlığındaki toplantılarda Teknoloji OSB'de %42, Merkez OSB'deki 102 parselde ise %100 doluluğa ulaşıldığı açıklandı.\nTeknoloji OSB'de ROKETSAN'ın 340 dönümlük yatırım yeri tahsisi ile iki meslek lisesi, Lojistik Merkez'de ise 4 hububat deposu görüşüldü.",
+   "why": "Savunma sanayisi yatırımı, büyüyen OSB'ler ve kurulacak iki meslek lisesi kentteki nitelikli istihdamı artıracak.",
+   "sources": [
+    "İHA",
+    "Aydınlık",
+    "Gazete Gerçek"
+   ],
+   "n": 1
+  },
+  {
+   "category": "Ticaret",
+   "district": "Samsun",
+   "location": "Samsun TSO Meclisi",
+   "title": "Samsun TSO'dan 30 firmaya yeşil ve dijital dönüşüm desteği",
+   "short_title": "Samsun TSO'dan 30 firmaya dönüşüm projesi",
+   "stat": {
+    "value": "30 firma",
+    "label": "Yeşil ve dijital dönüşüm desteği kapsamı"
+   },
+   "body": "Samsun TSO Başkanı Salih Zeki Murzioğlu, kentin 1 milyar 650 milyon dolar ihracata ulaştığını ve artık geri göç almaya başladığını söyledi.\nYeni projeyle 30 firmanın yeşil ve dijital dönüşüm yol haritası hazırlanacak; işletmelerin finansmana erişiminde Nefes Kredisi vurgulandı.",
+   "why": "KOBİ'lerin finansmana erişim taleplerini gündeme taşırken 30 yerel sanayi firmasına dönüşüm rehberliği sağlıyor.",
+   "sources": [
+    "Aksiyon",
+    "Kapsam Haber"
+   ],
+   "n": 2
+  },
+  {
+   "category": "Duyuru",
+   "district": "Samsun",
+   "location": "Samsun merkez ve ilçeleri",
+   "title": "TOKİ sosyal konutlarında aralık ayı sözleşme takvimi açıklandı",
+   "short_title": "TOKİ sosyal konut sözleşme takvimi açıklandı",
+   "stat": {
+    "value": "6.397",
+    "label": "Samsun genelinde planlanan sosyal konut"
+   },
+   "body": "TOKİ'nin Samsun projesinde merkezdeki 502 dairenin ardından Çarşamba'da 58, Bafra'da 216 ve Asarcık'ta 47 konutun kuraları tamamlandı.\nSözleşmeler 7 Aralık'tan itibaren banka şubelerinde imzalanacak; merkezde %10 peşinat ve 240 ay vadeyle daireler 48 ayda teslim edilecek.",
+   "why": "Kurada hak sahibi olan vatandaşların aralık ayı sözleşme tarihlerini, ödeme ve teslim koşullarını netleştiriyor.",
+   "sources": [
+    "Haber Expres"
+   ],
+   "n": 3
+  },
+  {
+   "category": "Altyapı",
+   "district": "Çarşamba",
+   "location": "Çarşamba ilçe merkezi",
+   "title": "Çarşamba'da öz kaynakla yeni dönüşüm etabı ve asfalt tesisi yatırımı",
+   "short_title": "Çarşamba'da dönüşüm ve asfalt tesisi yatırımı",
+   "stat": {
+    "value": "50 milyon TL",
+    "label": "Sıcak asfalt üretim tesisi yatırım bedeli"
+   },
+   "body": "Çarşamba Belediyesi, öz kaynaklarıyla yürüttüğü dönüşümde 113 daire ve 44 bin metrekare ticari alanlı yeni etap için haftaya ihaleye çıkacak.\nMezbaha bölgesindeki 108 dairelik etapta %50 seviyeye ulaşılırken, 50 milyon TL'lik sıcak asfalt tesisi de haftaya hizmete açılacak.",
+   "why": "İlçede 44 bin metrekare ticari alan yaratırken belediyenin kendi asfaltını üreterek maliyet düşürmesini sağlıyor.",
+   "sources": [
+    "İHA",
+    "Habertürk"
+   ],
+   "n": 4
+  },
+  {
+   "category": "Ekonomi",
+   "district": "Samsun",
+   "location": "Toybelen ve Canik",
+   "title": "Samsun esnafından kredi, faiz indirimi ve borç yapılandırması çağrısı",
+   "short_title": "Samsun esnafından kredi ve yapılandırma talebi",
+   "stat": {
+    "value": "140-160 TL",
+    "label": "Serbest piyasada fındık satış fiyatı"
+   },
+   "body": "Kooperatif Başkanı Fevzi Apaydın, kış öncesi esnaf için kredi artışı, gecikme faizi indirimi ve borç yapılandırması kolaylığı çağrısı yaptı.\nGülsan'dan Toybelen'e taşınan esnafın yüksek kirayla zorlandığını, düşük fındık ve çeltik fiyatlarının ticareti daralttığını söyledi.",
+   "why": "Kış öncesinde küçük esnafın ve yeni sanayi sitesine taşınan işletmelerin finansman ile kira sorunlarını yansıtıyor.",
+   "sources": [
+    "Haber Expres"
+   ],
+   "n": 5
+  }
+ ],
+ "briefs": [
+  {
+   "category": "Ekonomi",
+   "district": "Atakum",
+   "text": "Atakum Alanlı Mahallesi'ndeki 15 bölümlü bir otel, 58 milyon 803 bin TL muhammen bedelle icradan satışa çıkarıldı.",
+   "sources": [
+    "Turizm Ekonomi"
+   ],
+   "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M3 17l6-6 4 4 8-8\"/><path d=\"M15 7h6v6\"/></svg>"
+  },
+  {
+   "category": "Ticaret",
+   "district": "Samsun",
+   "text": "SAMGİAD 9'uncu dönem başkan adayı Mustafa Kar, 12 kişilik yönetim kurulu aday listesini ve hedeflerini tanıttı.",
+   "sources": [
+    "Günaydın Samsun Haber"
+   ],
+   "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M4 10v10h16V10M3 10l2-6h14l2 6z\"/><path d=\"M9 20v-6h6v6\"/></svg>"
+  },
+  {
+   "category": "İstihdam",
+   "district": "İlkadım",
+   "text": "İlkadım Halk Eğitim Merkezi'nde pastacılık ve butik çikolata eğitimi alan kadınlar evden siparişle gelir sağlıyor.",
+   "sources": [
+    "İHA",
+    "Gazete Gerçek"
+   ],
+   "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"3\" y=\"7\" width=\"18\" height=\"13\" rx=\"2\"/><path d=\"M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2M3 13h18\"/></svg>"
+  },
+  {
+   "category": "Ticaret",
+   "district": "Çarşamba",
+   "text": "Çarşamba TSO, meclis ve meslek komitesi üyelerine yönelik protokol kuralları ve resmî nezaket eğitimi düzenledi.",
+   "sources": [
+    "Çarşamba Güncel Haber"
+   ],
+   "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M4 10v10h16V10M3 10l2-6h14l2 6z\"/><path d=\"M9 20v-6h6v6\"/></svg>"
+  }
+ ],
+ "outages": [],
+ "scoreboard": null,
+ "hook": "Samsun Merkez OSB'de doluluk %100'e ulaşırken Teknoloji OSB'de ROKETSAN'ın 340 dönümlük yatırım yeri tahsisi ve yeni meslek liseleri gündeme geldi.",
+ "edition": "ekonomi",
+ "date": "2026-11-28",
+ "issue_no": 11,
+ "permalink": "https://www.instagram.com/p/DgR7_zCDbqL/"
+}
