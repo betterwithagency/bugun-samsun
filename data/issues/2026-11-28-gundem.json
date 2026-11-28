@@ -1,0 +1,180 @@
+{
+ "stories": [
+  {
+   "category": "Gündem",
+   "district": "Samsun",
+   "location": "SASKİ Genel Kurulu",
+   "title": "SASKİ yeni su tarifesini ve dar gelirliye fatura desteğini kabul etti",
+   "short_title": "Yeni su tarifesi ve fatura desteği kararı",
+   "stat": {
+    "value": "34,83 TL",
+    "label": "Mesken 1. kademe yeni su metreküp fiyatı"
+   },
+   "body": "SASKİ Genel Kurulu, 1 Aralık'ta başlayacak yeni su tarifesini kabul etti. Meskende ilk kademe sınırı 17'den 10 metreküpe çekilirken metreküp ücreti 31,66 TL'den 34,83 TL'ye çıktı.\nBaşkan Halit Doğan, başvuran dar gelirli hanelerin su faturasını karşılayacaklarını açıkladı.",
+   "why": "1 Aralık'tan itibaren su faturaları yeni tarifeyle hesaplanacak; dar gelirliler fatura desteğine başvurabilecek.",
+   "sources": [
+    "İHA",
+    "Son Dakika"
+   ],
+   "n": 1
+  },
+  {
+   "category": "Gündem",
+   "district": "Samsun",
+   "location": "Atakum ve İlkadım",
+   "title": "TOKİ Samsun Merkez projesinde 502 sosyal konutun kurası çekildi",
+   "short_title": "TOKİ'den 502 sosyal konut için daire kurası",
+   "stat": {
+    "value": "502",
+    "label": "Kurayla daire dağılımı yapılan konut"
+   },
+   "body": "TOKİ, Samsun Merkez projelerindeki hak sahipleri için konut belirleme kurası çekti. Kuraya Atakum Kamalı Mahallesi 1. ve 2. etaplar ile İlkadım Badırlı projesi dahil edildi.\nÇekilişle 445'i 2+1 ve 57'si 3+1 olmak üzere toplam 502 sosyal konutun daire dağılımı belirlendi.",
+   "why": "Merkez ilçeleri kapsayan sosyal konut projesinde hak sahiplerinin hangi etap ve dairede oturacağı kesinleşti.",
+   "sources": [
+    "Yeni Şafak",
+    "TOKİ"
+   ],
+   "n": 2
+  },
+  {
+   "category": "Hava",
+   "district": "Samsun",
+   "location": "Samsun geneli",
+   "title": "Samsun'da pazar gününden itibaren soğuk ve yağışlı hava etkili olacak",
+   "short_title": "Pazar günü soğuk ve yağışlı hava geliyor",
+   "stat": {
+    "value": "8 derece",
+    "label": "Pazartesi beklenen en yüksek sıcaklık"
+   },
+   "body": "Meteoroloji verilerine göre bugün 17 derece olan hava sıcaklığı, pazar gününden itibaren Balkanlar ve Karadeniz üzerinden gelen soğuk hava dalgasıyla düşecek.\nEn yüksek sıcaklığın pazartesi 8 dereceye inmesi, sahilde yağmur, yüksek kesimlerde ise kar ve buzlanma bekleniyor.",
+   "why": "Sıcaklık iki günde 9 derece düşeceği ve yüksek kesimlerde buzlanma beklendiği için tedbirli olunması gerekiyor.",
+   "sources": [
+    "Meteoroloji Genel Müdürlüğü",
+    "İHA",
+    "Samsun Gazetesi"
+   ],
+   "n": 3
+  },
+  {
+   "category": "Çevre",
+   "district": "İlkadım",
+   "location": "Aşağıavdan Mahallesi",
+   "title": "İlkadım'da uygunsuz koşuldaki 155 hayvan bakımevine nakledildi",
+   "short_title": "İlkadım'da 155 hayvan korumaya alındı",
+   "stat": {
+    "value": "155",
+    "label": "Bakımevine nakledilen kedi ve köpek sayısı"
+   },
+   "body": "Aşağıavdan Mahallesi'nde sağlıksız koşullarda tutulan 126 köpek ve 29 kedi, mahkeme kararıyla yapılan denetimle belediye hayvan bakımevine nakledildi.\nİlkadım Kaymakamlığı, sorumlulara idari para cezası ve hayvan bulundurma yasağı uygulanacağını açıkladı.",
+   "why": "Akarsu kenarında sağlıksız koşullarda hayvan tutulması, çevre sağlığı ve hayvan refahı için sonlandırıldı.",
+   "sources": [
+    "İHA",
+    "Samsun Gazetesi"
+   ],
+   "n": 4
+  },
+  {
+   "category": "Ulaşım",
+   "district": "Vezirköprü",
+   "location": "Küçükkale mevkisi",
+   "title": "Vezirköprü'de heyelan sonrası açılan yeni grup yoluna beton dökülüyor",
+   "short_title": "Vezirköprü'de yeni grup yoluna beton kaplama",
+   "stat": {
+    "value": "2 km",
+    "label": "Yeni açılan beton grup yolunun uzunluğu"
+   },
+   "body": "Vezirköprü'de üç mahalleye ulaşım sağlayan yolun heyelanla kapanması üzerine Büyükşehir Belediyesince yeni güzergâhta başlatılan çalışmalar tamamlanma aşamasına geldi.\nZemin güçlendirmesinin ardından 2 kilometre uzunluğunda ve 8,5 metre genişliğinde beton yol yapımına geçildi.",
+   "why": "Heyelanla ana yolu kapanan Küçükkale, Kızılcakoru ve Elmalı mahalleleri kalıcı ve güvenli ulaşıma kavuşacak.",
+   "sources": [
+    "İHA",
+    "Habertürk"
+   ],
+   "n": 5
+  },
+  {
+   "category": "Belediye",
+   "district": "Canik",
+   "location": "Canik Belediyesi",
+   "title": "Canik Belediyesinde vergi vezneleri hafta sonu da hizmet veriyor",
+   "short_title": "Canik'te vergi vezneleri hafta sonu açık",
+   "stat": {
+    "value": "10.00-16.00",
+    "label": "Veznelerin hafta sonu çalışma saatleri"
+   },
+   "body": "Canik Belediyesi, emlak, çevre temizlik ve ilan reklam vergisi 2. taksit ödemelerinde son günün 30 Kasım Pazartesi olduğunu hatırlattı.\nHizmet binasındaki vezneler hafta sonu 10.00-16.00'da açık olacak; ödemeler e-Devlet'ten de yapılabilecek.",
+   "why": "Pazartesi dolacak süre öncesinde hafta içi belediyeye gidemeyen mükellefler hafta sonu ödeme yapabilecek.",
+   "sources": [
+    "DHA",
+    "Canik Belediyesi"
+   ],
+   "n": 6
+  }
+ ],
+ "briefs": [
+  {
+   "category": "Belediye",
+   "district": "Çarşamba",
+   "text": "Çarşamba'da 108 dairelik kentsel dönüşüm %50'ye ulaştı; 113 dairelik yeni etap için haftaya ihaleye çıkılacak.",
+   "sources": [
+    "İHA",
+    "Samsun İlk Haber"
+   ],
+   "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M3 21h18M4 10h16M12 3l8.5 7h-17z\"/><path d=\"M6.5 10v11M10.5 10v11M13.5 10v11M17.5 10v11\"/></svg>"
+  },
+  {
+   "category": "Yönetim",
+   "district": "Vezirköprü",
+   "text": "Vezirköprü İlçe Emniyet Müdürlüğü yeni hizmet binasının yapımına yakında temel kazısıyla başlanacak.",
+   "sources": [
+    "AA",
+    "Habertürk"
+   ],
+   "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M3 21h18M4 10h16M12 3l8.5 7h-17z\"/><path d=\"M6.5 10v11M10.5 10v11M13.5 10v11M17.5 10v11\"/></svg>"
+  },
+  {
+   "category": "Etkinlik",
+   "district": "İlkadım",
+   "text": "LÖSAM ve gönüllü kadınlar, lösemili çocukların tedavisi yararına İlkadım'da bir günlük gıda kermesi açtı.",
+   "sources": [
+    "DHA",
+    "Hürriyet"
+   ],
+   "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"3\" y=\"5\" width=\"18\" height=\"16\" rx=\"2\"/><path d=\"M3 10h18M8 3v4M16 3v4\"/></svg>"
+  },
+  {
+   "category": "Altyapı",
+   "district": "Bafra",
+   "text": "Bafra Belediyesi, yenilenen Belediye ve Alaçam caddelerine 51 adet LED aydınlatma direği monte etti.",
+   "sources": [
+    "Bafra Haber",
+    "BRT Haber"
+   ],
+   "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M12 3s7 7.5 7 12a7 7 0 0 1-14 0c0-4.5 7-12 7-12z\"/></svg>"
+  }
+ ],
+ "outages": [
+  {
+   "kind": "bolt",
+   "title": "Canik ve Terme'de planlı elektrik kesintisi",
+   "text": "09.00-17.30 saatleri arasında Canik'in Adatepe, Alibeyli, Avluca, Başalan, Gökçepınar, Kestanepınar, Muratlı, Tekkiraz ve Toygar; Terme'nin Erenköy ve Yüksekyayla mahallelerinde elektrik kesintisi uygulanıyor.",
+   "source": "YEDAŞ / Haber Gazetesi"
+  }
+ ],
+ "scoreboard": null,
+ "hook": "Samsun'da 1 Aralık'tan itibaren geçerli olacak yeni su tarifesi ve dar gelirli hanelere fatura desteği kararıyla birlikte günün öne çıkan gelişmelerini derledik.",
+ "edition": "gundem",
+ "date": "2026-11-28",
+ "issue_no": 11,
+ "practical": {
+  "outages": [
+   {
+    "kind": "bolt",
+    "title": "Canik ve Terme'de planlı elektrik kesintisi",
+    "text": "09.00-17.30 saatleri arasında Canik'in Adatepe, Alibeyli, Avluca, Başalan, Gökçepınar, Kestanepınar, Muratlı, Tekkiraz ve Toygar; Terme'nin Erenköy ve Yüksekyayla mahallelerinde elektrik kesintisi uygulanıyor.",
+    "source": "YEDAŞ / Haber Gazetesi"
+   }
+  ],
+  "pharmacy": "Nöbetçi eczaneleri e-Devlet'ten ya da Samsun Eczacı Odası'ndan öğrenebilirsin."
+ },
+ "permalink": "https://www.instagram.com/p/DgRdKRDjjr8/"
+}
